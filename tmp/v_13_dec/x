@@ -1,6 +1,0 @@
-mv EMConfig.txt     emconfig.txt
-mv ILDef_be.txt     ildef_be.txt
-mv InitVars_be.txt     initvars_be.txt
-mv TakeUp_be.txt     takeup_be.txt
-mv TUDef_be.txt     tudef_be.txt
-
