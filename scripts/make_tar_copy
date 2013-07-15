@@ -1,0 +1,44 @@
+tar zcvf ~/archives/mefisto.tgz \
+  --exclude='.svn' \
+  --exclude='bin/*.ali' \
+  --exclude='bin/*' \
+  --exclude='tmp/*' \
+  --exclude='model_output/*' \
+  --exclude='*.pdf' \
+  --exclude='*.doc' \
+  --exclude='*.xls' \
+  --exclude='working/users/*' \
+  --exclude='log/*' \
+  --exclude='*.log' \
+  --exclude='tests/asis/*' \
+  --exclude='scripts/loadtest/*' \
+  --exclude='loadtest/*' \
+  --exclude='svnstats/*' \
+  --exclude='etc/parameters/*' \
+  --exclude='etc/parameters.v2/*' \
+  .
+
+tar zcvf ~/archives/mefisto_full.tgz \
+  --exclude='.svn' \
+  --exclude='bin/*' \
+  --exclude='tmp/*' \
+  --exclude='scripts/loadtest/*' \
+  --exclude='loadtest/*' \
+  --exclude='model_output/*' \
+  --exclude='log/*' \
+  --exclude='*.log' \
+  .
+
+cd ../../model/
+
+tar zcvf ~/archives/euromod.tgz \
+  --exclude='.svn' \
+  --exclude='bin/*.ali' \
+  --exclude='bin/*.o' \
+  --exclude='bin/*.adb' \
+  --exclude='bin/*.ads' \
+  --exclude='tmp/*' \
+  --exclude='model_output/*' \
+  --exclude='*.pdf' \
+  --exclude='*.doc' \
+  --exclude='*.xls' .

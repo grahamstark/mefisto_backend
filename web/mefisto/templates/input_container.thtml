@@ -1,0 +1,36 @@
+<form action="@_URI_@" id="parametersform" name="parametersform"  >
+        <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+        
+            @_MODEL-MENU_@
+            <div id="parameterform" class="designreformblock" style="width: 450px; min-height:500px;">
+            
+                
+                <div id="parametercontainer"></div>
+                
+                <div class="rowElem formbuttons" >
+                    <input id="run_submit_button" name="run" value="@_RUN_@" @_DISABLE-RUN_@ type="submit" onclick="submitForm( 'run' ); return false;"/>
+                    <input id="save_button" name="save" value="@_SAVE_@"  type="submit" onclick="submitForm( 'save' ); return false;" />
+                    <input name="reset_shown" value="@_RESET-SHOWN_@"  type="submit"  onclick="submitForm( 'reset_shown' ); return false;"/>
+                    <input name="reset_all" value="@_RESET-ALL_@"  type="submit"  onclick="submitForm( 'reset_all' ); return false;"/>
+                </div>
+                
+            </div>
+            
+            <div id="informationblock" class="designreformblock" style="width: 230px; min-height:500px;" ><!-- min-height was 340px -->
+                <h3>@_INFORMATION_@</h3>
+                <div id='infotext'></div>
+            </div>
+            
+            <div id="uprateform" class="designreformblock" style="width: 230px; height:143px; display: none;">
+                <h3>Uprate</h3>
+                    <div class="rowElem">
+                        <label for="uprate_amount">@_UPRATE-AMOUNT_@:</label>
+                        <input size="6" name="uprate_amount" value="0.0" type="text" id='uprate_amount' />
+                        <span id="uprate_error_message"></span> 
+                    </div>
+                    <div class="rowElem formbuttons">
+                        <input name="uprate_shown" value="@_UPRATE-SHOWN_@"  type="submit" onclick="submitForm( 'uprate_shown' ); return false;" />
+                        <input name="uprate_all" value="@_UPRATE-ALL_@"  onmouseout="return nd();" type="submit" onclick="submitForm( 'uprate_all' ); return false;"/>
+                    </div>
+            </div>
+</form>

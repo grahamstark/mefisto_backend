@@ -1,0 +1,40 @@
+with Ada.Strings.Unbounded;
+
+package EU.Web.Settings is
+
+   use Ada.Strings.Unbounded;
+   --
+   -- FIXME: WRONG WRONG WRONG 
+   -- we only need one instance of this
+   -- 
+   type Web_Settings is tagged private;
+   
+   function Read_Web_Settings( filename : String ) return Web_Settings;
+   
+   function Log_File_Name( this : in Web_Settings ) return String;
+   function Log_File_Name( this : in Web_Settings ) return Unbounded_String;
+   function Root( this : in Web_Settings ) return Unbounded_String; 
+   function Root( this : in Web_Settings ) return String; 
+   function Work_Dir( this : in Web_Settings ) return Unbounded_String; 
+   function Work_Dir( this : in Web_Settings ) return String; 
+   function Template_Components_Path( this : in Web_Settings ) return Unbounded_String; 
+   function Template_Components_Path( this : in Web_Settings ) return String; 
+   function Port( this : in Web_Settings ) return Positive; 
+   function Charts_Driver_Script( this : in Web_Settings ) return Unbounded_String; 
+   function Charts_Driver_Script( this : in Web_Settings ) return String; 
+   function Create_Zip_File_And_Static_Images( this : in Web_Settings ) return Boolean;
+ 
+private    
+
+   type Web_Settings is tagged record
+      
+      log_file_name            : Unbounded_String := To_Unbounded_String("");
+      root                     : Unbounded_String := To_Unbounded_String("");
+      work_dir                 : Unbounded_String := To_Unbounded_String("");
+      template_components_path : Unbounded_String := To_Unbounded_String("");
+      port                     : Positive := 80;
+      charts_driver_script     : Unbounded_String := To_Unbounded_String("");
+      create_zip_file_and_static_images : Boolean := False;
+   end record;   
+   
+end EU.Web.Settings;

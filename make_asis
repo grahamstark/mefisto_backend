@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# force compile for asis; see asis user guide pdf version ch 8
+# -c compiple only -XOP=asis force eu.gpr into ASIS mode -f force compile
+#
+gnatmake -c -Peu -XOP=asis -f $1

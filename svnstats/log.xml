@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<log>
+<logentry
+   revision="12405">
+<author>graham_s</author>
+<date>2011-07-31T22:21:31.424234Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12406">
+<author>graham_s</author>
+<date>2011-08-01T13:38:08.396107Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12407">
+<author>graham_s</author>
+<date>2011-08-01T22:21:16.773132Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/mefisto_backend/backend/ada/web/mefisto/templates/input_light_new.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/input_light.thtml</path>
+<path
+   kind=""
+   action="A">/mefisto_backend/backend/ada/web/mefisto/templates/input_new.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.ads</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/header_includes.thtml</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12408">
+<author>graham_s</author>
+<date>2011-08-01T22:23:49.239987Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/eu-be-model-settings.ads</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12410">
+<author>graham_s</author>
+<date>2011-08-02T15:31:04.370026Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/input_light_new.thtml</path>
+<path
+   kind=""
+   action="A">/mefisto_backend/backend/ada/web/mefisto/templates/input_container.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/callbacks-mefisto.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/input_new.thtml</path>
+<path
+   kind=""
+   copyfrom-path="/mefisto_backend/backend/ada/src/callbacks-mefisto.adb"
+   copyfrom-rev="12404"
+   action="A">/mefisto_backend/backend/ada/src/callbacks-mefisto_fullpage_version.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.ads</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/header_includes.thtml</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12411">
+<author>graham_s</author>
+<date>2011-08-02T15:31:53.360580Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12413">
+<author>graham_s</author>
+<date>2011-08-02T18:28:37.098057Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/input_container.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/index.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/input_new.thtml</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.ads</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/web/mefisto/templates/header_includes.thtml</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="12414">
+<author>graham_s</author>
+<date>2011-08-02T18:35:33.623660Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/callbacks-mefisto.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.adb</path>
+<path
+   kind=""
+   action="M">/mefisto_backend/backend/ada/src/parameter_system-input_buffer-eu_renderer.ads</path>
+</paths>
+<msg></msg>
+</logentry>
+</log>

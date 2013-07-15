@@ -1,0 +1,35 @@
+
+<h3>@_HEADER_@<a href='@_PATH_@/help' onclick='ExampleWindow( this.href ); return false;' class='help_link'><img src='/mefisto/images/help.png' class='help_link' alt='help'/></a></h3>
+@@IF@@ @_JOB-IS-RUNNING_@        
+
+@@INCLUDE@@ jquery_progress_bar.thtml        
+
+<input type='hidden' name='job_is_running' id='job_is_running' value="1" /> 
+
+@@ELSE@@
+
+<input type='hidden' name='job_is_running' id='job_is_running' value="0" /> 
+
+@@END_IF@@
+
+@_MAIN-ERROR-MESSAGE_@
+
+<table>
+
+@@TABLE@@
+
+@_INPUT-CELL_@
+
+@@END_TABLE@@
+
+</table>
+
+<input type='hidden' name='which_section' id='which_section' value="parameters_page" /> 
+<input type='hidden' name='which_page' id='which_page' value="q1" /> 
+<input type='hidden' name='path' id='path' value="@_PATH_@" /> 
+<input type='hidden' name='error_count' id='error_count' value="@_ERROR-COUNT_@" /> 
+<input type='hidden' name='uprate_error' id='uprate_error' value="@_UPRATE-ERROR_@" /> 
+
+
+@_MAIN-ERROR-MESSAGE_@
+

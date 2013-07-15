@@ -1,0 +1,991 @@
+	BELGIUM	sys_par_name	sys_reserved	sys_first_sys	BE_2005	BE_2006	BE_2007	BE_2008	BE_2009	BE_2010	sys_end_sys
+		sys_first_par			TAX: withholding Income Tax						
+		func_Elig	12		off	off	off	off	off	off	
+		elig_cond	13		{loc!=1}	{loc!=1}	{loc!=1}	{loc!=1}	{loc!=1}	{loc!=1}	
+		TAX_UNIT	14		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_SchedCalc	15		off	off	off	off	off	off	
+		who_must_be_elig	16		one	one	one	one	one	one	
+		Base_IL	17		il_netProfY	il_netProfY	il_netProfY	il_netProfY	il_netProfY	il_netProfY	
+		band1_upLim	18		4660#y	4800#y	4880#y	5060#y	5200#y	5200#y	
+		band1_rate	19		0.25	0.25	0.25	0.25	0.25	0.25	
+		band2_upLim	20		9270#y	9540#y	9700#y	10050#y	10320#y	10320#y	
+		band2_rate	21		0.1	0.1	0.1	0.1	0.1	0.1	
+		band3_upLim	22		15420#y	15870#y	16140#y	16730#y	17180#y	17180#y	
+		band3_rate	23		0.05	0.05	0.05	0.05	0.05	0.05	
+		band4_rate	24		0.03	0.03	0.03	0.03	0.03	0.03	
+		uplim_amount	25		3110#y	3200#y	3250#y	3370#y	3460#y	3460#y	
+		output_var	26		tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	
+		TAX_UNIT	27		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	28		off	off	off	off	off	off	
+		elig_cond	29		{loc=1}	{loc=1}	{loc=1}	{loc=1}	{loc=1}	{loc=1}	
+		TAX_UNIT	30		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_SchedCalc	31		off	off	off	off	off	off	
+		who_must_be_elig	32		one	one	one	one	one	one	
+		Base_IL	33		il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY	
+		band1_rate	34		0.05	0.05	0.05	0.05	0.05	0.05	
+		uplim_amount	35		3110#y	3200#y	3250#y	3370#y	3460#y	3460#y	
+		output_add_var	36		tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	tinwhtace_s	
+		TAX_UNIT	37		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	38		off	off	off	off	off	off	
+		elig_cond	39		{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	{IsHead} & {GetPartnerIncome#1<=amount#4} & {GetPartnerIncome#2<=0} & {GetPartnerIncome#3<=0}	
+		#1_income_il	40		il_netrepY	il_netrepY	il_netrepY	il_netrepY	il_netrepY	il_netrepY	
+		#2_income_var	41		yem	yem	yem	yem	yem	yem	
+		#3_income_var	42		yse	yse	yse	yse	yse	yse	
+		#4_amount	43		105#m	108#m	110#m	114#m	117#m	117#m	
+		TAX_UNIT	44		tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp	45		off	off	off	off	off	off	
+		who_must_be_elig	46		one	one	one	one	one	one	
+		formula	47		amount#1*il_earnedY	amount#1*il_earnedY	amount#1*il_earnedY	amount#1*il_earnedY	amount#1*il_earnedY	amount#1*il_earnedY	
+		uplim_amount	48		8330#y	8580#y	8720#y	9040#y	9280#y	9280#y	
+		#1_amount	49		0.3	0.3	0.3	0.3	0.3	0.3	
+		output_var	50		sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	
+		TAX_UNIT	51		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate_F210	52		off	off	off	off	off	off	
+		share_var	53		sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	
+		share_between	54		{Ispartner}	{Ispartner}	{Ispartner}	{Ispartner}	{Ispartner}	{Ispartner}	
+		share_all_ifnoelig	55		yes	yes	yes	yes	yes	yes	
+		output_var	56		sin02_s	sin02_s	sin02_s	sin02_s	sin02_s	sin02_s	
+		TAX_UNIT	57		tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp	58		off	off	off	off	off	off	
+		formula	59		sin02_s-sin01_s	sin02_s-sin01_s	sin02_s-sin01_s	sin02_s-sin01_s	sin02_s-sin01_s	sin02_s-sin01_s	
+		output_var	60		tinwhtasp_s	tinwhtasp_s	tinwhtasp_s	tinwhtasp_s	tinwhtasp_s	tinwhtasp_s	
+		TAX_UNIT	61		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp	62		off	off	off	off	off	off	
+		formula	63		yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	yem+yse+il_repY-ils_sicee-ils_sicse-tinwhtace_s+tinwhtasp_s	
+		output_var	64		tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	
+		TAX_UNIT	65		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	66		off	off	off	off	off	off	
+		elig_cond	67		{ddppr_s!=1}	{ddppr_s!=1}	{ddppr_s!=1}	{ddppr_s!=1}	{ddppr_s!=1}	{ddppr_s!=1}	
+		TAX_UNIT	68		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_SchedCalc	69		off	off	off	off	off	off	
+		who_must_be_elig	70		one	one	one	one	one	one	
+		base_var	71		tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	tinwhtb_s	
+		band1_upLim	72		7090#y	7300#y	7430#y	7700#y	7900#y	7900#y	
+		band1_rate	73		0.2675	0.2675	0.2675	0.2675	0.2675	0.2675	
+		band2_upLim	74		9640#y	9920#y	10090#y	10460#y	10740#y	10740#y	
+		band2_rate	75		0.321	0.321	0.321	0.321	0.321	0.321	
+		band3_upLim	76		13970#y	14370#y	14620#y	15150#y	15560#y	15560#y	
+		band3_rate	77		0.428	0.428	0.428	0.428	0.428	0.428	
+		band4_upLim	78		30840#y	31740#y	32280#y	33460#y	34360#y	34360#y	
+		band4_rate	79		0.4815	0.4815	0.4815	0.4815	0.4815	0.4815	
+		band5_rate	80		0.535	0.535	0.535	0.535	0.535	0.535	
+		output_var	81		tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	
+		TAX_UNIT	82		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	83		off	off	off	off	off	off	
+		elig_cond	84		{tinwhtasp_s>0}	{tinwhtasp_s>0}	{tinwhtasp_s>0}	{tinwhtasp_s>0}	{tinwhtasp_s>0}	{tinwhtasp_s>0}	
+		TAX_UNIT	85		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp	86		off	off	off	off	off	off	
+		who_must_be_elig	87		one	one	one	one	one	one	
+		formula	88		tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	
+		output_var	89		sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	
+		TAX_UNIT	90		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp	91		off	off	off	off	off	off	
+		who_must_be_elig	92		one	one	one	one	one	one	
+		formula	93		sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	
+		output_add_var	94		tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	
+		TAX_UNIT	95		tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		func_ArithOp	96		off	off	off	off	off	off	
+		who_must_be_elig	97		one	one	one	one	one	one	
+		formula	98		(-1)*sin03_s	(-1)*sin03_s	(-1)*sin03_s	(-1)*sin03_s	(-1)*sin03_s	(-1)*sin03_s	
+		output_add_var	99		tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	tinwhts_s	
+		TAX_UNIT	100		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc	101		off	off	off	off	off	off	
+		comp1_cond	102		{tinwhtasp_s=0} & {ddppr_s!=1}	{tinwhtasp_s=0} & {ddppr_s!=1}	{tinwhtasp_s=0} & {ddppr_s!=1}	{tinwhtasp_s=0} & {ddppr_s!=1}	{tinwhtasp_s=0} & {ddppr_s!=1}	{tinwhtasp_s=0} & {ddppr_s!=1}	
+		comp1_perElig	103		1313.43#y	1350.88#y	1374.95#y	1425.78#y	1463.23#y	1463.23#y	
+		comp2_cond	104		{tinwhtasp_s<0} & {IsHead}	{tinwhtasp_s<0} & {IsHead}	{tinwhtasp_s<0} & {IsHead}	{tinwhtasp_s<0} & {IsHead}	{tinwhtasp_s<0} & {IsHead}	{tinwhtasp_s<0} & {IsHead}	
+		comp2_perElig	105		2626.86#y	2701.76#y	2749.90#y	2851.56#y	2926.46#y	2926.46#y	
+		comp3_cond	106		!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	!{IsWithPartner} & !{IsParent} & {ddppr_s!=1}	
+		comp3_perElig	107		amount#1	amount#1	amount#1	amount#1	amount#1	amount#1	
+		comp4_cond	108		{IsDisabled} & {ddppr_s!=1}	{IsDisabled} & {ddppr_s!=1}	{IsDisabled} & {ddppr_s!=1}	{IsDisabled} & {ddppr_s!=1}	{IsDisabled} & {ddppr_s!=1}	{IsDisabled} & {ddppr_s!=1}	
+		comp4_perElig	109		amount#2	amount#2	amount#2	amount#2	amount#2	amount#2	
+		#1_amount	110		240#y	240#y	252#y	252#y	264#y	264#y	
+		#2_amount	111		336#y	348#y	348#y	360#y	372#y	372#y	
+		output_var	112		tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	
+		TAX_UNIT	113		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc	114		off	off	off	off	off	off	
+		comp1_cond	115		{IsNtoMchild}#1	{IsNtoMchild}#1	{IsNtoMchild}#1	{IsNtoMchild}#1	{IsNtoMchild}#1	{IsNtoMchild}#1	
+		#1_N	116		1	1	1	1	1	1	
+		#1_M	117		1	1	1	1	1	1	
+		comp1_perElig	118		amount#10*(1+ddi)	amount#10*(1+ddi)	amount#10*(1+ddi)	amount#10*(1+ddi)	amount#10*(1+ddi)	amount#10*(1+ddi)	
+		comp2_cond	119		{IsNtoMchild}#2	{IsNtoMchild}#2	{IsNtoMchild}#2	{IsNtoMchild}#2	{IsNtoMchild}#2	{IsNtoMchild}#2	
+		#2_N	120		2	2	2	2	2	2	
+		#2_M	121		2	2	2	2	2	2	
+		comp2_perElig	122		amount#11*(1+ddi)	amount#11*(1+ddi)	amount#11*(1+ddi)	amount#11*(1+ddi)	amount#11*(1+ddi)	amount#11*(1+ddi)	
+		comp3_cond	123		{IsNtoMchild}#3	{IsNtoMchild}#3	{IsNtoMchild}#3	{IsNtoMchild}#3	{IsNtoMchild}#3	{IsNtoMchild}#3	
+		#3_N	124		3	3	3	3	3	3	
+		#3_M	125		3	3	3	3	3	3	
+		comp3_perElig	126		amount#12*(1+ddi)	amount#12*(1+ddi)	amount#12*(1+ddi)	amount#12*(1+ddi)	amount#12*(1+ddi)	amount#12*(1+ddi)	
+		comp4_cond	127		{IsNtoMchild}#4	{IsNtoMchild}#4	{IsNtoMchild}#4	{IsNtoMchild}#4	{IsNtoMchild}#4	{IsNtoMchild}#4	
+		#4_N	128		4	4	4	4	4	4	
+		#4_M	129		4	4	4	4	4	4	
+		comp4_perElig	130		amount#13*(1+ddi)	amount#13*(1+ddi)	amount#13*(1+ddi)	amount#13*(1+ddi)	amount#13*(1+ddi)	amount#13*(1+ddi)	
+		comp5_cond	131		{IsNtoMchild}#5	{IsNtoMchild}#5	{IsNtoMchild}#5	{IsNtoMchild}#5	{IsNtoMchild}#5	{IsNtoMchild}#5	
+		#5_N	132		5	5	5	5	5	5	
+		#5_M	133		5	5	5	5	5	5	
+		comp5_perElig	134		amount#14*(1+ddi)	amount#14*(1+ddi)	amount#14*(1+ddi)	amount#14*(1+ddi)	amount#14*(1+ddi)	amount#14*(1+ddi)	
+		comp6_cond	135		{IsNtoMchild}#6	{IsNtoMchild}#6	{IsNtoMchild}#6	{IsNtoMchild}#6	{IsNtoMchild}#6	{IsNtoMchild}#6	
+		#6_N	136		6	6	6	6	6	6	
+		#6_M	137		6	6	6	6	6	6	
+		comp6_perElig	138		amount#15*(1+ddi)	amount#15*(1+ddi)	amount#15*(1+ddi)	amount#15*(1+ddi)	amount#15*(1+ddi)	amount#15*(1+ddi)	
+		comp7_cond	139		{IsNtoMchild}#7	{IsNtoMchild}#7	{IsNtoMchild}#7	{IsNtoMchild}#7	{IsNtoMchild}#7	{IsNtoMchild}#7	
+		#7_N	140		7	7	7	7	7	7	
+		#7_M	141		7	7	7	7	7	7	
+		comp7_perElig	142		amount#16*(1+ddi)	amount#16*(1+ddi)	amount#16*(1+ddi)	amount#16*(1+ddi)	amount#16*(1+ddi)	amount#16*(1+ddi)	
+		comp8_cond	143		{IsNtoMchild}#8	{IsNtoMchild}#8	{IsNtoMchild}#8	{IsNtoMchild}#8	{IsNtoMchild}#8	{IsNtoMchild}#8	
+		#8_N	144		8	8	8	8	8	8	
+		#8_M	145		8	8	8	8	8	8	
+		comp8_perElig	146		amount#17*(1+ddi)	amount#17*(1+ddi)	amount#17*(1+ddi)	amount#17*(1+ddi)	amount#17*(1+ddi)	amount#17*(1+ddi)	
+		comp9_cond	147		{IsNtoMchild}#9	{IsNtoMchild}#9	{IsNtoMchild}#9	{IsNtoMchild}#9	{IsNtoMchild}#9	{IsNtoMchild}#9	
+		#9_N	148		9	9	9	9	9	9	
+		#9_M	149		99	99	99	99	99	99	
+		comp9_perElig	150		amount#18*(1+ddi)	amount#18*(1+ddi)	amount#18*(1+ddi)	amount#18*(1+ddi)	amount#18*(1+ddi)	amount#18*(1+ddi)	
+		comp10_cond	151		{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	{dms=5} & {dcu!=1} & {nDepChildrenOfPerson>=1}	
+		comp10_perElig	152		amount#19	amount#19	amount#19	amount#19	amount#19	amount#19	
+		comp11_cond	153		{IsLoneParent}	{IsLoneParent}	{IsLoneParent}	{IsLoneParent}	{IsLoneParent}	{IsLoneParent}	
+		comp11_perElig	154		amount#20	amount#20	amount#20	amount#20	amount#20	amount#20	
+		comp12_cond	155		{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative}	{IsDepParent} | {IsDepRelative}	{IsDepParent} | {IsDepRelative}	{IsDepParent} | {IsDepRelative}	
+		comp12_perElig	156		amount#21*(1+ddi)	amount#21*(1+ddi)	amount#21*(1+ddi)	amount#21*(1+ddi)	amount#21*(1+ddi)	amount#21*(1+ddi)	
+		comp13_cond	157		{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	
+		comp13_perElig	158		amount#22*(1+ddi)	amount#22*(1+ddi)	amount#22*(1+ddi)	amount#22*(1+ddi)	amount#22*(1+ddi)	amount#22*(1+ddi)	
+		#10_amount	159		360#y	348#y	348#y	360#y	372#y	372#y	
+		#11_amount	160		540#y	576#y	600#y	624#y	636#y	636#y	
+		#12_amount	161		1512#y	1560#y	1572#y	1632#y	1680#y	1680#y	
+		#13_amount	162		2004#y	2064#y	2100#y	2172#y	2232#y	2232#y	
+		#14_amount	163		2100#y	2160#y	2208#y	2280#y	2340#y	2340#y	
+		#15_amount	164		2100#y	2172#y	2208#y	2292#y	2352#y	2352#y	
+		#16_amount	165		2112#y	2160#y	2196#y	2280#y	2340#y	2340#y	
+		#17_amount	166		2256#y	2340#y	2376#y	2448#y	2520#y	2520#y	
+		#18_amount	167		2340#y	2412#y	2460#y	2532#y	2604#y	2604#y	
+		#19_amount	168		336#y	348#y	348#y	360#y	372#y	372#y	
+		#20_amount	169		336#y	348#y	348#y	360#y	372#y	372#y	
+		#21_amount	170		336#y	348#y	348#y	360#y	372#y	372#y	
+		#22_amount	171		672#y	696#y	708#y	732#y	756#y	756#y	
+		output_add_var	172		tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	tinwhtc_s	
+		TAX_UNIT	173		tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		func_ArithOp	174		off	off	off	off	off	off	
+		formula	175		(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	(tinwhts_s-tinwhtc_s)*(1-ddppr_s)	
+		lowlim_amount	176		0	0	0	0	0	0	
+		output_var	177		tinwh_s	tinwh_s	tinwh_s	tinwh_s	tinwh_s	tinwh_s	
+		TAX_UNIT	178		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	179		off	off	off	off	off	off	
+		elig_cond	180		{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	{yem>0} & !{IsCivilServant} & (({dms!=2} & {dcu!=1}) | (({dms=2} | {dcu=1}) & {GetPartnerIncome#1<=0}))	
+		#1_income_il	181		il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	
+		TAX_UNIT	182		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc	183		off	off	off	off	off	off	
+		who_must_be_elig	184		one	one	one	one	one	one	
+		comp1_cond	185		{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	
+		comp1_perElig	186		amount#5*(yem-amount#1)	amount#5*(yem-amount#1)	amount#5*(yem-amount#1)	amount#5*(yem-amount#1)	amount#5*(yem-amount#1)	amount#5*(yem-amount#1)	
+		comp2_cond	187		{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	
+		comp2_perElig	188		amount#4+(yem-amount#2)*amount#6	amount#4+(yem-amount#2)*amount#6	amount#4+(yem-amount#2)*amount#6	amount#4+(yem-amount#2)*amount#6	amount#4+(yem-amount#2)*amount#6	amount#4+(yem-amount#2)*amount#6	
+		comp3_cond	189		{yem>=amount#3}	{yem>=amount#3}	{yem>=amount#3}	{yem>=amount#3}	{yem>=amount#3}	{yem>=amount#3}	
+		comp3_perElig	190		60.94#m	60.94#m	60.94#m	60.94#m	60.94#m	60.94#m	
+		#1_amount	191		1945.39#m	1945.39#m	1945.39#m	1945.39#m	1945.39#m	1945.39#m	
+		#2_amount	192		2190.19#m	2190.19#m	2190.19#m	2190.19#m	2190.19#m	2190.19#m	
+		#3_amount	193		6038.83#m	6038.83#m	6038.83#m	6038.83#m	6038.83#m	6038.83#m	
+		#4_amount	194		18.60#m	18.60#m	18.60#m	18.60#m	18.60#m	18.60#m	
+		#5_amount	195		0.076	0.076	0.076	0.076	0.076	0.076	
+		#6_amount	196		0.011	0.011	0.011	0.011	0.011	0.011	
+		output_var	197		tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	
+		TAX_UNIT	198		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig	199		off	off	off	off	off	off	
+		elig_cond	200		{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	{les=3} & !{IsCivilServant} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#1>0}	
+		#1_income_il	201		il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	
+		TAX_UNIT	202		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc	203		off	off	off	off	off	off	
+		who_must_be_elig	204		one	one	one	one	one	one	
+		comp1_cond	205		{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	{yem>=amount#1} & {yem<amount#2}	
+		comp1_perElig	206		amount#5	amount#5	amount#5	amount#5	amount#5	amount#5	
+		comp2_cond	207		{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	{yem>=amount#2} & {yem<amount#3}	
+		comp2_perElig	208		(amount#8*(sin03_s-amount#2))<max>amount#5	(amount#8*(sin03_s-amount#2))<max>amount#5	(amount#8*(sin03_s-amount#2))<max>amount#5	(amount#8*(sin03_s-amount#2))<max>amount#5	(amount#8*(sin03_s-amount#2))<max>amount#5	(amount#8*(sin03_s-amount#2))<max>amount#5	
+		comp3_cond	209		{yem>=amount#3} & {yem<amount#4}	{yem>=amount#3} & {yem<amount#4}	{yem>=amount#3} & {yem<amount#4}	{yem>=amount#3} & {yem<amount#4}	{yem>=amount#3} & {yem<amount#4}	{yem>=amount#3} & {yem<amount#4}	
+		comp3_perElig	210		(amount#6+(yem-amount#3)*amount#9)<min>amount#7	(amount#6+(yem-amount#3)*amount#9)<min>amount#7	(amount#6+(yem-amount#3)*amount#9)<min>amount#7	(amount#6+(yem-amount#3)*amount#9)<min>amount#7	(amount#6+(yem-amount#3)*amount#9)<min>amount#7	(amount#6+(yem-amount#3)*amount#9)<min>amount#7	
+		comp4_cond	211		{yem>=amount#4}	{yem>=amount#4}	{yem>=amount#4}	{yem>=amount#4}	{yem>=amount#4}	{yem>=amount#4}	
+		comp4_perElig	212		amount#7	amount#7	amount#7	amount#7	amount#7	amount#7	
+		#1_amount	213		1095.10#m	1095.10#m	1095.10#m	1095.10#m	1095.10#m	1095.10#m	
+		#2_amount	214		1945.39#m	1945.39#m	1945.39#m	1945.39#m	1945.39#m	1945.39#m	
+		#3_amount	215		2190.19#m	2190.19#m	2190.19#m	2190.19#m	2190.19#m	2190.19#m	
+		#4_amount	216		6038.83#m	6038.83#m	6038.83#m	6038.83#m	6038.83#m	6038.83#m	
+		#5_amount	217		9.30#m	9.30#m	9.30#m	9.30#m	9.30#m	9.30#m	
+		#6_amount	218		18.60#m	18.60#m	18.60#m	18.60#m	18.60#m	18.60#m	
+		#7_amount	219		51.64#m	51.64#m	51.64#m	51.64#m	51.64#m	51.64#m	
+		#8_amount	220		0.076	0.076	0.076	0.076	0.076	0.076	
+		#9_amount	221		0.011	0.011	0.011	0.011	0.011	0.011	
+		output_add_var	222		tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	tscwheesp_s	
+		TAX_UNIT	223		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		sys_end_par								BE_2009	
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											

@@ -1,0 +1,1401 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE ParameterSystem 
+        SYSTEM
+        "/home/graham_s/VirtualWorlds/projects/tax_benefit_model_components/etc/parameters/dtds/parameter_system.dtd"
+>
+<!--  
+      Ada xml doesn't like urls, hence the SYSTEM one above;
+      use this public definition otherwise
+          PUBLIC 
+          "-//Virtual Worlds//Parameter System DTD//EN" 
+          "http://www.virtual-worlds.biz/dtds/parameter_system.dtd"
+-->
+
+<ParameterSystem name='be' instanceName='be'>
+
+
+        <ParameterSystem name="Income_Tax" instanceName="income_tax" >
+                <Description type='description' lang='en'>
+                
+                The revenue from taxation is collected at the national level and
+                then it is divided over the different institutional levels (the
+                federal level, the different regions
+                (Brussels/Flanders/Wallonia) and the communities (Flemish
+                community and French-speaking community)). Only municipalities'
+                tax rates vary (from 4% to 8.5%, with an average of 6.8%). Their
+                collection however also takes place at the national level, after
+                which these are transferred to the municipalities. The main
+                exception in the national collection of taxes is the tax on real
+                estate. This tax is administratively coordinated by the regions,
+                while tax rates are set by the municipalities. Its revenue is
+                split over the different administrative levels (municipalities,
+                provinces, regions).
+                
+                </Description>
+                <Description type='label' lang='en'>
+                Income Taxes
+                </Description>
+                <Description type='description' lang='nl'>
+                
+                De inkomsten uit belastingen wordt verzameld op nationaal niveau
+                en dan is het verdeeld over de verschillende institutionele
+                niveaus (het federale niveau, de verschillende regio's (Brussel
+                / Vlaanderen / Wallonië) en de gemeenschappen (de Vlaamse
+                gemeenschap en de Franstalige gemeenschap)). Alleen gemeenten
+                belastingtarieven variëren (van 4% tot 8,5%, met een gemiddelde
+                van 6,8%). Hun collectie echter ook plaats op nationaal niveau,
+                waarna deze worden overgedragen aan de gemeenten. De
+                belangrijkste uitzondering in de nationale collectie van
+                belastingen is de belasting op onroerend goed. Deze belasting
+                wordt administratief gecoördineerd door de regio's, terwijl de
+                fiscale tarieven worden vastgesteld door de gemeenten. De omzet
+                is verdeeld over de verschillende bestuurlijke niveaus
+                (gemeenten, provincies, regio's).
+                
+                </Description>
+                <Description type='label' lang='nl'>
+                Belastingen op inkomen
+                </Description>
+                
+               <ParameterSystem name="Tax_Rates_And_Bands" instanceName='rates_and_bands'> 
+                        <Description lang='en' type='label'>
+                        Rates and Bands
+                        </Description>        
+                       <ParameterSystemReference 
+                                instanceName="rate_bands" 
+                                indexType="integer" 
+                                collectionType="list" 
+                                maximumSize="8" 
+                                type="Rates_And_Bands">
+                                        <Description type="description" lang="en">
+                                                 Parameter values are part of the
+                                                current Income Tax policy. You can
+                                                change tax rates and upper limits of tax
+                                                brackets. The form automatically
+                                                calculates the next level "lower limit".
+                                                You can also change the retirement age
+                                                criteria. 
+                                        </Description>
+                                        <Description type="description" lang="nl">
+                                                 Les valeurs des paramètres font partie
+                                                de la politique actuelle d&#39;impôts
+                                                sur le revenu. Vous pouvez changer ces
+                                                taux et les limites supérieures des
+                                                tranches d&#39;imposition. La feuille
+                                                calcule automatiquement le niveau
+                                                suivant de « limite inférieure ».
+                                                Vous pouvez également changer les
+                                                critères de l&#39;âge de la retraite. 
+                                        </Description>
+                                        <Description type="label" lang="en">
+                                                 Tax Rates and Bands 
+                                        </Description>
+                                        <Description type="tooltip" lang="en">
+                                                 Income Tax: (R)ates in percent and
+                                                starting point of the bracket. 
+                                        </Description>
+                                        <Description type="description" lang="nl">
+                                                 L&#39;Anlique du Sud a un impôt
+                                                gradué à six taux. Les valeurs à
+                                                gauche représentent l&#39;impôt sur le
+                                                revenu et les valeurs à droite
+                                                correspondent au point de départ. Bien
+                                                que vous ne puissiez pas ajouter ou
+                                                supprimer des tranches de taux pour le
+                                                moment add or delete rate bands at the
+                                                moment, vous pouvez expérimenter avec
+                                                par exemple le tarif uniforme en fixant
+                                                tous les taux à une somme fixe. 
+                                        </Description>
+                                       <Description type="label" lang="nl">
+                                                                 Tax Rates and Bands 
+                                        </Description>
+                                       <Description type="tooltip" lang="nl">
+                                                                 Impôt sur le revenu. Taux en pour cent
+                                                                et début de la tranche. 
+                                        </Description>
+                        </ParameterSystemReference>
+                </ParameterSystem>
+                
+                <ParameterSystem name="Allowances" instanceName="allowances">
+                        <Description type='label' lang='en'>
+                                Tax Allowances
+                        </Description>
+                         <Parameter logicalType="tax_allowance" instanceName="base_tax_allowance">
+                                <Description type='description' lang='en'>Base tax allowance</Description>
+                                 <Extra key="param_name" value="IT_BaseAlw"/>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_first_dependent_child">
+                                <Description type='description' lang='en'>Supplement for first dependent child</Description>
+                                 <Extra key="param_name" value="IT_AlwCh1Supp"/>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_second_dependent_child">
+                                <Description type='description' lang='en'>Supplement for second dependent child</Description>
+                                 <Extra key="param_name" value="IT_AlwCh2Supp"/>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_third_dependent_child">
+                                <Description type='description' lang='en'>Supplement for third dependent child</Description>
+                                 <Extra key="param_name" value="IT_AlwCh3Supp"/>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_each_additional_dependent_child">
+                                <Description type='description' lang='en'>Supplement for each additional dependent child</Description>
+                                <Extra key="param_name" value="IT_AlwCh4Supp"/>
+                         </Parameter>
+                        
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_dependent_person_under_65">
+                                <Description type='description' lang='en'>Supplement for dependent person(under 65)</Description>
+                                <Extra key="param_name" value="IT_AlwDepMin65Supp" />
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_dependent_person_65_and_over">
+                                <Description type='description' lang='en'>Supplement for dependent person (65 and over)</Description>
+                                <Extra key="param_name" value="IT_AlwDepPlus65Supp" />
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_lone_parent_family">
+                                <Description type='description' lang='en'>Supplement for lone parent family</Description>
+                                <Extra key="param_name" value="IT_AlwLPSupp" />
+                         </Parameter>
+                                
+                        <Extra key="sheet" value="tin_be"/>
+                </ParameterSystem>
+
+                
+                <ParameterSystem name='marital_quotient' instanceName='marital_quotient'>
+                        <Description lang='en' type='label'>
+                        Marital Quotients
+                        </Description>
+                        <Description lang='en' type='description'>
+                        
+                        The taxable income that can be transferred
+                        from the earning spouse to the non-earning
+                        spouse and treated as his/her individual taxable
+                        income.
+
+                        </Description>
+                        
+                         <Parameter logicalType="rate" instanceName="maximum_percentage">
+                                <Description type='label' lang='en'>
+                                Percentage of taxable income that can be transferred
+                                between married and legally cohabiting spouses
+                                </Description>
+                                <Description type='description' lang='en'>
+                                Percentage of taxable income that can be transferred
+                                between married and legally cohabiting spouses.
+                                The amount transferred from the earning spouse to the non-earning spouse is, for the
+                                calculation of the taxes, treated as the individual taxable income of the non-earning
+                                spouse.
+
+                                </Description>
+                                
+                                <Extra key="param_name" value="IT_MarrQuotRate"/>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="maximum_transfer">
+                                <Description type='description' lang='en'>Maximum transfer</Description>
+                                 <Extra key="param_name" value="IT_MarrQuotUpLim"/>
+                         </Parameter>
+                        
+                </ParameterSystem>
+                
+                <ParameterSystem name='refundable_tax_credit_for_children' instanceName='refundable_tax_credit_for_children'>
+                        <Description lang='en' type='description'> 
+                         Refundable Tax Credit for children
+                        </Description>
+                         <Parameter logicalType="tax_allowance" instanceName="maximum_refundable_amount_per_dependent_child">
+                                <Description type='description' lang='en'>Maximum refundable amount per dependent child (yearly amount)</Description>
+                                <Extra key="param_name" value="IT_TCChild" />
+                         </Parameter>
+                         <Extra key="sheet" value="tin_be"/>
+                </ParameterSystem>
+                <!--
+                <ParameterSystem name='basic_tax_credit' instanceName='basic_tax_credit'>
+                         <Description lang='en' type='description'> 
+                         Basic tax credit
+                        </Description>
+                        
+                          <Parameter logicalType="tax_allowance" instanceName="basic_tax_credit">
+                                <Description type='description' lang='en'>Basic tax credit for income from unemployment tax_allowances</Description>
+                                <Extra key="sheet" value="tin_be"/>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="tax_credit_lower_income_limit">
+                                <Description type='description' lang='en'>The basic tax credit is 100% granted as long as the taxable income is lower than:</Description>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="tax_credit_upper_income_limit">
+                                <Description type='description' lang='en'>A diminishing proportion of the basic tax credit is granted for taxable income up to this limit </Description>
+                         </Parameter>
+                         
+                         <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                <Description type='description' lang='en'>% of the basic  tax credit is granted for a taxable</Description>
+                         </Parameter>
+                         
+                </ParameterSystem>
+                -->
+                
+                <ParameterSystem name="tax_credits_replacement_income" instanceName="tax_credits_replacement_income">
+                        <Description type='description' lang='en'>
+                        Tax credits for replacement income
+                        </Description>
+                        <ParameterSystem name="unemployment_benefits" instanceName="unemployment_benefits">
+                                <Description type='description' lang='en'>
+                                Unemployment benefits
+                                </Description> 
+                                <Parameter instanceName="basic_tax_credit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Basic tax credit for income from unemployment benefits
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCUBInd"/>
+                                </Parameter>
+                                <Parameter instanceName="tax_credit_lower_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        The basic tax credit is 100% granted as long as the jtaxable income is lower than this.
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCUBInclim1" />	
+                                </Parameter>
+                                
+                                 <Parameter  instanceName="tax_credit_upper_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Gradual phase-out: a diminishing proportion of the basic tax credit is granted for taxable income up to this limit:
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCUBIncLim2" />	
+                                 </Parameter>
+                                 <!--
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic tax credit is granted for a joint taxable</Description>
+                                        <Extra key="param_name" value="" />	
+                                 </Parameter>
+                                 -->
+                        </ParameterSystem>
+                                 
+                        <ParameterSystem name="sickness_benefits" instanceName="sickness_benefits">
+                                <Description type='description' lang='en'>
+                                Sickness and disability benefits
+                                </Description> 
+                                 <Parameter instanceName="basic_tax_credit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Basic tax credit for income from sickness and disability  benefits
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCDisab" />
+                                </Parameter>
+                                <Parameter instanceName="tax_credit_lower_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        The basic tax credit is 100% granted as long as taxable income is lower than this.
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCReplIncLim1" />
+                                </Parameter>
+                                
+                                 <Parameter instanceName="tax_credit_upper_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Gradual phase-out: a diminishing proportion of the basic tax credit is granted for taxable income up to this limit:
+                                        </Description>
+                                        
+                                        <Extra key="param_name" value="IT_TCReplIncLim2" />
+                                        
+                                 </Parameter>
+                                 <!--
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                        <Extra key="param_name" value="" />
+                                 </Parameter>
+                                 -->
+                        </ParameterSystem>
+                                 
+                        <ParameterSystem name="pensions" instanceName="pensions">
+                                <Description type='description' lang='en'>
+                                Pensions
+                                </Description> 
+                                <Parameter instanceName="basic_tax_credit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Basic tax credit for income from pensions
+                                        </Description>
+                                        <Extra key="param_name" value="IT_TCUBInd" />
+                                </Parameter>
+                                <Parameter instanceName="tax_credit_lower_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        The basic tax credit is 100% granted as long as taxable income is lower than this.
+                                        </Description>
+                                        <Extra key="param_name" value="T_TCUBInclim1" />
+                                </Parameter>
+                                
+                                 <Parameter instanceName="tax_credit_upper_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Gradual phase-out: a diminishing proportion of the basic tax credit is granted for taxable income up to this limit:
+                                        </Description>
+                                        <Extra key="param_name" value="T_TCUBInclim2" />                                        
+                                 </Parameter>
+                                 <!--
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                 </Parameter>
+                                 -->
+                        </ParameterSystem>
+                        <!--
+                        <ParameterSystem name="early_retirement_pensions" instanceName="early_retirement_pensions">
+                                <Description type='description' lang='en'>
+                                Early Retirement Pensions
+                                </Description> 
+                                <Parameter instanceName="basic_tax_credit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Basic tax credit for income from early retirement pensions
+                                        </Description>
+                                </Parameter>
+                                <Parameter instanceName="tax_credit_lower_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        The basic tax credit is 100% granted as long as the joint taxable income is lower than this.
+                                        </Description>
+                                </Parameter>
+                                
+                                 <Parameter logicalType="tax_allowance" instanceName="tax_credit_upper_income_limit">
+                                        <Description type='description' lang='en'>A diminishing proportion of the basic tax credit is granted for joint taxable income up to this limit </Description>
+                                 </Parameter>
+                                 
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                 </Parameter>
+                        </ParameterSystem>
+                        -->
+                </ParameterSystem>
+
+                <ParameterSystem name='reductions_to_zero' instanceName='reductions_to_zero'>
+                        <Description type='label' lang='en'>
+                        Reductions of Taxes on Benefits
+                        </Description>
+                        
+                        <Parameter instanceName='unemployment_benefit_label'>
+                                <Description type='description' lang='en'>
+                                Unemployment Benefits
+                                </Description>
+                                <EditInfo display='label_only' />
+                        </Parameter>
+                
+                        <Parameter instanceName="unemployment_benefit_lower_level" logicalType="tax_allowance">
+                                <Description type='description' lang='en'>
+                                
+                                Taxes on unemployment benefits are
+                                reduced to zero if a person received
+                                only unemployment benefits and the
+                                taxable income does not exceed
+                        
+                                </Description>
+                                <Extra key="param_name" value="IT_ZTOldUN" />
+
+                        </Parameter>
+                        
+                        <Parameter instanceName="unemployment_benefit_higher_level" >
+                                <Description type='description' lang='en'>
+                                
+                                For higher taxable incomes, taxes paid
+                                on unemployment income can never exceed
+                                the difference between the taxable
+                                income and
+                                
+                                </Description>
+                                <EditInfo display="read_only" />
+                        </Parameter>
+                 
+
+                        <Parameter instanceName='sickness_and_disability_benefit_label'>
+                                <Description type='description' lang='en'>
+                                Sickness and disability Benefits
+                                </Description>
+                                <EditInfo display='label_only' />
+                        </Parameter>
+
+                        <Parameter instanceName="sickness_and_disability_lower_level" logicalType="tax_allowance">
+                                <Description type='description' lang='en'>
+                                
+                                Taxes on sickness and disability benefits are
+                                reduced to zero if a person received
+                                only sickness and disability benefits and the
+                                taxable income does not exceed
+                        
+                                </Description>
+                                <Extra key="param_name" value="IT_ZTDisab" />
+                        </Parameter>
+                        
+                        <Parameter instanceName="sickness_and_disability_higher_level"  >
+                                <Description type='description' lang='en'>
+                                
+                                For higher taxable incomes, taxes paid
+                                on sickness and disability income can never exceed
+                                the difference between the taxable
+                                income and
+                                
+                                </Description>
+                                <EditInfo display="read_only" />
+                        </Parameter>
+                
+                        
+                        <Parameter instanceName='pensions_label'>
+                                <Description type='description' lang='en'>
+                                Pensions, survivor pensions and early retirement pensions
+                                </Description>
+                                <EditInfo display='label_only' />
+                        </Parameter>
+                        
+                        <Parameter instanceName="pensions_lower_level"  logicalType="tax_allowance">
+                                <Description type='description' lang='en'>
+                                
+                                Taxes on pensions are
+                                reduced to zero if a person received
+                                only pensions and the
+                                taxable income does not exceed
+                        
+                                </Description>
+                                <Extra key="param_name" value="IT_ZTOthReplInc" />
+                        </Parameter>
+                        
+                        <Parameter instanceName="pensions_higher_level" >
+                                <Description type='description' lang='en' >
+                                
+                                For higher taxable incomes, taxes paid
+                                on pensions income can never exceed
+                                the difference between the taxable
+                                income and
+                                
+                                </Description>
+                                <EditInfo display="read_only" />
+                        </Parameter>
+                 </ParameterSystem>
+                 
+                  <ParameterSystem name="jobkorting" instanceName="jobkorting">
+                          <Description type='label' lang='en'>
+                                Regional tax credit (Jobkorting)
+                          </Description>
+                         
+                          <Parameter instanceName="basic_yearly_amount" logicalType="benefit">
+                                <Description type='label' lang='en'>The basic yearly amount</Description>
+                                <Extra key="param_name" value="IT_RTCBaseAmt1"/>
+                          </Parameter>
+                          <Parameter instanceName="phase_in_zone_start" logicalType="benefit">
+                                <Description type='label' lang='en'>Start of Phase-in zone of the tax credit</Description>
+                                <Extra key="param_name" value="IT_RTCIncLowLim1"/>
+                          </Parameter>
+                          <Parameter instanceName="phase_in_zone_end" logicalType="benefit">
+                                <Description type='label' lang='en'>End of Phase-in zone of the tax credit</Description>
+                                <Extra key="param_name" value="IT_RTCIncLowLim2"/>
+                          </Parameter>
+                          <Parameter instanceName="flat_zone" logicalType="benefit">
+                                <Description type='label' lang='en'>End of Flat zone of the tax credit</Description>
+                                <Extra key="param_name" value="IT_RTCIncUpLim1"/>
+                          </Parameter>
+                          <Parameter instanceName="phase_out_zone" logicalType="benefit">
+                                <Description type='label' lang='en'>End of Phase-out zone of the tax credit</Description>
+                                <Extra key="param_name" value="IT_RTCIncUpLim2"/>
+                          </Parameter>
+                  </ParameterSystem>
+
+
+        </ParameterSystem>
+        
+        <ParameterSystem name="child_benefits" instanceName="child_benefits" >
+                <Description lang='en' type='description'>
+                <p>
+                
+                Child allowance is paid to families with dependent
+                children. In principle, children are dependent if they
+                are younger than 18 years old. The exceptions to this
+                rule are twofold. On the one hand, the child remains
+                dependent until 21 if he or she is disabled. On the
+                other hand, a child can remain dependent until the age
+                of 25 if he or she is in full-time education (including
+                higher and advanced education), not married, and whose
+                net taxable income as well as the number of days a
+                gainful occupation has been exercised do not exceed
+                certain thresholds. The income thresholds are slightly
+                higher for handicapped children as well as for children
+                of lone parents.
+                
+                </p>
+                <p>
+                
+                In general a beneficiary, usually the father, opens a
+                right to child allowance if his employer (or himself if
+                he is self-employed) pays or has paid social security
+                contributions. The relevant rules for the computation of
+                child allowances depend on the contribution scheme to
+                which the employer of the beneficiary or the beneficiary
+                himself contributed: the contributory scheme can be as
+                wage earner on the private labour market, as wage earner
+                on the public labour market (either statutory or
+                contractual) or as self-employed. If a beneficiary did
+                not contribute to any of the social security
+                contribution schemes he or she may still open a right to
+                child allowance through the system of guaranteed child
+                allowance. The amount of child allowance depends on the
+                birth rank of the child. The guaranteed child allowance
+                is means tested. Orphan allowances do not depend on the
+                child's rank. A monthly lump sum amount of &#8364;290.20
+                is granted to each orphan.
+                
+                </p>
+                </Description>
+                <Description lang='en' type='label'>
+                Child allowances
+                </Description>
+                
+                <Description lang='nl' type='description'>
+                <p>
+                
+                Kinderbijslag wordt uitgekeerd aan gezinnen met
+                afhankelijke kinderen. In principe zijn kinderen ten
+                laste, indien zij jonger bent dan 18 jaar oud. De
+                uitzonderingen op dit regel zijn tweeledig. Aan de ene
+                kant, het kind blijft afhankelijk zijn tot en met 21 als
+                hij of zij is uitgeschakeld. Op de Anderzijds kan een
+                kind ten laste te blijven tot de leeftijd van 25 als hij
+                of zij is in het voltijds onderwijs (inclusief hoger en
+                voortgezet onderwijs), niet getrouwd, en waarvan de
+                netto belastbaar inkomen, alsook het aantal dagen dat
+                een winstgevende activiteit is uitgeoefend niet meer dan
+                bepaalde drempels. De inkomensgrenzen zijn iets hoger
+                voor gehandicapte kinderen, alsook voor kinderen van
+                alleenstaande ouders.
+                
+                </p>
+                <p>
+                
+                In het algemeen een begunstigde, meestal de vader, opent
+                een recht op kindertoeslag indien zijn werkgever (of
+                zichzelf als hij is zelfstandige) betaalt of heeft
+                betaald de sociale zekerheid bijdragen. De relevante
+                regels voor de berekening van kinderbijslag afhankelijk
+                van de bijdrage regeling waarbij de werkgever van de
+                begunstigde of de begunstigde zelf zou hebben
+                bijgedragen: de premie regeling kan worden als
+                kostwinner op de private arbeidsmarkt, als werknemer in
+                loondienst op de publieke arbeidsmarkt (zij het
+                wettelijke of contractuele) of als zelfstandige. Indien
+                een begunstigde werd niet bijdragen tot een van de
+                sociale zekerheid premieregelingen kan hij of zij nog
+                steeds open een recht op kinderbijslag via het systeem
+                van gewaarborgde kinderbijslag uitkering. Het bedrag van
+                de kinderbijslag hangt af van de rang van de geboorte
+                van het kind. De gewaarborgde kinderbijslag is
+                inkomensafhankelijk. Orphan vergoedingen zijn niet
+                afhankelijk van de kind rang. Een maandelijkse
+                forfaitaire bedrag van &#8364;290,20 is toegekend aan elk
+                weeskind. </p> 
+                
+                </Description> <Description lang='nl' type='label'>
+                
+                Kinderbijslag
+                
+                </Description>
+                <ParameterSystem name="base_amounts" instanceName="base_amounts">
+                        <Description type='label' lang='en'>
+                        Child Support - Base Amounts
+                        </Description>
+                        <Parameter instanceName="first_child" logicalType='benefit'>
+                                <Description type='description' lang='en'>Base amount for first child</Description>
+                                <Extra key='param_name' value='CB_BaseAmtEmpCh1' />
+                        </Parameter>
+                        <Parameter instanceName="second_child" logicalType='benefit'>
+                                <Description type='description' lang='en'>Base amount for second child</Description>
+                                <Extra key='param_name' value='CB_BaseAmtEmpCh2' />
+                        </Parameter>
+                        <Parameter instanceName="third_child" logicalType='benefit'>
+                                <Description type='description' lang='en'>Base amount for third and subsequent children</Description>
+                                <Extra key='param_name' value='CB_BaseAmtEmpCh3' />
+                        </Parameter>
+                </ParameterSystem>
+                <ParameterSystem name='age_supplements_first_child' instanceName='age_supplements_first_child'>
+                        <Description type='description' lang='en'>
+                        Monthly age supplements: for the first child 
+                        
+                        </Description>
+                        <Parameter instanceName="children_aged_6_11" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 6-11
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH1Age6to11' />
+                        </Parameter>
+                        <Parameter instanceName="children_aged_12_17" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 12 to 17
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH1Age12to17a' />
+                        </Parameter>
+                        <Parameter instanceName="children_aged_18_25" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 18-25
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH1Age18to25a' />
+                        </Parameter>
+                        
+                </ParameterSystem>
+                <ParameterSystem name='age_supplements_second_child' instanceName='age_supplements_second_child'>
+                        <Description type='description' lang='en'>
+                        Monthly age supplements: for the second and subsequent children 
+                        </Description>
+                        <Parameter instanceName="children_aged_6_11" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 6-11
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH2Age6to11' />
+                        </Parameter>
+                        <Parameter instanceName="children_aged_12_17" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 12 to 17
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH2Age12to17a' />
+                        </Parameter>
+                        <Parameter instanceName="children_aged_18_25" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                 For children aged 18-25
+                                 </Description>
+                                 <Extra key='param_name' value='CB_SuppCH2Age18to25a' />
+                        </Parameter>
+                        
+                </ParameterSystem>
+                
+                <Extra key="sheet" value="bch_be"/>
+                 
+        </ParameterSystem>
+
+
+        
+        <ParameterSystem name="basic_minimum_income" instanceName="basic_minimum_income" >
+                <Description lang='en' type='description'>
+                
+                If the means of a person are less than a certain
+                threshold, that person is eligible for income support up
+                to the level of the minimum income. In order to receive
+                income support, one needs to apply for it at the offices
+                for public assistance (CPAS). These centres have some
+                discretionary power over the acceptance. For example,
+                the CPAS can demand an individualized project for social
+                (re)integration that the applicant has to agree to and
+                follow in order to get and/or keep income support.
+                
+                </Description>
+                <Description lang='en' type='label'>
+                
+                Income support
+                
+                </Description>
+                
+                <Description lang='nl' type='label'>
+                
+                Leefloon / revenu d'integration sociale
+                
+                </Description>
+                <Description lang='nl' type='description'>
+                
+                Indien de middelen van een persoon minder dan een
+                bepaalde drempel, die persoon in aanmerking komt voor
+                inkomenssteun up tot het niveau van het minimuminkomen.
+                Om te ontvangen inkomenssteun, dient men aan te vragen
+                op de kantoren voor de openbare bijstand (OCMW). Deze
+                centra hebben een aantal discretionaire macht over de
+                aanvaarding. Bijvoorbeeld, het OCMW kan de vraag naar
+                een geïndividualiseerd project voor maatschappelijke
+                (Re) integratie dat de aanvrager heeft om akkoord te
+                gaan en volgen om te krijgen en / of te houden
+                inkomenssteun.
+                
+                </Description>
+                
+                <Description type='description' lang='en'>
+                Basic monthly Minimum Income
+                </Description>
+                        <Parameter instanceName="single_person" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                Single person
+                                 </Description>
+                                 <Extra key='param_name' value='S_AmtSACat2' />
+                        </Parameter>
+                        <Parameter instanceName="family_without_children" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                Family without children
+                                 </Description>
+                                 <Extra key='param_name' value='IS_AmtSACat1' />
+                        </Parameter>
+                        <Parameter instanceName="family_with_children" logicalType="benefit">
+                                <Description type='description' lang='en'>
+                                Couple or individual with dependents (at least one minor)
+                                 </Description>
+                                 <Extra key='param_name' value='S_AmtSACat3' />
+                        </Parameter>
+        </ParameterSystem>
+                
+        <ParameterSystem name="unemployment_benefits" instanceName="unemployment_benefits" >
+                
+                <Description lang='en' type='description'>
+                
+                In the employment legislation one can distinguish three
+                main groups: the indemnified unemployed, support for
+                employed people, and support for the employed who reduce
+                their working hours. The simulation of unemployment
+                benefits will only be for the first group (also the most
+                important group in size). This includes the unemployed
+                after employment, the unemployed after finishing
+                studies, the older unemployed and the early retired.
+                
+                </Description>
+                <Description lang='en' type='label'>
+                
+                Unemployment benefits
+                
+                </Description>
+                
+                <Description lang='nl' type='description'>
+                
+                In de arbeidswetgeving kan men onderscheiden drie
+                hoofdgroepen: de vergoede werklozen, ondersteuning voor
+                werkenden, en steun voor de werknemers die te
+                verminderen hun werktijden. De simulatie van de
+                werkloosheid voordelen worden alleen voor de eerste
+                groep (ook de meest belangrijke groep in omvang). Dit
+                omvat de werklozen na het dienstverband, na het afronden
+                van de werklozen studies, de oudere werklozen en het
+                begin van de gepensioneerde.
+                
+                </Description>
+                
+                <Description lang='nl' type='label'>
+                Werkloosheidsuitkering
+                </Description>
+                <ParameterSystem name='unemployment_benefit_after_regular_employment' instanceName='unemployment_benefit_after_regular_employment'>
+                        <Description type='description' lang='en'>Unemployment benefit after regular employment</Description>
+                        <ParameterSystem name='single_non_disabled' instanceName='single_non_disabled'>
+                        
+                                <Description type='description' lang='en'>
+                                 Single non disabled person without dependents
+                                </Description>
+                        
+                                <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        0-6 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_ReplRateSingle6m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowLimSingle6m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit"  units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimSingle6m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        7-12 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_ReplRateSingle7to12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowLimSingle12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimSingle12m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='more_than_12_months_unemployed' instanceName='more_than_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        More than 12 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                 <Extra key='param_name' value='UI_ReplRateDep12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                                 <Extra key='param_name' value='UI_LowLimDep12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimDep12m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                        </ParameterSystem>
+                        <ParameterSystem name='non_disabled_with_family' instanceName='non_disabled_with_family'>
+                                <Description type='description' lang='en'>
+                                Non disabled person with dependent family 
+                                </Description>
+                        
+                                <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        0-6 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_ReplRateDep6m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minumum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowLimDep6m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimDep6m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        7-12 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_ReplRateDep7to12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit units='day'">
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                               <Extra key='param_name' value='UI_LowLimDep7to12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimDep7to12m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='more_than_12_months_unemployed' instanceName='more_than_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        More than 12 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_ReplRateDep12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit"  units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowLimDep12m' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit"  units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UpLimDep12m' />
+                                        </Parameter>
+                                </ParameterSystem>
+                        </ParameterSystem>
+                        
+                        <ParameterSystem name='cohabitating_non_disabled' instanceName='cohabitating_non_disabled'>
+                                <Description type='description' lang='en'>
+                                Cohabitating, non disabled person 
+                                </Description>
+                        
+                                <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        0-6 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit"  units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        7-12 Months Unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Minimum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='12_16_months_unemployed' instanceName='more_than_12_months_unemployed'>
+                                        <Description type='description' lang='en'>
+                                        12-16 months unemployed
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Mininum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='more_than_16_months_unemployed_20_years' instanceName='more_than_16_months_unemployed_20_years'>
+                                        <Description type='description' lang='en'>
+                                        More than 16 months unemployed and work history of more than 20 years
+                                        </Description>
+                                        <Parameter instanceName="payment_type" type='enumerated' enumTypeRef="payment_types">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate or lump sum? 
+                                                </Description>
+                                                <EditInfo onchange='
+if( $( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.payment_type").value == "lump_sum" ){
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).enable();  
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).value="0.0";
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).disable();  
+} else {
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).disable();  
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).value="0.0";
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).enable();  
+};'
+                                                />
+                                        </Parameter>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="lump_sum" logicalType="benefit"  units='timeless'>
+                                                <Description type='description' lang='en'>
+                                                Lump sum payment
+                                                </Description>
+                                        </Parameter>
+                                </ParameterSystem>
+                                
+                                <ParameterSystem name='more_than_16_months_unemployed_lt_20_years' instanceName='more_than_16_months_unemployed_lt_20_years'>
+                                        <Description type='description' lang='en'>
+                                        More than 16 months unemployed and work history of less than 20 years
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                        </Parameter>
+                                        <Parameter instanceName="lump_sum" logicalType="benefit"  units='timeless'>
+                                                <Description type='description' lang='en'>
+                                                Lump sum payment
+                                                </Description>
+                                        </Parameter>
+                                </ParameterSystem>
+                                
+                        </ParameterSystem>                                             
+                                                                     
+                </ParameterSystem> 
+                <ParameterSystem name='unemployment_benefit_after_study' instanceName='unemployment_benefit_after_study'>
+                        <Description type='description' lang='en'>Unemployment benefit - after study</Description>
+                          <Parameter instanceName="eligibility_maximum_age" logicalType="age_limit">
+                                                <Description type='description' lang='en'>
+                                                Eligibility: until the age of
+                                                </Description>
+                        </Parameter>
+                       
+                        <ParameterSystem name='single_non_disabled' instanceName='single_non_disabled'>
+                                <Description type='description' lang='en'>
+                                Single non-disabled people
+                                </Description>
+                                <Parameter instanceName="age_lt_18" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; aged under 18
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudySingleY18' />
+                                </Parameter>
+                                <Parameter instanceName="age_18_21" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; age 18 to 21
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudySingleY21' />
+                                </Parameter>
+                                <Parameter instanceName="age_over_21" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; aged over 21
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudySingle21' />
+                                </Parameter>
+                       </ParameterSystem>
+                        
+                        <ParameterSystem name='with_dependent_family' instanceName='with_dependent_family'>
+                                <Description type='description' lang='en'>
+                                People with dependent families
+                                </Description>
+                                <Parameter instanceName="per_day" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudyDepFam' />
+                                </Parameter>
+                                
+                       </ParameterSystem>
+
+                       <ParameterSystem name='cohabitating_with partner_with_other_income' instanceName='cohabitating_with partner_with_other_income'>
+                                <Description type='description' lang='en'>
+                                Cohabitating with partner with other income than unemployment benefits
+                                </Description>
+                                <Parameter instanceName="age_lt_18" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; aged under 18
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudyNoPrivCohabY18' />
+                                </Parameter>
+                                <Parameter instanceName="age_18_21" logicalType="benefit" units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; age 18 to 21
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudyNoPrivCohab18' />
+                                </Parameter>
+                       </ParameterSystem>
+                       
+                       <ParameterSystem name='cohabitating_with partner_no_other_income' instanceName='cohabitating_with partner_no_other_income'>
+                                <Description type='description' lang='en'>
+                                Cohabitating with partner with no other income than unemployment benefits
+                                </Description>
+                                <Parameter instanceName="age_lt_18" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; aged under 18
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudyPrivCohabY18' />
+                                </Parameter>
+                                <Parameter instanceName="age_18_21" logicalType="benefit"  units='day'> 
+                                        <Description type='description' lang="en">
+                                        Unemployment benefit; age 18 to 21
+                                        </Description>
+                                        <Extra key='param_name' value='UI_PostStudyPrivCohab18' />
+                                </Parameter>
+                                
+                       </ParameterSystem>                                       
+                </ParameterSystem>
+
+                <ParameterSystem name='unemployment_benefit_older_employees' instanceName='unemployment_benefit_older_employees'>
+                        <Description type='description' lang='en'>Unemployment benefits for older employees</Description>
+                          <Parameter instanceName="eligibility_minimum_age" logicalType="age_limit">
+                                <Description type='description' lang='en'>
+                                Eligibility: from the age of
+                                </Description>
+                        </Parameter>
+                          <Parameter instanceName="eligibility_minimum_years_work" logicalType="age_limit">
+                                <Description type='description' lang='en'>
+                                With at least 	this number of years of work history
+                                </Description>
+                        </Parameter>
+                       
+                        <ParameterSystem name='single_without_dependents' instanceName='single_without_dependents'>
+                            
+                                <Description type='description' lang='en'>
+                                Single without dependents
+                                </Description>
+                                <Parameter instanceName='under_55s'>
+                                        <Description type='description' lang='en'>
+                                        Under 55 year old
+                                        </Description>
+                                        <EditInfo display='label_only' />
+                                </Parameter>
+                                <Parameter instanceName="under_55s_replacement_rate" logicalType="rate">
+                                        <Description type='description' lang='en'>
+                                        Replacement rate 
+                                        </Description>
+                                        <Extra key='param_name' value='UI_SuppRateSingleY55' />
+                                </Parameter>
+                                <Parameter instanceName="under_55s_minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_LowlimSingleY55' />
+                                </Parameter>
+                                <Parameter instanceName="under_55s_maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_UplimSingleY55' />
+                                </Parameter>
+                                <Parameter instanceName='over_55s'>
+                                        <Description type='description' lang='en'>
+                                        55 years old and over
+                                        </Description>
+                                        <EditInfo display='label_only' />
+                                </Parameter>
+                                <Parameter instanceName="over_55s_replacement_rate" logicalType="rate">
+                                        <Description type='description' lang='en'>
+                                        Replacement rate 
+                                        </Description>
+                                        <Extra key='param_name' value='UI_SuppRateSingle55' />
+                                </Parameter>
+                                <Parameter instanceName="over_55s_minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_LowlimSingle55' />
+                                </Parameter>
+                                <Parameter instanceName="over_55s_maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_UplimSingle55' />
+                                </Parameter>
+                                
+                       </ParameterSystem>
+                        <ParameterSystem name='with_dependent_family' instanceName='with_dependent_family'>
+                                <Description type='description' lang='en'>
+                                With dependent family
+                                </Description>
+                                <Parameter instanceName="replacement_rate" logicalType="rate">
+                                        <Description type='description' lang='en'>
+                                        Replacement rate 
+                                        </Description>
+                                        <Extra key='param_name' value='UI_ReplRateDep12M' /> <!-- gks changed -->
+                                </Parameter>
+                                <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_LowlimOldDep' />
+                                </Parameter>
+                                <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                        <Description type='description' lang='en'>
+                                        Maximum unemployment benefit
+                                        </Description>
+                                        <Extra key='param_name' value='UI_UplimOldDep' />
+                                </Parameter>                                                
+                        </ParameterSystem>
+                        <ParameterSystem name='cohabitating_with_partner' instanceName='cohabitating_with_partner'>
+                                <Description type='description' lang='en'>
+                                Cohabitating with Partner
+                                </Description>
+                                 <ParameterSystem name='fifty_54' instanceName="fifty_54">
+                                        <Description type='description' lang='en'>
+                                        50 to 54 years old
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_SuppRateCohabY55' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowlimCohab55' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UplimCohab55' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='fifty_five_57' instanceName="fifty_five_57">
+                                        
+                                        <Description type='description' lang='en'>
+                                        Age 55 to 57 
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                               <Extra key='param_name' value='UI_SuppRateCohab55to57' />
+                                                
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowlimCohab55to57' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UplimCohab55to57' />
+                                        </Parameter>
+                                </ParameterSystem>
+                                <ParameterSystem name='fifty_eight_plus' instanceName="fifty_eight_plus">
+                                        
+                                        <Description type='description' lang='en'>
+                                        Age 58 and over 
+                                        </Description>
+                                        <Parameter instanceName="replacement_rate" logicalType="rate">
+                                                <Description type='description' lang='en'>
+                                                Replacement rate 
+                                                </Description>
+                                                <Extra key='param_name' value='UI_SuppRateCohab58' />
+                                        </Parameter>
+                                        <Parameter instanceName="minimum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_LowlimCohab58' />
+                                        </Parameter>
+                                        <Parameter instanceName="maximum_unemployment_benefit" logicalType="benefit" units='day'>
+                                                <Description type='description' lang='en'>
+                                                Maximum unemployment benefit
+                                                </Description>
+                                                <Extra key='param_name' value='UI_UplimCohab58' />
+                                        </Parameter>
+                                </ParameterSystem>
+                       </ParameterSystem> <!-- cohabiting -->
+               </ParameterSystem>         <!-- ub older -->
+
+<!--
+  any_kind, 
+  rate =>
+  tax_allowance =>
+  tax_band =>
+  benefit =>
+  age_limit =>
+  quickies =>
+  poverty_line =>
+  rates_and_bands =>   
+ -->
+ 
+
+                <Extra key="sheet" value="bun_be"/>
+        </ParameterSystem> <!-- ub -->
+ 
+        
+       <ParameterSystem name="Rates_And_Bands" id="rates_and_bands">
+         <Description type="label" lang="en">
+                         Tax Rates and Bands 
+                </Description>
+         <Description type="description" lang="en">
+                         Tax Rates and Bands 
+                </Description>
+         <Description type="label" lang="nl">
+                         Taux et tranches d&#39;imposition 
+                </Description>
+         <Description type="description" lang="nl">
+                         Taux et tranches d&#39;imposition 
+                </Description>
+         <Parameter name='rate' instanceName="rate" units="percent" type="real" logicalType="rate">
+            <Description type="label" lang="en"></Description>
+            <Description type="tooltip" lang="en">
+                                 Tax Rate 
+                        </Description>
+            <Description type="label" lang="nl"></Description>
+            <Description type="tooltip" lang="nl">
+                                 Taux d&#39;imposition 
+                        </Description>
+            <EditInfo topset="false" treatAsPercentage="true" prec="1" max="100" min="0" check="halt" uprate="dont_uprate"/>
+            <Extra key="param_name" value="IT_Rate"/>
+         </Parameter>
+         <Parameter name='band' instanceName="band" type="real" logicalType="tax_band" units="year">
+            <Description type="label" lang="en"></Description>
+            <Description type="tooltip" lang="en">
+                                 Tax Band (Upper Limit) 
+                        </Description>
+            <Description type="description" lang="en">
+                                 The Upper Limit of the Tax Band 
+                        </Description>
+            <Description type="label" lang="nl"></Description>
+            <Description type="tooltip" lang="nl">
+                                 Tranche d&#39;imposition (limite supérieure) 
+                        </Description>
+            <Description type="description" lang="nl">
+                                 Limite suppérieure de la tranche
+                                d&#39;imposition 
+                        </Description>
+            <EditInfo topset="true" prec="1" min="0" next="100" check="halt" uprate="rooker_wise"/>
+            <Extra key="param_name" value="IT_Bracket"/>
+        </Parameter>
+        </ParameterSystem>
+
+        
+        <EnumeratedType id="incomes" >
+                <EnumValue name="pdi">
+                        <Text lang='en'>Disability pension</Text>
+                </EnumValue>
+                <EnumValue name="phl">
+                        <Text lang='en'>Health benefits</Text>
+                </EnumValue>
+                <EnumValue name="poa">
+                        <Text lang='en'>Retirement pension</Text>
+                </EnumValue>
+                <EnumValue name="psu">
+                        <Text lang='en'>Survivor pension </Text>
+                </EnumValue>
+                <EnumValue name="bun">
+                        <Text lang='en'>Unemployement benefit</Text>
+                </EnumValue>
+                <EnumValue name="yem">
+                         <Text lang='en'>Income from employment</Text>
+                </EnumValue>
+                <EnumValue name="ypp">
+                        <Text lang='en'>Income from private pension</Text>
+                </EnumValue>
+                <EnumValue name="yse">
+                        <Text lang='en'>Income from self employment</Text>
+                </EnumValue>
+                <EnumValue name="sic">
+                        <Text lang='en'>Social insurance contributions (including deductions)</Text>
+                </EnumValue>
+                <EnumValue name="xmp">
+                        <Text lang='en'>Alimony (paid)</Text>
+                </EnumValue>
+                <EnumValue name="ypt">
+                        <Text lang='en'>Alimony (received)</Text>
+                </EnumValue>
+                <EnumValue name="kivho">
+                        <Text lang='en'>Imputed rent from housing</Text>
+                </EnumValue>
+        </EnumeratedType>
+        
+        <EnumeratedType id="payment_types" >
+                <EnumValue name="replacement_rate">
+                        <Text lang='en'>Replacement rate</Text>
+                </EnumValue>
+                <EnumValue name="lump_sum">
+                        <Text lang='en'>Lump Sum</Text>
+                </EnumValue>
+        </EnumeratedType>
+        
+</ParameterSystem>

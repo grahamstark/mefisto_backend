@@ -1,0 +1,1024 @@
+	BELGIUM	sys_par_name	sys_reserved	sys_first_sys	BE_2005	BE_2006	BE_2007	BE_2008	BE_2009	BE_2010	sys_end_sys		
+		sys_first_par			DEF: INCOME CONCEPTS								
+		func_DefIl	3		on	on	on	on	on	on			
+		name	4		ils_earns	ils_earns	ils_earns	ils_earns	ils_earns	ils_earns			
+		+	5		yem	yem	yem	yem	yem	yem			
+		+	6		yse	yse	yse	yse	yse	yse			
+		func_DefIl	7		on	on	on	on	on	on			
+		name	8		ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee			
+		+	9		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		+	10		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		+	11		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		-	12		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		+	13		tsceesp_s	tsceesp_s	tsceesp_s	tsceesp_s	tsceesp_s	tsceesp_s			
+		func_DefIl	14		on	on	on	on	on	on			
+		name	15		ils_sicer	ils_sicer	ils_sicer	ils_sicer	ils_sicer	ils_sicer			
+		+	16		tscer_s	tscer_s	tscer_s	tscer_s	tscer_s	tscer_s			
+		-	17		tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s			
+		func_DefIl	18		on	on	on	on	on	on			
+		name	19		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		+	20		tscse_s	tscse_s	tscse_s	tscse_s	tscse_s	tscse_s			
+		func_DefIl	21		on	on	on	on	on	on			
+		name	22		il_gross_taxabley	il_gross_taxabley	il_gross_taxabley	il_gross_taxabley	il_gross_taxabley	il_gross_taxabley			
+		+	23		byr	byr	byr	byr	byr	byr			
+		+	24		phl	phl	phl	phl	phl	phl			
+		+	25		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	26		psu	psu	psu	psu	psu	psu			
+		+	27		poa	poa	poa	poa	poa	poa			
+		+	28		bun	bun	bun	bun	bun	bun			
+		+	29		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	30		yem	yem	yem	yem	yem	yem			
+		+0.8	31		ypt	ypt	ypt	ypt	ypt	ypt			
+		+	32		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	33		yse	yse	yse	yse	yse	yse			
+		func_DefIl	34		on	on	on	on	on	on			
+		name	35		il_taxabley	il_taxabley	il_taxabley	il_taxabley	il_taxabley	il_taxabley			
+		-	36		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	37		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	38		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	39		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	40		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		-	42		tintace_s	tintace_s	tintace_s	tintace_s	tintace_s	tintace_s			
+		+	43		tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s			
+		+	44		tintals_s	tintals_s	tintals_s	tintals_s	tintals_s	tintals_s			
+		+	45		byr	byr	byr	byr	byr	byr			
+		+	47		pdi 	pdi 	pdi 	pdi 	pdi 	pdi 			
+		+	48		phl	phl	phl	phl	phl	phl			
+		+	49		poa	poa	poa	poa	poa	poa			
+		+	50		psu	psu	psu	psu	psu	psu			
+		+	51		bun	bun	bun	bun	bun	bun			
+		+	52		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	53		bma	bma	bma	bma	bma	bma			
+		+	54		yem	yem	yem	yem	yem	yem			
+		+0	55		yiy	yiy	yiy	yiy	yiy	yiy			
+		-.8	56		xmp	xmp	xmp	xmp	xmp	xmp			
+		+0.8	57		ypt	ypt	ypt	ypt	ypt	ypt			
+		+0	58		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	59		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	60		yse	yse	yse	yse	yse	yse			
+		+	61		kivho	kivho	kivho	kivho	kivho	kivho			
+		func_DefIl	62		on	on	on	on	on	on			
+		name	63		il_taxableyui	il_taxableyui	il_taxableyui	il_taxableyui	il_taxableyui	il_taxableyui			
+		-	64		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	65		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	66		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	67		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	68		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		-	70		tintace_s	tintace_s	tintace_s	tintace_s	tintace_s	tintace_s			
+		+	71		byr	byr	byr	byr	byr	byr			
+		+	73		pdi 	pdi 	pdi 	pdi 	pdi 	pdi 			
+		+	74		phl	phl	phl	phl	phl	phl			
+		+	75		poa	poa	poa	poa	poa	poa			
+		+	76		psu	psu	psu	psu	psu	psu			
+		+	77		bun	bun	bun	bun	bun	bun			
+		+	78		bma	bma	bma	bma	bma	bma			
+		+	79		yem	yem	yem	yem	yem	yem			
+		+0	80		yiy	yiy	yiy	yiy	yiy	yiy			
+		-.8	81		xmp	xmp	xmp	xmp	xmp	xmp			
+		+0.8	82		ypt	ypt	ypt	ypt	ypt	ypt			
+		+0	83		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	84		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	85		yse	yse	yse	yse	yse	yse			
+		+	86		kivho	kivho	kivho	kivho	kivho	kivho			
+		func_DefIl	87		on	on	on	on	on	on			
+		name	88		il_taxabley_bf_mq	il_taxabley_bf_mq	il_taxabley_bf_mq	il_taxabley_bf_mq	il_taxabley_bf_mq	il_taxabley_bf_mq			
+		-	89		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	90		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	91		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	92		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	93		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		-	94		tintace_s	tintace_s	tintace_s	tintace_s	tintace_s	tintace_s			
+		+	95		byr	byr	byr	byr	byr	byr			
+		+	96		pdi 	pdi 	pdi 	pdi 	pdi 	pdi 			
+		+	97		phl	phl	phl	phl	phl	phl			
+		+	98		poa	poa	poa	poa	poa	poa			
+		+	99		psu	psu	psu	psu	psu	psu			
+		+	100		bun	bun	bun	bun	bun	bun			
+		+	101		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	102		bma	bma	bma	bma	bma	bma			
+		+	103		yem	yem	yem	yem	yem	yem			
+		+0	104		yiy	yiy	yiy	yiy	yiy	yiy			
+		+0.8	105		ypt	ypt	ypt	ypt	ypt	ypt			
+		+0	106		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	107		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	108		yse	yse	yse	yse	yse	yse			
+		+	109		kivho	kivho	kivho	kivho	kivho	kivho			
+		func_DefIl	110		on	on	on	on	on	on			
+		name	111		il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY			
+		-	112		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	113		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	114		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	115		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	116		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		+	117		yem	yem	yem	yem	yem	yem			
+		+	118		yse	yse	yse	yse	yse	yse			
+		func_DefIl	119		on	on	on	on	on	on			
+		name	120		il_netYem	il_netYem	il_netYem	il_netYem	il_netYem	il_netYem			
+		-	121		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	122		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	123		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	124		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		+	125		yem	yem	yem	yem	yem	yem			
+		func_DefIl	126		on	on	on	on	on	on			
+		name	127		il_meansY	il_meansY	il_meansY	il_meansY	il_meansY	il_meansY			
+		-	128		ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee			
+		-	129		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		+	130		phl	phl	phl	phl	phl	phl			
+		+	131		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	132		poa	poa	poa	poa	poa	poa			
+		+	133		psu	psu	psu	psu	psu	psu			
+		+	134		byr	byr	byr	byr	byr	byr			
+		+	135		bun	bun	bun	bun	bun	bun			
+		+	136		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	137		bma	bma	bma	bma	bma	bma			
+		-	138		tin_s	tin_s	tin_s	tin_s	tin_s	tin_s			
+		+	139		yem	yem	yem	yem	yem	yem			
+		+	140		yse	yse	yse	yse	yse	yse			
+		+	141		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	142		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	143		yiviy_s	yiviy_s	yiviy_s	yiviy_s	yiviy_s	yiviy_s			
+		func_DefIl	144		on	on	on	on	on	on			
+		name	145		il_means01Y	il_means01Y	il_means01Y	il_means01Y	il_means01Y	il_means01Y			
+		+0.9	146		phl	phl	phl	phl	phl	phl			
+		+0.9	147		pdi	pdi	pdi	pdi	pdi	pdi			
+		+0.9	148		poa	poa	poa	poa	poa	poa			
+		-0.9	149		xmp	xmp	xmp	xmp	xmp	xmp			
+		+0.9	150		psu	psu	psu	psu	psu	psu			
+		+0.9	151		byr	byr	byr	byr	byr	byr			
+		+0.9	152		bun	bun	bun	bun	bun	bun			
+		+0.9	153		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+0.75	154		yem	yem	yem	yem	yem	yem			
+		+0.95	155		yse	yse	yse	yse	yse	yse			
+		+0.9	156		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	157		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	158		yiviy01_s	yiviy01_s	yiviy01_s	yiviy01_s	yiviy01_s	yiviy01_s			
+		func_DefIl	159		on	on	on	on	on	on			
+		name	160		il_netownY	il_netownY	il_netownY	il_netownY	il_netownY	il_netownY			
+		+0.8	161		phl	phl	phl	phl	phl	phl			
+		+0.8	162		pdi	pdi	pdi	pdi	pdi	pdi			
+		+0.8	163		poa_s	poa_s	poa_s	poa_s	poa_s	poa_s			
+		-0.8	164		xmp	xmp	xmp	xmp	xmp	xmp			
+		+0.8	165		psu	psu	psu	psu	psu	psu			
+		+0.8	166		byr	byr	byr	byr	byr	byr			
+		+0.8	167		bun	bun	bun	bun	bun	bun			
+		+0.8	168		bma	bma	bma	bma	bma	bma			
+		+0.8	169		yem	yem	yem	yem	yem	yem			
+		+0.8	170		yse	yse	yse	yse	yse	yse			
+		+0.8	171		ypp	ypp	ypp	ypp	ypp	ypp			
+		+0.8	172		ypt	ypt	ypt	ypt	ypt	ypt			
+		+0.6	173		ypr	ypr	ypr	ypr	ypr	ypr			
+		+0.8	174		yiy	yiy	yiy	yiy	yiy	yiy			
+		func_DefIl	175		on	on	on	on	on	on			
+		name	176		il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY			
+		-	177		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	178		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	179		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	180		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	181		tintace_s	tintace_s	tintace_s	tintace_s	tintace_s	tintace_s			
+		-	182		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		+	183		poa	poa	poa	poa	poa	poa			
+		+	184		phl	phl	phl	phl	phl	phl			
+		+	185		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	186		psu	psu	psu	psu	psu	psu			
+		+	187		bun	bun	bun	bun	bun	bun			
+		+	188		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	189		byr	byr	byr	byr	byr	byr			
+		+	190		bma	bma	bma	bma	bma	bma			
+		+	191		yem	yem	yem	yem	yem	yem			
+		-.8	192		xmp	xmp	xmp	xmp	xmp	xmp			
+		+	193		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	194		yse	yse	yse	yse	yse	yse			
+		func_DefIl	195		on	on	on	on	on	on			
+		name	196		il_actY	il_actY	il_actY	il_actY	il_actY	il_actY			
+		-	197		tscee_s	tscee_s	tscee_s	tscee_s	tscee_s	tscee_s			
+		-	198		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	199		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	200		tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s	tsceerd_s			
+		-	201		tintace_s	tintace_s	tintace_s	tintace_s	tintace_s	tintace_s			
+		-	202		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		+	203		yem	yem	yem	yem	yem	yem			
+		+	204		yse	yse	yse	yse	yse	yse			
+		func_DefIl	205		on	on	on	on	on	on			
+		name	206		il_gross_earnedy	il_gross_earnedy	il_gross_earnedy	il_gross_earnedy	il_gross_earnedy	il_gross_earnedy			
+		+	207		poa	poa	poa	poa	poa	poa			
+		+	208		bun	bun	bun	bun	bun	bun			
+		+	209		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	210		byr	byr	byr	byr	byr	byr			
+		+	211		bma	bma	bma	bma	bma	bma			
+		+	212		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	213		phl	phl	phl	phl	phl	phl			
+		+	214		psu	psu	psu	psu	psu	psu			
+		+	215		yem	yem	yem	yem	yem	yem			
+		+	216		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	217		yse	yse	yse	yse	yse	yse			
+		+	218		yiy	yiy	yiy	yiy	yiy	yiy			
+		+	219		ypt	ypt	ypt	ypt	ypt	ypt			
+		+	220		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	221		yot	yot	yot	yot	yot	yot			
+		func_DefIl	222		on	on	on	on	on	on			
+		name	223		il_pension	il_pension	il_pension	il_pension	il_pension	il_pension			
+		+	224		poa	poa	poa	poa	poa	poa			
+		+	225		psu	psu	psu	psu	psu	psu			
+		func_DefIl	226		on	on	on	on	on	on			
+		name	227		il_netpension	il_netpension	il_netpension	il_netpension	il_netpension	il_netpension			
+		+	228		poa	poa	poa	poa	poa	poa			
+		+	229		psu	psu	psu	psu	psu	psu			
+		-	230		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		func_DefIl	231		on	on	on	on	on	on			
+		name	232		il_disabY	il_disabY	il_disabY	il_disabY	il_disabY	il_disabY			
+		+	233		pdi	pdi	pdi	pdi	pdi	pdi			
+		func_DefIl	234		on	on	on	on	on	on			
+		name	235		il_sickY	il_sickY	il_sickY	il_sickY	il_sickY	il_sickY			
+		+	236		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	237		phl	phl	phl	phl	phl	phl			
+		func_DefIl	238		on	on	on	on	on	on			
+		name	239		il_netsickY	il_netsickY	il_netsickY	il_netsickY	il_netsickY	il_netsickY			
+		+	240		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	241		phl	phl	phl	phl	phl	phl			
+		-	242		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		func_DefIl	243		on	on	on	on	on	on			
+		name	244		il_repY	il_repY	il_repY	il_repY	il_repY	il_repY			
+		+	245		bun	bun	bun	bun	bun	bun			
+		+	246		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s	bun_s		
+		+	247		bma	bma	bma	bma	bma	bma			
+		+	248		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	249		phl	phl	phl	phl	phl	phl			
+		+	250		poa	poa	poa	poa	poa	poa			
+		+	251		psu	psu	psu	psu	psu	psu			
+		+	252		byr	byr	byr	byr	byr	byr			
+		func_DefIl	253		on	on	on	on	on	on			
+		name	254		il_netrepY01	il_netrepY01	il_netrepY01	il_netrepY01	il_netrepY01	il_netrepY01			
+		-	255		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	256		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	257		bun	bun	bun	bun	bun	bun			
+		+	258		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	259		bma	bma	bma	bma	bma	bma			
+		+	260		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	261		phl	phl	phl	phl	phl	phl			
+		+	262		poa	poa	poa	poa	poa	poa			
+		+	263		psu	psu	psu	psu	psu	psu			
+		+	264		byr	byr	byr	byr	byr	byr			
+		func_DefIl	265		on	on	on	on	on	on			
+		name	266		il_netrepY	il_netrepY	il_netrepY	il_netrepY	il_netrepY	il_netrepY			
+		-	267		tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s	tscpe_s			
+		-	268		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+0.8	269		bun	bun	bun	bun	bun	bun			
+		+0.8	270		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+0.8	271		bma	bma	bma	bma	bma	bma			
+		+0.8	272		pdi	pdi	pdi	pdi	pdi	pdi			
+		+0.8	273		phl	phl	phl	phl	phl	phl			
+		+0.8	274		poa	poa	poa	poa	poa	poa			
+		+0.8	275		psu	psu	psu	psu	psu	psu			
+		+0.8	276		byr	byr	byr	byr	byr	byr			
+		func_DefIl	277		on	on	on	on	on	on			
+		name	278		il_repY01	il_repY01	il_repY01	il_repY01	il_repY01	il_repY01			
+		+	279		bun	bun	bun	bun	bun	bun			
+		+	280		bma	bma	bma	bma	bma	bma			
+		+	281		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	282		phl	phl	phl	phl	phl	phl			
+		func_DefIl	283		on	on	on	on	on	on			
+		name	284		ils_origy	ils_origy	ils_origy	ils_origy	ils_origy	ils_origy			
+		+	285		yem	yem	yem	yem	yem	yem			
+		+	286		yiy	yiy	yiy	yiy	yiy	yiy			
+		+	287		yot	yot	yot	yot	yot	yot			
+		+	288		ypr	ypr	ypr	ypr	ypr	ypr			
+		+	289		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	290		ypt	ypt	ypt	ypt	ypt	ypt			
+		+	291		yse	yse	yse	yse	yse	yse			
+		-	292		xmp	xmp	xmp	xmp	xmp	xmp			
+		func_DefIl	293		on	on	on	on	on	on			
+		name	294		ils_origrepy	ils_origrepy	ils_origrepy	ils_origrepy	ils_origrepy	ils_origrepy			
+		+	295		ils_origy	ils_origy	ils_origy	ils_origy	ils_origy	ils_origy			
+		+	296		bun	bun	bun	bun	bun	bun	bun		
+		+	297		bma	bma	bma	bma	bma	bma	bma		
+		+	298		pdi	pdi	pdi	pdi	pdi	pdi	pdi		
+		+	299		phl	phl	phl	phl	phl	phl	phl		
+		+	300		poa	poa	poa	poa	poa	poa	poa		
+		+	301		psu	psu	psu	psu	psu	psu	psu		
+		+	302		byr	byr	byr	byr	byr	byr	byr		
+		func_DefIl	303		on	on	on	on	on	on			
+		name	304		ils_pen	ils_pen	ils_pen	ils_pen	ils_pen	ils_pen			
+		+	305		poa	poa	poa	poa	poa	poa			
+		+	306		psu	psu	psu	psu	psu	psu			
+		+	307		pdi	pdi	pdi	pdi	pdi	pdi			
+		+	308		phl	phl	phl	phl	phl	phl			
+		+	309		byr	byr	byr	byr	byr	byr			
+		func_DefIl	310		on	on	on	on	on	on			
+		name	311		ils_tax	ils_tax	ils_tax	ils_tax	ils_tax	ils_tax			
+		+	312		tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	tinna_s			
+		+	313		tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s			
+		+	314		tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s			
+		func_DefIl	315		on	on	on	on	on	on			
+		name	316		ils_bennt	ils_bennt	ils_bennt	ils_bennt	ils_bennt	ils_bennt			
+		+	317		bch_s	bch_s	bch_s	bch_s	bch_s	bch_s			
+		+	318		bchba_s	bchba_s	bchba_s	bchba_s	bchba_s	bchba_s			
+		+	319		bun	bun	bun	bun	bun	bun			
+		+	320		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	321		bma	bma	bma	bma	bma	bma			
+		func_DefIl	322		on	on	on	on	on	on			
+		name	323		ils_benmt	ils_benmt	ils_benmt	ils_benmt	ils_benmt	ils_benmt			
+		+	324		bsa_s	bsa_s	bsa_s	bsa_s	bsa_s	bsa_s			
+		+	325		bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s			
+		+	326		bed	bed	bed	bed	bed	bed			
+		+	327		bho	bho	bho	bho	bho	bho			
+		func_DefIl	328		on	on	on	on	on	on			
+		name	329		ils_ben	ils_ben	ils_ben	ils_ben	ils_ben	ils_ben			
+		+	330		ils_pen	ils_pen	ils_pen	ils_pen	ils_pen	ils_pen			
+		+	331		ils_benmt	ils_benmt	ils_benmt	ils_benmt	ils_benmt	ils_benmt			
+		+	332		ils_bennt	ils_bennt	ils_bennt	ils_bennt	ils_bennt	ils_bennt			
+		func_DefIl	333		on	on	on	on	on	on			
+		name	334		ils_tinty	ils_tinty	ils_tinty	ils_tinty	ils_tinty	ils_tinty			
+		-	335		ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee			
+		-	336		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		-	337		tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s	tscdb_s			
+		+	338		byr	byr	byr	byr	byr	byr			
+		+	339		pdi 	pdi 	pdi 	pdi 	pdi 	pdi 			
+		+	340		phl	phl	phl	phl	phl	phl			
+		+	341		poa	poa	poa	poa	poa	poa			
+		+	342		psu	psu	psu	psu	psu	psu			
+		+	343		bun	bun	bun	bun	bun	bun			
+		+	344		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	345		yem	yem	yem	yem	yem	yem			
+		-.8	346		xmp	xmp	xmp	xmp	xmp	xmp			
+		+0.8	347		ypt	ypt	ypt	ypt	ypt	ypt			
+		+	348		ypp	ypp	ypp	ypp	ypp	ypp			
+		+	349		yse	yse	yse	yse	yse	yse			
+		+	350		kivho	kivho	kivho	kivho	kivho	kivho			
+		func_DefIl	351		on	on	on	on	on	on			
+		name	352		ils_dispy	ils_dispy	ils_dispy	ils_dispy	ils_dispy	ils_dispy			
+		+	353		ils_origy	ils_origy	ils_origy	ils_origy	ils_origy	ils_origy			
+		+	354		ils_ben	ils_ben	ils_ben	ils_ben	ils_ben	ils_ben			
+		-	355		ils_tax	ils_tax	ils_tax	ils_tax	ils_tax	ils_tax			
+		-	356		ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee	ils_sicee			
+		-	357		ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse	ils_sicse			
+		func_DefIl	358		on	on	on	on	on	on			
+		name	359		ils_taxsim	ils_taxsim	ils_taxsim	ils_taxsim	ils_taxsim	ils_taxsim			
+		+	360		tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	tinna_s			
+		+	361		tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s			
+		+	362		tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s			
+		func_DefIl	363		on	on	on	on	on	on			
+		name	364		ils_bensim	ils_bensim	ils_bensim	ils_bensim	ils_bensim	ils_bensim			
+		+	365		bch_s	bch_s	bch_s	bch_s	bch_s	bch_s			
+		+	366		bchba_s	bchba_s	bchba_s	bchba_s	bchba_s	bchba_s			
+		+	367		bun_s	bun_s	bun_s	bun_s	bun_s	bun_s			
+		+	368		bsa_s	bsa_s	bsa_s	bsa_s	bsa_s	bsa_s			
+		+	369		bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s	bsaoa_s			
+		sys_end_par											
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													

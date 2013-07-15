@@ -1,0 +1,20 @@
+        <div id="footer">
+<div id="disclaimer"><p style="font-size:smaller;">Disclaimer: The results of the simulations carried out hereinafter are indicative and should be interpreted cautiously. The results shown assume unchanged gross wages before and after the simulated reforms. The displayed statistics cover only households in the Region of Flanders. The simulated policy and standard parameters displayed reflect the situation in mid 2010. For more information, click 'Output Help' in the results screen.</p></div>
+            <div id="webdesign">
+                created by <a href="http://www.makingchoices.be/" target="_blank">makingChoices.be</a> | 
+                <a href='http://virtual-worlds.biz'>Virtual Worlds</a> &bull;
+                
+                powered by <a href="http://www.makingchoices.be/ECMS_CLIENT/pages/showpage.php?id=2">
+                <img alt="" src="/mefisto/images/poweredby.png" height="15" width="73" align="middle"
+                border="0" /></a> |
+                <a href='http://libre.adacore.com/libre/tools/aws/'>Ada Web Server</a>
+            </div>
+           
+            <p>
+                Copyright (c) 2010 Flemosi &bull; all rights
+                reserved.
+            </p>
+           
+        </div>
+       
+

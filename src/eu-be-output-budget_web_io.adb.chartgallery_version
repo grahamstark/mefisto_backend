@@ -1,0 +1,350 @@
+with Ada.Containers.Hashed_Sets;
+
+with Costs_Tabulator.Web_IO;
+with EU.Web.Settings;
+with General_Chart_Constants;
+with Inequality_Generator.Web_IO;
+with Poverty_Tabulator.Web_IO;
+with Poverty_Tabulator;
+with Tabulator.Web_IO;
+with Templates_Parser;
+with Web_Utils;
+with EU.BE.Main_Menu;
+
+package body EU.BE.Output.Budget_Web_IO is
+   
+   use Translations;
+
+   package Costs_By_Tenure_Web_IO is new 
+      Household_Costs_By_Tenure.Web_IO;
+   package Costs_By_Decile_Web_IO is new 
+      Household_Costs_By_Decile.Web_IO;
+   package Costs_By_Age_band_Web_IO is new 
+      Household_Costs_By_Age_band.Web_IO;
+   package Costs_By_Occupation_Web_IO is new 
+      Household_Costs_By_Occupation.Web_IO;
+
+   package euws renames EU.Web.Settings; 
+
+   function Get_Summary(
+      outputs       : Outputs_Rec; 
+      lang          : Languages          := Languages'First ) return Unbounded_String is
+   use Templates_Parser;
+   use Household_Costs_By_Tenure;
+   
+      translations : Translate_Set;
+      sum_lines    : Vector_Tag;
+      row_str      : Unbounded_String;
+      diff         : Amount;
+      pre_totals   : All_Taxes_And_Benefits_Array := outputs.costs_by_tenure( 1 ).Extract_Costs_Row( Tenure_Type'First, True );
+      post_totals  : All_Taxes_And_Benefits_Array := outputs.costs_by_tenure( 2 ).Extract_Costs_Row( Tenure_Type'First, True );
+   begin
+     Insert( translations, Assoc( "TITLE", Lookup( "Budget Breakdown", lang ))); 
+     for col in All_Taxes_And_Benefits_Type'First .. mip loop
+        diff := post_totals( col ) -  pre_totals( col );
+        row_str := TuS( "<tr>" ) & 
+        
+         "<th>" & Lookup( Censor_String( All_Taxes_And_Benefits_Type'Image( col )), lang )  & "</th>" &
+         "<td>" & Web_Format( Integer( pre_totals( col )/1000.0 ), lang ) & "</td>" &
+         "<td>" & Web_Format( Integer( post_totals( col )/1000.0 ), lang ) & "</td>" &
+         "<td>" & Web_Format( Integer( diff/1000.0 ), lang ) & "</td></tr>";
+        sum_lines := sum_lines & row_str; 
+     end loop;
+     Insert( translations, Assoc( "PRE", Lookup( "Before", lang )));
+     Insert( translations, Assoc( "POST",  Lookup( "After", lang )));
+     Insert( translations, Assoc( "DIFFERENCE", Lookup( "Change", lang )));
+     Insert( translations, Assoc( "BUD-ROWS", sum_lines ));
+     Insert( translations, Assoc( "TOTAL-COST-STR", Lookup( "Total cost of your measures", lang )));
+     Insert( translations, Assoc( "UNITS", Lookup( "millions of euros per year", lang )));
+     Insert( translations, Assoc( "TOTAL-COST", Web_Format( Integer( outputs.summary_statistics( total_cost )/1000.0 ), lang )));
+     return Web_Utils.Parse_Template( TuS( euws.template_components_path ) & 
+         euws.Dir_Separator & "budget_summary", translations );      
+      
+   end Get_Summary;
+ 
+   function Get_Budget_Chart_Grid(
+      outputs       : Outputs_Rec; 
+      breakdown     : Breakdown_Target   := no_breakdown;
+      lang          : Languages          := Languages'First ) return Unbounded_String is
+   use Templates_Parser;
+         translations : Translate_Set;
+         title      : Unbounded_String;
+         subtitle   : Unbounded_String;
+         gal_str    : Unbounded_String;
+         thumb_list : Vector_Tag;
+   begin
+      case breakdown is
+         when by_tenure =>
+             declare
+                use Household_Costs_By_Tenure;
+             begin
+               for col in All_Taxes_And_Benefits_Type'First .. mip loop
+                  for print_counts in False .. True loop
+                     title := TuS( "" ) & Lookup( Censor_String( All_Taxes_And_Benefits_Type'Image( col )), lang ) & " ";
+                     
+                     if( print_counts )then
+                        title := title & " (" & Lookup( "Caseloads", lang ) & ")";
+                     end if;                                                        
+                     gal_str:= TuS( "         <li>" ) & LINE_BREAK;
+                     gal_str:= gal_str& "              <a class='thumb' href='";
+                     gal_str:= gal_str& 
+                     Costs_By_Tenure_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_tenure( 1 ), 
+                        post_tab      => outputs.costs_by_tenure( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Tenure Type",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.large,
+                        lang=>lang );
+                     gal_str:= gal_str& "' title='" & title & "' >" & LINE_BREAK;  
+                     gal_str:= gal_str& "<img src='" &  
+                     Costs_By_Tenure_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_tenure( 1 ), 
+                        post_tab      => outputs.costs_by_tenure( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Tenure Type",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.thumb,
+                        lang=>lang );
+                     gal_str:= gal_str& "' alt='" & title & "' />" & LINE_BREAK;  
+                     gal_str:= gal_str& "            </a>" & LINE_BREAK;
+                     gal_str:= gal_str& "         </li>" & LINE_BREAK;
+                     thumb_list := thumb_list & gal_str;
+                  end loop;
+               end loop;
+            end;
+         when by_decile =>
+             declare
+                use Household_Costs_By_Decile;
+             begin
+               for col in All_Taxes_And_Benefits_Type'First .. mip loop
+                  for print_counts in False .. True loop
+                     title := TuS( "" ) & Lookup( Censor_String( All_Taxes_And_Benefits_Type'Image( col )), lang ) & " ";
+                     
+                     if( print_counts )then
+                        title := title & " (" & Lookup( "Caseloads", lang ) & ")";
+                     end if;
+                     gal_str:= TuS( "         <li>" ) & LINE_BREAK;
+                     gal_str:= gal_str& "              <a class='thumb' href='";
+                     gal_str:= gal_str& 
+                     Costs_By_Decile_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_decile( 1 ), 
+                        post_tab       => outputs.costs_by_decile( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Income Decile",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.large,
+                        lang=>lang );
+                     gal_str:= gal_str& "' title='" & title & "' >" & LINE_BREAK;  
+                     gal_str:= gal_str& "<img src='" &  
+                     Costs_By_Decile_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_decile( 1 ), 
+                        post_tab      => outputs.costs_by_decile( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Income Decile",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.thumb,
+                        lang=>lang );
+                     gal_str:= gal_str& "' alt='" & title & "' />" & LINE_BREAK;  
+                     gal_str:= gal_str& "            </a>" & LINE_BREAK;
+                     gal_str:= gal_str& "         </li>" & LINE_BREAK;
+                     thumb_list := thumb_list & gal_str;
+                  end loop;
+               end loop;
+            end;
+         when by_age_of_head =>
+             declare
+                use Household_Costs_By_Age_band;
+             begin
+               for col in All_Taxes_And_Benefits_Type'First .. mip loop
+                  for print_counts in False .. True loop
+                     title := TuS( "" ) & Lookup( Censor_String( All_Taxes_And_Benefits_Type'Image( col )), lang ) & " ";
+                     
+                     if( print_counts )then
+                        title := title & " (" & Lookup( "Caseloads", lang ) & ")";
+                     end if;
+                     gal_str:= TuS( "         <li>" ) & LINE_BREAK;
+                     gal_str:= gal_str& "              <a class='thumb' href='";
+                     gal_str:= gal_str& 
+                     Costs_By_Age_band_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_age_band( 1 ), 
+                        post_tab      => outputs.costs_by_age_band( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Age Band",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.large,
+                        lang=>lang );
+                     gal_str:= gal_str& "' title='" & title & "' >" & LINE_BREAK;  
+                     gal_str:= gal_str& "<img src='" &  
+                     Costs_By_Age_band_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_age_band( 1 ), 
+                        post_tab      => outputs.costs_by_age_band( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Age Band",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.thumb,
+                        lang=>lang );
+                     gal_str:= gal_str& "' alt='" & title & "' />" & LINE_BREAK;  
+                     gal_str:= gal_str& "            </a>" & LINE_BREAK;
+                     gal_str:= gal_str& "         </li>" & LINE_BREAK;
+                     thumb_list := thumb_list & gal_str;
+                  end loop;
+               end loop;
+            end;
+         when by_occupation_of_head =>
+             declare
+                use Household_Costs_By_Occupation;
+             begin
+               for col in All_Taxes_And_Benefits_Type'First .. mip loop
+                  for print_counts in False .. True loop
+                     title := TuS( "" ) & Lookup( Censor_String( All_Taxes_And_Benefits_Type'Image( col )), lang ) & " ";
+                     
+                     if( print_counts )then
+                        title := title & " (" & Lookup( "Caseloads", lang ) & ")";
+                     end if;
+                     gal_str:= TuS( "         <li>" ) & LINE_BREAK;
+                     gal_str:= gal_str& "              <a class='thumb' href='";
+                     gal_str:= gal_str& 
+                     Costs_By_Occupation_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_occupation( 1 ), 
+                        post_tab      => outputs.costs_by_occupation( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        print_counts  => print_counts,
+                        x_axis_label  => "Occupation",
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.large,
+                        lang=>lang );
+                     gal_str:= gal_str& "' title='" & title & "' >" & LINE_BREAK;  
+                     gal_str:= gal_str& "<img src='" &  
+                     Costs_By_Occupation_Web_IO.Make_Chart( 
+                        pre_tab       => outputs.costs_by_occupation( 1 ), 
+                        post_tab      => outputs.costs_by_occupation( 2 ), 
+                        title         => TS( title ),
+                        subtitle      => TS( subtitle ),
+                        col           => col,
+                        x_axis_label  => "Occupation",
+                        print_counts  => print_counts,
+                        chart_type    => General_Chart_Constants.bar,
+                        size          => General_Chart_Constants.thumb,
+                        lang=>lang );
+                     gal_str:= gal_str& "' alt='" & title & "' />" & LINE_BREAK;  
+                     gal_str:= gal_str& "            </a>" & LINE_BREAK;
+                     gal_str:= gal_str& "         </li>" & LINE_BREAK;
+                     thumb_list := thumb_list & gal_str;
+                  end loop;
+               end loop;
+            end;
+         when no_breakdown => null;
+      end case;
+      Insert( translations, Assoc( "ROOT", euws.Mefisto_Root ));
+      Insert( translations, Assoc( "INTRO_TEXT", Lookup( "household_budget_explanation", lang )));
+        Insert( translations, Assoc( "THUMBNAILS", thumb_list ));
+        return TuS( Web_Utils.Parse_Template( 
+            EU.Web.Settings.template_components_path & 
+            EU.Web.Settings.dir_separator & "output_gallery", 
+            translations ));      
+   end Get_Budget_Chart_Grid;
+
+   
+   function Get_Budget_Table( 
+      outputs        : Outputs_Rec; 
+      sysno          : System_Number      := 1;
+      breakdown      : Disaggregated_Breakdown_Target   := by_decile;
+      print_counts   : Boolean            := False;
+      do_differences : Boolean            := False;
+      lang           : Languages          := Languages'First ) return Unbounded_String is
+    begin
+      case breakdown is
+         when by_tenure =>
+            declare
+               tab : Household_Costs_By_Tenure.Table_Type;
+            begin
+               if( do_differences )then
+                  tab := Household_Costs_By_Tenure.Difference( outputs.costs_by_tenure( 1 ), outputs.costs_by_tenure( 2 ));
+               else
+                  tab := outputs.costs_by_tenure( sysno );
+               end if;
+               return Costs_By_Tenure_Web_IO.To_String( 
+                  tab,
+                  Lookup( "By Tenure Type", lang ),
+                  Lookup( "Budgetary effects broken down by tenure type (&#8364;)",lang ),
+                  lang,
+                  print_counts,
+                  True );
+            end;
+         when by_decile =>
+            declare
+               tab : Household_Costs_By_Decile.Table_Type;
+            begin
+               if( do_differences )then
+                  tab := Household_Costs_By_Decile.Difference( outputs.costs_by_decile( 1 ), outputs.costs_by_decile( 2 ));
+               else
+                  tab := outputs.costs_by_decile( sysno );
+               end if;
+               return Costs_By_Decile_Web_IO.To_String( 
+                  tab,
+                  Lookup( "By Decile Type", lang ),
+                  Lookup( "Budgetary effects broken down by decile type (&#8364;)",lang ),
+                  lang,
+                  print_counts,
+                  True );
+            end;
+         when by_age_of_head =>
+            declare
+               tab : Household_Costs_By_Age_band.Table_Type;
+            begin
+               if( do_differences )then
+                  tab := Household_Costs_By_Age_band.Difference( outputs.costs_by_age_band( 1 ), outputs.costs_by_age_band( 2 ));
+               else
+                  tab := outputs.costs_by_age_band( sysno );
+               end if;
+               return Costs_By_Age_band_Web_IO.To_String( 
+                  tab,
+                  Lookup( "By Adult_Age_Band Type", lang ),
+                  Lookup( "Budgetary effects broken down by Adult_Age_Band type (&#8364;)",lang ),
+                  lang,
+                  print_counts,
+                  True );
+            end;
+         when by_occupation_of_head =>
+            declare
+               tab : Household_Costs_By_Occupation.Table_Type;
+            begin
+               if( do_differences )then
+                  tab := Household_Costs_By_Occupation.Difference( outputs.costs_by_occupation( 1 ), outputs.costs_by_occupation( 2 ));
+               else
+                  tab := outputs.costs_by_occupation( sysno );
+               end if;
+               return Costs_By_Occupation_Web_IO.To_String( 
+                  tab,
+                  Lookup( "By Occupation Type", lang ),
+                  Lookup( "Budgetary effects broken down by occupation type (&#8364;)",lang ),
+                  lang,
+                  print_counts,
+                  True );
+            end;
+        end case;
+    end Get_Budget_Table;   
+    
+
+end  EU.BE.Output.Budget_Web_IO;

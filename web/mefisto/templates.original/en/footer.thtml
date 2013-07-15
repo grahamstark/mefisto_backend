@@ -1,0 +1,20 @@
+        <div id="footer">
+
+            <div id="webdesign">
+                created by <a href="http://www.makingchoices.be/"
+                target="_blank">makingChoices.be</a> &bull;
+                powered by <a
+                href="http://www.makingchoices.be/ECMS_CLIENT/pages/showpage.php?id=2">
+                <img alt=""
+                src="mefisto/images/poweredby.gif"
+                height="15" width="73" align="middle"
+                border="0" /></a>
+            </div>
+            <p>
+                Copyright (c) 2010 Flemosi &bull; all rights
+                reserved.
+            </p>
+           
+        </div>
+       
+

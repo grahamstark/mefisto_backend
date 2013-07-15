@@ -1,0 +1,21 @@
+<div id="header">
+        <h1>
+                <img src="/mefisto/images/flemosi.png" alt="" width="200" />
+        </h1>
+        <p>
+        A tool for ex ante evaluation of socio-economic policies in Flanders
+        </p>
+        <div id="langbar">
+         @_LANG-CHOICE_@
+        </div>
+</div><!-- end #header -->
+<div id="menu">
+		<ul>
+			
+		  <div  id="topnav">
+			  <!-- begin menu -->
+
+			  <ul id="csstopmenu"><li class="mainitems current_page_item"><div class="headerlinks"><a href="http://www.flemosi.be/easycms/home">Home</a></div></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/modellen">Simulation models</a></div></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/nieuws">News</a></div></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/agenda">Agenda</a></div></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/downloads">Research & publications</a></div><ul class="submenus" ><li><a href="http://www.flemosi.be/easycms/papers" >Papers</a></li><li><a href="http://www.flemosi.be/easycms/other_publications" >Other publications</a></li></ul></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/about">About FLEMOSI</a></div><ul class="submenus" ><li><a href="http://www.flemosi.be/easycms/about" >About FLEMOSI</a></li><li><a href="http://www.flemosi.be/easycms/doelstellingen" >Objectives</a></li><li><a href="http://www.flemosi.be/easycms/instellingen" >Partner institutions</a></li><li><a href="http://www.flemosi.be/easycms/medewerkers" >People</a></li><li><a href="http://www.flemosi.be/easycms/links" >Links</a></li></ul></li><li class="mainitems "><div class="headerlinks"><a href="http://www.flemosi.be/easycms/contacteerons">Contact</a></div></li>  </ul>
+
+			  </div><script type="text/javascript"></script>		</ul>
+	</div>

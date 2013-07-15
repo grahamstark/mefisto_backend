@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_SEP_@@_LANG_@@_SEP_@header.thtml "@_PAGE-TITLE_@"
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_SEP_@header_includes.thtml 
+
+</head>
+<body>
+<div id="wrapper">
+
+<form action="@_URI_@" method="post" id="mainform" name="mainform">
+       <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+                
+                @@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@main_menu.thtml 
+                
+    <div id="page">
+      
+       <div id="page-bgtop">
+           <div id="page-bgbtm"> 
+               <div id="content">
+      
+                @_MODEL-MENU_@
+
+               @@IF@@ @_JOB-IS-RUNNING_@        
+                 <div class='statusDiv' id='progress'>        
+                        @@INCLUDE@@ progress_bar.thtml        
+                </div>
+                @@END_IF@@
+                         <table class='inputtable' width='100%'>
+                              <tbody>
+                              <tr >
+                                   <td colspan='2' align='center'>
+                                   @_MAIN-ERROR-MESSAGE_@
+                                   </td>
+                              </tr> 
+                              <tr>
+                                   <td colspan='3' align='center' >
+                                   <h2>@_HEADER_@
+                                   <a href='help' onclick='ExampleWindow( this.href ); return false;' class='help_link'><img src='/mefisto/images/java_graphs/general/Help24.gif' 
+                                      class='help_link' alt='help'/></a>
+                                   </h2>
+                                   </td>
+                              </tr>
+                               <tr>
+                                  <td></td>
+                                   <td width='70%' align='left'>
+                                     <table width='90%'>
+                                             @@TABLE@@
+                                             
+                                                 @_INPUT-CELL_@
+                                             
+                                             @@END_TABLE@@
+                                     </table>
+                                   </td>
+                                   <td id='infobox' class='infobox' width='30%'>
+                                   <h3>@_INFORMATION_@</h3>
+                                   <div id='infotext'></div>
+                                   </td>
+                              </tr>
+                              <tr >
+                                  <td></td>
+                                   <td colspan='2' align='center'>
+                                        @_MAIN-ERROR-MESSAGE_@
+                                        
+                                        @@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@submit.thtml
+                                   </td>
+                              </tr>
+                              </tbody>
+                         </table>
+                   </div>
+                   </div>
+          </div> <!-- content -->
+   </div> <!-- page -->
+           
+
+    <div style="clear: both;">&nbsp;</div>
+    
+    <input type='hidden' name='which_section' id='which_section' value="parameters_page" /> 
+    <input type='hidden' name='which_page' id='which_page' value="@_WHICH_PAGE_@" /> 
+  </form>
+</div> <!-- wrapper -->
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@footer.thtml
+
+</body>
+</html>

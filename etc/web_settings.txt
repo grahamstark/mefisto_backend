@@ -1,0 +1,16 @@
+physical_root=/home/graham_s/VirtualWorlds/projects/mefisto/backend/ada/;
+mefisto_root=/mefisto/;
+motyff_root=/motyff/;
+log_file_dir=log/;
+work_dir=tmp;
+template_components_path=/web/mefisto/templates/;
+port=9093;
+charts_driver_script=???;
+language_components_path=etc/lang;
+dir_separator=/;
+xml_file=etc/be_mefisto_for_leuven.xml;
+charts_url=http://projectsvr.virtual-worlds-research.com/mfplot/plotter;
+first_mini_port=20000;
+num_mini_servers=15;
+mini_url=projectsvr.virtual-worlds-research.com;
+

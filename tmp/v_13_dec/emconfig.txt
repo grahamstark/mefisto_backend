@@ -1,0 +1,15 @@
+ERRLOG_FILE	"C:\Users\Office\Documents\My files\Werk\EUROMOD\Model\Output\201112071339_EMErrLog.txt"
+LOG_WARNINGS	yes
+EMVERSION	Version: F4.15
+PARAMPATH	"C:\Users\Office\Documents\My files\Werk\EUROMOD\Model\__F4.15 (Flemosi 2010)\param\txt\"
+OUTPUTPATH	"C:\Users\Office\Documents\My files\Werk\EUROMOD\Model\Output\"
+DATAPATH	"C:\Users\Office\Documents\My files\Werk\EUROMOD\Model\Datasets\"
+DATASETNAME	BE_2008_b4
+HEADER_DATE	201112071339
+OUTFILE_DATE	-
+LOG_RUNTIME	no
+LAST_RUN	yes
+DECSIGN_PARAM	.
+CONTROL	control_be.txt
+SPINE	spine_be.txt
+SYSTEM	BE_2010

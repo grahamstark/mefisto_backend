@@ -1,0 +1,199 @@
+<div id='quickie_div'>
+
+<h3 style='text-align:center'>Mefisto Light: Quick Changes Page</h3>
+
+
+
+<script type="text/javascript">
+
+   updater = new $.PeriodicalUpdater(
+                       '/mefisto/progress/',
+                       {
+                               method: 'post', // method; get or post
+                               data: '', // array of values to be passed to the page - e.g. {name: "John", greeting: "hello"}
+                               minTimeout: 1000, // starting value for the timeout in milliseconds
+                               maxTimeout: 8000, // maximum length of time between requests
+                               multiplier: 2, // the amount to expand the timeout by if the response hasn't changed (up to maxTimeout)
+                               type: 'html',  // response type - text, xml, json, etc. See $.ajax config options
+                               maxCalls: 0, // maximum number of calls. 0 = no limit.
+                               autoStop: 0 // automatically stop requests after this many returns of the same data. 0 = disabled.
+                       },
+                       function(remoteData, success, xhr, handle) { // Process the new data (only called when there was a change)
+                               $( '#progress_indicator' ).html( remoteData );
+                       });
+</script>
+
+<div id='progress_indicator' class='statusDiv' ></div>
+
+
+        <p>&nbsp;</p>
+
+
+<form action="/mefisto/light_page/" method="post" id="flat-rate-form" name="flat-rate-form" class='jqtransform lightform'>
+        <h3>Flat tax proposal</h3>
+               <input type='hidden' name='random_string' value="947518141" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='flat_tax' />
+               <div class='rowElem'>
+                       <label for='rate-input'>Unique Tax Rate</label>&nbsp;<select name='base_rate' id='base_rate'>
+<option value='v0' >0.00</option>
+<option value='v1' >1.00</option>
+<option value='v5' >5.00</option>
+<option value='v6' >6.00</option>
+<option value='v7' >7.00</option>
+<option value='v8' >8.00</option>
+<option value='v9' >9.00</option>
+<option value='v10' >10.00</option>
+<option value='v11' >11.00</option>
+<option value='v12' >12.00</option>
+<option value='v14' >14.00</option>
+<option value='v15' >15.00</option>
+<option value='v16' >16.00</option>
+<option value='v18' >18.00</option>
+<option value='v20'  selected='selected' >20.00</option>
+<option value='v25' >25.00</option>
+<option value='v30' >30.00</option>
+<option value='v40' >40.00</option>
+<option value='v50' >50.00</option>
+</select>
+               </div>
+               <div class='rowElem'>
+                       <label for='exemption-input'>Exemption</label>&nbsp;<select name='exemption' id='exemption'>
+<option value='v10000' >10,000.00</option>
+<option value='v12000'  selected='selected' >12,000.00</option>
+<option value='v12500' >12,500.00</option>
+<option value='v13000' >13,000.00</option>
+<option value='v15000' >15,000.00</option>
+<option value='v30000' >30,000.00</option>
+<option value='v40000' >40,000.00</option>
+<option value='v50000' >50,000.00</option>
+</select>
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="Save"
+                                 onclick='saveQuickie( "flat-rate" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="Run"
+                                  disabled='disabled' 
+                                 onclick='runQuickie( "flat-rate" );return false'
+                                 type="submit" />
+               </div>
+</form>
+
+<form action="/mefisto/light_page/" method="post" id="rtc-form" name="rtc-form" class='jqtransform lightform'>
+      <h3>Basic Tax Credit</h3>
+               <input type='hidden' name='random_string' value="947518141" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='regional_tax_credit' />
+               <div class='rowElem'>
+                        <label for='exemption-input'>Regional Tax Credit</label>&nbsp;<select name='basic_tax_credit' id='basic_tax_credit'>
+<option value='v100' >100.00</option>
+<option value='v200' >200.00</option>
+<option value='v300' >300.00</option>
+<option value='v500' >500.00</option>
+<option value='v800' >800.00</option>
+<option value='v1000'  selected='selected' >1,000.00</option>
+<option value='v1100' >1,100.00</option>
+<option value='v1200' >1,200.00</option>
+<option value='v1500' >1,500.00</option>
+<option value='v2000' >2,000.00</option>
+</select>
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="Save"
+                                 onclick='saveQuickie( "rtc" );return false'
+                                 type="submit" />
+                       <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="Run"
+                                  disabled='disabled' 
+                                 onclick='runQuickie( "rtc" );return false'
+                                 type="submit" />
+               </div>
+</form>
+
+<form action="/mefisto/light_page/" method="post" id="cc-form" name="cc-form" class='jqtransform lightform'>
+      <h3>Child Support</h3>
+               <input type='hidden' name='random_string' value="947518141" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='child_care' />
+               <div class='rowElem'>
+                       <label for='exemption-input'>Base amount of child care</label>&nbsp;<select name='basic_amount' id='basic_amount'>
+<option value='v50' >50.00</option>
+<option value='v100' >100.00</option>
+<option value='v150' >150.00</option>
+<option value='v200' >200.00</option>
+<option value='v300'  selected='selected' >300.00</option>
+<option value='v500' >500.00</option>
+<option value='v800' >800.00</option>
+<option value='v1000' >1,000.00</option>
+</select>
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="Save"
+                                 onclick='saveQuickie( "cc" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="Run"
+                                  disabled='disabled' 
+                                 onclick='runQuickie( "cc" );return false'
+                                 type="submit" />
+                </div>
+</form>
+
+<form action="/mefisto/light_page/" method="post" id="mip-form" name="mip-form" class='jqtransform lightform'>
+      <h3>Minimum income protection</h3>
+               <input type='hidden' name='random_string' value="947518141" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='minimum_income_protection' />
+               <div class='rowElem'>
+                        <label for='exemption-input'>Base Amount</label>&nbsp;<select name='income_support_per_single_person' id='income_support_per_single_person'>
+<option value='v100' >100.00</option>
+<option value='v200' >200.00</option>
+<option value='v800' >800.00</option>
+<option value='v1000' >1,000.00</option>
+<option value='v1200' >1,200.00</option>
+<option value='v1500' >1,500.00</option>
+<option value='v1725'  selected='selected' >1,725.00</option>
+<option value='v2000' >2,000.00</option>
+<option value='v2200' >2,200.00</option>
+<option value='v2400' >2,400.00</option>
+<option value='v3000' >3,000.00</option>
+</select>
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="Save"
+                                 onclick='saveQuickie( "mip" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="Run"
+                                  disabled='disabled' 
+                                 onclick='runQuickie( "mip" );return false'
+                                 type="submit" />
+               </div>
+
+</form>
+
+<div style="clear: both;">&nbsp;</div>
+
+</div>

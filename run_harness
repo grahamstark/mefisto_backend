@@ -1,0 +1,3 @@
+#!/bin/sh
+. etc/cleanup_test_users
+bin/eu_harness

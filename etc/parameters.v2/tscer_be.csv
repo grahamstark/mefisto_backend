@@ -1,0 +1,1000 @@
+	BELGIUM	sys_par_name	sys_reserved	sys_first_sys	BE_2005	BE_2006	BE_2007	BE_2008	BE_2009	BE_2010	sys_end_sys		
+		sys_first_par			SIC: employer social insurance contribution								
+		func_Elig	3		on	on	on	on	on	on			
+		elig_cond	4		{yem>0} & !{IsCivilServant}	{yem>0} & !{IsCivilServant}	{yem>0} & !{IsCivilServant}	{yem>0} & !{IsCivilServant}	{yem>0} & !{IsCivilServant}	{yem>0} & !{IsCivilServant}			
+		TAX_UNIT	5		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	6		on	on	on	on	on	on			
+		who_must_be_elig	7		one	one	one	one	one	one			
+		formula	8		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	9		0.0886	0.0886	0.0886	0.0886	0.0886	0.0886			
+		output_var	10		tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s			
+		TAX_UNIT	11		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	12		on	on	on	on	on	on			
+		who_must_be_elig	13		one	one	one	one	one	one			
+		formula	14		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	15		0.038	0.038	0.038	0.038	0.038	0.038			
+		output_var	16		tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s			
+		TAX_UNIT	17		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	18		on	on	on	on	on	on			
+		who_must_be_elig	19		one	one	one	one	one	one			
+		formula	20		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	21		0.0235	0.0235	0.0235	0.0235	0.0235	0.0235			
+		output_var	22		tscerdi_s	tscerdi_s	tscerdi_s	tscerdi_s	tscerdi_s	tscerdi_s			
+		TAX_UNIT	23		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	24		on	on	on	on	on	on			
+		who_must_be_elig	25		one	one	one	one	one	one			
+		formula	26		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	27		0.0168	0.0168	0.0168	0.0161	0.0161	0.0161			
+		output_var	28		tscerui_s	tscerui_s	tscerui_s	tscerui_s	tscerui_s	tscerui_s			
+		TAX_UNIT	29		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	30		on	on	on	on	on	on			
+		who_must_be_elig	31		one	one	one	one	one	one			
+		formula	32		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	33		0.07	0.07	0.07	0.07	0.07	0.07			
+		output_var	34		tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s			
+		TAX_UNIT	35		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	36		on	on	on	on	on	on			
+		who_must_be_elig	37		one	one	one	one	one	one			
+		formula	38		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	39		0.003	0.003	0.003	0.003	0.003	0.003			
+		output_var	40		tscerac_s	tscerac_s	tscerac_s	tscerac_s	tscerac_s	tscerac_s			
+		TAX_UNIT	41		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	42		on	on	on	on	on	on			
+		who_must_be_elig	43		one	one	one	one	one	one			
+		formula	44		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	45		0.0102	0.01	0.01	0.01	0.01	0.01			
+		output_add_var	46		tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s			
+		TAX_UNIT	47		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	48		on	on	on	on	on	on			
+		who_must_be_elig	49		one	one	one	one	one	one			
+		formula	50		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	51		0.0004	0.0004	0.0004	0.0004	0.0006	0.0006			
+		output_var	52		tscered_s	tscered_s	tscered_s	tscered_s	tscered_s	tscered_s			
+		TAX_UNIT	53		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	54		on	on	on	on	on	on			
+		who_must_be_elig	55		one	one	one	one	one	one			
+		formula	56		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	57		0.0005	0.0005	0.0005	0.0005	0.0005	0.0005			
+		output_var	58		tscerir_s	tscerir_s	tscerir_s	tscerir_s	tscerir_s	tscerir_s			
+		TAX_UNIT	59		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	60		on	on	on	on	on	on			
+		who_must_be_elig	61		one	one	one	one	one	one			
+		formula	62		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	63		0.0005	0.0005	0.0005	0.0005	0.0005	0.0005			
+		output_var	64		tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s			
+		TAX_UNIT	65		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	66		on	on	on	on	on	on			
+		who_must_be_elig	67		one	one	one	one	one	one			
+		formula	68		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	69		0.001	0.001	0.001	0.001	0.001	0.001			
+		output_add_var	70		tscerir_s	tscerir_s	tscerir_s	tscerir_s	tscerir_s	tscerir_s			
+		TAX_UNIT	71		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	72		on	on	on	on	on	on			
+		who_must_be_elig	73		one	one	one	one	one	one			
+		formula	74		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	75		0.0749	0.0749	0.0749	0.0749	0.0749	0.0749			
+		output_var	76		tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s			
+		TAX_UNIT	77		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_Elig	78		on	on	on	on	on	on			
+		elig_cond	79		{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}			
+		#1_amount	80		10	10	10	10	10	10			
+		TAX_UNIT	81		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	82		on	on	on	on	on	on			
+		who_must_be_elig	83		one	one	one	one	one	one			
+		formula	84		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	85		0.016	0.016	0.016	0.016	0.016	0.016			
+		output_add_var	86		tscerui_s	tscerui_s	tscerui_s	tscerui_s	tscerui_s	tscerui_s			
+		TAX_UNIT	87		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	88		on	on	on	on	on	on			
+		who_must_be_elig	89		one	one	one	one	one	one			
+		formula	90		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	91		0.0009	0.0009	0.0009	0.0009	0.0009	0.0009			
+		output_add_var	92		tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s			
+		TAX_UNIT	93		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_Elig	94		on	on	on	on	on	on			
+		elig_cond	95		{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1} & {lfs<=amount#2}			
+		#1_amount	96		1	1	1	1	1	1			
+		#2_amount	97		19	19	19	19	19	19			
+		TAX_UNIT	98		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	99		on	on	on	on	on	on			
+		who_must_be_elig	100		one	one	one	one	one	one			
+		formula	101		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	102		0.0025	0.0025	0.0025	0.0014	0.0025	0.0025			
+		output_var	103		tscerei_s	tscerei_s	tscerei_s	tscerei_s	tscerei_s	tscerei_s			
+		TAX_UNIT	104		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	105		on	on	on	on	on	on			
+		who_must_be_elig	106		one	one	one	one	one	one			
+		formula	107		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	108		0.0001	0.0001	0.0001	0.0001	0.0001	0.0001			
+		output_add_var	109		tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s			
+		TAX_UNIT	110		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_Elig	111		on	on	on	on	on	on			
+		elig_cond	112		{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}	{yem>0} & !{IsCivilServant} & {lfs>=amount#1}			
+		#1_amount	113		20	20	20	20	20	20			
+		TAX_UNIT	114		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	115		on	on	on	on	on	on			
+		who_must_be_elig	116		one	one	one	one	one	one			
+		formula	117		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	118		0.0029	0.0029	0.0029	0.0015	0.0029	0.0029			
+		output_add_var	119		tscerei_s	tscerei_s	tscerei_s	tscerei_s	tscerei_s	tscerei_s			
+		TAX_UNIT	120		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	121		on	on	on	on	on	on			
+		who_must_be_elig	122		one	one	one	one	one	one			
+		formula	123		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	124		0.0001	0.0002	0.0002	0.0001	0.0001	0.0001			
+		output_add_var	125		tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s			
+		TAX_UNIT	126		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_Elig	127		on	on	on	on	on	on			
+		elig_cond	128		{yem>0} & {IsBluecoll} & !{IsCivilServant}	{yem>0} & {IsBluecoll} & !{IsCivilServant}	{yem>0} & {IsBluecoll} & !{IsCivilServant}	{yem>0} & {IsBluecoll} & !{IsCivilServant}	{yem>0} & {IsBluecoll} & !{IsCivilServant}	{yem>0} & {IsBluecoll} & !{IsCivilServant}			
+		TAX_UNIT	129		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	130		on	on	on	on	on	on			
+		who_must_be_elig	131		one	one	one	one	one	one			
+		formula	132		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	133		0.06	0.06	0.06	0.06	0.06	0.06			
+		output_var	134		tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s			
+		TAX_UNIT	135		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	136		off	off	off	off	off	off			
+		who_must_be_elig	137		one	one	one	one	one	one			
+		formula	138		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	139		0.1027	0.1027	0.1027	0.1027	0.1027	0.1027			
+		output_add_var	140		tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s	tscerhe_s			
+		TAX_UNIT	141		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_Elig	142		on	on	on	on	on	on			
+		elig_cond	143		{IsCivilServant}	{IsCivilServant}	{IsCivilServant}	{IsCivilServant}	{IsCivilServant}	{IsCivilServant}			
+		TAX_UNIT	144		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	145		off	off	off	off	off	off			
+		who_must_be_elig	146		one	one	one	one	one	one			
+		formula	147		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	148		0.2	0.2	0.2	0.2	0.2	0.2			
+		output_add_var	149		tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s	tscerpi_s			
+		TAX_UNIT	150		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	151		off	off	off	off	off	off			
+		who_must_be_elig	152		one	one	one	one	one	one			
+		formula	153		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	154		0.038	0.038	0.038	0.038	0.038	0.038			
+		output_add_var	155		tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s			
+		TAX_UNIT	156		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	157		off	off	off	off	off	off			
+		who_must_be_elig	158		one	one	one	one	one	one			
+		formula	159		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	160		0.0525	0.0525	0.0525	0.0525	0.0525	0.0525			
+		output_add_var	161		tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s	tscerfa_s			
+		TAX_UNIT	162		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	163		off	off	off	off	off	off			
+		who_must_be_elig	164		one	one	one	one	one	one			
+		formula	165		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	166		0.0017	0.0017	0.0017	0.0017	0.0017	0.0017			
+		output_add_var	167		tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s			
+		TAX_UNIT	168		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	169		off	off	off	off	off	off			
+		who_must_be_elig	170		one	one	one	one	one	one			
+		formula	171		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	172		0.0748	0.0748	0.0748	0.0748	0.0748	0.0748			
+		output_add_var	173		tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s	tscersf_s			
+		TAX_UNIT	174		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	175		off	off	off	off	off	off			
+		who_must_be_elig	176		one	one	one	one	one	one			
+		formula	177		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	178		0.0005	0.0005	0.0005	0.0005	0.0005	0.0005			
+		output_add_var	179		tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s	tscerdc_s			
+		TAX_UNIT	180		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	181		on	on	on	on	on	on			
+		who_must_be_elig	182		one	one	one	one	one	one			
+		formula	183		yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1	yem*amount#1			
+		#1_amount	184		0.038	0.038	0.038	0.038	0.038	0.038			
+		output_add_var	185		tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s	tscerhl_s			
+		TAX_UNIT	186		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	187		on	on	on	on	on	on			
+		formula	188		tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s	tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s	tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s	tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s	tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s	tscerpi_s+tscerhl_s+tscerdi_s+tscerui_s+tscerfa_s+tscerac_s+tscered_s+tscerir_s+tscerdc_s+tscersf_s+tscerei_s			
+		output_var	189		tscer_s	tscer_s	tscer_s	tscer_s	tscer_s	tscer_s			
+		TAX_UNIT	190		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_BenCalc	191		on	on	on	on	on	on			
+		base_amount	192		400#q	400#q	400#q	400#q	400#q	400#q			
+		comp1_cond	193		{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>=amount#1} & {yemeq_s<=amount#2}			
+		comp1_perElig	194		base_amount	base_amount	base_amount	base_amount	base_amount	base_amount			
+		comp2_cond	195		{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}	{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}	{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}	{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}	{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}	{yem>0} & !{IsCivilServant} & {yemeq_s<amount#1}			
+		comp2_perElig	196		base_amount+amount#3*(amount#1-yemeq_s)	base_amount+amount#3*(amount#1-yemeq_s)	base_amount+amount#3*(amount#1-yemeq_s)	base_amount+amount#3*(amount#1-yemeq_s)	base_amount+amount#3*(amount#1-yemeq_s)	base_amount+amount#3*(amount#1-yemeq_s)			
+		comp3_cond	197		{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}	{yem>0} & !{IsCivilServant} & {yemeq_s>amount#2}			
+		comp3_perElig	198		base_amount+amount#4*(yemeq_s-amount#2)	base_amount+amount#4*(yemeq_s-amount#2)	base_amount+amount#4*(yemeq_s-amount#2)	base_amount+amount#4*(yemeq_s-amount#2)	base_amount+amount#4*(yemeq_s-amount#2)	base_amount+amount#4*(yemeq_s-amount#2)			
+		#1_amount	199		5870.71#q	5870.71#q	5870.71#q	5870.71#q	5870.71#q	5870.71#q			
+		#2_amount	200		12000#q	12000#q	12000#q	12000#q	12000#q	12000#q			
+		#3_amount	201		0.1444	0.1444	0.1444	0.1444	0.162	0.162			
+		#4_amount	202		0.06	0.06	0.06	0.06	0.06	0.06			
+		output_var	203		sin02_s	sin02_s	sin02_s	sin02_s	sin02_s	sin02_s			
+		TAX_UNIT	204		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_BenCalc	205		on	on	on	on	on	on			
+		comp1_cond	206		{lhw>amount#1}	{lhw>amount#1}	{lhw>amount#1}	{lhw>amount#1}	{lhw>amount#1}	{lhw>amount#1}			
+		comp1_perElig	207		1	1	1	1	1	1			
+		comp2_cond	208		{lhw<=amount#1}	{lhw<=amount#1}	{lhw<=amount#1}	{lhw<=amount#1}	{lhw<=amount#1}	{lhw<=amount#1}			
+		comp2_perElig	209		lhw/amount#1	lhw/amount#1	lhw/amount#1	lhw/amount#1	lhw/amount#1	lhw/amount#1			
+		#1_amount	210		38	38	38	38	38	38			
+		output_var	211		sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	sin03_s			
+		TAX_UNIT	212		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_BenCalc	213		on	on	on	on	on	on			
+		comp1_cond	214		{sin03_s<amount#1}	{sin03_s<amount#1}	{sin03_s<amount#1}	{sin03_s<amount#1}	{sin03_s<amount#1}	{sin03_s<amount#1}			
+		comp1_perElig	215		0	0	0	0	0	0			
+		comp2_cond	216		{sin03_s>=amount#1} & {sin03_s<=amount#2}	{sin03_s>=amount#1} & {sin03_s<=amount#2}	{sin03_s>=amount#1} & {sin03_s<=amount#2}	{sin03_s>=amount#1} & {sin03_s<=amount#2}	{sin03_s>=amount#1} & {sin03_s<=amount#2}	{sin03_s>=amount#1} & {sin03_s<=amount#2}			
+		comp2_perElig	217		1.25	1.25	1.25	1.25	1.25	1.25			
+		comp3_cond	218		{sin03_s>amount#2}	{sin03_s>amount#2}	{sin03_s>amount#2}	{sin03_s>amount#2}	{sin03_s>amount#2}	{sin03_s>amount#2}			
+		comp3_perElig	219		1/sin03_s	1/sin03_s	1/sin03_s	1/sin03_s	1/sin03_s	1/sin03_s			
+		#1_amount	220		0.275	0.275	0.275	0.275	0.275	0.275			
+		#2_amount	221		0.8	0.8	0.8	0.8	0.8	0.8			
+		output_var	222		sin04_s	sin04_s	sin04_s	sin04_s	sin04_s	sin04_s			
+		TAX_UNIT	223		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		func_ArithOp	224		on	on	on	on	on	on			
+		formula	225		sin02_s*sin03_s*sin04_s	sin02_s*sin03_s*sin04_s	sin02_s*sin03_s*sin04_s	sin02_s*sin03_s*sin04_s	sin02_s*sin03_s*sin04_s	sin02_s*sin03_s*sin04_s			
+		uplim	226		tscer_s	tscer_s	tscer_s	tscer_s	tscer_s	tscer_s			
+		output_var	227		tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s	tscerrd_s			
+		TAX_UNIT	228		tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be			
+		sys_end_par											
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													
+													

@@ -1,0 +1,279 @@
+with Ada.Containers.Hashed_Sets;
+
+with Costs_Tabulator.Web_IO;
+with EU.Web.Settings;
+with Google_Chart_Constants;
+with Inequality_Generator.Web_IO;
+with Poverty_Tabulator.Web_IO;
+with Poverty_Tabulator;
+with Tabulator.Web_IO;
+with Templates_Parser;
+with Web_Utils;
+with EU.BE.Main_Menu;
+with General_Chart_Constants;
+
+package body EU.BE.Output.Inequality_Web_IO is
+   
+   use Translations;
+   use General_Chart_Constants;
+   
+   package Be_Inequality_Web_IO is new 
+      Be_Inequality.Web_IO;
+   
+   package euws renames EU.Web.Settings; 
+   
+   function Get_Summary(
+      outputs       : Outputs_Rec; 
+      lang          : Languages          := Languages'First ) return Unbounded_String is
+      s : Unbounded_String;
+   use Templates_Parser;
+       translations : Translate_Set;
+       chart        : Unbounded_String;
+   begin
+       chart := Be_Inequality_Web_IO.Make_Standard_Chart(
+                  euws.Charts_URL,
+                  outputs.ineq( 1 ).lorenz, 
+                  outputs.ineq( 2 ).lorenz, 
+                  "Lorenz Curve",
+                  medium,
+                  lang );
+                
+      Insert( translations, Assoc( "TITLE", Lookup( "Inequality", lang )));
+      Insert( translations, Assoc( "CHART", chart ));
+      Insert( translations, Assoc( "GINI-CHANGE-STR", Lookup( "Change In Gini", lang )));
+      Insert( translations, Assoc( "GINI-CHANGE", 
+         Web_Format( outputs.ineq( 2 ).inequality_measures( be_inequality.gini ) - 
+                     outputs.ineq( 1 ).inequality_measures( be_inequality.gini ), lang )));
+      
+      return Web_Utils.Parse_Template( TuS( euws.template_components_path ) & 
+         euws.Dir_Separator & "inequality_summary", translations );      
+   end Get_Summary;
+      
+   function Get_Inequality_Chart_Grid(
+      outputs      : Outputs_Rec; 
+      breakdown    : Breakdown_Target   := no_breakdown;
+      lang         : Languages := Languages'First) return Unbounded_String is
+     use Templates_Parser;
+         translations : Translate_Set;
+         ts           : Unbounded_String;
+         title        : Unbounded_String;
+         thumb_list   : Vector_Tag;
+   begin
+      case breakdown is
+         when by_tenure =>
+            for tt in Tenure_Type loop
+               if( Natural( outputs.ineq_by_tenure( 1 )( tt ).lorenz.Length ) > 0 )then
+                  title := TuS( "" ) & Lookup( "Income Distribution Effects", lang ) & "nbsp;:nbsp;"
+                    & Lookup( Censor_String( Tenure_Type'Image( tt )), lang )
+                    & " (" & Lookup( "Lorenz Curves", lang ) & ")";
+                  ts := TuS( "         <li>" ) & LINE_BREAK;
+                  ts := ts & "              <a class='thumb' href='";
+                  ts := ts & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_tenure( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_tenure( 2 )( tt ).lorenz,
+                     Censor_String( Tenure_Type'Image( tt )),
+                     thumb,
+                     lang );
+                  ts := ts & "' title='" & title & "' >" & LINE_BREAK;  
+                  ts := ts & "<img src='" & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_tenure( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_tenure( 2 )( tt ).lorenz, 
+                     Censor_String( Tenure_Type'Image( tt )),
+                     large,
+                     lang );
+                  ts := ts & "' alt='" & title & "' />" & LINE_BREAK;  
+                  ts := ts & "            </a>" & LINE_BREAK;
+                  ts := ts & "         </li>" & LINE_BREAK;
+                  thumb_list := thumb_list & ts;
+               end if;
+            end loop;
+         when by_decile =>
+            for dec in Deciles loop
+               if( Natural( outputs.ineq_by_decile( 1 )( dec ).lorenz.Length ) > 0 )then
+                  title := TuS( "" ) & Lookup( "Income Distribution Effects", lang ) & "nbsp;:nbsp;"
+                    & Lookup( Censor_String( Deciles'Image( dec )), lang )
+                    & " (" & Lookup( "Lorenz Curves", lang ) & ")";
+                  ts := TuS( "         <li>" ) & LINE_BREAK;
+                  ts := ts & "              <a class='thumb' href='";
+                  ts := ts & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_decile( 1 )( dec ).lorenz, 
+                     outputs.ineq_by_decile( 2 )( dec ).lorenz,
+                     Censor_String( Deciles'Image( dec )),
+                     thumb,
+                     lang );
+                  ts := ts & "' title='" & title & "' >" & LINE_BREAK;  
+                  ts := ts & "<img src='" & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_decile( 1 )( dec ).lorenz, 
+                     outputs.ineq_by_decile( 2 )( dec ).lorenz, 
+                     Censor_String( Deciles'Image( dec )),
+                     large,
+                     lang );
+                  ts := ts & "' alt='" & title & "' />" & LINE_BREAK;  
+                  ts := ts & "            </a>" & LINE_BREAK;
+                  ts := ts & "         </li>" & LINE_BREAK;
+                  thumb_list := thumb_list & ts;
+               end if;
+            end loop;
+         when by_age_of_head =>
+            for tt in Adult_Age_Band loop
+               if( Natural( outputs.ineq_by_age_band( 1 )( tt ).lorenz.Length ) > 0 )then
+                  title := TuS( "" ) & Lookup( "Income Distribution Effects", lang ) & "nbsp;:nbsp;"
+                    & Lookup( Censor_String( Adult_Age_Band'Image( tt )), lang )
+                    & " (" & Lookup( "Lorenz Curves", lang ) & ")";
+                  ts := TuS( "         <li>" ) & LINE_BREAK;
+                  ts := ts & "              <a class='thumb' href='";
+                  ts := ts & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_age_band( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_age_band( 2 )( tt ).lorenz,
+                     Censor_String( Adult_Age_Band'Image( tt )),
+                     thumb,
+                     lang );
+                  ts := ts & "' title='" & title & "' >" & LINE_BREAK;  
+                  ts := ts & "<img src='" & Be_Inequality_Web_IO.Make_Standard_Chart(
+                     euws.Charts_URL,
+                     outputs.ineq_by_age_band( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_age_band( 2 )( tt ).lorenz, 
+                     Censor_String( Adult_Age_Band'Image( tt )),
+                     large,
+                     lang );
+                  ts := ts & "' alt='" & title & "' />" & LINE_BREAK;  
+                  ts := ts & "            </a>" & LINE_BREAK;
+                  ts := ts & "         </li>" & LINE_BREAK;
+                  thumb_list := thumb_list & ts;
+               end if;
+            end loop;
+         when by_occupation_of_head =>
+            for tt in Adult_Age_Band loop
+               if( Natural( outputs.ineq_by_age_band( 1 )( tt ).lorenz.Length ) > 0 )then
+                  title := TuS( "" ) & Lookup( "Income Distribution Effects", lang ) & "nbsp;:nbsp;"
+                    & Lookup( Censor_String( Adult_Age_Band'Image( tt )), lang )
+                    & " (" & Lookup( "Lorenz Curves", lang ) & ")";
+                  ts := TuS( "         <li>" ) & LINE_BREAK;
+                  ts := ts & "              <a class='thumb' href='";
+                  ts := ts & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_age_band( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_age_band( 2 )( tt ).lorenz,
+                     Censor_String( Adult_Age_Band'Image( tt )),
+                     thumb,
+                     lang );
+                  ts := ts & "' title='" & title & "' >" & LINE_BREAK;  
+                  ts := ts & "<img src='" & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                     euws.Charts_URL,
+                     outputs.ineq_by_age_band( 1 )( tt ).lorenz, 
+                     outputs.ineq_by_age_band( 2 )( tt ).lorenz, 
+                     Censor_String( Adult_Age_Band'Image( tt )),
+                     large,
+                     lang );
+                  ts := ts & "' alt='" & title & "' />" & LINE_BREAK;  
+                  ts := ts & "            </a>" & LINE_BREAK;
+                  ts := ts & "         </li>" & LINE_BREAK;
+                  thumb_list := thumb_list & ts;
+               end if;
+            end loop;
+              
+         when no_breakdown =>
+               title := TuS( "" ) & Lookup( "Income Distribution Effects", lang )
+                 & Lookup( "Whole Population", lang )
+                 & "(" & Lookup( "Lorenz Curve", lang )
+                 & "&nbsp;%)";
+               ts := ts & "<img src='" & Be_Inequality_Web_IO.Make_Standard_Chart( 
+                  euws.Charts_URL,
+                  outputs.ineq( 1 ).lorenz, 
+                  outputs.ineq( 2 ).lorenz, 
+                  "Whole Population",
+                  large,
+                  lang );
+               ts := ts & "' alt='" & title & "' />" & LINE_BREAK;  
+     end case;
+     Insert( translations, Assoc( "INTRO_TEXT", Lookup( "gini_explanation", lang )));
+     Insert( translations, Assoc( "ROOT", euws.Mefisto_Root ));
+     if( breakdown /= no_breakdown )then
+        Insert( translations, Assoc( "THUMBNAILS", thumb_list ));
+        return TuS( Web_Utils.Parse_Template( 
+            EU.Web.Settings.template_components_path & 
+            EU.Web.Settings.dir_separator & "output_gallery", 
+            translations ));      
+     else
+        Insert( translations, Assoc( "LORENZ", ts ));
+        return TuS( Web_Utils.Parse_Template( 
+            EU.Web.Settings.template_components_path & 
+            EU.Web.Settings.dir_separator & "inequality_output_main", 
+            translations ));         
+     end if;
+   end Get_Inequality_Chart_Grid;
+      
+   function Get_Inequality_Table(
+      outputs      : Outputs_Rec; 
+      breakdown    : Breakdown_Target   := no_breakdown;
+      lang         : Languages := Languages'First ) return Unbounded_String is
+         ts : Unbounded_String;
+   begin
+      if( breakdown = no_breakdown )then
+         ts := ts & "   <h3>" & Lookup( "Aggregate Gini Coefficient", lang ) & "</h3>" & LINE_BREAK;
+      end if;
+      ts := ts & "<table class='datatable' cellpadding='8' >" & LINE_BREAK;
+      
+      if( breakdown /= no_breakdown )then
+         ts := ts & "   <caption>" & Lookup( "Gini Coefficients by ", lang ) & Lookup( censor_string( Breakdown_Target'Image( breakdown )), lang ) & "</caption>" & LINE_BREAK;
+      end if;
+      ts := ts & "   <thead>" & LINE_BREAK;
+      ts := ts & "      <tr><th></th><th>" & Lookup( "Pre", lang ) & "</th><th>" & Lookup( "Post", lang ) & "</th></tr>" & LINE_BREAK;
+      ts := ts & "   </thead>" & LINE_BREAK;
+
+      ts := ts & "   <tbody>" & LINE_BREAK;
+      case breakdown is
+         when by_tenure =>
+            for tt in Tenure_Type loop
+               ts := ts & "      " & Be_Inequality_Web_IO.To_String( 
+                  outputs.ineq_by_tenure( 1 )( tt ).inequality_measures, 
+                  outputs.ineq_by_tenure( 2 )( tt ).inequality_measures, 
+                  Censor_String( Tenure_Type'Image( tt )), 
+                  lang );       
+            end loop;
+         when by_decile =>
+            for tt in Deciles loop
+               ts := ts & "      " & 
+                  Be_Inequality_Web_IO.To_String( 
+                     outputs.ineq_by_decile( 1 )( tt ).inequality_measures, 
+                     outputs.ineq_by_decile( 2 )( tt ).inequality_measures, 
+                     Censor_String( Deciles'Image( tt )), 
+                  lang );       
+            end loop;
+         when by_age_of_head =>
+            for tt in Adult_Age_Band loop
+               ts := ts & "      " & 
+                  Be_Inequality_Web_IO.To_String( 
+                     outputs.ineq_by_age_band( 1 )( tt ).inequality_measures, 
+                     outputs.ineq_by_age_band( 2 )( tt ).inequality_measures, 
+                     Censor_String( Adult_Age_Band'Image( tt )), 
+                  lang );       
+            end loop;
+         when by_occupation_of_head =>
+            for tt in Occupation_Isco_1_Digit loop
+               ts := ts & "      " & 
+                  Be_Inequality_Web_IO.To_String( 
+                     outputs.ineq_by_occupation( 1 )( tt ).inequality_measures, 
+                     outputs.ineq_by_occupation( 2 )( tt ).inequality_measures, 
+                     Censor_String( Occupation_Isco_1_Digit'Image( tt )), 
+                  lang );       
+            end loop;
+         when no_breakdown =>
+               ts := ts  & "      " & Be_Inequality_Web_IO.To_String( 
+                  outputs.ineq( 1 ).inequality_measures, 
+                  outputs.ineq( 2 ).inequality_measures, 
+                  Lookup( "Overall", lang ), 
+                  lang ); 
+      end case;
+      ts := ts & "   </tbody>" & LINE_BREAK;
+      ts := ts & "</table>" & LINE_BREAK;
+      return ts;
+   end Get_Inequality_Table;
+   
+
+end  EU.BE.Output.Inequality_Web_IO;

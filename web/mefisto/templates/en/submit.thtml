@@ -1,0 +1,33 @@
+           
+            <div class="rowElem formbuttons">
+                    <input @_DISABLE-RUN_@ id="run_submit_button" name="run" value="Run" onmouseover="return overlibConditional( 'Select this to run the model' );" onmouseout="return nd();" type="submit">
+                    <input id="save_button" name="save" value="Save" onmouseover="return overlibConditional( 'Save Your Changes' );" onmouseout="return nd();" type="submit">
+                    <input name="reset" value="Reset shown" onmouseover="return overlibConditional( 'Select this button to reset your chosen items.' );" onmouseout="return nd();" type="submit">
+                    <input name="reset" value="Reset all" onmouseover="return overlibConditional( 'Select this button to reset your chosen items.' );" onmouseout="return nd();" type="submit">
+                </div>
+            </div>
+            
+            <div id="informationblock" class="designreformblock" style="width: 230px; height:340px;">
+                <h3>Information</h3>
+
+            </div>
+            
+              <div id="uprateform" class="designreformblock" style="width: 230px; height:143px;">
+                <h3>Uprate</h3>
+                    <div class="rowElem">
+                        <label for="uprate_amount">Uprate:</label>
+                        <input onmouseover="return overlibConditional( 'uprate_uprateAmount_label' );" onmouseout="return nd();" size="6" name="uprate_amount" value="0.0" type="text">
+                        <br/>
+                        @_UPRATE-ERROR_@
+                    </div>
+                    <div class="rowElem formbuttons">
+
+                        <input name="reset" value="Uprate shown" onmouseover="return overlibConditional( 'Select this button to reset your chosen items.' );" onmouseout="return nd();" type="submit">
+                        <input name="reset" value="Uprate all" onmouseover="return overlibConditional( 'Select this button to reset your chosen items.' );" onmouseout="return nd();" type="submit">
+                    </div>
+                    <input name="which_section" id="which_section" value="parameters_page" type="hidden">
+        
+            </div>
+            
+            
+

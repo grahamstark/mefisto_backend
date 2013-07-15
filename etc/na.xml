@@ -1,0 +1,1400 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE ParameterSystem SYSTEM "/home/graham_s/VirtualWorlds/projects/tax_benefit_model_components/etc/parameters/dtds/parameter_system.dtd">
+<ParameterSystem name='na' instanceName='na'>
+      <Description type='description' lang='en'>
+             The Namíbian Tax and Benefit System. 
+      </Description>
+      <Description type='label' lang='en'>
+             Namíbia 
+      </Description>
+      <Description type='description' lang='fr'>
+             Système d&apos;impôts et d&apos;allocation en Namibie. 
+      </Description>
+      <Description type='label' lang='fr'>
+             Namibie 
+      </Description>
+      <Description type='label' lang='pt'>
+             Namíbia 
+      </Description>
+      <ParameterSystem name='quickies' instanceName='quickies' logicalType='quickies'>
+            
+            <Description type='description' lang='en'>
+                   This page allows you to make quick changes to different
+                  categories of policy variables in the model. You can make
+                  additional changes to policy variables by going directly to
+                  other pages under “Design Reform” 
+            </Description>
+            <Description type='description' lang='fr'>
+                   Cette page vous permet de faire des changements rapides sur
+                  les différentes catégories de variables de politiques du
+                  modèle. Vous pouvez faire des changements supplémentaires en
+                  allant directement à  «Créer la réforme» 
+            </Description>
+            <Description type='label' lang='en'>
+                   Quick changes 
+            </Description>
+            <Description type='label' lang='fr'>
+                   Changements rapides 
+            </Description>
+            <Parameter instanceName='standardrateofvat' units='percent' logicalType='rate' type='real'>
+                  <Description type='description' lang='en'>
+                         Change the standard Rate of VAT to this. 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Change the standard Rate of VAT to this. 
+                  </Description>
+                  <Description type='label' lang='en'>
+                         Change the standard Rate of VAT to this. 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Changer le taux standard de TVA à celui-ci. 
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Changer le taux standard de TVA àcelui-ci. 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Changer le taux standard de TVA àcelui-ci. 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+                  <EditInfo prec='1' max='100' min='0'/>
+                  <Description type='description' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Altere a taxa do IVA por defeito para esta. 
+                  </Description>
+            </Parameter>
+            <Parameter instanceName='vatonfood' units='percent' logicalType='rate' type='real'>
+                  <Description type='description' lang='en'>
+                         Set the VAT rate on all food to this. 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Set the VAT rate on all food to this. 
+                  </Description>
+                  <Description type='label' lang='en'>
+                         Set the VAT rate on all food to this. 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Fixer le taux de TVA sur tous les aliments à celui-ci.
+                        
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Fixer le taux de TVA sur tous les aliments à celui-ci.
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Fixer le taux de TVA sur tous les aliments à celui-ci.
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+                  <EditInfo prec='1' max='100' min='0'/>
+                  <Description type='description' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Defina a taxa do IVA em todos os alimentos para esta. 
+                  </Description>
+            </Parameter>
+            <Parameter instanceName='pension' units='year' logicalType='benefit' type='real'>
+                  <Description type='description' lang='en'>
+                         This page allows you to change the amount of the
+                        current Old Age Pension 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Add this amount (in Namibian Dollars per month) to the state
+                        pension. 
+                  </Description>
+                  <Description type='label' lang='en'>
+                         Add this amount (in Namibian Dollars per month) to the state
+                        pension. 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Cette page vous permet de changer le montant actuel de
+                        l&apos;Allocation Vieillesse. 
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Ajouter cette somme (Dollars namibiens par mois) à la
+                        pension de retraite d&apos;état. 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Ajouter cette somme (Dollars namibiens par mois) à la
+                        pension de retraite d&apos;état. 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Esta página permite-lhe alterar o valor da pensão de
+                        reforma. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Adicione esta quantia (em Nambian Dólares) à pensão de reforma.
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Adicione esta quantia (em Nambian Dólares) à pensão de reforma. 
+                  </Description>
+                  <EditInfo prec='1' max='10000' min='0'/>
+                  <Description type='description' lang='pt'>
+                         Esta página permite-lhe alterar o valor da pensão de
+                        reforma. 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Adicione esta quantia (em Nambian Dólares) à pensão de reforma. 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Adicione esta quantia (em Nambian Dólares) à pensão de reforma. 
+                  </Description>
+                   <Extra key='row' value='row22'/>
+            </Parameter>
+            <Description type='description' lang='pt'>
+                   Esta página permite-lhe fazer pequenas mudanças em diferentes
+                  categorias de variáveis das políticas no modelo. Pode fazer
+                  mudanças adicionais às variáveis políticas ao ir directamente
+                  a outras páginas sob &quot;Desenhar Reforma&quot;. 
+            </Description>
+            <Description type='label' lang='pt'>
+                   Mudanças rápidas 
+            </Description>
+            <Extra key='page' value='page1'/>
+            <Extra key='page' value='page2'/>
+      </ParameterSystem>
+      <ParameterSystem name='direct' instanceName='direct'>
+            <Description type='label' lang='en'>
+                   Direct Taxes and Benefits 
+            </Description>
+            <Description type='label' lang='fr'>
+                   Impôts et allocations directs 
+            </Description>
+            <Description type='label' lang='pt'>
+                  Impostos Directos e Subsídios
+            </Description>
+            <ParameterSystem name='pension' instanceName='pension'>
+                  <Description type='label' lang='en'>
+                         Pensions, Poverty and Benefits 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Somme supplémentaire pour la pension de retraite
+                        d&apos;état 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         This page allows you to change the amount of the
+                        current Old Age Pension 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Cette page vous permet de changer le montant actuel de
+                        l’Allocation Vieillesse. 
+                  </Description>
+                  <Parameter instanceName='age_pen_m' logicalType='ageLimit' type='integer'>
+                        <Description type='journalese' lang='en'>
+                               The age at which males qualify for a pension. 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Minimum Male Age - Pension 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               The age at which males qualify for a pension. 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Age auquel les hommes ont droit à la retraite. 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Age masculin minimum 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Age auquel les hommes ont droit à la retraite. 
+                        </Description>
+                        <EditInfo  min='0' lang='en' check='halt'/>
+                        <Description type='journalese' lang='pt'>
+                               A idade em que os homens se qualificam para a
+                              reforma. 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Minimum Male Age - Pension 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               A idade em que os homens se qualificam para a
+                              reforma. 
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='age_pen_f' logicalType='ageLimit' type='integer'>
+                        <Description type='journalese' lang='en'>
+                               The age at which females qualify for a pension. 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Minimum Female Age 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               The age at which females qualify for a pension. 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Age auquel les femmes ont droit à la retraite. 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Age fÃ©minin minimum 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Age auquel les femmes ont droit à la retraite. 
+                        </Description>
+                        <EditInfo  min='0' lang='en' check='halt'/>
+                        <Description type='journalese' lang='pt'>
+                               A idade em que as mulheres se qualificam para a
+                              reforma. 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Idade Mínima Feminina 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               A idade em que as mulheres se qualificam para a
+                              reforma. 
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='amt_pen' units='year' logicalType='benefit' type='real'>
+                        <Description type='description' lang='en'>
+                               Pension Amount (Namibian Dollars per month) 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Somme supplémentaire pour la pension de retraite
+                              d&apos;état ( Dollars namibiens par mois) 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Quantia de reforma pagável (Nambian Dólares) 
+                        </Description>
+                        <EditInfo prec='1'  min='0' lang='en' next='1' uprate='rooker_wise' check='halt'/>
+                        <Description type='description' lang='pt'>
+                               Quantia de reforma pagável (Nambian Dólares) 
+ 
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='age_cs' logicalType='ageLimit' type='integer'>
+                        <Description type='journalese' lang='en'>
+                               Child Support - Upper Age Limit 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Child Support - Upper Age Limit 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               Child Support - Upper Age Limit 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Pension alimentaire pour enfant - Augmenter la
+                              limite d&apos;âge 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Pension alimentaire pour enfant - Augmenter la
+                              limite d&apos;âge 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Pension alimentaire pour enfant - Augmenter la
+                              limite d&apos;âge 
+                        </Description>
+                        <Description type='journalese' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                        <EditInfo  min='0' lang='en' check='halt'/>
+                        <Description type='journalese' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Abono de família - Idade máxima por escalão 
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='amt_cs' units='year' logicalType='benefit' type='real'>
+                        <Description type='journalese' lang='en'>
+                               Child Support - Amount Payable (Namibain Dollars
+                              per month) 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Child Support - Amount Payable (Namibain Dollars
+                              per month) 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               Child Support - Amount Payable (Namibain Dollars
+                              per month) 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Pension alimentaire pour enfant - Somme à
+                              régler (Dollars namibiens par mois) 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Pension alimentaire pour enfant - Somme à
+                              régler (Dollars namibiens par mois) 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Pension alimentaire pour enfant - Somme à
+                              régler (Dollars namibiens par mois) 
+                        </Description>
+                        <Description type='journalese' lang='pt'>
+                               Abono de família - Quantia Pagável
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Abono de família - Quantia Pagável
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Abono de família - Quantia Pagável
+                        </Description>
+                        <EditInfo prec='1'  min='0' lang='en' next='1' uprate='rooker_wise' check='halt'/>
+                        <Description type='journalese' lang='pt'>
+                               Abono de família - Quantia Pagável 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Abono de família - Quantia Pagável
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Abono de família - Quantia Pagável
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='means_cs' units='year' logicalType='benefit' type='real'>
+                        <Description type='journalese' lang='en'>
+                               Child Support - Means Test Income Limit (Namíbian
+                              Dollars Per Month) 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Child Support - Means Test Income Limit (Namíbian
+                              Dollars Per Month) 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               Child Support - Means Test Income Limit (Namíbian
+                              Dollars Per Month) 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Pension alimentaire pour enfant - Enquête sur
+                              les ressources de limite des revenus (Dollars
+                              namibiens par mois) 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Pension alimentaire pour enfant - Enquête sur
+                              les ressources de limite des revenus (Dollars
+                              namibiens par mois) 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Pension alimentaire pour enfant - Enquête sur
+                              les ressources de limite des revenus (Dollars
+                              namibiens par mois) 
+                        </Description>
+                        <Description type='journalese' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês) 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês) 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês) 
+                        </Description>
+                        <EditInfo prec='1'  min='0' lang='en' next='1' uprate='rooker_wise' check='halt'/>
+                        <Description type='journalese' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês) 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês)  
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Pensão de alimentos para crianças - Limite de rendimento testado pelos 
+							   rendimentos (Dólares Namíbianos Por Mês) 
+                        </Description>
+                  </Parameter>
+                  <Parameter instanceName='povline' units='year' logicalType='povertyLine' type='real'>
+                        <Description type='journalese' lang='en'>
+                               Basic needs poverty line (Namibian Dollars Per day) 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Basic needs poverty line (Namibian Dollars Per day) 
+                        </Description>
+                        <Description type='description' lang='en'>
+                               Basic needs poverty line (Namibian Dollars Per day) 
+                        </Description>
+                        <Description type='journalese' lang='fr'>
+                               Besoins essentiels au seuil de pauvreté
+                              (Namibienne de dollars par jour) 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Besoins essentiels au seuil de pauvreté
+                              (Namibienne de dollars par jour) 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Besoins essentiels au seuil de pauvreté
+                              (Namibienne de dollars par jour) 
+                        </Description>
+                        <Description type='journalese' lang='pt'>
+                               Necessidades básicas da linha da pobreza (Nambian Dólares por dia) 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Necessidades básicas da linha da pobreza (Nambian Dólares por dia)  
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Necessidades básicas da linha da pobreza (Nambian Dólares por dia) 
+                        </Description>
+                        <EditInfo prec='1'  min='0' lang='en' next='1' uprate='rooker_wise' check='halt'/>
+                  </Parameter>
+                  <Description type='label' lang='pt'>
+                         Quantia adicional para a pensão 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Esta página permite-lhe alterar o valor da pensão de
+                        reforma. 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Cette page vous permet de changer le montant actuel de
+                        l’Allocation Vieillesse. 
+                  </Description>
+            </ParameterSystem>
+            <ParameterSystem name='ratesandbands' instanceName='ratesandbands'>
+                  <Description type='label' lang='en'>
+                         Tax Rates and Bands 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Parameter values are part of the current Income Tax
+                        policy. You can change tax rates and upper limits of tax
+                        brackets. The form automatically calculates the next
+                        level “lower limit”. You can also change the
+                        retirement age criteria. 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Here, you can lower or raise income tax rates and raise
+                        or lower the upper limit of the corresponding tax
+                        bracket. The form will automatically calculate the next
+                        level lower limit as the previous upper limit plus 1.
+                        You also have the choice to change the retirement age
+                        from the current 65 years for men and 60 years for
+                        women. 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Les valeurs des paramètres font partie de la politique
+                        actuelle d&apos;impôts sur le revenu. Vous pouvez
+                        changer ces taux et les limites supérieures des
+                        tranches d&apos;âge d&apos;imposition. La feuille
+                        calcule automatiquement le niveau suivant de limite
+                        inférieure. Vous pouvez également changer les
+                        critères de l&apos;âge de la retraite. 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Taux et tranches d&apos;imposition 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Vous pouvez ici baisser ou augmenter les taux
+                        d&apos;imposition et augmenter ou baisser la limite
+                        suppérieure de la tranche d&apos;imposition
+                        correspondante. Le formulaire calculera automatiquement
+                        la limite inférieure du niveau supérieur (niveau
+                        supérieur précédent plus 1). Vous pouvez aussi
+                        changer l&apos;âge de la retraite actuel, qui est de 65
+                        ans pour les hommes et 60 ans pour les femmes. 
+                  </Description>
+                  <ParameterSystemReference instanceName='rateBands' indexType='integer' collectionType='list' maximumSize='4' type='ratebands'>
+                        <Description type='description' lang='en'>
+                               Parameter values are part of the current Income
+                              Tax policy. You can change tax rates and upper
+                              limits of tax brackets. The form automatically
+                              calculates the next level "lower limit". You can
+                              also change the retirement age criteria. 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               Les valeurs des paramètres font partie de la
+                              politique actuelle d&apos;impôts sur le revenu.
+                              Vous pouvez changer ces taux et les limites
+                              supérieures des tranches d&apos;âge
+                              d&apos;imposition. La feuille calcule
+                              automatiquement le niveau suivant de limite
+                              inférieure. Vous pouvez également changer les
+                              critères de l&apos;âge de la retraite. 
+                        </Description>
+                        <Description type='description' lang='pt'>
+                               Os valores paramêtros são parte integrante da
+                              actual política de imposto sobre o rendimento.
+                              Pode alterar as taxas e os limites superiores do
+                              escalão do imposto. O formulário calcula
+                              automaticamente o nível seguinte do &quot;limite
+                              minimo do escalão&quot;. Pode também alterar o
+                              critério de idade de reforma. 
+                        </Description>
+                        <Description type='label' lang='en'>
+                               Tax Rates and Bands 
+                        </Description>
+                        <Description type='tooltip' lang='en'>
+                               Income Tax: (R)ates in percent and starting point
+                              of the bracket. 
+                        </Description>
+                        <Description type='description' lang='fr'>
+                               L&apos;Afrique du Sud a un impôt gradué sur six
+                              taux. Les valeurs à gauche représentent
+                              l&apos;impôt sur le revenu et les valeurs à 
+                              droite correspondent au point de départ. Bien que
+                              vous ne puissiez pas ajouter ou supprimer des
+                              tranches de taux pour le moment, vous pouvez
+                              expérimenter avec par exemple le tarif uniforme
+                              en fixant tous les taux à une somme fixe. 
+                        </Description>
+                        <Description type='label' lang='fr'>
+                               Taux et tranches d&apos;imposition 
+                        </Description>
+                        <Description type='tooltip' lang='fr'>
+                               Impôtt sur le revenu. Taux en pour cent et
+                              dÃ©but de la tranche. 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Taxas de imposto e escalões 
+                        </Description>
+                        <EditInfo topset='true' asArray='true'/>
+                        <Description type='description' lang='pt'>
+                               Os valores paramêtros são parte integrante da
+                              actual política de imposto sobre o rendimento.
+                              Pode alterar as taxas e os limites superiores do
+                              escalão do imposto. O formulário calcula
+                              automaticamente o nível seguinte do &quot;limite
+                              minimo do escalão&quot;. Pode também alterar o
+                              critério de idade de reforma. 
+                        </Description>
+                        <Description type='label' lang='pt'>
+                               Taxas de imposto e escalões 
+                        </Description>
+                        <Description type='tooltip' lang='pt'>
+                               Imposto sobre o Rendimento: (T)axas em percentagem e o ponto inicial do escalão. 
+                        </Description>
+                  </ParameterSystemReference>
+                  <Description type='label' lang='pt'>
+                         Taxas de imposto e escalões 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Os valores paramêtros são parte integrante da actual
+                        política de imposto sobre o rendimento. Pode alterar as
+                        taxas e os limites superiores do escalão do imposto. O
+                        formulário calcula automaticamente o nível seguinte do
+                        &quot;limite minimo do escalão&quot;. Pode também
+                        alterar o critério de idade . 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Aqui, pode aumentar ou diminuir as taxas de imposto sobre o rendimento  
+                        e aumentar ou diminuir o limite superior  do escalão de imposto correspondente. 
+                        O formulário calculaá automaticamente o limite inferior do escalão seguinte 
+                        como o limite superior anterior mais  1.
+                        Pode também alterar idade de reforma dos actuais 65 anos para homem e 65 anos
+                        from the current 65 years for men and 60 years for
+                        women. 
+                  </Description>
+            </ParameterSystem>
+      </ParameterSystem>
+      <!--
+    <ParameterSystem name='indirect' instanceName='indirect'>
+     <Description type='description' lang='en'>
+          The Namíbia Indirect Tax System. Value Added Tax (VAT) is levied
+         on most goods, and additional excise duties on petrol, alchohol and
+         tobacco.
+         
+      </Description>
+      <Description type='tooltip' lang='en'>
+                    The Namíbia Indirect Tax System.
+      </Description>
+      <Description type='label' lang='en'>
+          
+      </Description>
+      <Description type='description' lang='fr'>
+          Système d&#39;impôts indirects d&#39;Afrique du Sud. La Taxe sur la
+         Valeur Ajoutée (TVA) est prélevée sur la plupart des produits, avec
+         des taxes supplémentaires sur l&#39;essence, l&#39;alcool et le tabac.
+         
+      </Description>
+      <Description type='tooltip' lang='fr'>
+          Système d&#39;impôts indirects d&#39;Afrique du Sud. 
+      </Description>
+      <Description type='label' lang='fr'>
+          Impôts indirects. 
+      </Description>
+      <Description type='description' lang='pt'>
+           O Sistema de Impostos Indirectos da Namibia.  O Imposto sobre o valor absoluto (IVA) é aplicado 
+         na maior parte dos produtos, e os impostos adicionais em petróleo, alcoól e tabaco.
+      </Description>
+      <Description type='tooltip' lang='pt'>
+ O Sistema de Impostos Indirectos da Namibia. 
+      </Description>
+      <Description type='label' lang='pt'>
+          Impostos Indirectos 
+      </Description>
+      <ParameterSystem name='exciseduties' instanceName='exciseduties'>
+         <Description type='description' lang='en'>
+             Parameter values reflect the current VAT rate and the extra duties
+            applied to each item. As part of designing your policy scenario, you
+            can change the VAT rate and/or extra duties that are currently
+            applied to each item 
+         </Description>
+         <Description type='description' lang='fr'>
+             Les valeurs des paramètres reflètent le taux de TVA actuel et les
+            taxes supplémentaires appliquées à chaque produit. En créant
+            votre propre scénario, vous pouvez changer la TVA et/ou les taxes
+            supplémentaires qui s'appliquent actuellement à chaque produit. 
+         </Description>
+         <Description type='tooltip' lang='en'>
+             Tobacco, Alcoholic Drinks and Car Fuel 
+         </Description>
+         <Description type='label' lang='en'>
+             Excise Duties
+         </Description>
+         <Description type='description' lang='fr'>
+             Tabac, boissons alcoolisées et essence. 
+         </Description>
+         <Description type='tooltip' lang='fr'>
+             Tabac, boissons alcoolisées et essence 
+         </Description>
+         <Description type='label' lang='fr'>
+             Taxes sur le Tabac,les boissons alcoolisées et l&#39;essence 
+         </Description>
+         <ParameterSystemReference instanceName='rates' indexType='enumerated' collectionType='map' type='excise' indexEnumTypeRef='excisable'>
+            <Description type='description' lang='en'>
+                Tobacco, Alcoholic Drinks and Car Fuel. 
+            </Description>
+            <Description type='tooltip' lang='en'>
+                Tobacco, Alcoholic Drinks and Car Fuel 
+            </Description>
+            <Description type='label' lang='en'>
+                Duties on Tobacco, Alcoholic Drinks and Car Fuel 
+            </Description>
+            <Description type='description' lang='fr'>
+                Tabac, boissons alcoolisées et essence. 
+            </Description>
+            <Description type='tooltip' lang='fr'>
+                Tabac, boissons alcoolisées et essence 
+            </Description>
+            <Description type='label' lang='fr'>
+                Taxes sur le tabac,les boissons alcoolisées et l&#39;essence 
+            </Description>
+            <Description type='description' lang='pt'>
+                Tabaco, Bebidas Alcoólicas e Gasolina. 
+            </Description>
+            <Description type='tooltip' lang='pt'>
+                Tabaco, Bebidas Alcoólicas e Gasolina.
+            </Description>
+            <Description type='label' lang='pt'>
+                Impostos sobre o Tabaco, Bebidas Alcoólicas e Gasolina.
+            </Description>
+         </ParameterSystemReference>
+         <Description type='description' lang='pt'>
+             Os valores parâmtro reflectem a actual taxa do IVA e os impostos adicionais aplicados a cada produto.
+            Como parte de desenhar o seu cenário de política, pode alterar a taxa do IVA e/ou os impostos adicionais 
+            que actualmente são aplicados a cada artigo.
+         </Description>
+         <Description type='tooltip' lang='pt'>
+             Tabaco, Bebidas Alcoólicas e Gasolina 
+         </Description>
+         <Description type='label' lang='pt'>
+             Impostos sobre o Tabaco, Bebidas Alcoólicas e Gasolina 
+         </Description>
+      </ParameterSystem>
+      <ParameterSystem name='taxesonfood' instanceName='taxesonfood'>
+         <Description type='description' lang='en'>
+             Os valores parâmetros reflectem as actuais taxas do IVA nos diversos produtos. Pode usar esta página
+            para alterar manualmente a taxa do IVA dos diferentes produtos ou ir a  "Mudanças rápidas" para alterar a taxa nacional 
+            do IVA nas categorias dos produtos.
+            
+         </Description>
+         <Description type='tooltip' lang='en'>
+             Taxes and duties on Food and Non Alcoholic Drinks. 
+         </Description>
+         <Description type='label' lang='en'>
+             Food
+         </Description>
+         <Description type='description' lang='fr'>
+             Les valeurs des paramètres reflètent les taux de TVA sur
+            différents produits. Vous pouvez utiliser cette page pour changer
+            manuellement les taux de TVA de différents produits ou bien aller
+            dans « changements rapides » pour changer le taux de TVA
+            national par catégories de produits. 
+         </Description>
+         <Description type='tooltip' lang='fr'>
+             Impôts et taxes sur les aliments et les boissons non-alcoolisées.
+            
+         </Description>
+         <Description type='label' lang='fr'>
+             Impôts et taxes sur les aliments et les boissons non-alcoolisées.
+            
+         </Description>
+         <ParameterSystemReference instanceName='rates' indexType='enumerated' collectionType='map' type='indirecttaxrates' indexEnumTypeRef='food'>
+            <Description type='description' lang='en'>
+                Taxes and duties on food. 
+            </Description>
+            <Description type='tooltip' lang='en'>
+                Taxes and duties on food 
+            </Description>
+            <Description type='label' lang='en'>
+                Taxes and duties on food 
+            </Description>
+            <Description type='description' lang='fr'>
+                Impôts et taxes sur les aliments. 
+            </Description>
+            <Description type='tooltip' lang='fr'>
+                Impôts et taxes sur les aliments 
+            </Description>
+            <Description type='label' lang='fr'>
+                Impôts et taxes sur les aliments 
+            </Description>
+            <EditInfo />
+            <Description type='description' lang='pt'>
+                Impostos em produtos alimentares. 
+            </Description>
+            <Description type='tooltip' lang='pt'>
+                Impostos em produtos alimentares.
+            </Description>
+            <Description type='label' lang='pt'>
+                Impostos em produtos alimentares.
+            </Description>
+         </ParameterSystemReference>
+         <Description type='description' lang='pt'>
+             Os valores parâmetros reflectem as actuais taxas do IVA nos diversos produtos. Pode usar esta página
+            para alterar manualmente a taxa do IVA dos diferentes produtos ou ir a  "Mudanças rápidas" para alterar a taxa nacional 
+            do IVA nas categorias dos produtos. 
+         </Description>
+         <Description type='tooltip' lang='pt'>
+             Impostos e taxas sobre alimentos e Bebidas Não Alcoólicas. 
+         </Description>
+         <Description type='label' lang='pt'>
+             Impostos e taxas sobre alimentos e Bebidas Não Alcoólicas.  
+         </Description>
+      </ParameterSystem>
+      <ParameterSystem name='taxesonotherexpenditures' instanceName='taxesonotherexpenditures'>
+         <Description type='description' lang='en'>
+             Parameter values reflect current VAT rates on different items. You
+            can either use this page to manually change different item’s VAT
+            rates, or go to “Quick Changes” to change the national VAT rate
+            on categories of items. 
+         </Description>
+         <Description type='tooltip' lang='en'>
+             Taxes and duties on non-durable goods/services: 
+         </Description>
+         <Description type='label' lang='en'>
+             Other Goods
+         </Description>
+         <Description type='description' lang='fr'>
+             Les valeurs des paramètres reflètent les taux de TVA sur
+            différents produits. Vous pouvez utiliser cette page pour changer
+            manuellement les taux de TVA de différents produits ou bien aller
+            dans « changements rapides » pour changer le taux de TVA
+            national par catégories de produits. 
+         </Description>
+         <Description type='tooltip' lang='fr'>
+             Impôts et taxes sur les biens et les services non-durables 
+         </Description>
+         <Description type='label' lang='fr'>
+             Impôts et taxes sur les biens et les services non-durables: 
+         </Description>
+         <ParameterSystemReference instanceName='rates' indexType='enumerated' collectionType='map' type='indirecttaxrates' indexEnumTypeRef='otherexpenditures'>
+            <Description type='description' lang='en'>
+                Taxes and duties on non-durable goods/services 
+            </Description>
+            <Description type='tooltip' lang='en'>
+                Taxes and duties on non-durable goods/services 
+            </Description>
+            <Description type='label' lang='en'>
+                Taxes and duties on non-durable goods/services 
+            </Description>
+            <EditInfo />
+            <Description type='description' lang='pt'>
+                Impostos e taxas em produtos perecíveis/serviços
+            </Description>
+            <Description type='tooltip' lang='pt'>
+                Impostos e taxas em produtos perecíveis/serviços
+            </Description>
+            <Description type='label' lang='pt'>
+                Impostos e taxas em produtos perecíveis/serviços
+            </Description>
+         </ParameterSystemReference>
+         <Description type='description' lang='pt'>
+             Os valores parâmetros reflectem as actuais taxas do IVA nos diversos produtos. Pode usar esta página
+            para alterar manualmente a taxa do IVA dos diferentes produtos ou ir a  "Mudanças rápidas" para alterar a taxa nacional 
+            do IVA nas categorias dos produtos. 
+         </Description>
+         <Description type='tooltip' lang='pt'>
+             Impostos e taxas em produtos perecíveis/serviços
+         </Description>
+         <Description type='label' lang='pt'>
+             Impostos e taxas em produtos perecíveis/serviços: 
+         </Description>
+      </ParameterSystem>
+      <ParameterSystem name='taxesondurables' instanceName='taxesondurables'>
+         <Description type='description' lang='en'>
+             Parameter values reflect current VAT rates on different items. You
+            can either use this page to manually change different item’s VAT
+            rates, or go to “Quick Changes” to change the national VAT rate
+            on categories of items. 
+         </Description>
+         <Description type='tooltip' lang='en'>
+             Taxes on Semi-durable and durable items 
+         </Description>
+         <Description type='label' lang='en'>
+             Durables
+         </Description>
+         <Description type='description' lang='fr'>
+             Les valeurs des paramètres reflètent les taux de TVA sur
+            différents produits. Vous pouvez utiliser cette page pour changer
+            manuellement les taux de TVA de différents produits ou bien aller
+            dans « changements rapides » pour changer le taux de TVA
+            national par catégories de produits. 
+         </Description>
+         <Description type='tooltip' lang='fr'>
+             Taxes sur les produits semi-durables et durables 
+         </Description>
+         <Description type='label' lang='fr'>
+             Taxes sur les produits semi-durables et durables 
+         </Description>
+         <ParameterSystemReference instanceName='rates' indexType='enumerated' collectionType='map' type='indirecttaxrates' indexEnumTypeRef='durables'>
+            <Description type='description' lang='en'>
+                Taxes on Semi-durable and durable items 
+            </Description>
+            <Description type='tooltip' lang='en'>
+                Taxes on Semi-durable and durable items 
+            </Description>
+            <Description type='label' lang='en'>
+                Durables
+            </Description>
+            <Description type='description' lang='fr'>
+                Taxes sur les produits semi-durables et durables 
+            </Description>
+            <Description type='tooltip' lang='fr'>
+                Taxes sur les produits semi-durables et durables 
+            </Description>
+            <Description type='label' lang='fr'>
+                Taxes sur les produits semi-durables et durables 
+            </Description>
+            <Description type='description' lang='pt'>
+                Taxas em produtos duradouros e semi-duradouros 
+            </Description>
+            <Description type='tooltip' lang='pt'>
+                Taxas em produtos duradouros e semi-duradouros
+            </Description>
+            <Description type='label' lang='pt'>
+                Taxas em produtos duradouros e semi-duradouros
+            </Description>
+         </ParameterSystemReference>
+         <Description type='description' lang='pt'>
+             Os valores parâmetros reflectem as actuais taxas do IVA nos diversos produtos. Pode usar esta página
+            para alterar manualmente a taxa do IVA dos diferentes produtos ou ir a  "Mudanças rápidas" para alterar a taxa nacional 
+            do IVA nas categorias dos produtos.
+         </Description>
+         <Description type='tooltip' lang='pt'>
+             Taxas em produtos duradouros e semi-duradouros 
+         </Description>
+         <Description type='label' lang='pt'>
+             Taxas em produtos duradouros e semi-duradouros
+         </Description>
+      </ParameterSystem>
+   </ParameterSystem>
+   <ParameterSystem name='indirecttaxrates'>
+      <Description type='description' lang='en'>
+          Tax Rates on an Individual Good 
+      </Description>
+      <Description type='label' lang='en'>
+          Tax Rates on an Individual Good 
+      </Description>
+      <Parameter instanceName='vatrate' units='percent' type='real' logicalType='rate'>
+         <Description type='label' lang='en'/>
+         <Description type='tooltip' lang='en'>
+             Value Added Tax Rate 
+         </Description>
+         <Description type='journalese' lang='en'>
+             Value Added Tax Rate 
+         </Description>
+         <Description type='description' lang='en'>
+             Value Added Tax Rate 
+         </Description>
+         <Description type='label' lang='fr'/>
+         <Description type='tooltip' lang='fr'>
+             Taux de la Taxe sur la Valeur Ajoutée 
+         </Description>
+         <Description type='journalese' lang='fr'>
+             Taux de la Taxe sur la Valeur Ajoutée 
+         </Description>
+         <Description type='description' lang='fr'>
+             Taux de la Taxe sur la Valeur Ajoutée 
+         </Description>
+         <EditInfo prec='1' max='100' min='0' treatAsPercentageage='true'/>
+         <Description type='label' lang='pt'/>
+         <Description type='tooltip' lang='pt'>
+             Taxa do Imposto sobre o Valor Acrescentado
+         </Description>
+         <Description type='journalese' lang='pt'>
+             Taxa do Imposto sobre o Valor Acrescentado 
+         </Description>
+         <Description type='description' lang='pt'>
+             Taxa do Imposto sobre o Valor Acrescentado
+         </Description>
+      </Parameter>
+      <Description type='description' lang='pt'>
+          Taxas de Imposto num Artigo Individual
+      </Description>
+      <Description type='label' lang='pt'>
+          Taxas de Imposto num Artigo Individual
+      </Description>
+   </ParameterSystem>
+   
+   -->
+      <ParameterSystem name='ratebands'>
+            <Description type='label' lang='en'>
+                   Tax Rates and Bands 
+            </Description>
+            <Description type='description' lang='en'>
+                   Tax Rates and Bands 
+            </Description>
+            <Description type='label' lang='fr'>
+                   Taux et tranches d&apos;imposition 
+            </Description>
+            <Description type='description' lang='fr'>
+                   Taux et tranches d&apos;imposition 
+            </Description>
+            <Description type='label' lang='pt'>
+                   Taxas de imposto e escalões 
+            </Description>
+            <Description type='description' lang='pt'>
+                   Taxas de imposto e escalões 
+            </Description>
+            <Parameter instanceName='rate' units='percent' logicalType='rate' type='real'>
+                  <Description type='label' lang='en'/>
+                  <Description type='tooltip' lang='en'>
+                         Tax Rate (%) 
+                  </Description>
+                  <Description type='label' lang='fr'/>
+                  <Description type='tooltip' lang='fr'>
+                         Taux d&apos;imposition (%) 
+                  </Description>
+                  <Description type='label' lang='pt'/>
+                  <Description type='tooltip' lang='pt'>
+                        Taxa de Imposto (%) 
+                  </Description>
+                  <EditInfo topset='false' prec='1' max='100' treatAsPercentage='true' min='0' uprate='dont_uprate' check='halt'/>
+                  <Description type='label' lang='pt'/>
+                  <Description type='tooltip' lang='pt'>
+                         Taxa de Imposto  (%) 
+                  </Description>
+            </Parameter>
+            <Parameter instanceName='band' units='year' logicalType='band' type='real'>
+                  <Description type='label' lang='en'/>
+                  <Description type='tooltip' lang='en'>
+                         Tax Band (Upper Limit) (Namibian Dollars per annum) 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         The Upper Limit of the Tax Band (Namibian Dollars per annum) 
+                  </Description>
+                  <Description type='label' lang='fr'/>
+                  <Description type='tooltip' lang='fr'>
+                         Tranche d&apos;imposition (limite supérieure)(En
+                        dollars namibiens par an) 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Limite supérieure de la tranche d&apos;imposition (En
+                        dollars namibiens par an) 
+                  </Description>
+                  <Description type='label' lang='pt'/>
+                  <Description type='tooltip' lang='pt'>
+                         Escalão de Imposto (Limite superior) (Nambian Dólares por ano) 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                        O Limite Superior do Escalão de Imposto (Namibian Dollars por
+                        Ano)
+                  </Description>
+                  <EditInfo topset='true' prec='1' min='0' next='100' uprate='rooker_wise' check='halt'/>
+                  <Description type='label' lang='pt'/>
+                  <Description type='tooltip' lang='pt'>
+                         Escalão do Imposto (Limite Superior) 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                        O Limite Superior do Escalão de Imposto (Namibian Dollars por
+                        Ano)
+                  </Description>
+            </Parameter>
+            <Description type='label' lang='pt'>
+                   Taxas de imposto e escalões 
+            </Description>
+            <Description type='description' lang='pt'>
+                   Taxas de imposto e escalões 
+            </Description>
+      </ParameterSystem>
+      <ParameterSystem name='excise'>
+            <Description type='description' lang='en'>
+                   Tax on an Exciseable Item. 
+            </Description>
+            <Description type='label' lang='en'>
+                   Excise Duty 
+            </Description>
+            <Description type='description' lang='fr'>
+                   Taxe sur les produits imposables. 
+            </Description>
+            <Description type='label' lang='fr'>
+                   Taxe d&apos;octroi 
+            </Description>
+            <Parameter instanceName='guideprice' logicalType='rate' type='real'>
+                  <Description type='label' lang='en'>
+                         Typical Price in Namibian Dollars per unit (bottle, packet,
+                        litre, etc.) 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Typical Price in Namibian Dollars per unit (bottle, packet,
+                        litre, etc.) 
+                  </Description>
+                  <Description type='journalese' lang='en'>
+                         Typical Price in Namibian Dollars per unit (bottle, packet,
+                        litre, etc.) 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Typical Price in Namibian Dollars per unit (bottle, packet,
+                        litre, etc.) 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Typical Price in Namibian Dollars per unit 
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Prix type en Dollars namibiens par unité(bouteille,
+                        paquet, litre, etc.) 
+                  </Description>
+                  <Description type='journalese' lang='fr'>
+                         Prix type en Dollars namibiens par unité(bouteille,
+                        paquet, litre, etc.) 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Prix type en Dollars namibiens par unité(bouteille,
+                        paquet, litre, etc.) 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Preço Típico em moeda por unidade.
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Preço Típico em moeda por unidade.
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Preço Tipico em xilingues por unidade 
+                  </Description>
+                  <EditInfo prec='2' max='100000' min='0' access='admin'/>
+            </Parameter>
+            <Parameter instanceName='vat' units='percent' logicalType='rate' type='real'>
+                  <Description type='label' lang='en'/>
+                  <Description type='tooltip' lang='en'>
+                         Value added Tax Rate 
+                  </Description>
+                  <Description type='journalese' lang='en'>
+                         Value Added Tax Rate 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Value Added Tax Rate 
+                  </Description>
+                  <Description type='label' lang='fr'/>
+                  <Description type='tooltip' lang='fr'>
+                         Taux de la Taxe sur la Valeur Ajoutée 
+                  </Description>
+                  <Description type='journalese' lang='fr'>
+                         Taux de la Taxe sur la Valeur Ajoutée 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Taux de la Taxe sur la Valeur Ajoutée 
+                  </Description>
+                  <EditInfo prec='1' max='100' min='0'/>
+                  <Description type='label' lang='pt'/>
+                  <Description type='tooltip' lang='pt'>
+                         Taxa do Imposto sobre o Valor Acrescentado 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Taxa do Imposto sobre o Valor Acrescentado 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Taxa do Imposto sobre o Valor Acrescentado 
+                  </Description>
+            </Parameter>
+            <Parameter instanceName='specific' logicalType='rate' type='real'>
+                  <Description type='label' lang='en'>
+                         Extra Tax Per Unit 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Extra Tax Per Unit 
+                  </Description>
+                  <Description type='journalese' lang='en'>
+                         Extra Tax Per Unit 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Extra Tax Per Unit 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='journalese' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <EditInfo prec='1' max='5000' min='0' uprate='standard_uprate'/>
+                  <Description type='label' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+            </Parameter>
+            <Parameter instanceName='advalorem' units='timeless' logicalType='incomeLimit' type='real'>
+                  <Description type='label' lang='en'>
+                         Extra Tax as a percentage of price 
+                  </Description>
+                  <Description type='tooltip' lang='en'>
+                         Extra Tax as a percentage of price 
+                  </Description>
+                  <Description type='journalese' lang='en'>
+                         Extra Tax as a percentage of price 
+                  </Description>
+                  <Description type='description' lang='en'>
+                         Ad Valorem 
+                  </Description>
+                  <Description type='label' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='tooltip' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='journalese' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='description' lang='fr'>
+                         Taxe supplémentaire par unité 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Imposto Extraordinário Por Unidade 
+                  </Description>
+                  <Description type='label' lang='pt'>
+                         Imposto adicional por unidade (xilingues) 
+                  </Description>
+                  <Description type='tooltip' lang='pt'>
+                         Imposto adicional por unidade (xilingues) 
+                  </Description>
+                  <Description type='journalese' lang='pt'>
+                         Imposto adicional por unidade (xilingues) 
+                  </Description>
+                  <Description type='description' lang='pt'>
+                         Imposto adicional por unidade (xilingues) 
+                  </Description>
+            </Parameter>
+            <Description type='description' lang='pt'>
+                   Imposto num artigo elegível. 
+            </Description>
+            <Description type='label' lang='pt'>
+                   Imposto aduaneiro 
+            </Description>
+      </ParameterSystem>
+      <EnumeratedType id='food'>
+            <EnumValue name='name1' value='1'>
+                  <Text lang='en'>
+                         Good number 1 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 1 
+                  </Text>
+                  <Text lang='pt'>
+                        Bom número 1 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name2' value='2'>
+                  <Text lang='en'>
+                         Good number 2 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 2 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 2 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name3' value='3'>
+                  <Text lang='en'>
+                         Good number 3 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 3 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 3 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name4' value='4'>
+                  <Text lang='en'>
+                         Good number 4 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 4 
+                  </Text>
+                  <Text lang='pt'>
+                        Bom númbero 4 
+                  </Text>
+            </EnumValue>
+      </EnumeratedType>
+      <EnumeratedType id='excisable'>
+            <EnumValue name='name11' value='11'>
+                  <Text lang='en'>
+                         Good number 11 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 11 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 11 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name12' value='12'>
+                  <Text lang='en'>
+                         Good number 12 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 12 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 12 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name13' value='13'>
+                  <Text lang='en'>
+                         Good number 13 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 13 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 13 
+                  </Text>
+            </EnumValue>
+      </EnumeratedType>
+      <EnumeratedType id='durables'>
+            <EnumValue name='name5' value='5'>
+                  <Text lang='en'>
+                         Good number 5 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 5 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 5 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name6' value='6'>
+                  <Text lang='en'>
+                         Good number 6 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 6 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 6 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name7' value='7'>
+                  <Text lang='en'>
+                         Good number 7 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 7 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número7 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name8' value='8'>
+                  <Text lang='en'>
+                         Good number 8 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 8 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número8 
+                  </Text>
+            </EnumValue>
+      </EnumeratedType>
+      <EnumeratedType id='otherexpenditures'>
+            <EnumValue name='name9' value='9'>
+                  <Text lang='en'>
+                         Good number 9 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 9 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 9 
+                  </Text>
+            </EnumValue>
+            <EnumValue name='name10' value='10'>
+                  <Text lang='en'>
+                         Good number 10 
+                  </Text>
+                  <Text lang='fr'>
+                         Bien numéro 10 
+                  </Text>
+                  <Text lang='pt'>
+                         Bom número 10 
+                  </Text>
+            </EnumValue>
+      </EnumeratedType>
+</ParameterSystem>

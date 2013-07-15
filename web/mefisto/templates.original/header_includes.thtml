@@ -1,0 +1,78 @@
+        @@IF@@ @_IS-OUTPUT-PAGE_@ 
+        
+          <script type="text/javascript" src="/mefisto/js/jquery-1.3.2.js"></script> <!-- latest http://code.jquery.com/jquery-1.4.4.min.js" /> -->
+          <link type="text/css" href="/mefisto/css/galleriffic-3.css" rel="stylesheet" media="screen" />
+          <!-- Optionally include jquery.history.js for history support -->
+          <script type="text/javascript" src="/mefisto/js/jquery.history.js"></script>
+          <script type="text/javascript" src="/mefisto/js/jquery.opacityrollover.js"></script>
+         <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js' ></script>
+         <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js' ></script>
+         <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" media="screen" ></link>
+   
+         <script type='text/javascript'>
+
+          
+         $( document ).ready(function() {
+                $("#tabs").tabs(  { ajaxOptions: { cache: false }});
+         });
+
+         function ExampleWindow( mypage ){
+             LeftPosition=(screen.width)?(screen.width-950)/2:100;
+             TopPosition=(screen.height)?(screen.height-450)/2:100;
+             settings='width=650,height=800,top='+TopPosition+',left='+LeftPosition+',scrollbars=yes,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+             w = window.open( mypage, 'Example', settings );
+             w.focus();
+          }
+
+        </script>
+		    
+        @@END_IF@@
+        
+        @@IF@@  @_IS-INPUT-PAGE_@ 
+          <script type="text/javascript" src="/mefisto/js/prototype.js"></script>
+        @@END_IF@@
+        
+        @@IF@@ @_IS-EXAMPLE-PAGE_@ 
+        
+        <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js' ></script>
+        <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js' ></script>
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" media="screen" ></link>
+        <script type='text/javascript'>
+          
+         $(document).ready(function() {
+         $("#tabs").tabs({ ajaxOptions: { cache: false }});
+         });
+         
+         </script>
+        @@END_IF@@
+                 
+        <link type="text/css" href="/mefisto/css/mefisto.css" rel="stylesheet" media="screen" />
+        <script type="text/javascript" src="/mefisto/js/gksfunctions.js"></script>
+          
+        <script type="text/javascript">
+        
+        function initTooltip(id) {
+        //------------------------------
+            var HelpTip = new Tips($(id), {
+                offsets: {
+                    'x': 60,       //default is 16
+                    'y': 25        //default is 16
+                },
+
+                initialize:function(){
+                    this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 500, wait: false}).set(0);
+                },
+                onShow: function(toolTip) {
+                    this.fx.start(1);
+                },
+                onHide: function(toolTip) {
+                    this.fx.start(0);
+                },
+                fixed: true
+            });
+        }
+        initTooltip("tooltip_mefisto");
+        initTooltip("tooltip_motyff");
+        
+        </script>
+      

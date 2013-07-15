@@ -1,0 +1,176 @@
+<table
+ class="submit_table">
+    <tbody>
+        <tr>
+            <td
+             valign="middle">
+                <input
+                 id="save_button"
+                 name="save"
+                 value="Opslaan"
+                 onmouseover="return overlibConditional( 'Sla uw wijzigingen op' );"
+                 onmouseout="return nd();"
+                 type="submit" />
+                 
+            </td>
+            <td>
+                <input
+                 id="run_submit_button"
+                 value="Uitvoeren"
+                 name="run"
+                 onmouseover="return overlibConditional( 'Selecteer deze optie om het model te draaien' );"
+                 onmouseout="return nd();"
+                 @@IF@@ @_JOB_IS_RUNNING_@
+                 disabled='disabled'
+                 @@END_IF@@
+                 type="submit" />
+                 
+            </td>
+            <td>
+            </td>
+            <td
+             class="reset_table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td
+                             rowspan="2"
+                             valign="middle">
+                                <input
+                                 value="Reset"
+                                 name="reset"
+                                 onmouseover="return overlibConditional( 'Selecteer deze knop om uw gekozen objecten te resetten.' );"
+                                 onmouseout="return nd();"
+                                 type="submit" />
+                                 
+                            </td>
+                            <td
+                             onmouseover='return overlibConditional( "Dit stelt de parameters op deze pagina terug naar hun oorspronkelijke waarden" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "Dit stelt de parameters op deze pagina terug naar hun oorspronkelijke waarden" );'
+                                 onmouseout="return nd();"
+                                 name="resetselect"
+                                 value="reset_thispage"
+                                 checked="checked"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             onmouseover='return overlibConditional( "Dit stelt de parameters op deze pagina terug naar hun oorspronkelijke waarden" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                Alleen items op deze pagina
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                             onmouseover='return overlibConditional( "Dit zet alles op alle paginas, terug naar hun oorspronkelijke waarden" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "Dit zet alles op alle paginas, terug naar hun oorspronkelijke waarden" );'
+                                 onmouseout="return nd();"
+                                 name="resetselect"
+                                 value="reset_allpages"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             onmouseover='return overlibConditional( "Dit zet alles op alle paginas, terug naar hun oorspronkelijke waarden" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                Alle items
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            
+            <td class="uprate_table"
+             valign="middle">   
+            <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Vermenigvuldigen:
+                            </td>
+                            <td>
+                               
+                                 
+                            </td>
+                            <td>
+                                <input
+                                 onmouseover="return overlibConditional( 'uprate_uprateAmount_label' );"
+                                 onmouseout="return nd();"
+                                 size="6"
+                                 name="uprate_amount"
+                                 value="0.0"
+                                 type="text" />
+                                 <br/>
+                                 @_UPRATE-ERROR_@
+                            </td>
+
+             <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "Select this option to only multiply the parameters on this page" );'
+                                 onmouseout="return nd();"
+                                 name="uprateselect"
+                                 value="uprate_thispage"
+                                 checked="checked"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                              align="left">
+                                De items op deze pagina
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "Vermenigvuldig alles, op alle paginas" );'
+                                 onmouseout="return nd();"
+                                 name="uprateselect"
+                                 value="uprate_allpages"
+                                 @_UPRATE-FIELD-CLASS_@
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             align="left">
+                                Alle items, op elke pagina.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                   </td>         
+                            <td>
+                                <input
+                                 name="uprate"
+                                 value="Vermenigvuldigen"
+                                 onmouseover="return overlibConditional( 'Select this to uprate your chosen selections by this chosen amount.' );"
+                                 onmouseout="return nd();"
+                                 type="submit" />
+                                 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

@@ -1,0 +1,1054 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE ParameterSystem SYSTEM "/home/graham_s/VirtualWorlds/projects/tax_benefit_model_components/etc/parameters/dtds/parameter_system.dtd">
+<ParameterSystem name='be' instanceName='be'>
+        <ParameterSystem name="tax" instanceName="tax" >
+                <Description type='description' lang='en'>
+                
+                The revenue from taxation is collected at the national level and
+                then it is divided over the different institutional levels (the
+                federal level, the different regions
+                (Brussels/Flanders/Wallonia) and the communities (Flemish
+                community and French-speaking community)). Only municipalities’
+                tax rates vary (from 4% to 8.5%, with an average of 6.8%). Their
+                collection however also takes place at the national level, after
+                which these are transferred to the municipalities. The main
+                exception in the national collection of taxes is the tax on real
+                estate. This tax is administratively coordinated by the regions,
+                while tax rates are set by the municipalities. Its revenue is
+                split over the different administrative levels (municipalities,
+                provinces, regions).
+                
+                </Description>
+                <Description type='label' lang='en'>
+                Income Taxes
+                </Description>
+                <Description type='description' lang='nl'>
+                
+                De inkomsten uit belastingen wordt verzameld op nationaal niveau
+                en dan is het verdeeld over de verschillende institutionele
+                niveaus (het federale niveau, de verschillende regio's (Brussel
+                / Vlaanderen / Wallonië) en de gemeenschappen (de Vlaamse
+                gemeenschap en de Franstalige gemeenschap)). Alleen gemeenten
+                belastingtarieven variëren (van 4% tot 8,5%, met een gemiddelde
+                van 6,8%). Hun collectie echter ook plaats op nationaal niveau,
+                waarna deze worden overgedragen aan de gemeenten. De
+                belangrijkste uitzondering in de nationale collectie van
+                belastingen is de belasting op onroerend goed. Deze belasting
+                wordt administratief gecoördineerd door de regio's, terwijl de
+                fiscale tarieven worden vastgesteld door de gemeenten. De omzet
+                is verdeeld over de verschillende bestuurlijke niveaus
+                (gemeenten, provincies, regio's).
+                
+                </Description>
+                <Description type='label' lang='nl'>
+                Belastingen op inkomen
+                </Description>
+               <ParameterSystem name='withholding_income_tax' instanceName='withholding_income_tax'> 
+                        <Description type='description' lang='en'>
+                        
+                        All earning individuals are obliged to fill in a tax
+                        return if their income exceeds the minimum taxable
+                        income (&#8364;5780 per individual in 2005), except if their
+                        income consists entirely of a state pension or real
+                        estate income that is taxable only at the rate of
+                        cadastral income. As withholding tax is calculated
+                        taking only a few characteristics into account,
+                        differences between withholding tax and the final amount
+                        due are often considerable. A clearance of the balance
+                        usually takes place in the first half of the second year
+                        after the period in which the income has been received.
+                        
+                        </Description>
+                        <Description type='label' lang='en'>
+                        Withholding Income Tax
+                        </Description>
+                        <Description type='description' lang='nl'>
+                        
+                        Alle individuen verdienen zijn verplicht in te vullen in
+                        een aangifte, indien het inkomen meer bedraagt dan de
+                        minimale belastbare inkomen (&#8364;5780 per persoon in
+                        2005), behalve als hun inkomen volledig bestaat uit een
+                        staatspensioen of onroerend goed inkomen dat is, slechts
+                        belastbaar tegen het tarief van kadastraal inkomen.
+                        Aangezien de roerende voorheffing wordt berekend met
+                        slechts een paar kenmerken rekening wordt gehouden,
+                        verschillen tussen de roerende voorheffing en de
+                        uiteindelijke verschuldigde bedrag zijn vaak
+                        aanzienlijk. Een goedkeuring van het saldo vindt
+                        gewoonlijk plaats in de eerste helft van het tweede jaar
+                        na de periode waarin het inkomen is ontvangen.
+                        
+                        </Description>
+                        <Description type='label' lang='nl'>
+                        Roerende Inkomstenbelasting
+                        </Description>
+                        
+                        
+                        <Extra key="sheet" value="tinwh_be"/>
+               </ParameterSystem>
+                <ParameterSystem name="deduction_of_professional_expenses" instanceName="deduction_of_professional_expenses" >
+                        <Description lang='en' type='description'>
+                        <p>
+                        
+                        In this category, the simulation possibilities are
+                        limited. As detailed expenditure data lack from the
+                        data, it is impossible to reconstruct the deductions.
+                        
+                        </p>                      
+                        <p>
+                        
+                        Two exceptions to this apply: paid alimony and
+                        work-related expenses. Paid alimony is available in the
+                        data and is deductible up to 80% of the paid amounts if
+                        the beneficiary does not live in the same household as
+                        the taxpayer and the payment must be the result of a
+                        court order.
+                        
+                        </p>
+                        <p>
+                        
+                        For all workers, gross taxable income from a
+                        professional activity is reduced by the amount of
+                        work-related costs incurred, or by a lump sum amount,
+                        whichever is most favourable. In the case of real costs
+                        the taxpayer must prove these costs if asked for by the
+                        tax legislator. In EUROMOD, lump sum costs are simulated
+                        for every worker.
+                        
+                        </p>
+                        <p>
+                        
+                        The total amount of the lump sum costs cannot exceed the
+                        amount of &#8364;3110 which corresponds to gross taxable
+                        income of &#8364;54637.
+                        
+                        </p>
+                        <p>
+                        
+                        For managers and self-employed only one rate of 5% on
+                        gross taxable income applies to determine the lump sum
+                        amount of work related costs with a maximum set at
+                        &#8364;3110.
+                        
+                        </p>
+                        </Description>
+                        <Description lang='en' type='label'>
+                                Deduction of professional expenses
+                        </Description>
+                        
+                        <Description lang='nl' type='description'>
+                        <p>
+                        
+                        In deze categorie, de simulatie zijn de mogelijkheden
+                        beperkt. Zoals gebrek aan gedetailleerde gegevens over
+                        uitgaven van gegevens uit de gegevens, is het onmogelijk
+                        om de aftrek te reconstrueren.
+                        </p>
+                        <p>
+                        
+                        Twee uitzonderingen hierop van toepassing: betaalde
+                        alimentatie en werkgerelateerde kosten. Betaalde
+                        alimentatie is beschikbaar in de gegevens en is
+                        aftrekbaar tot 80% van de betaalde bedragen indien de
+                        begunstigde woont niet in hetzelfde huishouden als de
+                        belastingbetaler en de betaling moet het resultaat van
+                        een rechterlijk bevel zijn.
+                        </p>
+                        <p>
+                        
+                        Voor alle werknemers, het bruto belastbaar inkomen uit
+                        een beroepsactiviteit wordt verminderd met het bedrag
+                        van de gemaakte kosten in verband met het werk, of door
+                        een forfaitair bedrag, afhankelijk van het gunstigst is.
+                        In het geval van de werkelijke kosten van de
+                        belastingbetaler moet bewijzen deze kosten, indien
+                        gevraagd door de fiscale wetgever. In Euromod,
+                        forfaitaire kosten worden gesimuleerd voor elke worker.1
+                        </p>
+                        <p>
+                        
+                        Het totale bedrag van de forfaitaire kosten niet hoger
+                        zijn dan het bedrag van &#8364;3110 die overeenkomt met
+                        het bruto belastbaar inkomen van &#8364;54.637.
+                        
+                        </p>
+                        <p>
+                        
+                        Voor managers en zelfstandigen slechts een tarief van 5%
+                        van het bruto belastbaar inkomen van toepassing is op
+                        het forfaitaire bedrag vast te stellen van het werk
+                        verband houdende kosten, met een maximum vastgesteld op
+                        &#8364;3110.
+                        
+                        </p>
+                        </Description>
+                        <Description lang='nl' type='label'>
+                         Aftrek van uitgaven
+                        </Description>
+                        
+                         <!-- 
+                         <Parameter name='' instanceName=''>
+                         
+                         </Parameter>
+                         -->
+                         <Extra key="sheet" value="tintace_be"/>
+                         
+                </ParameterSystem>
+                <ParameterSystem name="income_tax" instanceName="income_tax" >
+                        <Description lang='en' type='description'>
+                        <p>
+                        The tax unit typically consists of a single person or married couple1, with dependent persons. Household members that satisfy one of the following conditions are possibly fiscally dependent:
+                        <ul>
+                        <li>descendants of the taxpayer or his/her spouse (no age limits)</li>
+
+                        <li>children (up to 18 years old) that are not descendants but for which the taxpayer or his/her spouse bears responsibility</li>
+
+                        <li>ascendants of the taxpayer or his/her spouse</li>
+
+                        <li>relatives of the taxpayer or his/her spouse</li>
+
+                        <li>individuals of whom the taxpayer was him- or herself dependent in the past, according to tax legislation.</li>
+                        </ul>
+                        </p>
+                        <p>
+                        
+                        To qualify as dependent one’s own income may not surpass
+                        certain limits. If they do, the individual is considered
+                        a separate tax unit.
+                        
+                        </p>
+                        <p>
+                        
+                        To determine a potentially dependent person’s own means,
+                        the tax legislator takes into account both non-taxable
+                        and taxable income sources. Among the latter a further
+                        distinction is made between 1) occupational income, 2)
+                        real estate income, 3) income from assets, and 4) other
+                        income sources.
+                        
+                        </p>
+                        <p>
+                        
+                        In case of income from a professional activity
+                        (occupational income) one compares 80% of gross taxable
+                        income2 with gross taxable income minus the costs
+                        incurred to obtain this income and takes the lower of
+                        the two. The incurred costs can either be real or lump
+                        sum (cfr. section 2.5.2 for more details).3
+                        
+                        </p>
+                        <p>
+                        
+                        For replacement incomes the standard rate of 80% is used
+                        to determine net own means from replacement income.
+                        
+                        </p>
+                        <p>
+                        
+                        For income from unrented property the minimum is taken
+                        of cadastral income and 10/6 (developed) or 10/9
+                        (undeveloped) of cadastral income minus real incurred
+                        costs.4 If the property produces rental income then the
+                        minimum is taken of the received rent minus the real
+                        costs and 60% of the received rent for developed
+                        property or 80% of rent received for undeveloped
+                        property.5
+                        
+                        </p>
+                        <p>
+                        
+                        Income from assets is counted in net own means as the
+                        minimum of gross income from assets minus real costs and
+                        80% of gross income from assets.
+                        
+                        </p>
+                        <p>
+                        
+                        For maintenance allowances (alimony) and income from non
+                        taxable sources one takes 80% of the (gross) amount as
+                        net own means.
+                        
+                        </p>
+                        <p>
+                        
+                        In the case of children child allowances, birth and
+                        adoption allowances, scholarships, alimony and earnings
+                        of disabled children from employment in sheltered
+                        workplaces are not included in the means test for net
+                        own means and they are not taxable either.
+                        
+                        </p>
+                        <p>
+                        
+                        The yearly net own means for children cannot exceed
+                        &#8364;2120 (2005). This amount is increased to
+                        &#8364;3670 for children of lone parents6.
+                        
+                        </p>
+                        <p>
+                        
+                        Other rules apply for assessing the dependency of
+                        (grand)parents. The principal amount of &#8364;2120 remains
+                        the same, but if the persons are 65 or older and enjoy
+                        pensions, part of the latter (with a maximum of &#8364;20,450
+                        / year) is not considered in the determination of net
+                        own means. For the remainder, if yearly net own means do
+                        not exceed &#8364;2120, both (grand)parents are dependent. If
+                        net own means are between &#8364;2120 and &#8364;4230 only the
+                        (grand)parent with the lowest net own means is
+                        considered dependent. If net own means are above &#8364;4230
+                        than none of the (grand)parents are dependent.
+                        </p>
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                                Income tax
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        <p>
+                        
+                        De fiscale eenheid bestaat meestal uit een enkele
+                        persoon of gehuwde couple1, met afhankelijke personen.
+                        Leden van het huishouden die voldoen aan een van de
+                        volgende voorwaarden zijn mogelijk fiscaal ten laste:
+                        
+                        <ul>
+                        <li> afstammelingen van de belastingplichtige of zijn / haar echtgenoot (geen leeftijdsgrens grenzen) </li>
+
+                        <li> kinderen (tot 18 jaar oud) die niet zijn nakomelingen, maar waarvoor de belastingplichtige of zijn / haar echtgenoot de verantwoordelijkheid draagt </li>
+
+                        <li> bloedverwanten in opgaande lijn van de belastingplichtige of zijn / haar echtgenoot </li>
+
+                        <li> verwanten van de belastingplichtige of zijn / haar echtgenoot </li>
+
+                        <li> individuen van wie de belastingplichtige was hem-of haarzelf in het verleden afhankelijk zijn, afhankelijk van de fiscale wetgeving. </li>
+                        </ul>
+                        </p>
+                        <p>
+                        
+                        Om te kwalificeren als eigen afhankelijke je inkomen mag niet te overtreffen
+                        bepaalde grenzen. Als ze dat doen, is het individu beschouwd
+                        een aparte fiscale eenheid.
+                        
+                        </p>
+                        <p>
+                        
+                        Om vast te stellen een potentieel zorgbehoevende persoon
+                        zijn eigen middelen, de belasting wetgever rekening
+                        houdt met zowel niet-belastbare belastbaar inkomen en de
+                        bronnen. Onder de laatstgenoemde een extra Er wordt
+                        onderscheid gemaakt tussen 1) beroepsinkomen, 2)
+                        onroerend goed inkomen, 3) inkomsten uit vermogen, en 4)
+                        andere bronnen van inkomsten.
+                        
+                        </p>
+                        <p>
+                        
+                        In het geval van inkomsten uit een beroepsactiviteit
+                        (Bedrijfsvoorheffing) Vergelijkt men 80% van bruto
+                        belastbaar income2 met een bruto belastbaar inkomen
+                        minus de kosten gemaakt om deze inkomsten te verkrijgen
+                        en neemt de laagste van de twee. De gemaakte kosten
+                        kunnen zowel reële of forfaitaire sum (cfr. paragraaf
+                        2.5.2 voor meer details) .3
+                        
+                        </p>
+                        <p>
+                        
+                        Voor de vervanging inkomens het normale tarief van 80%
+                        wordt gebruikt op het netto eigen middelen vast te
+                        stellen uit vervangingsinkomen.
+                        
+                        </p>
+                        <p>
+                        
+                        Voor inkomsten uit onroerend goed unrented het minimum
+                        wordt genomen van het kadastraal inkomen en 10 / 6
+                        (ontwikkeld) of +10 / 9 (Onbebouwd) van het kadastraal
+                        inkomen verminderd met de werkelijk gemaakte costs.4 Als
+                        het goed produceert dan de huurinkomsten minimum is
+                        gehouden met de ontvangen huur minus de reële kosten en
+                        60% van de ontvangen huur voor ontwikkeld eigendom of
+                        80% van de huur ontvangen voor braakliggende property.5
+                        
+                        </p>
+                        <p>
+                        
+                        Opbrengsten uit activa is meegeteld in de netto eigen
+                        middelen als de minimum van bruto-inkomsten uit activa
+                        minus werkelijke kosten en 80% van het bruto inkomen uit
+                        vermogen.
+                        
+                        </p>
+                        <p>
+                        
+                        Voor onderhoud emissierechten (alimentatie) en inkomsten
+                        uit niet belastbare bronnen neemt men 80% van de (bruto)
+                        bedrag als netto eigen middelen.
+                        
+                        </p>
+                        <p>
+                        
+                        In het geval van kinderen kinderbijslag, geboorte-en
+                        adoptie, beurzen, alimentatie en winst van gehandicapte
+                        kinderen van de werkgelegenheid in de beschutte
+                        werkplekken zijn niet inbegrepen in de middelen voor de
+                        netto-test eigen middelen en ze zijn niet belastbaar
+                        ofwel.
+                        
+                        </p>
+                        <p>
+                        
+                        De jaarlijkse netto eigen middelen voor de kinderen
+                        kunnen niet meer bedragen dan &#8364;2.120 (2005). Dit
+                        bedrag wordt verhoogd tot &#8364;3670 voor kinderen van
+                        alleenstaande parents6.
+                        
+                        </p>
+                        <p>
+                        
+                        Andere regels gelden voor de beoordeling van de
+                        afhankelijkheid van (Groot) ouders. De hoofdsom van
+                        &#8364;2120 blijft hetzelfde, maar als de personen 65
+                        jaar of ouder en genieten pensioenen, een deel van de
+                        laatste (met een maximum van &#8364;20.450 / Jaar) is
+                        buiten beschouwing gelaten in de bepaling van de netto-
+                        eigen middelen. Voor de rest, als jaarlijks netto eigen
+                        middelen doen niet hoger zijn dan &#8364;2120, zowel
+                        (groot) ouders zijn aangewezen. Als netto eigen middelen
+                        tussen de &#8364;2120 en &#8364;4230 alleen de (Groot)
+                        ouder met de laagste netto eigen middelen is beschouwd
+                        als ten laste. Als het netto eigen middelen boven
+                        &#8364;4230 dan niets van de (groot) ouders afhankelijk
+                        zijn. </p>
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                                Inkomstenbelasting
+                        </Description>
+
+                         <Parameter logicalType="tax_allowance" instanceName="base_tax_allowance">
+                                <Description type='description' lang='en'>Base tax allowance</Description>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_first_dependent_child">
+                                <Description type='description' lang='en'>Supplement for first dependent child</Description>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_second_dependent_child">
+                                <Description type='description' lang='en'>Supplement for second dependent child</Description>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_third_dependent_child">
+                                <Description type='description' lang='en'>Supplement for third dependent child</Description>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_each_additional_dependent_child">
+                                <Description type='description' lang='en'>Supplement for each additional dependent child</Description>
+                         </Parameter>
+                        
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_dependent_person_under_65">
+                                <Description type='description' lang='en'>Supplement for dependent person(under 65)</Description>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_dependent_person_65_and_over">
+                                <Description type='description' lang='en'>Supplement for dependent person (65 and over)</Description>
+                         </Parameter>
+
+                         <Parameter logicalType="tax_allowance" instanceName="supplement_for_lone_parent_family">
+                                <Description type='description' lang='en'>Supplement for lone parent family</Description>
+                         </Parameter>
+
+                        
+                        <ParameterSystem name="refundable_tax_credit_for_children">
+                                <Description lang='en' type='description'> 
+                                FIXME
+                                </Description>
+                                 <Parameter logicalType="tax_allowance" instanceName="maximum_refundable_amount_per_dependent_child">
+                                        <Description type='description' lang='en'>Maximum refundable amount per dependent child (yearly amount)</Description>
+                                 </Parameter>
+                        </ParameterSystem>
+                        
+                        <ParameterSystem name="marital_quotient">
+                        
+                                <Description lang='en' type='description'>
+                                
+                                The joint taxable income that can be transferred
+                                from the earning spouse to the non-earning
+                                spouse and treated as his/her individual taxable
+                                income.
+
+                                </Description>
+                                
+                                 <Parameter logicalType="rate" instanceName="maximum_percentage">
+                                        <Description type='description' lang='en'>Between married and legally cohabiting spouses</Description>
+                                 </Parameter>
+                                 
+                                 <Parameter logicalType="tax_allowance" instanceName="maximum_transfer">
+                                        <Description type='description' lang='en'>Maximum transfer</Description>
+                                 </Parameter>
+                                
+                        </ParameterSystem>
+                                
+                        <Extra key="sheet" value="tin_be"/>
+                        
+                </ParameterSystem>
+         <!--
+          any_kind, 
+          rate =>
+          tax_allowance =>
+          tax_band =>
+          benefit =>
+          age_limit =>
+          quickies =>
+          poverty_line =>
+          rates_and_bands =>   
+         -->
+         
+        </ParameterSystem>
+        <ParameterSystem name="social_security_contributions" instanceName="social_security_contributions" >
+                
+                <Description lang='en' type='description'>
+                
+                Social insurance contributions are different for wage earners on
+                the public and private labour market, are different for blue and
+                white collar workers, and are different for earned wages and for
+                replacement income.
+                
+                </Description>
+                
+                <Description lang='en' type='label'>
+                        Social Security Contributions
+                </Description>
+
+                <Description lang='nl' type='description'>
+                
+                Sociale premies zijn verschillend voor de loontrekkenden op de
+                de publieke en private arbeidsmarkt, zijn verschillend voor
+                blauw en witteboordenwerkers, en zijn verschillend voor
+                verdiende loon en voor vervangingsinkomen.
+                
+                </Description>
+                
+                <Description lang='nl' type='label'>
+                        Socialezekerheidspremies
+                </Description>
+                
+                <ParameterSystem name="employer_social_security_contributions" instanceName="employer_social_security_contributions" >
+                        <Description lang='en' type='description'>
+                        
+                        Employers’ social insurance contributions are calculated
+                        on the gross wage. The final total ratio ranges from 33%
+                        to 40.73% of the gross wage, dependent on the size of
+                        the firm and whether the employee is a blue or white
+                        collar worker.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                                Employer Social Security Contributions
+                
+                         </Description>
+                        <Description lang='nl' type='description'>
+                        
+                       Sociale verzekeringen van werkgevers bijdragen worden
+                       berekend op het bruto loon. De uiteindelijke totale
+                       overbrengingsverhouding varieert van 33% tot 40,73% van
+                       het brutoloon, afhankelijk van de grootte van de
+                       onderneming en of de werknemer een blauwe of witte
+                       arbeider.
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                                Sociale Zekerheid werkgeversbijdragen
+                
+                         </Description>
+                         
+                         <Extra key="sheet" value="tscee_be"/>
+                </ParameterSystem>
+                <ParameterSystem name="employee_social_security_contributions" instanceName="employee_social_security_contributions" >
+                
+                        <Description lang='en' type='description'>
+                        
+                        Employeess social insurance contributions are paid on
+                        total gross earnings without ceiling and before income
+                        tax deductions. Remunerations include any advantages in
+                        money, or advantages that can be expressed in monetary
+                        terms, granted by the employer to the employee as a
+                        counterpart for labour supplied. The standard rate of
+                        the social insurance contribution is 13.07% of total
+                        gross earnings. Employees are eligible for a reduction
+                        in social insurance contributions, called “workbonus”,
+                        if they satisfy certain income conditions. Social
+                        insurance contributions are calculated slightly
+                        differently for some income components of blue collar
+                        workers and white collar workers. For instance, blue
+                        collar workers don’t pay social insurance contributions
+                        on their single holiday earnings (corresponding to 8% of
+                        their yearly wage), but on their regular earnings, pay
+                        social insurance contributions on 108% of their wage.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                                Employee Social Security Contributions
+                                
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        Medewerkers sociale premies worden betaald op totaal van
+                        de bruto winst, zonder plafond en het inkomen vóór
+                        belastingaftrek. Bezoldigingen omvatten alle voordelen
+                        in geld of voordelen die kunnen worden uitgedrukt in
+                        monetaire voorwaarden, toegekend door de werkgever aan
+                        de werknemer als tegenprestatie voor arbeid geleverd.
+                        Het normale tarief van de sociale verzekeringen bijdrage
+                        is 13,07% van de totale het brutoloon. Werknemers komen
+                        in aanmerking voor een vermindering in de sociale
+                        premies, genaamd "werkbonus", indien zij voldoen aan
+                        bepaalde voorwaarden inkomen. Sociaal premies zijn iets
+                        berekend verschillend voor sommige onderdelen van het
+                        inkomen blauwe kraag werknemers en bedienden.
+                        Bijvoorbeeld, blauw arbeiders betalen geen sociale
+                        premies op hun winst enkel vakantiegeld (wat overeenkomt
+                        met 8% van de hun jaarlijkse loon), maar op hun
+                        reguliere inkomsten, te betalen sociale premies op 108%
+                        van hun loon.
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                                Medewerker Sociale Zekerheid Bijdragen
+                                
+                        </Description>
+                        
+                         <Extra key="sheet" value="tscer_be"/>
+                </ParameterSystem>
+                <ParameterSystem name="pensioners_social_security_contributions" instanceName="pensioners_social_security_contributions" >
+                        <Description lang='en' type='description'>
+                        
+                        Retirement and survival pension benefits are subject to
+                        a social insurance contribution of 3.55% for the funding
+                        of sickness and disability insurance. However, if the
+                        contribution would bring the pension amount below a
+                        certain threshold no contributions are due. Although
+                        strictly speaking an unemployment benefit, the treatment
+                        of early retirement pensions concerning social insurance
+                        contributions is more similar to that on pensions. On
+                        the one hand, a social insurance contribution of 3.5% is
+                        withheld by the employer on the part paid by the
+                        employer to fund pension insurance. On the other hand, a
+                        contribution of 1% to 3%, depending on the start date of
+                        the early retirement, is withheld by the unemployment
+                        office on the unemployment benefit.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                         Pensioners contributions to health and disability
+                         insurance and solidarity contribution
+                        
+                         </Description>
+                        
+                        <Description lang='nl' type='description'>
+                         Pensioen-en overlevingspensioenen uitkeringen zijn onderworpen aan
+                        een sociale verzekering van 3,55% voor de financiering
+                        van de ziekte-en invaliditeitsverzekering. Echter, indien de
+                        bijdrage zou het pensioenbedrag te brengen onder een
+                        bepaalde drempel geen bijdragen verschuldigd zijn. Hoewel
+                        strikt genomen ook een werkloosheidsuitkering, de behandeling
+                        van vervroegde uittreding inzake sociale verzekering
+                        bijdragen is meer vergelijkbaar met die op de pensioenen. Op
+                        de ene hand, een sociale verzekering bijdrage van 3,5% is
+                        ingehouden door de werkgever op het deel betaald door de
+                        werkgever aan pensioenverzekering. Aan de andere kant, een
+                        bijdrage van 1% tot 3%, afhankelijk van de startdatum van
+                        de vervroegde pensionering, wordt ingehouden door de werkloosheid
+                        kantoor op de werkloosheidsuitkering. 
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                         Gepensioneerden bijdragen aan gezondheid en handicap
+                         verzekerings-en solidariteitsbijdrage
+                         
+                         </Description>
+                        
+                         <Extra key="sheet" value="tscpe_be"/>
+                         
+                </ParameterSystem>
+                
+                <ParameterSystem name="self_employed_social_security_contributions" instanceName="self_employed_social_security_contributions" >
+                        <Description lang='en' type='description'>
+                        
+                        Full-time self-employed pay social insurance
+                        contributions on a quarterly basis based on their income
+                        in the third calendar year preceding the year of
+                        contribution. If the self-employed has not yet been
+                        active for three years a lump sum amount of
+                        contributions is levied which will be regulated later
+                        against real earned income. The basis of calculation is
+                        net indexed earnings, i.e. gross earnings net of
+                        professional costs, and possible losses. The consumer
+                        price index is used for indexation. For self-employed in
+                        complementary activity, a different system applies, a
+                        category which is further subdivided for those before
+                        retirement age, the self-employed who combine this with
+                        pension benefits, and the self-employed after retirement
+                        age but without retirement pension. For the exact
+                        details of these systems, we refer to section 2.4. A
+                        self-employed starting an activity will enjoy a
+                        reduction of social insurance contributions during the
+                        first four quarters following the third complete
+                        calendar year of activity.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        Self-employed social insurance contribution
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        Full time zelfstandigen te betalen sociale premies
+                        bijdragen op kwartaalbasis basis van hun inkomen in het
+                        derde kalenderjaar dat voorafgaat aan het jaar van
+                        bijdrage. Als de zelfstandigen is nog niet actief voor
+                        de drie jaar een forfaitair bedrag van bijdragen wordt
+                        geheven, die later zal worden geregeld tegen de reële
+                        inkomsten uit arbeid. De basis van de berekening is
+                        netto geïndexeerde inkomsten, dat wil zeggen na aftrek
+                        van het brutoloon professionele kosten en mogelijke
+                        verliezen. De consument prijsindex wordt gebruikt voor
+                        indexatie. Voor zelfstandigen in aanvullende activiteit,
+                        een ander systeem van toepassing is, een categorie, die
+                        verder wordt onderverdeeld voor degenen die vóór
+                        pensioengerechtigde leeftijd, de zelfstandigen die dit
+                        combineren met pensioenuitkeringen en de zelfstandige na
+                        pensionering leeftijd, maar zonder pensioen. Voor de
+                        exacte details van deze systemen, verwijzen we naar
+                        paragraaf 2.4. Een zelfstandige starten van een
+                        activiteit zal genieten van een verlaging van de sociale
+                        premies tijdens de eerste vier kwartalen na het derde
+                        volledige kalenderjaar van de activiteit.
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                        Gepensioneerden bijdragen aan gezondheid en handicap
+                         verzekerings-en solidariteitsbijdrage
+                         
+                         </Description>
+                        
+                         <Extra key="sheet" value="tsce_be"/>
+                </ParameterSystem>
+                
+        </ParameterSystem>
+        <ParameterSystem name="benefits" instanceName="benefits" >
+                <Description type='description' lang='en'>
+                
+                Benefits that are part of the social security system
+                (unemployment, pensions, sickness and disability benefits,
+                family allowances, income support) are within the competence of
+                the federal government. The most important benefits that are
+                within the competence of the regions are threefold. First, there
+                are the benefits related to education (study allowances).
+                Second, additional social assistance (in addition to income
+                support) also is a regional matter. Third, since mid-2000s, the
+                compulsory “Flemish care insurance” was established, which is
+                only applicable for inhabitants of the region of Flanders and
+                optionally available for the inhabitants of Brussels.
+                
+                </Description>
+                <Description type='label' lang='en'>
+                        State Benefits
+                </Description>
+                
+                <Description type='description' lang='nl'>
+                
+                Voordelen die deel uitmaken van het stelsel van sociale
+                zekerheid (werkloosheid, pensioenen, ziekte-en
+                invaliditeitsuitkeringen, kinderbijslag, inkomenssteun) vallen
+                onder de bevoegdheid van de federale overheid. De belangrijkste
+                voordelen die onder de bevoegdheid van de regio's zijn
+                drieledig. Ten eerste zijn er de voordelen met betrekking tot
+                onderwijs (studie toelagen). Ten tweede, aanvullende sociale
+                bijstand (naast de inkomenssteun) ook een regionale
+                aangelegenheid. Ten derde, sinds medio jaren 2000 werd de
+                verplichte "Vlaamse zorgverzekering" opgericht, die is alleen
+                van toepassing voor inwoners van de regio Vlaanderen en
+                optioneel verkrijgbaar voor de inwoners van Brussel.
+                
+                </Description>
+                
+                <Description type='label' lang='nl'>
+                        Staat Voordelen
+                </Description>
+                
+                <ParameterSystem name="birth_allowance" instanceName="birth_allowance" >
+                        <Description lang='en' type='description'>
+                        
+                        The birth allowance is a universal lump sum benefit to
+                        the parents of a new-born baby. The amount only depends
+                        on the rank of the child (first-born or not). If the
+                        first-borns are twins then the amount for a first-born
+                        applies for both. A birth allowance can also be given in
+                        case of miscarriage as long as the pregnancy has lasted
+                        at least 180 days.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                        Birth allowance
+                        
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        De geboorte is een universele uitkering ineens voordeel
+                        voor de ouders van een pasgeboren baby. Het bedrag hangt
+                        alleen af van de rang van het kind (eerste-geboren of
+                        niet). Als het eerste pasgeborenen zijn tweelingen dan
+                        wordt het bedrag voor een eerste geboren geldt voor
+                        beide. Een geboorte vergoeding kan ook gegeven worden in
+                        geval van een miskraam als de zwangerschap zolang heeft
+                        geduurd minstens 180 dagen.
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                        Geboorte uitkering
+                        
+                        </Description>
+                        
+                        
+                        <Extra key="sheet" value="bchba_be"/>
+                </ParameterSystem>
+                <ParameterSystem name="income_support" instanceName="income_support" >
+                        <Description lang='en' type='description'>
+                        
+                        If the means of a person are less than a certain
+                        threshold, that person is eligible for income support up
+                        to the level of the minimum income. In order to receive
+                        income support, one needs to apply for it at the offices
+                        for public assistance (CPAS). These centres have some
+                        discretionary power over the acceptance. For example,
+                        the CPAS can demand an individualized project for social
+                        (re)integration that the applicant has to agree to and
+                        follow in order to get and/or keep income support.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                        Income support
+                        
+                        </Description>
+                        
+                        <Description lang='nl' type='label'>
+                        
+                        Leefloon / revenu d’integration sociale
+                        
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        Indien de middelen van een persoon minder dan een
+                        bepaalde drempel, die persoon in aanmerking komt voor
+                        inkomenssteun up tot het niveau van het minimuminkomen.
+                        Om te ontvangen inkomenssteun, dient men aan te vragen
+                        op de kantoren voor de openbare bijstand (OCMW). Deze
+                        centra hebben een aantal discretionaire macht over de
+                        aanvaarding. Bijvoorbeeld, het OCMW kan de vraag naar
+                        een geïndividualiseerd project voor maatschappelijke
+                        (Re) integratie dat de aanvrager heeft om akkoord te
+                        gaan en volgen om te krijgen en / of te houden
+                        inkomenssteun.
+                        
+                        </Description>
+                        
+                        
+                         <Extra key="sheet" value="bsa_be"/>
+                </ParameterSystem>
+                <ParameterSystem name="income_support_for_elderly" instanceName="income_support_for_elderly" >
+                        
+                        <Description lang='en' type='description'>
+                        
+                        Income support for the elderly is designed in the same
+                        way as the regular income support, but available for
+                        persons aged 63 or over. The categories are different
+                        than in the regular income support, as are the amounts.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                        Income support for the Elderly
+                        
+                        </Description>
+                        <Description lang='nl' type='description'>
+                        
+                        Inkomensgarantie voor ouderen is ontworpen in dezelfde
+                        wijze als de reguliere inkomsten te ondersteunen, maar
+                        beschikbaar voor personen die 63 jaar oud of ouder. De
+                        categorieën zijn verschillende dan in de reguliere
+                        inkomenssteun, net als de bedragen.
+                        
+                        </Description>
+                        <Description lang='nl' type='label'>
+                        
+                        Inkomensgarantie voor ouderen 
+                        
+                        </Description>
+                        
+                         <Extra key="sheet" value="bsaoa_be"/>
+                </ParameterSystem>
+                <ParameterSystem name="child_benefits" instanceName="child_benefits" >
+                        <Description lang='en' type='description'>
+                        <p>
+                        
+                        Child allowance is paid to families with dependent
+                        children. In principle, children are dependent if they
+                        are younger than 18 years old. The exceptions to this
+                        rule are twofold. On the one hand, the child remains
+                        dependent until 21 if he or she is disabled. On the
+                        other hand, a child can remain dependent until the age
+                        of 25 if he or she is in full-time education (including
+                        higher and advanced education), not married, and whose
+                        net taxable income as well as the number of days a
+                        gainful occupation has been exercised do not exceed
+                        certain thresholds. The income thresholds are slightly
+                        higher for handicapped children as well as for children
+                        of lone parents.
+                        
+                        </p>
+                        <p>
+                        
+                        In general a beneficiary, usually the father, opens a
+                        right to child allowance if his employer (or himself if
+                        he is self-employed) pays or has paid social security
+                        contributions. The relevant rules for the computation of
+                        child allowances depend on the contribution scheme to
+                        which the employer of the beneficiary or the beneficiary
+                        himself contributed: the contributory scheme can be as
+                        wage earner on the private labour market, as wage earner
+                        on the public labour market (either statutory or
+                        contractual) or as self-employed. If a beneficiary did
+                        not contribute to any of the social security
+                        contribution schemes he or she may still open a right to
+                        child allowance through the system of guaranteed child
+                        allowance. The amount of child allowance depends on the
+                        birth rank of the child. The guaranteed child allowance
+                        is means tested. Orphan allowances do not depend on the
+                        child’s rank. A monthly lump sum amount of &#8364;290.20
+                        is granted to each orphan.
+                        
+                        </p>
+                        </Description>
+                        <Description lang='en' type='label'>
+                        Child allowances
+                        </Description>
+                        
+                        <Description lang='nl' type='description'>
+                        <p>
+                        
+                        Kinderbijslag wordt uitgekeerd aan gezinnen met
+                        afhankelijke kinderen. In principe zijn kinderen ten
+                        laste, indien zij jonger bent dan 18 jaar oud. De
+                        uitzonderingen op dit regel zijn tweeledig. Aan de ene
+                        kant, het kind blijft afhankelijk zijn tot en met 21 als
+                        hij of zij is uitgeschakeld. Op de Anderzijds kan een
+                        kind ten laste te blijven tot de leeftijd van 25 als hij
+                        of zij is in het voltijds onderwijs (inclusief hoger en
+                        voortgezet onderwijs), niet getrouwd, en waarvan de
+                        netto belastbaar inkomen, alsook het aantal dagen dat
+                        een winstgevende activiteit is uitgeoefend niet meer dan
+                        bepaalde drempels. De inkomensgrenzen zijn iets hoger
+                        voor gehandicapte kinderen, alsook voor kinderen van
+                        alleenstaande ouders.
+                        
+                        </p>
+                        <p>
+                        
+                        In het algemeen een begunstigde, meestal de vader, opent
+                        een recht op kindertoeslag indien zijn werkgever (of
+                        zichzelf als hij is zelfstandige) betaalt of heeft
+                        betaald de sociale zekerheid bijdragen. De relevante
+                        regels voor de berekening van kinderbijslag afhankelijk
+                        van de bijdrage regeling waarbij de werkgever van de
+                        begunstigde of de begunstigde zelf zou hebben
+                        bijgedragen: de premie regeling kan worden als
+                        kostwinner op de private arbeidsmarkt, als werknemer in
+                        loondienst op de publieke arbeidsmarkt (zij het
+                        wettelijke of contractuele) of als zelfstandige. Indien
+                        een begunstigde werd niet bijdragen tot een van de
+                        sociale zekerheid premieregelingen kan hij of zij nog
+                        steeds open een recht op kinderbijslag via het systeem
+                        van gewaarborgde kinderbijslag uitkering. Het bedrag van
+                        de kinderbijslag hangt af van de rang van de geboorte
+                        van het kind. De gewaarborgde kinderbijslag is
+                        inkomensafhankelijk. Orphan vergoedingen zijn niet
+                        afhankelijk van de kind rang. Een maandelijkse
+                        forfaitaire bedrag van &#8364;290,20 is toegekend aan elk
+                        weeskind. </p> 
+                        
+                        </Description> <Description lang='nl' type='label'>
+                        
+                        Kinderbijslag
+                        
+                        </Description>
+                        
+                        <Extra key="sheet" value="bch_be"/>
+                         
+                </ParameterSystem>
+                <ParameterSystem name="unemployment_benefits" instanceName="unemployment_benefits" >
+                        
+                        <Description lang='en' type='description'>
+                        
+                        In the employment legislation one can distinguish three
+                        main groups: the indemnified unemployed, support for
+                        employed people, and support for the employed who reduce
+                        their working hours. The simulation of unemployment
+                        benefits will only be for the first group (also the most
+                        important group in size). This includes the unemployed
+                        after employment, the unemployed after finishing
+                        studies, the older unemployed and the early retired.
+                        
+                        </Description>
+                        <Description lang='en' type='label'>
+                        
+                        Unemployment benefits
+                        
+                        </Description>
+                        
+                        <Description lang='nl' type='description'>
+                        
+                        In de arbeidswetgeving kan men onderscheiden drie
+                        hoofdgroepen: de vergoede werklozen, ondersteuning voor
+                        werkenden, en steun voor de werknemers die te
+                        verminderen hun werktijden. De simulatie van de
+                        werkloosheid voordelen worden alleen voor de eerste
+                        groep (ook de meest belangrijke groep in omvang). Dit
+                        omvat de werklozen na het dienstverband, na het afronden
+                        van de werklozen studies, de oudere werklozen en het
+                        begin van de gepensioneerde.
+                        
+                        </Description>
+                        
+                        <Description lang='nl' type='label'>
+                        Werkloosheidsuitkering
+                        </Description>
+                        
+                        <Extra key="sheet" value="bun_be"/>
+                </ParameterSystem>
+                
+                
+        </ParameterSystem>
+        
+        <EnumeratedType id="et1" >
+                <EnumValue name="value" value="22">
+                        <Text lang='en'>Value 1</Text>
+                        <Text lang='nl'>Value 1</Text>
+                </EnumValue>
+                <EnumValue name="value2" value="23" default="true">
+                        <Text lang='en'>Value 2</Text>
+                        <Text lang='nl'>Value 2</Text>
+                </EnumValue>
+        </EnumeratedType>
+        
+</ParameterSystem>

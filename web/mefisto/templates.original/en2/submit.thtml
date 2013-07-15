@@ -1,0 +1,176 @@
+<table
+ class="submit_table">
+    <tbody>
+        <tr>
+            <td
+             valign="middle">
+                <input
+                 id="save_button"
+                 name="save"
+                 value="Save"
+                 onmouseover="return overlibConditional( 'Save Your Changes' );"
+                 onmouseout="return nd();"
+                 type="submit" />
+                 
+            </td>
+            <td>
+                <input
+                 id="run_submit_button"
+                 name="run"
+                 value="Run"
+                 onmouseover="return overlibConditional( 'Select this to run the model' );"
+                 onmouseout="return nd();"
+                 @_DISABLE-RUN_@
+                 type="submit" />
+                 
+            </td>
+            <td>
+            </td>
+            <td
+             class="reset_table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td
+                             rowspan="2"
+                             valign="middle">
+                                <input
+                                 name="reset"
+                                 value="Reset"
+                                 onmouseover="return overlibConditional( 'Select this button to reset your chosen items.' );"
+                                 onmouseout="return nd();"
+                                 type="submit" />
+                                 
+                            </td>
+                            <td
+                             onmouseover='return overlibConditional( "This sets the parameters on this page back to their original values" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "This sets the parameters on this page back to their original values" );'
+                                 onmouseout="return nd();"
+                                 name="resetselect"
+                                 value="reset_thispage"
+                                 checked="checked"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             onmouseover='return overlibConditional( "This sets the parameters on this page back to their original values" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                These
+                                items
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                             onmouseover='return overlibConditional( "This sets everything, on all pages, back to their original values" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "This sets everything, on all pages, back to their original values" );'
+                                 onmouseout="return nd();"
+                                 name="resetselect"
+                                 value="reset_allpages"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             onmouseover='return overlibConditional( "This sets everything, on all pages, back to their original values" );'
+                             onmouseout="return nd();"
+                             align="left">
+                                All
+                                items
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td
+             class="uprate_table"
+             valign="middle">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Uprate:
+                            </td>
+                            <td>
+                               
+                                 
+                            </td>
+                            <td>
+                                <input
+                                 onmouseover="return overlibConditional( 'uprate_uprateAmount_label' );"
+                                 onmouseout="return nd();"
+                                 size="6"
+                                 name="uprate_amount"
+                                 value="0.0"
+                                 type="text" />
+                                 <br/>
+                                 @_UPRATE-ERROR_@
+                            </td>
+                            
+               <td>                            
+                <table>
+                    <tbody>
+                        <tr>
+                            <td
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "This uprates the parameters on this page" );'
+                                 onmouseout="return nd();"
+                                 name="uprateselect"
+                                 value="uprate_thispage"
+                                 checked="checked"
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                              align="left">
+                                These
+                                items
+                            </td>
+                        </tr>
+                        <tr>
+                            <td
+                             align="left">
+                                <input
+                                 onmouseover='return overlibConditional( "This uprates everything, on all pages" );'
+                                 onmouseout="return nd();"
+                                 name="uprateselect"
+                                 value="uprate_allpages"
+                                 @_UPRATE-FIELD-CLASS_@
+                                 type="radio" />
+                                 
+                            </td>
+                            <td
+                             class="inpucolgroup"
+                             align="left">
+                                All
+                                items
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                   </td>         
+                            <td>
+                                <input
+                                 name="uprate"
+                                 value="Uprate"
+                                 onmouseover="return overlibConditional( 'Select this to uprate your chosen selections by this chosen amount.' );"
+                                 onmouseout="return nd();"
+                                 type="submit" />
+                                 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

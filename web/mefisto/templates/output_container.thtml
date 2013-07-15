@@ -1,0 +1,15 @@
+<script  type='text/javascript' >
+
+        initialiseOutputForm();
+	
+</script>
+
+@_OUTPUT-MENU_@
+
+<div id='output_target' ></div>
+
+
+
+
+
+

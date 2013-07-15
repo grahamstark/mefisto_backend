@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "stopping ..."
+/sbin/start-stop-daemon --exec /home/graham_s/VirtualWorlds/projects/mefisto/backend/ada/bin/mefisto_server  -d /home/graham_s/VirtualWorlds/projects/mefisto/backend/ada/ -v --stop $1 $2
+echo "starting ..."
+/sbin/start-stop-daemon --exec /home/graham_s/VirtualWorlds/projects/mefisto/backend/ada/bin/mefisto_server  -d /home/graham_s/VirtualWorlds/projects/mefisto/backend/ada/ -v --start -b   $1 $2

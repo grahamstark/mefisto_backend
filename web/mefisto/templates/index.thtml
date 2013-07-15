@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="@_LANG_@">
+<head>
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@header.thtml "@_PAGE-TITLE_@"
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_SEP_@header_includes.thtml 
+
+</head>
+<body>
+
+<div id='wrapper'>
+                
+                @@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@main_menu.thtml 
+                
+  <div id="page">
+       <div id="page-bgtop">
+                   <div id="page-bgbtm">
+                       	<div class="users">
+                            @_WELCOME_@ @_USERNAME_@ &nbsp; @_USERID_@ <a href="http://virtual-worlds.org.uk/mefisto/logout/">@_LOGOUT_@</a>
+
+                        </div>
+                         <div id="modelNavTop">
+                              @@IF@@ @_DISABLED_@   
+                             <div id="intro_text">
+                             <h1>@_COOKIES_@</h1>
+                             </div>
+                              @@ELSE@@
+                              <ul>
+                                  <li name='home_tab' id='home_tab'><a href="#intro_text">@_HOME-PAGE_@</a></li>
+                                  <li name='quick_input_tab' id='quick_input_tab'><a href="/mefisto/light_page/" >@_LIGHT-PAGE_@</a></li>
+                                  <li name='main_input_tab' id='main_input_tab'><a href="/mefisto/parameters_page/" >@_PARAMETERS-PAGE_@</a></li>
+                                  <li name='main_output_tab' id='main_output_tab'><a id='main_output_link' href="/mefisto/output_page/">@_OUTPUT-PAGE_@</a></li>
+                               </ul>
+                             <div id="intro_text">
+                                <p style='padding-left:20px padding-right:20px'>
+                                        @_FRONT-PAGE_@
+                                </p>
+                             </div>
+                              @@END_IF@@
+                               
+                        </div>
+                    </div> <!-- page-bgbtm -->
+                </div> <!-- page-bgtop -->	
+            </div> <!-- page -->
+            
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@footer.thtml
+
+</div>
+</body>
+</html>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

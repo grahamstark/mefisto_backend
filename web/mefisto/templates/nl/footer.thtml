@@ -1,0 +1,17 @@
+        <div id="footer">
+            <div id="disclaimer"><p style="font-size:smaller;">Disclaimer: De resultaten van de hierna uitgevoerde simulaties zijn indicatief, en dienen met zorg te worden geinterpreteerd. De weergegeven resultaten veronderstellen ongewijzigde brutolonen voor en na de gesimuleerde hervormingen. De weergegeven statistieken betreffen enkel huishoudens in het Vlaams Gewest. Het gesimuleerde beleid en de weergegeven standaardparameters weerspiegelen de situatie medio 2010. Voor meer informatie, klik in het resultatenscherm op 'Uitgang Help'.</p></div>
+            <div id="webdesign">
+                gecreerd door <a href="http://www.makingchoices.be/" target="_blank">makingChoices.be</a> | 
+                <a href='http://virtual-worlds.biz'>Virtual Worlds</a> &bull;
+                
+                uitgevoerd met <a href="http://www.makingchoices.be/ECMS_CLIENT/pages/showpage.php?id=2">
+                <img alt="" src="/mefisto/images/poweredby.png" height="15" width="73" align="middle"
+                border="0" /></a> |
+                <a href='http://libre.adacore.com/libre/tools/aws/'>Ada Web Server</a>
+            </div>
+            <p>
+                Auteursrecht &copy;2010 Flemosi
+            </p>
+        </div>
+        
+

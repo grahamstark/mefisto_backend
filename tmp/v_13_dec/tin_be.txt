@@ -1,0 +1,1044 @@
+	BELGIUM	sys_par_name	sys_reserved	sys_first_sys	BE_2005	BE_2006	BE_2007	BE_2008	BE_2009	BE_2010	sys_end_sys		
+		sys_first_par			TAX: income Tax						
+		func_DefConst	3		on	on	on	on	on	on	
+		const1_name	4		$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	
+		const1_amount	5		0.25	0.25	0.25	0.25	0.25	0.25	
+		const2_name	6		$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	
+		const2_amount	7		0.3	0.3	0.3	0.3	0.3	0.3	
+		const3_name	8		$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	
+		const3_amount	9		0.4	0.4	0.4	0.4	0.4	0.4	
+		const4_name	10		$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	
+		const4_amount	11		0.45	0.45	0.45	0.45	0.45	0.45	
+		const5_name	12		$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	
+		const5_amount	13		0.5	0.5	0.5	0.5	0.5	0.5	
+		const6_name	14		$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	
+		const6_amount	15		7100#y	7290#y	7420#y	7560#y	7900#y	7900#y	
+		const7_name	16		$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	
+		const7_amount	17		10100#y	10380#y	10570#y	10760#y	11240#y	11240#y	
+		const8_name	18		$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	
+		const8_amount	19		16830#y	17300#y	17610#y	17920#y	18730#y	18730#y	
+		const9_name	20		$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	
+		const9_amount	21		30840#y	31700#y	32270#y	32860#y	34330#y	34330#y	
+		const10_name	22		$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	
+		const10_amount	23		0	0	0	0	0	0	
+		const11_name	24		$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	
+		const11_amount	25		0	0	0	0	0	0	
+		const12_name	26		$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	
+		const12_amount	27		0	0	0	0	0	0	
+		const13_name	28		$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	
+		const13_amount	29		9999999999#y	9999999999#y	9999999999#y	9999999999#y	9999999999#y	9999999999#y	
+		const14_name	30		$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	
+		const14_amount	31		99999999999#y	99999999999#y	99999999999#y	99999999999#y	99999999999#y	99999999999#y	
+		const15_name	32		$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	
+		const15_amount	33		999999999999#y	999999999999#y	999999999999#y	999999999999#y	999999999999#y	999999999999#y	
+		const16_name	34		$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	
+		const16_amount	35		5780#y	5940#y	6040#y	6150#y	6430#y	6430#y	
+		const17_name	36		$IT_AlwDisabSupp	$IT_AlwDisabSupp	$IT_AlwDisabSupp	$IT_AlwDisabSupp	$IT_AlwDisabSupp	$IT_AlwDisabSupp	
+		const17_amount	37		1230#y	1260#y	1280#y	1310#y	1370#y	1370#y	
+		const18_name	38		$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	
+		const18_amount	39		1230#y	1260#y	1280#y	1310#y	1370#y	1370#y	
+		const19_name	40		$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	
+		const19_amount	41		1930#y	1990#y	2030#y	2060#y	2150#y	2150#y	
+		const20_name	42		$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	
+		const20_amount	43		3920#y	4030#y	4100#y	4170#y	4360#y	4360#y	
+		const21_name	44		$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	
+		const21_amount	45		4370#y	4490#y	4570#y	4660#y	4870#y	4870#y	
+		const22_name	46		$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	
+		const22_amount	47		1230#y	1260#y	1280#y	1310#y	1370#y	1370#y	
+		const23_name	48		$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	
+		const23_amount	49		1230#y	1260#y	1280#y	1310#y	1370#y	1370#y	
+		const24_name	50		$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	
+		const24_amount	51		2450#y	2520#y	2570#y	2610#y	2730#y	2730#y	
+		const25_name	52		$IT_TCPens	$IT_TCPens	$IT_TCPens	$IT_TCPens	$IT_TCPens	$IT_TCPens	
+		const25_amount	53		1672.24#y	1718.90#y	1748.69#y	1781.29#y	1861.42#y	1861.42#y	
+		const26_name	54		$IT_TCDisab	$IT_TCDisab	$IT_TCDisab	$IT_TCDisab	$IT_TCDisab	$IT_TCDisab	
+		const26_amount	55		2146.60#y	2206.49#y	2242.02#y	2286.58#y	2389.45#y	2389.45#y	
+		const27_name	56		$IT_TCReplIncLim1	$IT_TCReplIncLim1	$IT_TCReplIncLim1	$IT_TCReplIncLim1	$IT_TCReplIncLim1	$IT_TCReplIncLim1	
+		const27_amount	57		18530#y	19050#y	19390#y	19740#y	20630#y	20630#y	
+		const28_name	58		$IT_TCReplIncLim2	$IT_TCReplIncLim2	$IT_TCReplIncLim2	$IT_TCReplIncLim2	$IT_TCReplIncLim2	$IT_TCReplIncLim2	
+		const28_amount	59		37060#y	38100#y	38780#y	39480#y	41260#y	41260#y	
+		const29_name	60		$IT_TCUBCouple	$IT_TCUBCouple	$IT_TCUBCouple	$IT_TCUBCouple	$IT_TCUBCouple	$IT_TCUBCouple	
+		const29_amount	61		1952.58#y	2007.04#y	2042.59#y	2079.88#y	0	0	
+		const30_name	62		$IT_TCUBInd	$IT_TCUBInd	$IT_TCUBInd	$IT_TCUBInd	$IT_TCUBInd	$IT_TCUBInd	
+		const30_amount	63		1672.24#y	1718.90#y	1748.69#y	1781.29#y	1861.42#y	1861.42#y	
+		const31_name	64		$IT_TCUBIncLim1	$IT_TCUBIncLim1	$IT_TCUBIncLim1	$IT_TCUBIncLim1	$IT_TCUBIncLim1	$IT_TCUBIncLim1	
+		const31_amount	65		18530#y	19050#y	19390#y	19740#y	20630#y	20630#y	
+		const32_name	66		$IT_TCUBIncLim2	$IT_TCUBIncLim2	$IT_TCUBIncLim2	$IT_TCUBIncLim2	$IT_TCUBIncLim2	$IT_TCUBIncLim2	
+		const32_amount	67		23130#y	23780#y	24200#y	24640#y	25750#y	25750#y	
+		const33_name	68		$IT_TCChild	$IT_TCChild	$IT_TCChild	$IT_TCChild	$IT_TCChild	$IT_TCChild	
+		const33_amount	69		350#y	360#y	370#y	380#y	390#y	390#y	
+		const34_name	70		$IT_ZTOldUn	$IT_ZTOldUn	$IT_ZTOldUn	$IT_ZTOldUn	$IT_ZTOldUn	$IT_ZTOldUn	
+		const34_amount	71		13686.52#y	13819.18#y	14250.89#y	14876.16#y	15391.28#y	15491.03#y	
+		const35_name	72		$IT_ZTDisab	$IT_ZTDisab	$IT_ZTDisab	$IT_ZTDisab	$IT_ZTDisab	$IT_ZTDisab	
+		const35_amount	73		13835.70#y	14020.07#y	14418.87#y	15052.01#y	15423.94#y	15526.61#y	
+		const36_name	74		$IT_ZTOthReplInc	$IT_ZTOthReplInc	$IT_ZTOthReplInc	$IT_ZTOthReplInc	$IT_ZTOthReplInc	$IT_ZTOthReplInc	
+		const36_amount	75		12452.13#y	12618.06#y	12796.98#y	13546.81#y	13881.55#y	13973.95#y	
+		const37_name	76		$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	
+		const37_amount	77		0	0	125#y	200#y	300#y	125#y	
+		const38_name	78		$IT_RTCBaseAmt2	$IT_RTCBaseAmt2	$IT_RTCBaseAmt2	$IT_RTCBaseAmt2	$IT_RTCBaseAmt2	$IT_RTCBaseAmt2	
+		const38_amount	79		0	0	0	0	250#y	0#y	
+		const39_name	80		$IT_RTCIncLowLim1	$IT_RTCIncLowLim1	$IT_RTCIncLowLim1	$IT_RTCIncLowLim1	$IT_RTCIncLowLim1	$IT_RTCIncLowLim1	
+		const39_amount	81		0	0	5500#y	5500#y	5500#y	5500#y	
+		const40_name	82		$IT_RTCIncLowLim2	$IT_RTCIncLowLim2	$IT_RTCIncLowLim2	$IT_RTCIncLowLim2	$IT_RTCIncLowLim2	$IT_RTCIncLowLim2	
+		const40_amount	83		0	0	0	0	5500#y	5500#y	
+		const41_name	84		$IT_RTCIncUpLim1	$IT_RTCIncUpLim1	$IT_RTCIncUpLim1	$IT_RTCIncUpLim1	$IT_RTCIncUpLim1	$IT_RTCIncUpLim1	
+		const41_amount	85		0	0	21000#y	21000#y	22000#y	18500#y	
+		const42_name	86		$IT_RTCIncUpLim2	$IT_RTCIncUpLim2	$IT_RTCIncUpLim2	$IT_RTCIncUpLim2	$IT_RTCIncUpLim2	$IT_RTCIncUpLim2	
+		const42_amount	87		0	0	22250#y	23000#y	0	0	
+		const43_name	88		$IT_MarrQuotRate	$IT_MarrQuotRate	$IT_MarrQuotRate	$IT_MarrQuotRate	$IT_MarrQuotRate	$IT_MarrQuotRate	
+		const43_amount	89		0.3	0.3	0.3	0.3	0.3	0.3	
+		const44_name	90		$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	
+		const44_amount	91		8160#y	8570#y	8720#y	8880#y	9280#y	9280#y	
+		const45_name	92		$IT_TrRateSE	$IT_TrRateSE	$IT_TrRateSE	$IT_TrRateSE	$IT_TrRateSE	$IT_TrRateSE	
+		const45_amount	93		0.3	0.3	0.3	0.3	0.3	0.3	
+		const46_name	94		$IT_TrSEIncLimSp	$IT_TrSEIncLimSp	$IT_TrSEIncLimSp	$IT_TrSEIncLimSp	$IT_TrSEIncLimSp	$IT_TrSEIncLimSp	
+		const46_amount	95		10820#y	11120#y	11320#y	11530#y	12040#y	12040#y	
+		const47_name	96a		$HO_Reform_Year	$HO_Reform_Year	$HO_Reform_Year	$HO_Reform_Year	$HO_Reform_Year	$HO_Reform_Year	
+		const47_amount	96		2005	2005	2005	2005	2005	2005	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintals_s	tintals_s	tintals_s	tintals_s	tintals_s	tintals_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintami01_s	tintami01_s	tintami01_s	tintami01_s	tintami01_s	tintami01_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			0	0	0	0	0	0	
+		output_var			yhomr_s	yhomr_s	yhomr_s	yhomr_s	yhomr_s	yhomr_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & ({les=10} & {GetPartnerIncome#1>0} & {GetPartnerIncome#2<=0}) & {il_earnedY<=$IT_TrSEIncLimSp}	
+		#1_income			yse	yse	yse	yse	yse	yse	
+		#2_income			yem	yem	yem	yem	yem	yem	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			$IT_TrRateSE*(GetPartnerIncome#1)	$IT_TrRateSE*(GetPartnerIncome#1)	$IT_TrRateSE*(GetPartnerIncome#1)	$IT_TrRateSE*(GetPartnerIncome#1)	$IT_TrRateSE*(GetPartnerIncome#1)	$IT_TrRateSE*(GetPartnerIncome#1)	
+		#1_income_il			il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY	il_netprofY	
+		output_var			sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share_var			sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	sin03_s	
+		share_between			{sin03_s=0}#1	{sin03_s=0}#1	{sin03_s=0}#1	{sin03_s=0}#1	{sin03_s=0}#1	{sin03_s=0}#1	
+		#1_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			n/a	n/a	n/a	n/a	n/a	no	
+		output_var			sin04_s	sin04_s	sin04_s	sin04_s	sin04_s	sin04_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			sin03_s-sin04_s	sin03_s-sin04_s	sin03_s-sin04_s	sin03_s-sin04_s	sin03_s-sin04_s	sin03_s-sin04_s	
+		output_add_var			tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	(({dms=2} | {dcu=1}) & {idpartner!=0}) & {les!=10} & {il_earnedY<GetPartnerIncome#1}	
+		#1_income_il			il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	$IT_MarrQuotRate*il_earnedY#1-(0<max>il_earnedY)	
+		lowlim_amount			0	0	0	0	0	0	
+		uplim_amount			$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	$IT_MarrQuotUpLim	
+		#1_level			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		output_var			sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share_var			sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	sin01_s	
+		share_between			{sin01_s=0}#1	{sin01_s=0}#1	{sin01_s=0}#1	{sin01_s=0}#1	{sin01_s=0}#1	{sin01_s=0}#1	
+		#1_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			no	no	no	no	no	no	
+		output_var			sin02_s	sin02_s	sin02_s	sin02_s	sin02_s	sin02_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			sin01_s-sin02_s	sin01_s-sin02_s	sin01_s-sin02_s	sin01_s-sin02_s	sin01_s-sin02_s	sin01_s-sin02_s	
+		output_add_var			tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	tintasp_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	(({dms=2} | {dcu=1}) & {idpartner!=0}) &  {il_earnedY<0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			(-1)*il_earnedY	(-1)*il_earnedY	(-1)*il_earnedY	(-1)*il_earnedY	(-1)*il_earnedY	(-1)*il_earnedY	
+		uplim_amount			getpartnerincome#1	getpartnerincome#1	getpartnerincome#1	getpartnerincome#1	getpartnerincome#1	getpartnerincome#1	
+		#1_income_il			il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	il_earnedY	
+		output_var			sin05_s	sin05_s	sin05_s	sin05_s	sin05_s	sin05_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share_var			sin05_s	sin05_s	sin05_s	sin05_s	sin05_s	sin05_s	
+		share_between			{sin05_s=0}#1	{sin05_s=0}#1	{sin05_s=0}#1	{sin05_s=0}#1	{sin05_s=0}#1	{sin05_s=0}#1	
+		#1_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			no	no	no	no	no	no	
+		output_var			sin06_s	sin06_s	sin06_s	sin06_s	sin06_s	sin06_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			sin05_s-sin06_s	sin05_s-sin06_s	sin05_s-sin06_s	sin05_s-sin06_s	sin05_s-sin06_s	sin05_s-sin06_s	
+		output_add_var			tintals_s	tintals_s	tintals_s	tintals_s	tintals_s	tintals_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			off	off	off	off	off	off	
+		formula			1550#y	1600#y	1630#y	1660#y	1730#y	1730#y	
+		uplim_var			yiyitdp	yiyitdp	yiyitdp	yiyitdp	yiyitdp	yiyitdp	
+		output_var			tintadt_s	tintadt_s	tintadt_s	tintadt_s	tintadt_s	tintadt_s	
+		TAX_UNIT			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		func_Allocate			off	off	off	off	off	off	
+		share_var			kivho	kivho	kivho	kivho	kivho	kivho	
+		share_between			{IsHead} | {Ispartner#1}	{IsHead#1} | {Ispartner#1}	{IsHead#1} | {Ispartner#1}	{IsHead#1} | {Ispartner#1}	{IsHead#1} | {Ispartner#1}	({IsHead#1} | {Ispartner#1}) & {ddp_s!=1}	
+		#1_level			tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	
+		output_var			kivho	kivho	kivho	kivho	kivho	kivho	
+		TAX_UNIT			tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	tu_cb_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amolv>0}&{ddp_s!=1} 	{amolv>0}&{ddp_s!=1} 	{amolv>0}&{ddp_s!=1} 	{amolv>0}&{ddp_s!=1} 	{amolv>0}&{ddp_s!=1} 	{amolv>0}&{ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		comp1_cond			{amoyl>=$HO_Reform_Year}	{amoyl>=$HO_Reform_Year}	{amoyl>=$HO_Reform_Year}	{amoyl>=$HO_Reform_Year}	{amoyl>=$HO_Reform_Year}	{amoyl>=$HO_Reform_Year}	
+		comp1_perTU			0	0	0	0	0	0	
+		comp2_cond			{amoyl<$HO_Reform_Year}	{amoyl<$HO_Reform_Year}	{amoyl<$HO_Reform_Year}	{amoyl<$HO_Reform_Year}	{amoyl<$HO_Reform_Year}	{amoyl<$HO_Reform_Year}	
+		comp2_perTU			khooo	khooo	khooo	khooo	khooo	khooo	
+		output_add_var			yhomr_s	yhomr_s	yhomr_s	yhomr_s	yhomr_s	yhomr_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year} & {amolv>0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			khooo<min>xhcmomi	khooo<min>xhcmomi	khooo<min>xhcmomi	khooo<min>xhcmomi	khooo<min>xhcmomi	khooo<min>xhcmomi	
+		result_var			sin29_s	sin29_s	sin29_s	sin29_s	sin29_s	sin29_s	
+		output_add_var			tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			0<max>(xhcmomi-khooo)	0<max>(xhcmomi-khooo)	0<max>(xhcmomi-khooo)	0<max>(xhcmomi-khooo)	0<max>(xhcmomi-khooo)	0<max>(xhcmomi-khooo)	
+		output_var			sin26_s	sin26_s	sin26_s	sin26_s	sin26_s	sin26_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share			sin26_s	sin26_s	sin26_s	sin26_s	sin26_s	sin26_s	
+		share_between			{IsPartner#1} & {xhcmomi#2<khooo#2}	{IsPartner#1} & {xhcmomi#2<khooo#2}	{IsPartner#1} & {xhcmomi#2<khooo#2}	{IsPartner#1} & {xhcmomi#2<khooo#2}	{IsPartner#1} & {xhcmomi#2<khooo#2}	{IsPartner#1} & {xhcmomi#2<khooo#2}	
+		#1_level			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		#2_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			no	no	no	no	no	no	
+		output_var			sin27_s	sin27_s	sin27_s	sin27_s	sin27_s	sin27_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tintami_s + sin27_s	tintami_s + sin27_s	tintami_s + sin27_s	tintami_s + sin27_s	tintami_s + sin27_s	tintami_s + sin27_s	
+		uplim			khooo	khooo	khooo	khooo	khooo	khooo	
+		output_var			tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	sin26_s - (GetPartnerIncome#1-GetPartnerIncome#2)	
+		#1_income			tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	tintami_s	
+		#2_income			sin29_s	sin29_s	sin29_s	sin29_s	sin29_s	sin29_s	
+		output_var			sin28_s	sin28_s	sin28_s	sin28_s	sin28_s	sin28_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share			(ddppr_s*amount#1)	(ddppr_s*amount#1)	(ddppr_s*amount#1)	(ddppr_s*amount#1)	(ddppr_s*amount#1)	(ddppr_s*amount#1)	
+		#1_amount			347#y	357#y	363#y	370#y	390#y	390#y	
+		share_between			{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	{ddp_s!=1}&{amoyl<$HO_Reform_Year}& {khooo#2>0}	
+		#2_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			no	no	no	no	no	no	
+		output_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	{ddp_s!=1} & {amoyl<$HO_Reform_Year}& {khooo>0}	
+		#1_level			n/a	n/a	n/a	n/a	n/a	n/a	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			4167#y	4283#y	4360#y	4439#y	4640#y	4640#y	
+		output_add_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	{il_taxableY<=amount#1} & {amoyl<$HO_Reform_Year} &{ddp_s!=1}& {khooo>0}	
+		#1_amount			29230#y	30040#y	30580#y	31130#y	32530#y	32530#y	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			amount#1*(khooo-tintahm_s)	amount#1*(khooo-tintahm_s)	amount#1*(khooo-tintahm_s)	amount#1*(khooo-tintahm_s)	amount#1*(khooo-tintahm_s)	amount#1*(khooo-tintahm_s)	
+		#1_amount			0.5	0.5	0.5	0.5	0.5	0.5	
+		lowlim			0	0	0	0	0	0	
+		output_add_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tintahm_s<min>(khooo-tintami_s)	tintahm_s<min>(khooo-tintami_s)	tintahm_s<min>(khooo-tintami_s)	tintahm_s<min>(khooo-tintami_s)	tintahm_s<min>(khooo-tintami_s)	tintahm_s<min>(khooo-tintami_s)	
+		output_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tintahm_s - (khooo-tintami_s)	tintahm_s - (khooo-tintami_s)	tintahm_s - (khooo-tintami_s)	tintahm_s - (khooo-tintami_s)	tintahm_s - (khooo-tintami_s)	tintahm_s - (khooo-tintami_s)	
+		lowlim			0	0	0	0	0	0	
+		output_var			sin24_s	sin24_s	sin24_s	sin24_s	sin24_s	sin24_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share			sin24_s	sin24_s	sin24_s	sin24_s	sin24_s	sin24_s	
+		share_between			{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	{IsPartner#1} & {(khooo#2-tintami_s#2-tintahm_s#2) > 0}	
+		#1_level			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		#2_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		share_all_ifnoelig			no	no	no	no	no	no	
+		output_var			sin25_s	sin25_s	sin25_s	sin25_s	sin25_s	sin25_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tintahm_s + sin25_s	tintahm_s + sin25_s	tintahm_s + sin25_s	tintahm_s + sin25_s	tintahm_s + sin25_s	tintahm_s + sin25_s	
+		uplim			(khooo-tintami_s)	(khooo-tintami_s)	(khooo-tintami_s)	(khooo-tintami_s)	(khooo-tintami_s)	(khooo-tintami_s)	
+		output_var			tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	tintahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			1870#y	1920#y	1950#y	1990#y	2080#y	2080#y	
+		output_var			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	{$policy_year - amoyl<10}& {ddp_s!=1} & {amolv>0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			620#y	640#y	650#y	660#y	690#y	690#y	
+		output_add_var			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	{nDepChildrenInTu#1>=3} & {$policy_year - amoyl<10} & {amolv>0} & {ddp_s!=1} 	
+		#1_level			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			60#y	60#y	70#y	70#y	70#y	70#y	
+		output_add_var			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	{amoyl>=$HO_Reform_Year} & {amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			xhcmomi+xhcmomc	xhcmomi+xhcmomc	xhcmomi+xhcmomc	xhcmomi+xhcmomc	xhcmomi+xhcmomc	xhcmomi+xhcmomc	
+		uplim			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		output_var			tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	tintamimg_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			{amoyl>=1963}&{amoyl<=1985}	{amoyl>=1963}&{amoyl<=1985}	{amoyl>=1963}&{amoyl<=1985}	{amoyl>=1963}&{amoyl<=1985}	{amoyl>=1963}&{amoyl<=1985}	{amoyl>=1963}&{amoyl<=1985}	
+		comp1_perTU			9915.74	9915.74	9915.74	9915.74	9915.74	9915.74	
+		comp2_cond			{amoyl>=1986}&{amoyl<=1989}	{amoyl>=1986}&{amoyl<=1989}	{amoyl>=1986}&{amoyl<=1989}	{amoyl>=1986}&{amoyl<=1989}	{amoyl>=1986}&{amoyl<=1989}	{amoyl>=1986}&{amoyl<=1989}	
+		comp2_perTU			49578.7	49578.7	49578.7	49578.7	49578.7	49578.7	
+		comp3_cond			{amoyl=1990}	{amoyl=1990}	{amoyl=1990}	{amoyl=1990}	{amoyl=1990}	{amoyl=1990}	
+		comp3_perTU			51115.64	51115.64	51115.64	51115.64	51115.64	51115.64	
+		comp4_cond			{amoyl=1991}	{amoyl=1991}	{amoyl=1991}	{amoyl=1991}	{amoyl=1991}	{amoyl=1991}	
+		comp4_perTU			52875.69	52875.69	52875.69	52875.69	52875.69	52875.69	
+		comp5_cond			{amoyl>=1992}&{amoyl<=1998}	{amoyl>=1992}&{amoyl<=1998}	{amoyl>=1992}&{amoyl<=1998}	{amoyl>=1992}&{amoyl<=1998}	{amoyl>=1992}&{amoyl<=1998}	{amoyl>=1992}&{amoyl<=1998}	
+		comp5_perTU			54536.58	54536.58	54536.58	54536.58	54536.58	54536.58	
+		comp6_cond			{amoyl=1999}	{amoyl=1999}	{amoyl=1999}	{amoyl=1999}	{amoyl=1999}	{amoyl=1999}	
+		comp6_perTU			55057.15	55057.15	55057.15	55057.15	55057.15	55057.15	
+		comp7_cond			{amoyl=2000}	{amoyl=2000}	{amoyl=2000}	{amoyl=2000}	{amoyl=2000}	{amoyl=2000}	
+		comp7_perTU			55652.1	55652.1	55652.1	55652.1	55652.1	55652.1	
+		comp8_cond			{amoyl=2001}	{amoyl=2001}	{amoyl=2001}	{amoyl=2001}	{amoyl=2001}	{amoyl=2001}	
+		comp8_perTU			57570	57570	57570	57570	57570	57570	
+		comp9_cond			{amoyl=2002}	{amoyl=2002}	{amoyl=2002}	{amoyl=2002}	{amoyl=2002}	{amoyl=2002}	
+		comp9_perTU			58990	58990	58990	58990	58990	58990	
+		comp10_cond			{amoyl=2003}	{amoyl=2003}	{amoyl=2003}	{amoyl=2003}	{amoyl=2003}	{amoyl=2003}	
+		comp10_perTU			59960	59960	59960	59960	59960	59960	
+		comp11_cond			{amoyl=2004}	{amoyl=2004}	{amoyl=2004}	{amoyl=2004}	{amoyl=2004}	{amoyl=2004}	
+		comp11_perTU			60910	60910	60910	60910	60910	60910	
+		result_var			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		output_var			sin18_s	sin18_s	sin18_s	sin18_s	sin18_s	sin18_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			{nDepChildrenInTu#1=0}	{nDepChildrenInTu#1=0}	{nDepChildrenInTu#1=0}	{nDepChildrenInTu#1=0}	{nDepChildrenInTu#1=0}	{nDepChildrenInTu#1=0}	
+		comp1_perTU			sin17_s*0	sin17_s*0	sin17_s*0	sin17_s*0	sin17_s*0	sin17_s*0	
+		comp2_cond			{nDepChildrenInTu#1=1}	{nDepChildrenInTu#1=1}	{nDepChildrenInTu#1=1}	{nDepChildrenInTu#1=1}	{nDepChildrenInTu#1=1}	{nDepChildrenInTu#1=1}	
+		comp2_perTU			sin17_s*0.05	sin17_s*0.05	sin17_s*0.05	sin17_s*0.05	sin17_s*0.05	sin17_s*0.05	
+		comp3_cond			{nDepChildrenInTu#1=2}	{nDepChildrenInTu#1=2}	{nDepChildrenInTu#1=2}	{nDepChildrenInTu#1=2}	{nDepChildrenInTu#1=2}	{nDepChildrenInTu#1=2}	
+		comp3_perTU			sin17_s*0.10	sin17_s*0.10	sin17_s*0.10	sin17_s*0.10	sin17_s*0.10	sin17_s*0.10	
+		comp4_cond			{nDepChildrenInTu#1=3}	{nDepChildrenInTu#1=3}	{nDepChildrenInTu#1=3}	{nDepChildrenInTu#1=3}	{nDepChildrenInTu#1=3}	{nDepChildrenInTu#1=3}	
+		comp4_perTU			sin17_s*0.20	sin17_s*0.20	sin17_s*0.20	sin17_s*0.20	sin17_s*0.20	sin17_s*0.20	
+		comp5_cond			{nDepChildrenInTu#1>3}	{nDepChildrenInTu#1>3}	{nDepChildrenInTu#1>3}	{nDepChildrenInTu#1>3}	{nDepChildrenInTu#1>3}	{nDepChildrenInTu#1>3}	
+		comp5_perTU			sin17_s*0.30	sin17_s*0.30	sin17_s*0.30	sin17_s*0.30	sin17_s*0.30	sin17_s*0.30	
+		#1_level			tu_household_be	tu_household_be	tu_household_be	tu_household_be	tu_household_be	tu_household_be	
+		output_var			sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	{amoyl>=1986} & {amolv>0}&{ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	
+		output_add_var			sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	sin17_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	{amoyl>=1989} & {amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	sin22_s	
+		output_add_var			sin18_s	sin18_s	sin18_s	sin18_s	sin18_s	sin18_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			sin28_s*(amolv<min>sin17_s)/amolv	sin28_s*(amolv<min>sin17_s)/amolv	sin28_s*(amolv<min>sin17_s)/amolv	sin28_s*(amolv<min>sin17_s)/amolv	sin28_s*(amolv<min>sin17_s)/amolv	sin28_s*(amolv<min>sin17_s)/amolv	
+		output_var			sin19_s	sin19_s	sin19_s	sin19_s	sin19_s	sin19_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl>=1986}&{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		comp1_cond			{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	{$policy_year-amoyl>=0}&{$policy_year-amoyl<=4}	
+		comp1_perTU			sin19_s*0.8	sin19_s*0.8	sin19_s*0.8	sin19_s*0.8	sin19_s*0.8	sin19_s*0.8	
+		comp2_cond			{$policy_year-amoyl=5}	{$policy_year-amoyl=5}	{$policy_year-amoyl=5}	{$policy_year-amoyl=5}	{$policy_year-amoyl=5}	{$policy_year-amoyl=5}	
+		comp2_perTU			sin19_s*0.7	sin19_s*0.7	sin19_s*0.7	sin19_s*0.7	sin19_s*0.7	sin19_s*0.7	
+		comp3_cond			{$policy_year-amoyl=6}	{$policy_year-amoyl=6}	{$policy_year-amoyl=6}	{$policy_year-amoyl=6}	{$policy_year-amoyl=6}	{$policy_year-amoyl=6}	
+		comp3_perTU			sin19_s*0.6	sin19_s*0.6	sin19_s*0.6	sin19_s*0.6	sin19_s*0.6	sin19_s*0.6	
+		comp4_cond			{$policy_year-amoyl=7}	{$policy_year-amoyl=7}	{$policy_year-amoyl=7}	{$policy_year-amoyl=7}	{$policy_year-amoyl=7}	{$policy_year-amoyl=7}	
+		comp4_perTU			sin19_s*0.5	sin19_s*0.5	sin19_s*0.5	sin19_s*0.5	sin19_s*0.5	sin19_s*0.5	
+		comp5_cond			{$policy_year-amoyl=8}	{$policy_year-amoyl=8}	{$policy_year-amoyl=8}	{$policy_year-amoyl=8}	{$policy_year-amoyl=8}	{$policy_year-amoyl=8}	
+		comp5_perTU			sin19_s*0.4	sin19_s*0.4	sin19_s*0.4	sin19_s*0.4	sin19_s*0.4	sin19_s*0.4	
+		comp6_cond			{$policy_year-amoyl=9}	{$policy_year-amoyl=9}	{$policy_year-amoyl=9}	{$policy_year-amoyl=9}	{$policy_year-amoyl=9}	{$policy_year-amoyl=9}	
+		comp6_perTU			sin19_s*0.3	sin19_s*0.3	sin19_s*0.3	sin19_s*0.3	sin19_s*0.3	sin19_s*0.3	
+		comp7_cond			{$policy_year-amoyl=10}	{$policy_year-amoyl=10}	{$policy_year-amoyl=10}	{$policy_year-amoyl=10}	{$policy_year-amoyl=10}	{$policy_year-amoyl=10}	
+		comp7_perTU			sin19_s*0.2	sin19_s*0.2	sin19_s*0.2	sin19_s*0.2	sin19_s*0.2	sin19_s*0.2	
+		comp8_cond			{$policy_year-amoyl=11}	{$policy_year-amoyl=11}	{$policy_year-amoyl=11}	{$policy_year-amoyl=11}	{$policy_year-amoyl=11}	{$policy_year-amoyl=11}	
+		comp8_perTU			sin19_s*0.1	sin19_s*0.1	sin19_s*0.1	sin19_s*0.1	sin19_s*0.1	sin19_s*0.1	
+		output_add_var			tintami01_s	tintami01_s	tintami01_s	tintami01_s	tintami01_s	tintami01_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_SchedCalc			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		base_il			il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	
+		band1_upLim			$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	
+		band1_rate			$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	
+		band2_upLim			$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	
+		band2_rate			$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	
+		band3_upLim			$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	
+		band3_rate			$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	
+		band4_upLim			$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	
+		band4_rate			$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	
+		band5_upLim			$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	
+		band5_rate			$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	
+		band6_upLim			$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	
+		band6_rate			$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	
+		band7_upLim			$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	
+		band7_rate			$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	
+		band8_rate			$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	
+		output_var			tints_s	tints_s	tints_s	tints_s	tints_s	tints_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	off	off	off	
+		who_must_be_elig			one	one	one	n/a	n/a	n/a	
+		formula			$IT_BaseAlw+ddi*$IT_AlwDisabSupp	$IT_BaseAlw+ddi*$IT_AlwDisabSupp	$IT_BaseAlw+ddi*$IT_AlwDisabSupp	n/a	n/a	n/a	
+		output_var			tintatb_s	tintatb_s	tintatb_s	n/a	n/a	n/a	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	n/a	n/a	n/a	
+		func_BenCalc			off	off	off	on	on	on	
+		who_must_be_elig			n/a	n/a	n/a	one	one	one	
+		base_amount			n/a	n/a	n/a	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	
+		comp1_cond			n/a	n/a	n/a	{il_taxableY<=amount#1}	{il_taxableY<=amount#1}	{il_taxableY<=amount#1}	
+		comp1_perElig			n/a	n/a	n/a	base_amount+amount#3+ddi*$IT_AlwDisabSupp	base_amount+amount#3+ddi*$IT_AlwDisabSupp	base_amount+amount#3+ddi*$IT_AlwDisabSupp	
+		comp2_cond			n/a	n/a	n/a	{il_taxableY>amount#1} & {il_taxableY<=amount#2}	{il_taxableY>amount#1} & {il_taxableY<=amount#2}	{il_taxableY>amount#1} & {il_taxableY<=amount#2}	
+		comp2_perElig			n/a	n/a	n/a	base_amount+amount#3-(il_taxableY-amount#1)+ddi*$IT_AlwDisabSupp	base_amount+amount#3-(il_taxableY-amount#1)+ddi*$IT_AlwDisabSupp	base_amount+amount#3-(il_taxableY-amount#1)+ddi*$IT_AlwDisabSupp	
+		comp3_cond			n/a	n/a	n/a	{il_taxableY>amount#2}	{il_taxableY>amount#2}	{il_taxableY>amount#2}	
+		comp3_perElig			n/a	n/a	n/a	base_amount	base_amount	base_amount	
+		#1_amount			n/a	n/a	n/a	22870#y	23900#y	23900#y	
+		#2_amount			n/a	n/a	n/a	23120#y	24160#y	24160#y	
+		#3_amount			n/a	n/a	n/a	250#y	260#y	260#y	
+		output_var			n/a	n/a	n/a	tintatb_s	tintatb_s	tintatb_s	
+		TAX_UNIT			n/a	n/a	n/a	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		base_amount			$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	$IT_BaseAlw	
+		comp1_cond			{IsNtoMchild}#5 & !{IsDisabled}	{IsNtoMchild}#5 & !{IsDisabled}	{IsNtoMchild}#5 & !{IsDisabled}	{IsNtoMchild}#5 & !{IsDisabled}	{IsNtoMchild}#5 & !{IsDisabled}	{IsNtoMchild}#5 & !{IsDisabled}	
+		comp1_perElig			$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	$IT_AlwCh1Supp	
+		comp2_cond			{IsNtoMchild}#5 & {IsDisabled}	{IsNtoMchild}#5 & {IsDisabled}	{IsNtoMchild}#5 & {IsDisabled}	{IsNtoMchild}#5 & {IsDisabled}	{IsNtoMchild}#5 & {IsDisabled}	{IsNtoMchild}#5 & {IsDisabled}	
+		comp2_perElig			$IT_AlwCh1Supp+$IT_AlwCh2Supp	$IT_AlwCh1Supp+$IT_AlwCh2Supp	$IT_AlwCh1Supp+$IT_AlwCh2Supp	$IT_AlwCh1Supp+$IT_AlwCh2Supp	$IT_AlwCh1Supp+$IT_AlwCh2Supp	$IT_AlwCh1Supp+$IT_AlwCh2Supp	
+		#5_N			1	1	1	1	1	1	
+		#5_M			1	1	1	1	1	1	
+		comp3_cond			{IsNtoMchild}#6 & !{IsDisabled}	{IsNtoMchild}#6 & !{IsDisabled}	{IsNtoMchild}#6 & !{IsDisabled}	{IsNtoMchild}#6 & !{IsDisabled}	{IsNtoMchild}#6 & !{IsDisabled}	{IsNtoMchild}#6 & !{IsDisabled}	
+		comp3_perElig			$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	$IT_AlwCh2Supp	
+		comp4_cond			{IsNtoMchild}#6 & {IsDisabled}	{IsNtoMchild}#6 & {IsDisabled}	{IsNtoMchild}#6 & {IsDisabled}	{IsNtoMchild}#6 & {IsDisabled}	{IsNtoMchild}#6 & {IsDisabled}	{IsNtoMchild}#6 & {IsDisabled}	
+		comp4_perElig			$IT_AlwCh2Supp+$IT_AlwCh3Supp	$IT_AlwCh2Supp+$IT_AlwCh3Supp	$IT_AlwCh2Supp+$IT_AlwCh3Supp	$IT_AlwCh2Supp+$IT_AlwCh3Supp	$IT_AlwCh2Supp+$IT_AlwCh3Supp	$IT_AlwCh2Supp+$IT_AlwCh3Supp	
+		#6_N			2	2	2	2	2	2	
+		#6_M			2	2	2	2	2	2	
+		comp5_cond			{IsNtoMchild}#7 & !{IsDisabled}	{IsNtoMchild}#7 & !{IsDisabled}	{IsNtoMchild}#7 & !{IsDisabled}	{IsNtoMchild}#7 & !{IsDisabled}	{IsNtoMchild}#7 & !{IsDisabled}	{IsNtoMchild}#7 & !{IsDisabled}	
+		comp5_perElig			$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	$IT_AlwCh3Supp	
+		comp6_cond			{IsNtoMchild}#7 & {IsDisabled}	{IsNtoMchild}#7 & {IsDisabled}	{IsNtoMchild}#7 & {IsDisabled}	{IsNtoMchild}#7 & {IsDisabled}	{IsNtoMchild}#7 & {IsDisabled}	{IsNtoMchild}#7 & {IsDisabled}	
+		comp6_perElig			$IT_AlwCh3Supp+$IT_AlwCh4Supp	$IT_AlwCh3Supp+$IT_AlwCh4Supp	$IT_AlwCh3Supp+$IT_AlwCh4Supp	$IT_AlwCh3Supp+$IT_AlwCh4Supp	$IT_AlwCh3Supp+$IT_AlwCh4Supp	$IT_AlwCh3Supp+$IT_AlwCh4Supp	
+		#7_N			3	3	3	3	3	3	
+		#7_M			3	3	3	3	3	3	
+		comp7_cond			{IsNtoMchild}#8 & !{IsDisabled}	{IsNtoMchild}#8 & !{IsDisabled}	{IsNtoMchild}#8 & !{IsDisabled}	{IsNtoMchild}#8 & !{IsDisabled}	{IsNtoMchild}#8 & !{IsDisabled}	{IsNtoMchild}#8 & !{IsDisabled}	
+		comp7_perElig			$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	$IT_AlwCh4Supp	
+		comp8_cond			{IsNtoMchild}#8 & {IsDisabled}	{IsNtoMchild}#8 & {IsDisabled}	{IsNtoMchild}#8 & {IsDisabled}	{IsNtoMchild}#8 & {IsDisabled}	{IsNtoMchild}#8 & {IsDisabled}	{IsNtoMchild}#8 & {IsDisabled}	
+		comp8_perElig			$IT_AlwCh4Supp*2	$IT_AlwCh4Supp*2	$IT_AlwCh4Supp*2	$IT_AlwCh4Supp*2	$IT_AlwCh4Supp*2	$IT_AlwCh4Supp*2	
+		#8_N			4	4	4	4	4	4	
+		#8_M			99	99	99	99	99	99	
+		comp9_cond			{IsLoneParentOfDepChild}	{IsLoneParentOfDepChild}	{IsLoneParentOfDepChild}	{IsLoneParentOfDepChild}	{IsLoneParentOfDepChild}	{IsLoneParentOfDepChild}	
+		comp9_perElig			$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	$IT_AlwLPSupp	
+		comp10_cond			{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	{IsDepParent} | {IsDepRelative} & {dag<65}	
+		comp10_perElig			$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	$IT_AlwDepMin65Supp	
+		comp11_cond			{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	{IsDepParent} | {IsDepRelative} & {dag>=65}	
+		comp11_perElig			$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	$IT_AlwDepPlus65Supp	
+		comp12_cond			{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	{IsHeadOfTu} & ({dms=2} | {dcu=1}) & {GetPartnerIncome#9>0}	
+		comp12_perElig			base_amount-GetPartnerIncome#9	base_amount-GetPartnerIncome#9	base_amount-GetPartnerIncome#9	base_amount-GetPartnerIncome#9	base_amount-GetPartnerIncome#9	base_amount-GetPartnerIncome#9	
+		comp12_lowlim_amount			0	0	0	0	0	0	
+		#9_income_il			il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	
+		output_add_var			tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	
+		TAX_UNIT			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1>=1} & {IsHead#1} & ({dms=2} | {dcu=1})	
+		comp1_perElig			tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	
+		comp2_cond			{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	{tintatb_s>il_taxableY} & {nDepChildrenInTu#1=0} & ({dms=2} | {dcu=1})	
+		comp2_perElig			tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	tintatb_s-il_taxableY	
+		comp2_uplim			GetPartnerIncome#2-GetPartnerIncome#3	GetPartnerIncome#2-GetPartnerIncome#3	GetPartnerIncome#2-GetPartnerIncome#3	GetPartnerIncome#2-GetPartnerIncome#3	GetPartnerIncome#2-GetPartnerIncome#3	GetPartnerIncome#2-GetPartnerIncome#3	
+		#1_level			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		#2_income			il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	il_taxableY	
+		#3_income			tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	
+		output_var			sin08_s	sin08_s	sin08_s	sin08_s	sin08_s	sin08_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Allocate			on	on	on	on	on	on	
+		share_var			sin08_s	sin08_s	sin08_s	sin08_s	sin08_s	sin08_s	
+		share_between			{sin08_s=0}#1 & !{IsDepChild}	{sin08_s=0}#1 & !{IsDepChild}	{sin08_s=0}#1 & !{IsDepChild}	{sin08_s=0}#1 & !{IsDepChild}	{sin08_s=0}#1 & !{IsDepChild}	{sin08_s=0}#1 & !{IsDepChild}	
+		#1_level			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		output_var			sin09_s	sin09_s	sin09_s	sin09_s	sin09_s	sin09_s	
+		TAX_UNIT			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			sin09_s-sin08_s	sin09_s-sin08_s	sin09_s-sin08_s	sin09_s-sin08_s	sin09_s-sin08_s	sin09_s-sin08_s	
+		output_add_var			tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	{ddp_s!=1}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_SchedCalc			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		base_var			tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	tintatb_s	
+		band1_upLim			$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	$IT_Bracket1	
+		band1_rate			$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	
+		band2_upLim			$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	$IT_Bracket2	
+		band2_rate			$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	
+		band3_upLim			$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	$IT_Bracket3	
+		band3_rate			$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	
+		band4_upLim			$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	$IT_Bracket4	
+		band4_rate			$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	
+		band5_upLim			$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	$IT_Bracket5	
+		band5_rate			$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	
+		band6_upLim			$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	$IT_Bracket6	
+		band6_rate			$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	
+		band7_upLim			$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	$IT_Bracket7	
+		band7_rate			$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	
+		band8_rate			$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	
+		output_var			tintatc_s	tintatc_s	tintatc_s	tintatc_s	tintatc_s	tintatc_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	{amoyl<$HO_Reform_Year} & {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	tprhm_s <min> (amount#1*(khooo-tintami_s-tintahm_s))	
+		#1_amount			0.125	0.125	0.125	0.125	0.125	0.125	
+		lowlim			0	0	0	0	0	0	
+		output_var			tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	tinprtahm_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		comp1_cond			{il_taxableY <= $IT_Bracket1}	{il_taxableY <= $IT_Bracket1}	{il_taxableY <= $IT_Bracket1}	{il_taxableY <= $IT_Bracket1}	{il_taxableY <= $IT_Bracket1}	{il_taxableY <= $IT_Bracket1}	
+		comp1_perTU			$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	$IT_Rate1	
+		comp2_cond			{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	{il_taxableY > $IT_Bracket1} & {il_taxableY <= $IT_Bracket2}	
+		comp2_perTU			$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	$IT_Rate2	
+		comp3_cond			{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	{il_taxableY > $IT_Bracket2} & {il_taxableY <= $IT_Bracket3}	
+		comp3_perTU			$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	$IT_Rate3	
+		comp4_cond			{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	{il_taxableY > $IT_Bracket3} & {il_taxableY <= $IT_Bracket4}	
+		comp4_perTU			$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	$IT_Rate4	
+		comp5_cond			{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	{il_taxableY > $IT_Bracket4} & {il_taxableY <= $IT_Bracket5}	
+		comp5_perTU			$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	$IT_Rate5	
+		comp6_cond			{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	{il_taxableY > $IT_Bracket5} & {il_taxableY <= $IT_Bracket6}	
+		comp6_perTU			$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	$IT_Rate6	
+		comp7_cond			{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	{il_taxableY > $IT_Bracket6} & {il_taxableY <= $IT_Bracket7}	
+		comp7_perTU			$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	$IT_Rate7	
+		comp8_cond			{il_taxableY > $IT_Bracket7}	{il_taxableY > $IT_Bracket7}	{il_taxableY > $IT_Bracket7}	{il_taxableY > $IT_Bracket7}	{il_taxableY > $IT_Bracket7}	{il_taxableY > $IT_Bracket7}	
+		comp8_perTU			$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	$IT_Rate8	
+		output_var			sin20_s	sin20_s	sin20_s	sin20_s	sin20_s	sin20_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	{amoyl<$HO_Reform_Year}&{amolv>0}& {ddp_s!=1} 	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	xhcmomc*((amolv<min>sin18_s)/amolv)*sin20_s	
+		output_var			tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	tintcmg_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			{il_netpension>0} & {il_taxableY_bf_mq>0}	{il_netpension>0} & {il_taxableY_bf_mq>0}	{il_netpension>0} & {il_taxableY_bf_mq>0}	{il_netpension>0} & {il_taxableY_bf_mq>0}	{il_netpension>0} & {il_taxableY_bf_mq>0}	{il_netpension>0} & {il_taxableY_bf_mq>0}	
+		comp1_perElig			$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	$IT_TCPens*(il_netpension/il_taxableY_bf_mq)	
+		comp2_cond			{byr>0} & {il_taxableY_bf_mq>0}	{byr>0} & {il_taxableY_bf_mq>0}	{byr>0} & {il_taxableY_bf_mq>0}	{byr>0} & {il_taxableY_bf_mq>0}	{byr>0} & {il_taxableY_bf_mq>0}	{byr>0} & {il_taxableY_bf_mq>0}	
+		comp2_perElig			$IT_TCPens*(byr/il_taxableY_bf_mq)	$IT_TCPens*(byr/il_taxableY_bf_mq)	$IT_TCPens*(byr/il_taxableY_bf_mq)	$IT_TCPens*(byr/il_taxableY_bf_mq)	$IT_TCPens*(byr/il_taxableY_bf_mq)	$IT_TCPens*(byr/il_taxableY_bf_mq)	
+		comp3_cond			{il_netsickY>0} & {il_taxableY_bf_mq>0}	{il_netsickY>0} & {il_taxableY_bf_mq>0}	{il_netsickY>0} & {il_taxableY_bf_mq>0}	{il_netsickY>0} & {il_taxableY_bf_mq>0}	{il_netsickY>0} & {il_taxableY_bf_mq>0}	{il_netsickY>0} & {il_taxableY_bf_mq>0}	
+		comp3_perElig			$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	$IT_TCDisab*(il_netsickY/il_taxableY_bf_mq)	
+		output_var			sin10_s	sin10_s	sin10_s	sin10_s	sin10_s	sin10_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>0} & {il_taxableY<$IT_TCReplIncLim1}	
+		comp1_perElig			sin10_s	sin10_s	sin10_s	sin10_s	sin10_s	sin10_s	
+		comp2_cond			({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>=$IT_TCReplIncLim1} & {il_taxableY<=$IT_TCReplIncLim2}	
+		comp2_perElig			(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	(sin10_s/3)+sin10_s*(2/3)*($IT_TCReplIncLim2-il_taxableY)/$IT_TCReplIncLim1	
+		comp3_cond			({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	({il_netpension>0} | {il_netsickY>0} | {byr>0}) & {il_taxableY>$IT_TCReplIncLim2}	
+		comp3_perElig			sin10_s/3	sin10_s/3	sin10_s/3	sin10_s/3	sin10_s/3	sin10_s/3	
+		output_var			tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	off	off	
+		comp1_cond			({bun>0} | {bun_s > 0}) & (({dcu=1} | {dms=2}) & {idpartner!=0}) & {il_taxableY_bf_mq#1>0}	({bun>0} | {bun_s > 0}) & (({dcu=1} | {dms=2}) & {idpartner!=0}) & {il_taxableY_bf_mq#1>0}	({bun>0} | {bun_s > 0}) & (({dcu=1} | {dms=2}) & {idpartner!=0}) & {il_taxableY_bf_mq#1>0}	({bun>0} | {bun_s > 0}) & (({dcu=1} | {dms=2}) & {idpartner!=0}) & {il_taxableY_bf_mq#1>0}	n/a	n/a	
+		comp1_perElig			$IT_TCUBCouple*((bun + bun_s)/il_taxableY_bf_mq#1)	$IT_TCUBCouple*((bun + bun_s)/il_taxableY_bf_mq#1)	$IT_TCUBCouple*((bun + bun_s)/il_taxableY_bf_mq#1)	$IT_TCUBCouple*((bun + bun_s)/il_taxableY_bf_mq#1)	n/a	n/a	
+		comp2_cond			({bun>0} | {bun_s > 0}) & {dcu!=1} & {dms!=2} & {il_taxableY_bf_mq>0}	({bun>0} | {bun_s > 0}) & {dcu!=1} & {dms!=2} & {il_taxableY_bf_mq>0}	({bun>0} | {bun_s > 0}) & {dcu!=1} & {dms!=2} & {il_taxableY_bf_mq>0}	({bun>0} | {bun_s > 0}) & {dcu!=1} & {dms!=2} & {il_taxableY_bf_mq>0}	n/a	n/a	
+		comp2_perElig			$IT_TCUBInd*((bun + bun_s) /il_taxableY_bf_mq)	$IT_TCUBInd*((bun + bun_s) /il_taxableY_bf_mq)	$IT_TCUBInd*((bun + bun_s) /il_taxableY_bf_mq)	$IT_TCUBInd*((bun + bun_s) /il_taxableY_bf_mq)	n/a	n/a	
+		#1_level			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	n/a	n/a	
+		output_var			sin11_s	sin11_s	sin11_s	sin11_s	n/a	n/a	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	n/a	n/a	
+		func_BenCalc			on	on	on	on	off	off	
+		comp1_cond			({bun>0} | {bun_s > 0}) & {il_taxableY#1>0} & {il_taxableY#1<$IT_TCUBIncLim1}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>0} & {il_taxableY#1<$IT_TCUBIncLim1}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>0} & {il_taxableY#1<$IT_TCUBIncLim1}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>0} & {il_taxableY#1<$IT_TCUBIncLim1}	n/a	n/a	
+		comp1_perElig			sin11_s	sin11_s	sin11_s	sin11_s	n/a	n/a	
+		comp2_cond			({bun>0} | {bun_s > 0}) & {il_taxableY#1>=$IT_TCUBIncLim1} & {il_taxableY#1<=$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>=$IT_TCUBIncLim1} & {il_taxableY#1<=$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>=$IT_TCUBIncLim1} & {il_taxableY#1<=$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>=$IT_TCUBIncLim1} & {il_taxableY#1<=$IT_TCUBIncLim2}	n/a	n/a	
+		comp2_perElig			(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY#1)/$IT_TCUBIncLim1	(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY#1)/$IT_TCUBIncLim1	(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY#1)/$IT_TCUBIncLim1	(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY#1)/$IT_TCUBIncLim1	n/a	n/a	
+		comp3_cond			({bun>0} | {bun_s > 0}) & {il_taxableY#1>$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>$IT_TCUBIncLim2}	({bun>0} | {bun_s > 0}) & {il_taxableY#1>$IT_TCUBIncLim2}	n/a	n/a	
+		comp3_perElig			0	0	0	0	n/a	n/a	
+		#1_level			tu_couple_be	tu_couple_be	tu_couple_be	tu_couple_be	n/a	n/a	
+		output_add_var			tintcri_s	tintcri_s	tintcri_s	tintcri_s	n/a	n/a	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	n/a	n/a	
+		func_BenCalc			off	off	off	off	on	on	
+		comp1_cond			n/a	n/a	n/a	n/a	{bun>0} & {il_taxableY_bf_mq>0}	{bun>0} & {il_taxableY_bf_mq>0}	
+		comp1_perElig			n/a	n/a	n/a	n/a	$IT_TCUBInd*(bun/il_taxableY_bf_mq)	$IT_TCUBInd*(bun/il_taxableY_bf_mq)	
+		output_var			n/a	n/a	n/a	n/a	sin11_s	sin11_s	
+		TAX_UNIT			n/a	n/a	n/a	n/a	tu_individual_be	tu_individual_be	
+		func_BenCalc			off	off	off	off	on	on	
+		comp1_cond			n/a	n/a	n/a	n/a	{bun>0} & {il_taxableY>0} & {il_taxableY<$IT_TCUBIncLim1}	{bun>0} & {il_taxableY>0} & {il_taxableY<$IT_TCUBIncLim1}	
+		comp1_perElig			n/a	n/a	n/a	n/a	sin11_s	sin11_s	
+		comp2_cond			n/a	n/a	n/a	n/a	{bun>0} & {il_taxableY>=$IT_TCUBIncLim1} & {il_taxableY<=$IT_TCUBIncLim2}	{bun>0} & {il_taxableY>=$IT_TCUBIncLim1} & {il_taxableY<=$IT_TCUBIncLim2}	
+		comp2_perElig			n/a	n/a	n/a	n/a	(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY)/$IT_TCUBIncLim1	(sin11_s/3)+sin11_s*(2/3)*($IT_TCUBIncLim2-il_taxableY)/$IT_TCUBIncLim1	
+		comp3_cond			n/a	n/a	n/a	n/a	{bun>0} & {il_taxableY>$IT_TCUBIncLim2}	{bun>0} & {il_taxableY>$IT_TCUBIncLim2}	
+		comp3_perElig			n/a	n/a	n/a	n/a	0	0	
+		output_add_var			n/a	n/a	n/a	n/a	tintcri_s	tintcri_s	
+		TAX_UNIT			n/a	n/a	n/a	n/a	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{il_taxableY>0}	{il_taxableY>0}	{il_taxableY>0}	{il_taxableY>0}	{il_taxableY>0}	{il_taxableY>0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	
+		uplim			(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	(il_netrepY01/il_taxableY)*(0<max>(tints_s-tintatc_s))	
+		output_var			tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	tintcri_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#1} & {il_actY<amount#2}	
+		comp1_perElig			amount#5*(il_actY-amount#1)/(amount#2-amount#1)	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	
+		comp2_cond			({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#2} & {il_actY<amount#3}	
+		comp2_perElig			amount#5	amount#5	amount#5	amount#5	amount#5	amount#5	
+		comp3_cond			({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	({IsCivilServant} | ({yse>0} & {yem<=0})) & {il_actY>=amount#3} & {il_actY<amount#4}	
+		comp3_perElig			amount#5*(amount#4-il_actY)/(amount#4-amount#3)	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	
+		#1_amount			4050#y	4170#y	4240#y	4320#y	4510#y	4510#y	
+		#2_amount			5410#y	5560#y	5660#y	5760#y	6020#y	6020#y	
+		#3_amount			13530#y	13910#y	14160#y	14410#y	15060#y	15060#y	
+		#4_amount			17590#y	18080#y	18400#y	18730#y	19580#y	19580#y	
+		#5_amount			550#y	560#y	570#y	580#y	610#y	610#y	
+		output_var			tintcly_s	tintcly_s	tintcly_s	tintcly_s	tintcly_s	tintcly_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			off	off	on	off	off	off	
+		comp1_cond			n/a	n/a	{IsCivilServant} & {il_actY>=amount#1} & {il_actY<amount#2}	n/a	n/a	n/a	
+		comp1_perElig			n/a	n/a	amount#5*(il_actY-amount#1)/(amount#2-amount#1)	n/a	n/a	n/a	
+		comp2_cond			n/a	n/a	{IsCivilServant} & {il_actY>=amount#2} & {il_actY<amount#3}	n/a	n/a	n/a	
+		comp2_perElig			n/a	n/a	amount#5	n/a	n/a	n/a	
+		comp3_cond			n/a	n/a	{IsCivilServant} & {il_actY>=amount#3} & {il_actY<amount#4}	n/a	n/a	n/a	
+		comp3_perElig			n/a	n/a	amount#5*(amount#4-il_actY)/(amount#4-amount#3)	n/a	n/a	n/a	
+		#1_amount			n/a	n/a	4240#y	n/a	n/a	n/a	
+		#2_amount			n/a	n/a	5660#y	n/a	n/a	n/a	
+		#3_amount			n/a	n/a	14160#y	n/a	n/a	n/a	
+		#4_amount			n/a	n/a	18400#y	n/a	n/a	n/a	
+		#5_amount			n/a	n/a	1026#y	n/a	n/a	n/a	
+		output_add_var			n/a	n/a	tintcly_s	n/a	n/a	n/a	
+		TAX_UNIT			n/a	n/a	tu_individual_be	n/a	n/a	n/a	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{il_earnedY_bf_mq>0}	{il_earnedY_bf_mq>0}	{il_earnedY_bf_mq>0}	{il_earnedY_bf_mq>0}	{il_earnedY_bf_mq>0}	{il_earnedY_bf_mq>0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			tintcly_s*(il_actY/il_earnedY_bf_mq)	tintcly_s*(il_actY/il_earnedY_bf_mq)	tintcly_s*(il_actY/il_earnedY_bf_mq)	tintcly_s*(il_actY/il_earnedY_bf_mq)	tintcly_s*(il_actY/il_earnedY_bf_mq)	tintcly_s*(il_actY/il_earnedY_bf_mq)	
+		output_var			tintcly_s	tintcly_s	tintcly_s	tintcly_s	tintcly_s	tintcly_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	{nDepChildrenInTu#1>=1} & {tints_s<tintatc_s} & {ddp_s!=1} & {IsParent}	
+		#1_level			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			nDepChildrenInTu#1*$IT_TCChild	nDepChildrenInTu#1*$IT_TCChild	nDepChildrenInTu#1*$IT_TCChild	nDepChildrenInTu#1*$IT_TCChild	nDepChildrenInTu#1*$IT_TCChild	nDepChildrenInTu#1*$IT_TCChild	
+		uplim			tintatc_s-tints_s	tintatc_s-tints_s	tintatc_s-tints_s	tintatc_s-tints_s	tintatc_s-tints_s	tintatc_s-tints_s	
+		#1_level			tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	tu_family_be	
+		output_var			tintcch_s	tintcch_s	tintcch_s	tintcch_s	tintcch_s	tintcch_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			off	off	on	on	on	on	
+		elig_cond			n/a	n/a	{drgn1=2} & {il_actY>0} & {ddp_s!=1}	{drgn1=2} & {il_actY>0} & {ddp_s!=1}	{drgn1=2} & {il_actY>0} & {ddp_s!=1}	{drgn1=2} & {il_actY>0} & {ddp_s!=1}	
+		TAX_UNIT			n/a	n/a	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			off	off	on	on	off	off	
+		who_must_be_elig			n/a	n/a	one	one	one	one	
+		base_amount			n/a	n/a	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	
+		comp1_cond			n/a	n/a	{il_actY>=$IT_RTCIncLowLim2} & {il_actY<$IT_RTCIncUpLim1}	{il_actY>=$IT_RTCIncLowLim2} & {il_actY<$IT_RTCIncUpLim1}	{il_actY>=$IT_RTCIncLowLim2} & {il_actY<$IT_RTCIncUpLim1}	{il_actY>=$IT_RTCIncLowLim2} & {il_actY<$IT_RTCIncUpLim1}	
+		comp1_perElig			n/a	n/a	base_amount	base_amount	base_amount	base_amount	
+		comp2_cond			n/a	n/a	{il_actY>=$IT_RTCIncUpLim1} & {il_actY<$IT_RTCIncUpLim2}	{il_actY>=$IT_RTCIncUpLim1} & {il_actY<$IT_RTCIncUpLim2}	{il_actY>=$IT_RTCIncUpLim1}	{il_actY>=$IT_RTCIncUpLim1}	
+		comp2_perElig			n/a	n/a	base_amount-amount#1*(il_actY-$IT_RTCIncUpLim1)	base_amount-amount#1*(il_actY-$IT_RTCIncUpLim1)	$IT_RTCBaseAmt2+amount#1	$IT_RTCBaseAmt2+amount#1	
+		#1_amount			n/a	n/a	0.1	0.1	0	0	
+		output_var			n/a	n/a	tintcrg_s	tintcrg_s	tintcrg_s	tintcrg_s	
+		TAX_UNIT			n/a	n/a	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			off	off	off	off	on	on	
+		who_must_be_elig			n/a	n/a	n/a	n/a	one	one	
+		base_amount			n/a	n/a	n/a	n/a	$IT_RTCBaseAmt1	$IT_RTCBaseAmt1	
+		comp1_cond			n/a	n/a	n/a	n/a	{il_actY<=$IT_RTCIncLowLim2} & {$IT_RTCIncLowLim1<$IT_RTCIncLowLim2}	{il_actY<=$IT_RTCIncLowLim2} & {$IT_RTCIncLowLim1<$IT_RTCIncLowLim2}	
+		comp1_perElig			n/a	n/a	n/a	n/a	base_amount-(base_amount/($IT_RTCIncLowLim2-$IT_RTCIncLowLim1))*($IT_RTCIncLowLim2-il_actY)	base_amount-(base_amount/($IT_RTCIncLowLim2-$IT_RTCIncLowLim1))*($IT_RTCIncLowLim2-il_actY)	
+		comp2_cond			n/a	n/a	n/a	n/a	({il_actY>$IT_RTCIncLowLim2} & {il_actY<=$IT_RTCIncUpLim1}) | ({il_actY<=$IT_RTCIncLowLim2} & {$IT_RTCIncLowLim2<=$IT_RTCIncLowLim1})	({il_actY>$IT_RTCIncLowLim2} & {il_actY<=$IT_RTCIncUpLim1}) | ({il_actY<=$IT_RTCIncLowLim2} & {$IT_RTCIncLowLim2<=$IT_RTCIncLowLim1})	
+		comp2_perElig			n/a	n/a	n/a	n/a	base_amount	base_amount	
+		comp3_cond			n/a	n/a	n/a	n/a	{il_actY>$IT_RTCIncUpLim1} & {il_actY<=$IT_RTCIncUpLim2} & {$IT_RTCIncUpLim2>$IT_RTCIncUpLim1}	{il_actY>$IT_RTCIncUpLim1} & {il_actY<=$IT_RTCIncUpLim2} & {$IT_RTCIncUpLim2>$IT_RTCIncUpLim1}	
+		comp3_perElig			n/a	n/a	n/a	n/a	base_amount-(base_amount/($IT_RTCIncUpLim2-$IT_RTCIncUpLim1))*(il_actY-$IT_RTCIncUpLim1)	base_amount-(base_amount/($IT_RTCIncUpLim2-$IT_RTCIncUpLim1))*(il_actY-$IT_RTCIncUpLim1)	
+		comp4_cond			n/a	n/a	n/a	n/a	{il_actY>$IT_RTCIncUpLim1} & {$IT_RTCIncUpLim2<=$IT_RTCIncUpLim1}	{il_actY>$IT_RTCIncUpLim1} & {$IT_RTCIncUpLim2<=$IT_RTCIncUpLim1}	
+		comp4_perElig			n/a	n/a	n/a	n/a	base_amount	base_amount	
+		output_var			n/a	n/a	n/a	n/a	tintcrg_s	tintcrg_s	
+		TAX_UNIT			n/a	n/a	n/a	n/a	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s))-tintcch_s-tintcly_s	(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s))-tintcch_s-tintcly_s	(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s-tintcrg_s))-tintcch_s-tintcly_s	(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s-tintcrg_s))-tintcch_s-tintcly_s	(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s-tintcrg_s))-tintcch_s-tintcly_s	(0<max>(tints_s-tintcmg_s-tinprtahm_s-tintatc_s-tintcri_s-tintcrg_s))-tintcch_s-tintcly_s	
+		output_var			tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_Elig			on	on	on	on	on	on	
+		elig_cond			{il_gross_taxableY>0}	{il_gross_taxableY>0}	{il_gross_taxableY>0}	{il_gross_taxableY>0}	{il_gross_taxableY>0}	{il_gross_taxableY>0}	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			(bun + bun_s) /il_gross_taxableY	(bun + bun_s) /il_gross_taxableY	(bun + bun_s) /il_gross_taxableY	(bun + bun_s) /il_gross_taxableY	(bun + bun_s) /il_gross_taxableY	(bun + bun_s) /il_gross_taxableY	
+		output_var			sin12_s	sin12_s	sin12_s	sin12_s	sin12_s	sin12_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			poa/il_gross_taxableY	poa/il_gross_taxableY	poa/il_gross_taxableY	poa/il_gross_taxableY	poa/il_gross_taxableY	poa/il_gross_taxableY	
+		output_var			sin13_s	sin13_s	sin13_s	sin13_s	sin13_s	sin13_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			il_sickY/il_gross_taxableY	il_sickY/il_gross_taxableY	il_sickY/il_gross_taxableY	il_sickY/il_gross_taxableY	il_sickY/il_gross_taxableY	il_sickY/il_gross_taxableY	
+		output_var			sin14_s	sin14_s	sin14_s	sin14_s	sin14_s	sin14_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			psu/il_gross_taxableY	psu/il_gross_taxableY	psu/il_gross_taxableY	psu/il_gross_taxableY	psu/il_gross_taxableY	psu/il_gross_taxableY	
+		output_var			sin15_s	sin15_s	sin15_s	sin15_s	sin15_s	sin15_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		who_must_be_elig			one	one	one	one	one	one	
+		formula			byr/il_gross_taxableY	byr/il_gross_taxableY	byr/il_gross_taxableY	byr/il_gross_taxableY	byr/il_gross_taxableY	byr/il_gross_taxableY	
+		output_var			sin16_s	sin16_s	sin16_s	sin16_s	sin16_s	sin16_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_BenCalc			on	on	on	on	on	on	
+		comp1_cond			{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	{dag>=58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOldUn}	
+		comp1_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		comp2_cond			{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	{dag<58} & {sin12_s=1} & {(bun + bun_s) <=$IT_ZTOthReplInc}	
+		comp2_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		comp3_cond			{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	{sin13_s=1} & {poa<=$IT_ZTOthReplInc}	
+		comp3_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		comp4_cond			{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	{sin14_s=1} & {il_sickY<=$IT_ZTDisab}	
+		comp4_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		comp5_cond			{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	{sin15_s=1} & {psu<=$IT_ZTOthReplInc}	
+		comp5_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		comp6_cond			{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	{sin16_s=1} & {byr<=$IT_ZTOthReplInc}	
+		comp6_perElig			0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	0-(tinna_s+tintcch_s)	
+		output_add_var			tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	tinna_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tinna_s*0.073	tinna_s*0.073	tinna_s*0.073	tinna_s*0.073	tinna_s*0.073	tinna_s*0.073	
+		lowlim			0	0	0	0	0	0	
+		output_var			tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s	tinmu_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			tinna_s+tinmu_s	tinna_s+tinmu_s	tinna_s+tinmu_s	tinna_s+tinmu_s	tinna_s+tinmu_s	tinna_s+tinmu_s	
+		output_var			tin_s	tin_s	tin_s	tin_s	tin_s	tin_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		func_ArithOp			on	on	on	on	on	on	
+		formula			yiy*0.15	yiy*0.15	yiy*0.15	yiy*0.15	yiy*0.15	yiy*0.15	
+		output_var			tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s	tinkt_s	
+		TAX_UNIT			tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	tu_individual_be	
+		sys_end_par								 	
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											

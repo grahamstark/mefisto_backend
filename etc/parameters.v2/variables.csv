@@ -1,0 +1,685 @@
+VARIABLES	"Variable		
+Name"	Model Generated	Monetary	Default Variable	"Default		
+Value"	"Automatic		
+Label"																	
+	sys_var_name	sys_modgen	sys_mon	sys_defvar	sys_defval	sys_label	BE	IT	EE	HU	PL	SI	SL	CZ	ES	LT	EL	UK	SE	NL	sys_end_desc		
+	afc	0	1	n/a	0	assets : financial capital	financial capital	-	-	-	financial capital	-	-	Financial capital (Financni kapital)	financial capital (capital financiero)	financial capital	financial capital	financial capital	-	-			
+	afc00	0	1	n/a	0.0000000000001	assets : financial capital : main/basic	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	afc00_s	1	1	n/a	1E-13	assets : financial capital : main/basic : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	aldagar	0	0	n/a	0	assets : land : agriculture : area in m2	-	-	-	-	-	-	-	-	-	agricultural land (m2)	-	-	-	-			
+	aldagariv	0	0	n/a	0	assets : land : agriculture : area in m2 : imputed value	-	-	-	-	"agricultural land, area in converted hectares"	-	-	-	-	-	-	-	-	-			
+	aldar	0	0	n/a	0	assets : land : area in m2	-	-	-	-	Assets:Land:Area In M2::::	-	-	-	-	land size (m2)	-	-	-	-			
+	aldiv_s	1	1	n/a	1E-13	assets : land : imputed value : simulated	-	-	-	-	-	-	-	-	-	imputed value of land	-	-	-	-			
+	aldmv_s	1	1	n/a	1E-13	assets : land : market value : simulated	-	-	-	-	-	-	-	-	-	market value of land	-	-	-	-			
+	aldnaar	0	0	n/a	0	assets : land : non agricultural : area in m2	-	-	-	-	"non agricultural land, area in physical hectares"	-	-	-	-	-	-	-	-	-			
+	amolv	0	1	n/a	0	assets : mortgage : loan value	-	-	-	-	-	-	-	-	-	-	(initial) mortgage value	-	-	-			
+	amoyl	0	0	n/a	0	assets : mortgage : year of loan	-	-	-	-	-	-	-	-	-	-	year of taking mortgage	-	-	-			
+	amrar	0	0	n/a	50	assets : main residence : area in m2	-	-	main residence size in m2	-	size of flat in square meters	size of flat in square meters	-	-	-	residence size in m2	residence size in m2	-	-	-			
+	amriv	0	1	n/a	0	assets : main residence : imputed value	-	Main residence-imputed cadastral value	-	-	-	-	-	-	-	-	-	-	-	-			
+	amriv_s	1	1	n/a	1E-13	assets : main residence : imputed value : simulated	-	-	-	-	-	-	-	-	-	imputed value of main residence	-	-	-	-			
+	amrmv	0	1	n/a	0	assets : main residence : market value	-	-	-	-	-	-	-	-	-	market value of main residence	-	-	-	-			
+	amrmv_s	1	1	n/a	1E-13	assets : main residence : market value : simulated	-	-	-	-	-	-	-	-	-	market value of main residence	-	-	-	-			
+	amrrm	0	0	n/a	0	assets : main residence : number of rooms	number of rooms	-	number of rooms	number of rooms	number of rooms	-	-	Number of rooms (Pocet mistnosti)	number of rooms (no. dependencias en el hogar)	number of rooms (no. dependencias en el hogar)	number of rooms	number of rooms	-	-			
+	amrtn	0	0	n/a	0	assets : main residence : tenure	Housing tenure	Housing tenure	main residence tenure	-	tenure status	tenure status	-	Tenure and the current residence (Doba pobytu v miste trvaleho bydliste)	housing tenure (tenencia de la vivienda)	tenure status	tenure status	tenure status	-	-			
+	amrtp	0	0	n/a	0	assets : main residence : type of residence	-	-	-	-	-	-	-	-	-	type of residence	-	-	-	-			
+	aobiv	0	1	n/a	0	assets : other building : imputed value	-	other buildings -imputed cadastral value	-	-	-	-	-	-	-	-	-	-	-	-			
+	aoc	0	1	n/a	0	assets : other capital	-	-	-	-	other capital	-	-	-	-	-	-	-	-	-			
+	bac	0	1	n/a	0	benefit : accident/disease	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bcc00_s	1	1	n/a	1E-13	benefit : child care : main/basic : simulated	-	-	childcare allowance (lapsehooldustasu)	-	-	-	-	-	-	-	-	-	-	-			
+	bccct	0	1	n/a	0	benefit : child care : contributory	-	-	-	child care fee (gyermekgondoz�si d�j)	-	-	-	-	-	-	-	-	-	-			
+	bcclg_s	1	1	n/a	1E-13	benefit : child care : large family : simulated	-	-	large family parent allowance (seitsme- ja enamalapselise pere vanema toetus)	-	-	-	-	-	-	-	-	-	-	-			
+	bcclt_s	1	1	n/a	1E-13	benefit : child care : long term : simulated	-	-	-	child raising support (gyermeknevel�si t�mogat�s)	-	-	-	-	-	-	-	-	-	-			
+	bccnc_s	1	1	n/a	1E-13	benefit : child care : non-contributory : simulated	-	-	-	child care allowance (gyermekgondoz�si seg�ly)	-	-	-	-	-	-	-	-	-	-			
+	bch	0	1	n/a	0	benefit : child	-	-	child allowances (total)	-	-	-	-	-	BEN child benefits (prestaciones por menores a cargo)	-	-	Child benefit	-	-			
+	bch_s	1	1	n/a	1E-13	benefit : child : simulated	Child benefit	-	-	-	-	-	Child Benefit	-	-	-	-	Child benefit	-	-			
+	bch00	0	1	n/a	0	benefit : child : main/basic	-	-	child allowance (lapsetoetus)	-	family allowance	-	-	Child Allowances (Pridavky na deti)	BEN child benefit (prestacion por menores a cargo no minusvalido)	-	-	-	-	-			
+	bch00_s	1	1	n/a	1E-13	benefit : child : main/basic : simulated	-	-	child allowance (lapsetoetus)	-	basic child benefit	-	-	Child Allowances (Pridavky na deti)	BEN Child Benefit (prestacion por menores a cargo)	child allowance (i�moka vaikui)	-	-	-	-			
+	bchab	0	1	n/a	0	benefit : child : abroad	-	-	child allowance abroad	-	-	-	-	-	-	-	-	-	-	-			
+	bchba	0	1	n/a	0	benefit : child : birth/adoption	-	-	childbirth allowance (s�nnitoetus)	-	-	-	-	-	-	-	-	-	-	-			
+	bchba_s	1	1	n/a	1E-13	benefit : child : birth/adoption : simulated	Birth allowance	-	childbirth allowance (s�nnitoetus)	-	-	birth grant	-	-	-	birth grant (vienkartin? i�moka gimus vaikui)	birth grant	-	-	-			
+	bchbamtna_s	1	1	n/a	1E-13	benefit : child : birth/adoption : means-tested : national government : simulated	-	-	-	-	-	-	-	-	BEN national means tested child benefit for birth or adoption (prestaci�n estatal condicional a la renta por nacimiento o adopci�n)	-	-	-	-	-			
+	bchbamtrg_s	1	1	n/a	1E-13	benefit : child : birth/adoption : means-tested : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional means-tested child benefit for birth/adoption (prestaci�n regional condicional a la renta por nacimiento o adopci�n)	-	-	-	-	-			
+	bchbarg_s	1	1	n/a	1E-13	benefit : child : birth/adoption : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional birth/adoption benefit (prestaci�n regional por nacimiento o adopci�n)	-	-	-	-	-			
+	bchbaucna_s	1	1	n/a	1E-13	benefit : child : birth/adoption : unconditional/universal : national government : simulated	-	-	-	-	-	-	-	-	BEN national universal child benefit for birth/adoption (prestaci�n estatal no condicional a la renta por nacimiento o adopci�n)	-	-	-	-	-			
+	bchbaucrg_s	1	1	n/a	1E-13	benefit : child : birth/adoption : unconditional/universal : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional universal child benefit for birth/adoption (prestaci�n regional no condicional a la renta por nacimiento o adopci�n)	-	-	-	-	-			
+	bchdi	0	1	n/a	1E-13	benefit : child : disability	-	-	-	-	-	-	-	-	BEN disabled child benefit (prestacion por menor a cargo con incapacidad)	-	-	-	-	-			
+	bchdi_s	1	1	n/a	1E-13	benefit : child : disability : simulated	-	-	-	-	-	-	-	-	BEN disabled child benefit (prestacion por menor a cargo con incapacidad)	-	-	-	-	-			
+	bchdied_s	1	1	n/a	1E-13	benefit : child : disability : education : simulated	-	-	-	-	supplement for education of disabled child	-	-	-	-	-	-	-	-	-			
+	bched	0	1	n/a	0	benefit : child : education	-	-	-	-	-	-	-	-	-	-	income support to families with children in compulsory education (??????? ???????)	-	-	-			
+	bched_s	1	1	n/a	1E-13	benefit : child : education : simulated	-	-	school allowance (koolitoetus)	-	supplement for starting school  year	-	-	-	-	-	income support to families with children in compulsory education (??????? ???????)	-	-	-			
+	bchlg	0	1	n/a	0	benefit : child : large family	-	-	-	-	-	-	-	-	-	-	third child benefit (??????? ?????? ???????)	-	-	-			
+	bchlg_s	1	1	n/a	1E-13	benefit : child : large family : simulated	-	-	large family allowance (kolme- ja enamalapselise pere toetus)	-	supplement for large families	large family supplement	-	-	-	-	third child benefit (??????? ?????? ???????)	-	-	-			
+	bchlgmtrg_s	1	1	n/a	1E-13	benefit : child : large family : means-tested : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional means-tested large family benefit (prestaci�n regional condicional a la renta por familia numerosa)	-	-	-	-	-			
+	bchlgrg_s	1	1	n/a	0.0000000000001	benefit : child : large family : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional child benefit for large families (prestaci�n regional por familia numerosa)	-	-	-	-	-			
+	bchlgucrg_s	1	1	n/a	0.0000000000001	benefit : child : large family : unconditional/universal : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional universal large family benefit (prestaci�n regional no condicional a la renta por familia numerosa)	-	-	-	-	-			
+	bchlp	0	1	n/a	0	benefit : child : lone parent	-	-	single parent child allowance (�ksikvanema lapse toetus)	-	lone parent benefit	-	-	-	-	-	-	-	-	-			
+	bchlp00_s	1	1	n/a	1E-13	benefit : child : lone parent : main/basic : simulated	-	-	-	-	supplement for lone parent (main benefit)	-	-	-	-	-	-	-	-	-			
+	bchmt	0	1	n/a	0	benefit : child : means-tested	-	-	-	-	-	-	-	Social Allowance (Socialni priplatek +  Zaopatrovaci prispevek till 2004)	-	-	-	-	-	-			
+	bchmt_s	1	1	n/a	1E-13	benefit : child : means-tested : simulated	-	-	-	regular child protection benefit (rendszeres gyermekv�delmi t�mogat�s)	-	child benefit (means tested)	-	Social Allowance (Socialni priplatek +  Zaopatrovaci prispevek till 2004)	-	-	-	-	-	-			
+	bchmtrg_s	1	1	n/a	0.0000000000001	benefit : child : means-tested : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional means-tested child benefit (prestaci�n regional condicional a la renta por menor a cargo)	-	-	-	-	-			
+	bchnm_s	1	1	n/a	1E-13	benefit : child : not means-tested : simulated	-	-	-	family allowance (csal�di p�tl�k tart�sd�j)	-	-	-	-	-	-	-	-	-	-			
+	bchor	0	1	n/a	0	benefit : child : orphan	-	-	-	-	-	-	-	-	-	guardianship benefit (globos (r?pybos) i�moka)	-	-	-	-			
+	bchot	0	1	n/a	0	benefit : child : other	-	Child benefit (Assegno per famiglia con almeno 3 figli minori)	-	-	other child benefits	-	-	-	BEN other child benefits (otras prestaciones por menor a cargo)	-	-	-	-	-			
+	bchpl	0	1	n/a	0	benefit : child : parental leave	-	-	-	-	parental leave allowance	-	-	-	-	-	-	-	-	-			
+	bchrg_s	1	1	n/a	1E-13	benefit : child : regional government : simulated	-	-	-	-	-	-	-	-	BEN Regional Child Benefit (Prestaciones Familiares de las CCAA)	-	-	-	-	-			
+	bchucrg_s	1	1	n/a	0.0000000000001	benefit : child : unconditional/universal : regional government : simulated	-	-	-	-	-	-	-	-	BEN regional universal child benefit (prestaci�n regional no condicional por menor a cargo)	-	-	-	-	-			
+	bchunlp	0	1	n/a	0	benefit : child : unemployment : lone parent	-	-	-	-	benefit for unemployed lone parents	-	-	-	-	-	-	-	-	-			
+	bcrch_s	1	1	n/a	1E-13	benefit : caring : child : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bcrchdi	0	1	n/a	0	benefit : caring : child : disability	-	-	-	-	nursing benefit	-	-	-	-	-	-	-	-	-			
+	bcrchdi_s	1	1	n/a	1E-13	benefit : caring : child : disability : simulated	-	-	-	-	nursing benefit	-	-	-	-	-	-	-	-	-			
+	bcrdi	0	1	n/a	0	benefit : caring : disability	-	-	-	-	-	-	-	-	-	-	-	Invalid care allowance	-	-			
+	bcrsvcc	0	1	n/a	0	benefit : caring : severe disability : child care	-	-	-	-	-	compensation for lost income due to care for child with special needs	-	-	-	-	-	-	-	-			
+	bdi	0	1	n/a	0	benefit : disability	-	-	-	-	-	disability supplement	-	-	-	disability benefits	non-contributory disability benefits (????????? ????????? ?????????)	-	-	-			
+	bdica	0	1	n/a	0	benefit : disability : receiving care (any type)	-	-	-	-	-	Attendance supplement	-	-	-	-	-	-	-	-			
+	bdicc	0	1	n/a	0	benefit : disability : child care	-	-	-	-	-	childcare supplement	-	-	-	-	-	-	-	-			
+	bdict	0	1	n/a	0	benefit : disability : contributory	-	-	-	-	-	-	-	-	-	-	-	Incapacity benefit	-	-			
+	bdimb	0	1	n/a	0	benefit : disability : mobility limitation	-	-	-	-	-	-	-	-	-	-	-	Disability living (mobility) allowance	-	-			
+	bdioa	0	1	n/a	0	benefit : disability : old age	-	-	-	-	-	-	-	-	-	-	-	Attendance allowance	-	-			
+	bdisc	0	1	n/a	0	benefit : disability : self-care	-	-	-	-	-	-	-	-	-	-	-	Disability living allowance	-	-			
+	bdisv	0	1	n/a	0	benefit : disability : severe disability	-	-	-	-	-	-	-	-	-	-	-	Severe disablement allowance	-	-			
+	bdiwi	0	1	n/a	0	benefit : disability : work illness	-	-	-	-	-	-	-	-	-	-	-	Industrial injuries pension	-	-			
+	bed	0	1	n/a	0	benefit : education	Scholarships and grants	Scholarships and grants	scholarships and grants	education related income (oktat�ssal kapcsolatos t�mogat�s)	scholarships	scholarships	-	Education related allowances (studentske socialni davky)	BEN scholarships (becas)	education-related allowances	education allowances for students	-	-	-			
+	bedes	0	1	n/a	0	benefit : education : secondary education	-	-	-	-	-	-	-	-	-	-	-	Student payments	-	-			
+	bedsl	0	1	n/a	0	benefit : education : student loan	-	-	-	-	-	-	-	-	-	-	-	Student Loan	-	-			
+	bfa	0	1	n/a	0	benefit : family	Family related benefits	Family allowances (Assegni famigliari)	-	family allowance	-	family allowance	-	Family benefits (soucet davek vztazenych k detem v rodine)	-	family/children related allowances	total family benefits	-	-	-			
+	bfacpwc_s	1	1	n/a	1E-13	benefit : family : couple : with children : simulated	-	Family Allowance for 2 parents and children (Assegni familiari)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bfacpxc_s	1	1	n/a	1E-13	benefit : family : couple : no children : simulated	-	Family Allowance for couple and 0 child (Assegni famigiari)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bfacs	0	1	n/a	0	benefit : family : civil servant	-	-	-	-	-	-	-	-	-	-	civil servants' family benefit	-	-	-			
+	bfafp	0	1	n/a	0	benefit : family : foster parent	-	-	-	-	-	-	-	Foster Care Benefits (Davky pestounske pece)	-	-	-	-	-	-			
+	bfalg	0	1	n/a	0	benefit : family : large family	-	-	-	-	-	-	-	-	-	-	large family benefit (??????????? ???????)	-	-	-			
+	bfalg_s	1	1	n/a	0.0000000000001	benefit : family : large family : simulated	-	-	-	-	-	-	-	-	-	-	large family benefit (??????????? ???????)	-	-	-			
+	bfalp_s	1	1	n/a	1E-13	benefit : family : lone parent : simulated	-	Family Allowance for 1 parent and children (Assegni famigiari)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bfamt	0	1	n/a	0	benefit : family : means-tested	-	-	-	-	-	-	-	-	-	-	-	Child Tax Credit	-	-			
+	bfamt_s	1	1	n/a	0.0000000000001	benefit : family : means-tested : simulated	-	-	-	-	-	-	-	-	-	-	-	Child Tax Credit	-	-			
+	bfaot	0	1	n/a	0	benefit : family : other	-	-	-	-	-	-	-	Other Social Benefits (Ostatni davky SSP - porodne a pohrebne)	-	-	minor family benefits	-	-	-			
+	bfapl	0	1	n/a	0	benefit : family : parental leave	-	-	-	-	-	-	-	Parental Allowances (Rodicovsky prispevek)	-	-	-	-	-	-			
+	bfapl_s	1	1	n/a	1E-13	benefit : family : parental leave : simulated	-	-	-	-	-	-	-	Parental Allowances (Rodicovsky prispevek)	-	-	-	-	-	-			
+	bhl	0	1	n/a	0	benefit : health	-	-	sickness benefit (haigusraha)	"sickness benefits (t�pp�nz, t�voll�ti d�j)"	-	-	-	Sickness benefits (Nemocenska)	BEN sickness benefit (prestacion por enfermedad)	sickness benefits	sickness benefits (????????? ?????????)	-	-	-			
+	bhlsp_s	1	0	n/a	1E-13	benefit : health : social contribution pay back : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	Health insurance contribution compensation benefit			
+	bhlwk	0	1	n/a	0	benefit : health : work related	-	-	-	-	-	-	-	-	-	-	-	Statutory sick pay	-	-			
+	bho	0	1	n/a	0	benefit : housing	Housing related benefits	Housing benefits	-	housing benefit	housing benefit	housing benefit	-	Housing benefit (Prispevek na bydleni)	BEN housing benefit (prestacion por vivienda)	housing allowances	housing benefits	housing benefit	-	-			
+	bho_s	1	1	n/a	1E-13	benefit : housing : simulated	-	-	-	-	-	housing benefit	-	Housing benefit (Prispevek na bydleni)	-	-	-	housing benefit	-	-			
+	bhoef_s	1	1	n/a	1E-13	benefit : housing : effective : simulated	-	-	-	-	housing benefit: received	-	-	-	-	-	-	-	-	-			
+	bhoen_s	1	1	n/a	1E-13	benefit : housing : entitlement : simulated	-	-	-	-	housing benefit: entitlement	-	-	-	-	-	-	-	-	-			
+	bhope_s	1	1	n/a	0.0000000000001	benefit : housing : pensioner : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bma	0	1	n/a	0	benefit : maternity	Maternity leave	Maternity payments (only self emp and lump sum - Assegno di Maternita')	maternity benefits (total)	-	maternity benefit	-	-	-	-	-	-	-	-	-			
+	bmaab	0	1	n/a	0	benefit : maternity : abroad	-	-	parental benefit abroad	-	-	-	-	-	-	-	-	-	-	-			
+	bmact	0	1	n/a	0	benefit : maternity : contributory	-	-	parental benefit (vanemapalk)	maternity allowance (terhess�gi-gyermek�gyi seg�ly)	-	maternity payments	-	-	-	-	maternity benefits	-	-	-			
+	bmact_s	1	1	n/a	0.0000000000001	benefit : maternity : contributory : simulated	-	-	-	-	-	-	-	-	-	maternity (paternity) leave benefit (motinyst?s (t?vyst?s) pa�alpa)	-	-	-	-			
+	bmaer	0	1	n/a	0	benefit : maternity : employer	-	-	-	-	-	-	-	-	-	-	-	Statutory maternity pay	-	-			
+	bmals	0	1	n/a	0.0000000000001	benefit : maternity : lump-sum	-	Maternity payments (lump sum)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bmana	0	1	n/a	0	benefit : maternity : national government	-	-	-	-	-	-	-	-	-	-	-	Maternity Allowance	-	-			
+	bmanc	0	1	n/a	0	benefit : maternity : non-contributory	-	-	-	-	-	Parental allowance	-	-	-	-	-	-	-	-			
+	bmanc_s	1	1	n/a	1E-13	benefit : maternity : non-contributory : simulated	-	-	-	maternity grant (anyas�gi t�mogat�s)	-	parental allowance	-	-	-	-	-	-	-	-			
+	bmapr	0	1	n/a	0	benefit : maternity : pregnancy	-	-	maternity benefit (s�nnitush�vitis)	-	-	-	-	-	-	-	-	-	-	-			
+	bmaprct_s	1	1	n/a	0.0000000000001	benefit : maternity : pregnancy : contributory : simulated	-	-	-	-	-	-	-	-	-	maternity leave benefit (motinyst?s pa�alpa)	-	-	-	-			
+	bmaprnc_s	1	1	n/a	0.0000000000001	benefit : maternity : pregnancy : non-contributory : simulated	-	-	-	-	-	-	-	-	-	pregnancy grant (vienkartin? i�moka n?�?iai moteriai)	-	-	-	-			
+	bmase	0	1	n/a	0.0000000000001	benefit : maternity : self-employed	-	Maternity payments (only self emp)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bmu_s	1	1	n/a	0.0000000000001	benefit : municipal government : simulated	-	-	-	-	-	-	-	-	-	-	-	Council Tax benefit	-	-			
+	boa	0	1	n/a	0	benefit : old age	-	-	-	-	-	-	-	-	-	old age benefits	-	-	-	-			
+	boacs_s	1	1	n/a	0.0000000000001	benefit : old age : civil servant : simulated	-	-	-	-	-	-	-	-	-	-	lump sum benefit for retired civil servants	-	-	-			
+	boact	0	1	n/a	0	benefit : old age : contributory	-	-	-	-	-	-	-	-	-	-	pensioners' social solidarity benefit (????)	-	-	-			
+	boact00	0	1	n/a	0	benefit : old age : contributory : main/basic	-	-	-	-	-	-	-	-	-	-	-	State pension	-	-			
+	boact_s	1	1	n/a	1E-13	benefit : old age : contributory : simulated	-	-	-	-	-	-	-	-	-	-	pensioners' social solidarity benefit (????)	-	-	-			
+	boactcm	0	1	n/a	0	benefit : old age : contributory : complement	-	-	-	-	-	-	-	-	-	-	-	Occupational Pension	-	-			
+	boaht_s	1	1	n/a	0.0000000000001	benefit : old age : heating : simulated	-	-	-	-	-	-	-	-	-	-	-	Winter Fuel Allowance	-	-			
+	boamt	0	1	n/a	0	benefit : old age : means-tested	-	-	-	-	-	-	-	-	-	-	-	Pension Credit	-	-			
+	boamt_s	1	1	n/a	0.0000000000001	benefit : old age : means-tested : simulated	-	-	-	-	-	-	-	-	-	-	-	Pension Credit	-	-			
+	boamtmm_s	1	1	n/a	0.0000000000001	benefit : old age : means-tested : minimum  : simulated	-	-	-	-	-	-	-	-	-	-	-	PC: Guarantee Credit	-	-			
+	boamtxp_s	1	1	n/a	0.0000000000001	benefit : old age : means-tested : extra pay : simulated	-	-	-	-	-	-	-	-	-	-	-	PC:Saving Credit	-	-			
+	boanc	0	1	n/a	0	benefit : old age : non-contributory	-	-	-	-	-	-	-	-	-	-	social pension (??????? ???????????? ??????????)	-	-	-			
+	boanc_s	1	1	n/a	1E-13	benefit : old age : non-contributory : simulated	-	-	-	-	-	-	-	-	-	-	social pension (??????? ???????????? ??????????)	-	-	-			
+	boawr	0	1	n/a	0	benefit : old age : war	-	-	-	-	-	-	-	-	-	-	-	War pension	-	-			
+	bot	0	1	n/a	0	benefit : other	-	-	-	-	other benefits	-	-	-	-	-	-	other benefits	-	-			
+	botre	0	1	n/a	0	"benefit : other : regular, periodic"	-	-	-	other regular benefits	-	-	-	-	-	-	-	-	-	-			
+	bplct_s	1	1	n/a	0.0000000000001	benefit : parental leave : contributory : simulated	-	-	-	-	-	-	-	-	-	paternity leave benefit (t?vyst?s pa�alpa)	-	-	-	-			
+	bsa	0	1	n/a	0	benefit : social assistance	Social assistance	Social assistance	-	social assistance	social assistance	social assistance	-	"Social assistance benefits (Pravidelne davky socialni potrebnosti ""dav_sp"")"	BEN social assistance benefits (asistencia social)	social assistance benefits	-	Income Support	-	-			
+	bsa_s	1	1	n/a	1E-13	benefit : social assistance : simulated	Income support	-	-	social assistance (szoci�lis seg�lyek)	-	social assistance	Social Assistance	"Social assistance benefits (Pravidelne davky socialni potrebnosti ""dav_sp"")"	-	-	-	Income support	-	-			
+	bsa00	0	1	n/a	0	benefit : social assistance : main/basic	-	-	subsistence benefit (toimetulekutoetus)	-	-	-	-	-	-	social benefit (socialin? pa�alpa)	-	-	-	-			
+	bsa00_s	1	1	n/a	1E-13	benefit : social assistance : main/basic : simulated	-	-	subsistence benefit (toimetulekutoetus)	"social assistance, regular benefit (rendszeres szoci�lis seg�ly)"	-	-	-	Social assistance	-	social benefit (socialin? pa�alpa)	-	-	-	-			
+	bsacr	0	1	n/a	0	benefit : social assistance : caring	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bsaho_s	1	1	n/a	1E-13	benefit : social assistance : housing : simulated	-	-	-	"social assistance, home maintenance support (lak�sfenntart�si t�mogat�s)"	-	-	-	Social assistance supplement for housing	-	-	-	-	-	-			
+	bsaht_s	1	1	n/a	0.0000000000001	benefit : social assistance : heating : simulated	-	-	-	-	-	-	-	-	-	-	lump sum heating benefit	-	-	-			
+	bsals	0	1	n/a	0	benefit : social assistance : lump-sum	-	-	other social assistance	-	-	-	-	-	-	municipal and NGO support (savivaldybiu ir NVO parama)	-	-	-	-			
+	bsaoa_s	1	1	n/a	1E-13	benefit : social assistance : old age : simulated	Income support for the elderly	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bsaot	0	1	n/a	0	benefit : social assistance : other	-	-	-	-	-	-	-	-	-	-	minor social assistance benefits	-	-	-			
+	bsapm_s	1	1	n/a	1E-13	benefit : social assistance : permanent : simulated	-	-	-	-	social assistance: permanent	-	-	-	-	-	-	-	-	-			
+	bsarg_s	1	1	n/a	1E-13	benefit : social assistance : regional government : simulated	-	-	-	-	-	-	-	-	BEN simulated Regional Social Assistance (Rentas M�nimas de Inserci�n de las CCAA) - (!) switched off 	-	-	-	-	-			
+	bsatm_s	1	1	n/a	1E-13	benefit : social assistance : temporary : simulated	-	-	-	-	social assistance: temporary	-	-	-	-	-	-	-	-	-			
+	bsatmefmu_s	1	1	n/a	1E-13	benefit : social assistance : temporary : effective : municipal government : simulated	-	-	-	-	temporary social assistance assumed to be paid by local government (amount received)	-	-	-	-	-	-	-	-	-			
+	bsatmefna_s	1	1	n/a	1E-13	benefit : social assistance : temporary : effective : national government : simulated	-	-	-	-	temporary social assistance guaranteed by national government (amount received)	-	-	-	-	-	-	-	-	-			
+	bsatmen_s	1	1	n/a	1E-13	benefit : social assistance : temporary : entitlement : simulated	-	-	-	-	temporary social assistance entitlement (amount that should be received)	-	-	-	-	-	-	-	-	-			
+	bsatmpb	0	1	n/a	0	benefit : social assistance : temporary : probability of receiving	-	-	-	-	expected probability to receive temporary social assistance	-	-	-	-	-	-	-	-	-			
+	bsu	0	1	n/a	0	benefit : survivors	-	-	-	-	-	-	-	-	-	survivors' benefits	-	-	-	-			
+	bsuwd	0	1	n/a	0	benefit : survivors : widow	-	-	-	-	-	-	-	-	-	-	-	Widow's pension	-	-			
+	bun	0	1	n/a	0	benefit : unemployment	Unemployment benefits	-	unemployment benefits (total)	unemployment benefits (munkan�lk�li ell�t�sok)	unemployment benefit	unemployment benefit	-	Unemployment benefit (Prispevek v nezamestnanosti)	BEN unemployment benefit (prestacion por desempleo)	unemployment benefits	total unemployment benefits	-	-	-			
+	bun_s	1	1	n/a	1E-13	benefit : unemployment : simulated	Unemployment benefits	-	-	-	unemployment benefit	-	-	Unemployment benefit (Prispevek v nezamestnanosti)	-	-	-	-	-	-			
+	bunct	0	1	n/a	0	benefit : unemployment : contributory	-	-	unemployment insurance benefit (t��tukindlustush�vitis)	-	-	unemployment insurance benefit	-	-	BEN unemployment insurance (prestacion por desempleo contributiva)	unemployment insurance benefit (nedarbo draudimo i�moka)	unemployment insurance benefit (??????? ????????)	JSA contributory	-	-			
+	bunct02_s	1	1	n/a	0.0000000000001	benefit : unemployment : contributory : 02 : simulated	-	Unemployment benefit (Indennita' di Disoccupazione)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bunct_s	1	1	n/a	1E-13	benefit : unemployment : contributory : simulated	-	-	unemployment insurance benefit (t��tukindlustush�vitis)	-	-	-	-	-	BEN unemployment insurance (prestacion por desempleo contributiva)	unemployment insurance benefit (nedarbo draudimo i�moka)	unemployment insurance benefit (??????? ????????)	unemployment benefit (JSA)	-	-			
+	bunct01	0	1	n/a	0	benefit : unemployment : contributory : 01	-	Unemployment benefit (Cassa Integrazione Guadagni)	-	-	-	-	-	-	-	-	-	-	-	-			
+	bunct02	0	1	n/a	0	benefit : unemployment : contributory : 02	-	Unemployment benefit (Indennita' di Disoccupazione - Mobilita')	-	-	-	-	-	-	-	-	-	-	-	-			
+	bunctmy	0	0	bunmy	0	benefit : unemployment : contributory : months per year	-	-	no. months receiving unemployment insurance benefit	-	-	-	-	-	no. months receiving unemployment insurance (n. de meses recibiendo prestacion por Bdesempleo)	-	no. months receiving unemployment insurance benefit	-	-	-			
+	bunctmy01	0	0	n/a	0.0000000000001	benefit : unemployment : contributory : months per year : 01	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bunctmy02	0	0	n/a	0.0000000000001	benefit : unemployment : contributory : months per year : 02	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	bunctmy_s	1	0	n/a	1E-13	benefit : unemployment : contributory : months per year : simulated	-	-	no. months receiving unemployment insurance benefit	-	-	-	-	-	no. months receiving unemployment insurance (n. de meses recibiendo prestacion por Bdesempleo)	-	-	-	-	-			
+	bunmt	0	1	n/a	0	benefit : unemployment : means-tested	-	-	-	-	-	unemployment assistance benefit	-	-	-	-	-	-	-	-			
+	bunmt_s	1	1	n/a	0.0000000000001	benefit : unemployment : means-tested : simulated	-	-	-	-	-	-	-	-	-	-	-	Income  based JSA	-	-			
+	bunmy	0	0	n/a	0	benefit : unemployment : months per year	-	UB: no. of months received in the year	no. months receiving unemployment benefits	no. of months in unemp benefit	no. of months in unemp benefit	-	-	Months during last 12 months collecting unemployment benefit (Pocet mesicu v poslednich 12 mesicich pobirani prispevku v nezamestnanosti)	no. months receiving unemployment benefit (n. de meses recibiendo desempleo)	no. months receiving unemployment benefits	-	-	-	-			
+	bunmy_s	1	0	n/a	1E-13	benefit : unemployment : months per year : simulated	-	-	-	-	unemployment benefit: months received in the year	-	-	Months during last 12 months collecting unemployment benefit (Pocet mesicu v poslednich 12 mesicich pobirani prispevku v nezamestnanosti)	-	no. months receiving unemployment benefits	no. months receiving unemployment insurance benefit	-	-	-			
+	bunnc	0	1	n/a	0	benefit : unemployment : non-contributory	-	-	unemployment assistance benefit (t��tu abiraha)	-	-	-	-	-	BEN unemployment assistance (prestacion por desempleo asistencial)	-	unemployment assistance for older workers (??????? ???????????? ???????)	-	-	-			
+	bunnc_s	1	1	n/a	1E-13	benefit : unemployment : non-contributory : simulated	-	-	unemployment assistance benefit (t��tu abiraha)	-	-	-	-	-	BEN Unemployment assistance 	-	unemployment assistance for older workers (??????? ???????????? ???????)	-	-	-			
+	bunncmy	0	0	n/a	0	benefit : unemployment : non-contributory : months per year	-	-	no. months receiving unemployment assistance benefit	-	-	-	-	-	no. months receiving unemployment assistance (n. de meses recibiendo subsidio por desempleo)	-	-	-	-	-			
+	bunncmy_s	1	0	n/a	1E-13	benefit : unemployment : non-contributory : months per year : simulated	-	-	no. months receiving unemployment assistance benefit	-	-	-	-	-	no. months receiving unemployment assistance (n. de meses recibiendo subsidio por desempleo)	-	-	-	-	-			
+	bunot	0	1	n/a	0	benefit : unemployment : other	-	-	-	-	-	-	-	-	-	-	minor unemployment benefits	-	-	-			
+	bunst	0	1	n/a	0	benefit : unemployment : short term	-	Unemployment benefit s.t. training	-	-	-	-	-	-	-	-	-	-	-	-			
+	buntr	0	1	n/a	0	benefit : unemployment : training	-	-	unemployment retraining benefit (t��tu �mber�ppe stipendium)	-	-	-	-	-	-	-	-	Training allowance	-	-			
+	bwkmt	0	1	n/a	0	benefit : work related : means-tested	-	-	-	-	-	-	-	-	-	-	-	Working Tax Credit	-	-			
+	bwkmt_s	1	1	n/a	0.0000000000001	benefit : work related : means-tested : simulated	-	-	-	-	-	-	-	-	-	-	-	Working Tax Credit	-	-			
+	bwkmtcmyn_s	1	1	n/a	0.0000000000001	benefit : work related : means-tested : complement : received? yes/no : simulated	-	-	-	-	-	-	-	-	-	-	-	Receipt WTC 30hrs element	-	-			
+	byr	0	1	n/a	0	benefit : early retirement	Early retirement pension	-	-	-	-	-	-	-	-	early retirement benefit	-	-	-	-			
+	byr_s	1	1	n/a	1E-13	benefit : early retirement : simulated	early retirement benefit: simulated	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	dag	0	0	n/a	0	demographic : age	age	-	age	individual age	individual age	individual age	Age	Age (vek)	age (edad)	age	age	age	-	-			
+	dct	0	0	n/a	0	demographic : country	country code	-	country code	country of residence	country of residence	country of residence	-	Country specific code (specificky kod zeme)	country code (codigo del pais)	country code	country code	country code	-	-			
+	dcu	0	0	n/a	0	demographic : consensual union	consensual union: not married but legally cohabiting	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	dcz	0	0	n/a	0	demographic : citizenship	Citizenship	Citizenship	citizenship	citizenship	citizenship	citizenship	-	Citizenship (statni prislusnost)	citizenship (ciudadania)	citizenship	citizenship	citizenship	-	-			
+	ddi	0	0	n/a	0	demographic : disability	Disability status (0-1)	Disability status (0-1)	disability status	disability level in percent (0-100)	-	"disabled (yes, no)"	-	Permanently disabled or/and unfit to work (trvale invalidni a/nebo neschopen prace)	disability (invalidez)	disability	disability	disability	-	-			
+	ddilv	0	0	n/a	0	demographic : disability : level (%)	-	-	-	disability level in percent (0-100)	disability level	-	-	-	-	-	-	-	-	-			
+	ddita	0	0	n/a	0	demographic : disability : tax related	-	-	-	-	-	-	-	-	-	-	disability status for taxation purposes	-	-	-			
+	ddp_s	1	1	n/a	1E-13	demographic : dependant : simulated	dependent person (0=no; 1=yes)	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	ddt	0	0	n/a	0	demographic : date of interview	date of interview	-	-	date of interview	date of interview	-	-	Quarter of interview (datum vysetreni)	data of interview (fecha de entrevista)	data of interview (fecha de entrevista)	data of interview (fecha de entrevista)	data of interview	-	-			
+	dec	0	0	n/a	0	demographic : education - current status	education - current status	-	education - current status	current level of education	current level of education	current level of education	Current level of Education	Current education level (stavajici vzdelavaci stupen)	level of current education (nivel de educacion actual)	current level of education	current level of education	current level of education	-	-			
+	deh	0	0	n/a	0	demographic : education - highest status	education - highest status	-	education - highest status	highest level of education achieved	highest level of education achieved	highest level of education achieved	-	Highest Education achieved (nejvyssi dosazeny stupen vzdelani)	level of highest education (nivel de educacion m�s alto ya obtenido)	highest level of education achieved	highest level of education achieved	highest level of education	-	-			
+	dew	0	0	n/a	0	demographic : education - when achieved highest status	Education: when achieved highest status	-	-	Education: when achieved highest status	-	-	-	Year when highest level of education was attained (Rok dosazeni nejvyssiho stupne vzdelani)	year achieved highest education level (a�o de obtenci�n de nivel m�s alto de educacion)	year achieved highest education level	year achieved highest education level (a�o de obtenci�n de nivel m�s alto de educacion)	year achieved highest level of education	-	-			
+	dey	0	0	n/a	0	demographic : education - number of years	Education: number of years 	-	number of years in education	Education: number of years 	-	-	-	Number of years spent in education (pocet let skoly)	number of years in education (numero de a�os en educacion)	number of years in education	number of years in education	number of years in education	-	-			
+	dgn	0	0	n/a	0	demographic : gender	gender	-	gender	gender	gender	gender	Gender	Gender (pohlavi)	gender (genero)	gender	gender	gender	-	-			
+	dhr	0	0	n/a	0	demographic : home responsible	-	-	-	-	-	-	-	-	-	-	-	Home Responsible	-	-			
+	dlg_s	1	0	n/a	1E-13	demographic : large family : simulated	-	-	-	-	-	-	-	-	Is large family (es familia numerosa?)	-	-	-	-	-			
+	dmp	0	0	n/a	0	demographic : municipality population	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	dms	0	0	n/a	0	demographic : marital status	marital status	-	marital status	marital status	marital status	marital status	Marital Status	Marital status (rodinny stav)	marital status (estado civil)	marital status	marital status	marital status	-	-			
+	dqb	0	0	n/a	0	demographic : quarter of birth	-	-	-	-	-	-	-	-	-	quarter of birth	-	-	-	-			
+	drgn1	0	0	n/a	1	demographic : region : nuts level 1	region - nuts level 1	NUTS 1 (macro aree)	region - nuts level 1	"region, NUTS1 level"	"region, NUTS1 level"	"region, NUTS1 level"	-	ID of regional level NUTS 1 (regionalni kod urovne NUTS 1)	region NUTS 1 (region NUTS1)	"region, NUTS1 level"	region NUTS 1	region NUTS 1	-	-			
+	drgn2	0	0	n/a	0	demographic : region : nuts level 2	-	NUTS 2 (Regioni)	-	-	NUTS 2	-	-	ID of regional level NUTS 2 (regionalni kod urovne NUTS 2)	region NUTS 2 (region NUTS2)	-	region NUTS 2	-	-	-			
+	drgur	0	0	n/a	0	demographic : region : urban	-	-	-	-	-	-	-	-	-	level of urbanisation	level of urbanisation	-	-	-			
+	dsu00	0	0	n/a	0	demographic : sample units : main/basic	-	-	-	-	-	-	-	-	order of selection of PSU (unidad de muestreo)	order of selection of PSU	order of selection of PSU	-	-	-			
+	dsu01	0	0	n/a	0	demographic : sample units : 01	-	-	-	-	-	-	-	-	PSU first-stage (unidad de muestreo primera etapa)	PSU 1st stage	PSU first-stage	-	-	-			
+	dsu02	0	0	n/a	0	demographic : sample units : 02	-	-	-	-	-	-	-	-	PSU second-stage (unidad de muestreo segunda etapa)	PSU 2nd stage	PSU second-stage	-	-	-			
+	dwt	0	0	n/a	0	demographic : weight	household weight	-	household weight	weight	weight	weight	Household Weight	Household cross-sectional weight (prurezova vaha domacnosti)	weight (peso muestral)	household weight	household weight	household weight	-	-			
+	idfather	0	0	n/a	0	identifier: father	ID of father if in household otherwise 0	ID of father if in household otherwise 0	ID of father if in household otherwise 0	ID of father if in household otherwise 0	ID of father if in household otherwise 0	ID of father if in household otherwise 0	ID of father if in household otherwise 0	Father identification number (identifikacni kod otce)	identification number of father (numero de identificacion del padre)	father ID	father ID	ID of father if in household otherwise 0	-	-			
+	idhh	0	0	n/a	0	identifier: household	Household ID	Household ID	Household ID	Household ID	Household ID	Household ID	Household ID	Household  identification number (identifikacni kod domacnosti)	identification number of household (numero de identificacion del hogar)	household ID	household ID	Household ID	-	-			
+	idmother	0	0	n/a	0	identifier: mother	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	ID of mother if in household otherwise 0	Mother identification number (identifikacni kod matky)	identification number of mother (numero de identificacion de la madre)	mother ID	mother ID	ID of mother if in household otherwise 0	-	-			
+	idorigbenunit	0	0	n/a	0		-	-	-	-	-	-	-	-	-	-	-	Original Benefit Unit  ID 	-	-			
+	idorighh	0	0	n/a	0		Original Household ID 	Original Household ID 	Original Household ID 	Original Household ID 	Original Household ID 	Original Household ID 	Original Household ID 	Original household identification number (puvodni identifikacni kod somacnosti)	original identification number of household (numero de identificacion original del hogar)	Original Household ID 	Original Household ID 	Original Household ID 	-	-			
+	idorigperson	0	0	n/a	0		Original Person ID 	Original Person ID 	Original Person ID 	Original Person ID 	Original Person ID 	Original Person ID 	Original Person ID 	Original personal identification number (puvodni identifikacni kod osoby)	original identification number of person (numero de identificacion original de la persona)	Original Person ID 	Original Person ID 	Original Person ID 	-	-			
+	idparent	0	0	n/a	0	identifier: parent	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	"ID of mother if in household otherwise, father"	-	-	-	-	"ID of mother if in household otherwise, father"	-	-			
+	idpartner	0	0	n/a	0	identifier: partner	ID of partner if married or cohabiting	ID of partner if married or cohabiting	ID of partner if married or cohabiting	ID of partner if married or cohabiting	ID of partner if married or cohabiting	ID of partner if married or cohabiting	ID of partner if married or cohabiting	Partner/spouse identification number (identifikacni kod partnera)	identification number of partner (numero de identificacion de la pareja)	partner ID	partner ID	ID of partner if married or cohabiting	-	-			
+	idperson	0	0	n/a	0	identifier: person	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Unique Person ID = idhh * 100 + unique number within household	Personal  identification number (identifikacni kod osoby)	identification number of person (numero de identificacion de la persona)	person ID	person ID	Unique Person ID = idhh * 100 + unique number within household	-	-			
+	ked	0	1	n/a	0	in kind : education	-	-	-	-	-	-	-	-	-	-	-	Education (AIMAP)	-	-			
+	kfb	0	1	n/a	0	in kind : fringe benefit	fringe benefits (retribuciones en especie)	fringe benefits	-	-	-	-	-	Fringe benefits of employees (Naturalni pozitky zamestnancu)	fringe benefits (retribuciones en especie)	fringe benefits	fringe benefits	-	-	-			
+	kfb_s	1	1	n/a	0.0000000000001	in kind : fringe benefit : simulated	-	fringe benefits (taxable)	-	-	-	-	-	-	-	-	-	-	-	-			
+	khl	0	1	n/a	0	in kind : health	-	-	-	-	-	-	-	-	-	-	-	Health (AIMAP)	-	-			
+	kivho	0	1	n/a	0	in kind : imputed value : housing	Housing imputed value	-	-	-	-	-	-	Imputed rent (Odvozeny najem)	imputed income of housing (renta imputada de la vivienda)	imputed rent	imputed rent	imputed rent	-	-			
+	lap	0	0	n/a	0	labour market : apprentice	-	Apprentice	-	-	-	-	-	-	-	-	-	-	-	-			
+	lap00	0	0	n/a	0	labour market : apprentice : main/basic	-	Temporay worker (Co.co.co.)	-	-	-	-	-	-	-	-	-	-	-	-			
+	lbl	0	0	n/a	0	labour market : business licence	-	-	-	-	-	-	-	-	-	business certificate	-	-	-	-			
+	lcd01	0	0	n/a	0	labour market : cumulative distribution : 01	-	-	-	-	-	-	-	-	-	-	distribution of TEBE (old) contributors	-	-	-			
+	lcd02	0	0	n/a	0	labour market : cumulative distribution : 02	-	-	-	-	-	-	-	-	-	-	distribution of TEBE (new) contributors	-	-	-			
+	lcd03	0	0	n/a	0	labour market : cumulative distribution : 03	-	-	-	-	-	-	-	-	-	-	distribution of farmers	-	-	-			
+	lcd04	0	0	n/a	0	labour market : cumulative distribution : 04	-	-	-	-	-	-	-	-	-	-	distribution of TAE (old) contributors	-	-	-			
+	lcd05	0	0	n/a	0	labour market : cumulative distribution : 05	-	-	-	-	-	-	-	-	-	-	distribution of TAE (new) contributors	-	-	-			
+	lcl	0	0	n/a	0	labour market : collar	-	Collar (white - blue)	-	-	-	-	-	-	-	-	-	-	-	-			
+	lcr	0	0	n/a	0	labour market : carer	-	-	-	-	carer	-	-	-	-	-	-	carer	-	-			
+	lcs	0	0	n/a	0	labour market : civil servant	civil servant	-	-	-	-	-	-	-	-	-	civil servant	civil servant	-	-			
+	lct	0	0	n/a	0	labour market : contract type	-	-	-	-	-	-	-	-	-	-	contracty type (permanent vs temporary)	-	-	-			
+	les	0	0	n/a	0	labour market : economic status	economic status	-	economic status	labour economic status	labour economic status	labour economic status	Labour Economis Status	Economic status (Ekonomicka aktivita)	economic status (situacion economica)	economic status	economic status	economic status	-	-			
+	lfs	0	0	n/a	0	labour market : firm size	firm size	-	-	-	-	-	-	Firm size (pocet zamestnancu pracoviste)	firm size (tamano de empresa)	firm size	firm size	firm size	-	-			
+	lhw	0	0	n/a	0	labour market : hours worked per week	hours worked per week	-	hours worked per week	hours worked per week	hours worked per week	-	-	Hours worked per week (odpracovane hodiny tydne)	hours worked per week (horas trabajadas por semana)	hours worked per week	hours worked per week	hours worked per week	-	-			
+	lhw00	0	0	n/a	0	labour market : hours worked per week : main/basic	-	-	-	-	-	-	-	-	-	-	-	Hours per week as employee	-	-			
+	lhw01	0	0	n/a	0	labour market : hours worked per week : 01	-	-	-	-	-	-	-	-	-	-	-	Hours worked as selfemp	-	-			
+	lim	0	0	n/a	0	labour market : insurance scheme memb	-	-	-	-	-	-	-	-	-	-	-	NICs Class	-	-			
+	lin	0	0	n/a	0	labour market : industry (nace)	industry	-	industry	industry	industry	industry	-	Industry code (kod odvetvi ekonomicke cinnosti)	industry (industria)	industry	industry	industry	-	-			
+	lindi	0	0	n/a	0	labour market : industry (nace) : detailed industry	detailed industry	-	-	-	-	-	-	Industry code detailed (kod odvetvi ekonomicke cinnosti - podrobny)	detailed industry (industria detallada)	detailed industry	detailed industry	-	-	-			
+	liwft_s	1	0	n/a	1E-13	labour market : in work : full time worker : simulated	-	-	-	-	-	-	-	-	full-time worker (trabajador a tiempo completo)	-	-	-	-	-			
+	liwmy	0	0	n/a	0	labour market : in work : months per year	Months worked per year	Months worked per year	no. of months worked during the year	Working months per year (Munk�val t�lt�tt h�napok sz�ma az elm�lt �vben)	-	-	-	Months in work per year (pocet mesicu prace v obdobi poslednich 12 mesicu)	number of months worked in the year (n. de meses trabajados en el ano)	no. of months worked during the year	no. of months worked during the year	-	-	-			
+	liwmy_s	1	0	n/a	1E-13	labour market : in work : months per year : simulated	-	-	no. of months worked during the year	Working months per year simulated( currently switched off)	-	-	-	-	number of months worked in the year (n. de meses trabajados en el ano)	no. of months worked during the year	no. of months worked during the year	-	-	-			
+	liwpwwh	0	0	n/a	0	labour market : in work : previous work : work history (length of time in months)	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	liwwh	0	0	n/a	0	labour market : in work : work history (length of time in months)	no. of months worked	Number of months with SICs payed	no. of months worked total	Work history (Munk�val t�lt�tt h�napok sz�ma)	-	-	-	Number of months in work (pocet odpracovanych mesicu)	number of months worked (n. de meses trabajados)	no. of months worked total	no. of months worked total	no. of months worked	-	-			
+	lle	0	0	n/a	0	labour market : on leave	-	-	-	-	-	-	-	-	-	-	-	on leave	-	-			
+	loc	0	0	n/a	3	labour market : occupation (isco 1-digit)	occupation	-	occupation	occupation	occupation	occupation	-	Occupationl code (kod zamestnani)	occupation (ocupacion)	occupation	occupation	occupation	-	-			
+	lochz	0	0	n/a	0	labour market : occupation (isco 1-digit) : hazardous work?	-	-	-	-	-	-	-	-	-	-	hard and arduous occupations	-	-	-			
+	lowas	0	0	n/a	0	labour market : out of work : actively seeking	actively looking for work	-	-	-	-	-	-	-	actively looking for work (buscando trabajo)	actively looking for work	actively looking for work	actively looking for work	-	-			
+	lpb	0	0	n/a	0	labour market : public sector	-	-	-	-	public sector worker?	-	-	-	-	-	-	-	-	-			
+	lpemy	0	0	n/a	0	labour market : pensioner : months per year	Months retired per year	Months retired per year	-	-	-	-	-	Number of months as a pensioner during last 12 months (pocet mesicu v duchodu za poslednich 12 mesicu)	number of months as pensioner in the year (numero de meses como pensionista en el a�o)	no. of months in retirement during the year	no. of months in retirement during the year	-	-	-			
+	lpf	0	0	n/a	0	labour market : professional	-	Professional	-	-	-	-	-	-	-	-	-	-	-	-			
+	lpm	0	0	n/a	0	labour market : pension membership	-	-	funded pension membership (2nd pillar)	-	-	-	-	-	-	-	pension membership (old vs new)	pension membership	-	-			
+	lpmfc	0	0	n/a	0	labour market : pension membership : sic fund (contributing to)	-	-	-	-	-	-	-	-	-	-	employees' social insurance fund	-	-	-			
+	lpmfr	0	0	n/a	0	labour market : pension membership : sic fund (receiving from)	-	-	-	-	-	-	-	-	-	-	pensioners' social insurance fund	-	-	-			
+	lse	0	0	n/a	0	labour market : self employed	self-employed status	-	self-employed status	-	-	-	-	Self employment status (statut podnikatele)	type of self employed: with or w/o employees (tipo de trabajador por cuenta propia: con o sin empleados)	self-employment type	self-employment type	-	-	-			
+	lse00	0	0	n/a	0	labour market : self employed : main/basic	-	Occupation of self employed	-	EVA payers	-	-	-	-	-	-	-	-	-	-			
+	lsepf	0	0	n/a	0	labour market : self employed : professional	-	-	-	-	-	"self-employed professional (yes, no)"	-	-	-	-	-	-	-	-			
+	lserg	0	0	n/a	0	labour market : self employed : registered	-	-	registered self-employed	-	-	-	-	-	-	-	-	-	-	-			
+	lunmy	0	0	n/a	0	labour market : unemployed : months per year	Months unemployed per year	Months unemployed per year	no of months in unemployment during the year	Unemployed : Months per year (Munkan�lk�lik�nt t�lt�tt h�napok sz�ma az elm�lt �vben)	-	-	-	Months unemployed during last 12 months (pocet mesicu statutu nezamestnaneho behem poslednich 12 mesicu)	number of months as in unemployment in the year (numero de meses desempleado en el a�o)	no of months in unemployment during the year	no of months in unemployment during the year	-	-	-			
+	lunmy_s	1	0	n/a	1E-13	labour market : unemployed : months per year : simulated	-	-	no of months in unemployment during the year	unemployment months per year simulated (currently switched off)	-	-	-	-	number of months as in unemployment in the year (numero de meses desempleado en el a�o)	no of months in unemployment during the year	no of months in unemployment during the year	-	-	-			
+	lyrmy	0	0	n/a	0.0000000000001	labour market : early retired : months per year	Months early retired per year	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	pdi	0	1	n/a	0	pension : disability	Permanent disability benefits	-	disability pension (invaliidsuspension)	disability benefits (rokkants�gi t�mogat�sok)	-	disability pension	-	Disability pension (Plny a castecny invalidni duchod). 	PEN disability benefit (prestacion por invalidez)	-	disability pension	-	-	-			
+	pdi00	0	1	n/a	0	pension : disability : main/basic	-	-	-	-	disability insurance pension	-	-	-	-	-	-	-	-	-			
+	pdinc	0	1	n/a	0	pension : disability : non-contributory	-	Invalidity pension - non contributory (Assegni di accompagnamento)	-	-	-	-	-	-	-	-	-	-	-	-			
+	pdinw	0	1	n/a	0	pension : disability : not working	-	-	-	-	social pension	-	-	-	-	-	-	-	-	-			
+	pdiss	0	1	n/a	0	pension : disability : social security	-	Invalidity pension - contributory (Pensione di invalidita')	-	-	-	-	-	-	-	-	-	-	-	-			
+	pdiuc	0	1	n/a	0	pension : disability : unconditional/universal	-	-	-	-	nursing allowance	-	-	-	-	-	-	-	-	-			
+	pdiuc_s	1	1	n/a	1E-13	pension : disability : unconditional/universal : simulated	-	-	-	-	nursing allowance	-	-	-	-	-	-	-	-	-			
+	pfa	0	1	n/a	0	pension : family	-	-	-	-	-	-	-	-	-	-	lifetime pension for mothers of many-children (?????? ??????? ?????????? ???????)	-	-	-			
+	phl	0	1	n/a	0	pension : health	Sickness related Benefits	-	-	"Sickness related Benefits, Pension (Betegs�ggel kapcsolatos juttat�sok, rokkantnyugd�j) "	-	-	-	-	-	-	-	-	-	-			
+	pls	0	1	n/a	0	pension : lump-sum	-	-	-	-	-	holiday bonus for pensioners	-	-	-	-	-	-	-	-			
+	pmy	0	0	n/a	0	pension : months per year	-	pension: no. months received in the year	-	-	-	-	-	-	-	-	-	-	-	-			
+	poa	0	1	n/a	0	pension : old age	Old Age Pension	-	-	old age income (�regs�gi/saj�t jog� nyugd�j)	-	-	Old Age Pension	Old age pension (Starobni duchod)	PEN old-age pension (pension por vejez)	-	total old age pensions	-	-	-			
+	poa_s	1	1	n/a	1E-13	pension : old age : simulated	part of pensions included in net own means	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	poa00	0	1	n/a	0	pension : old age : main/basic	-	-	old age pension	-	old-age insurance pension	-	-	-	PEN contributory old-age pension (pension por vejez contributiva)	-	main old age pension (????? ??????? ???????)	-	-	-			
+	poaab	0	1	n/a	0	pension : old age : abroad	-	-	old age pension abroad	-	old-age pension from abroad	-	-	-	-	-	-	-	-	-			
+	poacm	0	1	n/a	0	pension : old age : complement	-	-	-	-	nursing supplement	-	-	-	PEN contributory old-age pension complement (complemento por minimo a pension por vejez)	-	supplementary old age pension (?????????? ??????? ???????)	-	-	-			
+	poacm_s	1	1	n/a	1E-13	pension : old age : complement : simulated	-	-	-	-	Nursing Supplement	-	-	-	PEN Old-age pension complement (Complemento de m�nimos por jubilaci�n)	-	-	-	-	-			
+	poamt	0	1	n/a	0	pension : old age : means-tested	-	Social pension (Pensione / Assegno sociale)	-	-	-	-	-	-	-	-	-	-	-	-			
+	poamt_s	1	1	n/a	1E-13	pension : old age : means-tested : simulated	-	-	-	"social assistance, old-age allowance (id?skor�ak j�rad�ka)"	-	-	-	-	-	-	-	-	-	-			
+	poamy	0	0	n/a	0	pension : old age : months per year	-	-	-	-	-	-	-	Months during last 12 months collecting  old-age pension(pocet mesicu v poslednich 12 mesicich kdy byl pobiran starobni duchod)	no. months receiving old-age pension (n. de meses recibiendo pension por vejez)	-	-	-	-	-			
+	poanc	0	1	n/a	0	pension : old age : non-contributory	-	-	-	-	-	old-age assistance	-	-	PEN non contributory old-age pension (pension no contributiva por vejez)	-	-	-	-	-			
+	poanc00_s	1	1	n/a	0.0000000000001	pension : old age : non-contributory : main/basic : simulated	-	-	-	-	-	-	-	-	PEN main old-age non contributory pension (parte principal de la prestacion no contributiva por vejez)	-	-	-	-	-			
+	poanc_s	1	1	n/a	1E-13	pension : old age : non-contributory : simulated	-	-	-	-	-	-	-	-	PEN non contributory old-age pension (pension no contributiva por vejez)	-	-	-	-	-			
+	poancna_s	1	1	n/a	0.0000000000001	pension : old age : non-contributory : national government : simulated	-	-	-	-	-	-	-	-	PEN national complement to non contributory old-age pension (complemento estatal para pension no contributiva por vejez)	-	-	-	-	-			
+	poancrg_s	1	1	n/a	0.0000000000001	pension : old age : non-contributory : regional government : simulated	-	-	-	-	-	-	-	-	PEN regional complement to non contributory old-age pension (complemento auton�mico para pension no contributiva por vejez)	-	-	-	-	-			
+	poaot	0	1	n/a	0	pension : old age : other	-	-	-	-	-	-	-	-	-	-	minor old age pensions	-	-	-			
+	poass	0	1	n/a	0	pension : old age : social security	-	Old age pension (Pensione di vecchiaia o di anzianita')	-	-	-	-	-	-	-	-	-	-	-	-			
+	psu	0	1	n/a	0	pension : survivors	survivor pensions	-	survivors' pension (toitjakaotuspension)	survivor benefits (hozz�tartoz�i jogon j�r� nyugd�j)	survivor pensions	survivor pensions	-	Survivors pension (vdovsky duchod)	PEN survivor pension (pension por supervivencia)	-	-	-	-	-			
+	psumy	0	0	n/a	0	pension : survivors : months per year	-	-	-	-	-	-	-	Months during last 12 months collecting  survivors pension (pocet mesicu v poslednich 12 mesicich kdy byl pobiran vdovsky duchod)	no. months receiving survivor pension (n. de meses recibiendo pension por supervivencia)	-	-	-	-	-			
+	psuor	0	1	n/a	0	pension : survivors : orphan	-	-	-	-	orphan pension	-	-	-	-	-	orphan's pension	-	-	-			
+	psuot	0	1	n/a	0	pension : survivors : other	-	-	-	-	-	-	-	-	PEN other survivor pension (otra pension de supervivencia)	-	-	-	-	-			
+	psuss	0	1	n/a	0	pension : survivors : social security	-	Survivor pension (Pensione di reversibilita')	-	-	-	-	-	-	-	-	-	-	-	-			
+	psuwd	0	1	n/a	0	pension : survivors : widow	-	-	-	-	widow pension	-	-	-	-	-	survivors' pensions	-	-	-			
+	psuwd00	0	1	n/a	0	pension : survivors : widow : main/basic	-	-	-	-	-	-	-	-	PEN contributory widow pension (pension por viudedad contributiva)	-	-	-	-	-			
+	psuwdcm	0	1	n/a	0	pension : survivors : widow : complement	-	-	-	-	-	-	-	-	PEN contributory widow pension complement (complemento por minimo a pension por viudedad)	-	-	-	-	-			
+	psuwdcm_s	1	1	n/a	1E-13	pension : survivors : widow : complement : simulated	-	-	-	-	-	-	-	-	PEN Widow-widower�s pension complement (Complemento de m�nimos por viudedad)	-	-	-	-	-			
+	pxp_s	1	1	n/a	1E-13	pension : extra pay : simulated	-	-	-	-	-	-	-	-	-	-	compensations for pension reduction	-	-	-			
+	pyr	0	1	n/a	0	pension : early retirement	-	-	-	-	early retirement pension	-	-	-	-	-	-	-	-	-			
+	sel01_s	1	0	n/a	0.0000000000001	system : eligibility : 01 : simulated	-	-	-	-	-	-	-	-	-	eligibility	eligibility	-	-	-			
+	sel_s	1	0	n/a	1E-13	system : eligibility : simulated	Eligibility	Eligibility	Eligibility	Eligibility	Eligibility	Eligibility	Eligibility	-	Eligibility	Eligibility	Eligibility	Eligibility	-	-			
+	sin01_s	1	1	n/a	1E-13	system : intermediate : 01 : simulated	-	-	-	-	-	-	-	Self-employed SIC: contribution base	tsc:Type of employee/er social contribution	-	-	-	-	-			
+	sin02_s	1	1	n/a	1E-13	system : intermediate : 02 : simulated	-	-	-	-	-	-	-	Self-employed SIC: maximum contribution base	tsc: Type of self-employed social contribution	-	-	-	-	-			
+	sin03_s	1	1	n/a	1E-13	system : intermediate : 03 : simulated	-	-	-	-	-	-	-	-	bch00: income test limit	-	-	-	-	-			
+	sin04_s	1	1	n/a	1E-13	system : intermediate : 04 : simulated	-	-	-	-	-	-	-	"Income tax: other income, pensions above exemption limit"	tinit: Personal Tax Allowance (Minimo Personal)	-	-	-	-	-			
+	sin05_s	1	1	n/a	1E-13	system : intermediate : 05 : simulated	-	-	-	-	-	-	-	Income tax: ficticious income for disabled	tinit: Family Tax Allowance for Children (M�nimo Familiar por Hijos)	-	-	-	-	-			
+	sin06_s	1	1	n/a	1E-13	system : intermediate : 06 : simulated	-	-	-	-	-	-	-	-	tinit: Family Tax Allowance for Dependent Parents (M�nimo Familiar por Ascendiente) 	-	-	-	-	-			
+	sin07_s	1	1	n/a	1E-13	system : intermediate : 07 : simulated	-	-	-	-	-	-	-	Total minimum living standard (MLS)	tinit: Employment Income Tax Allowance  (Deducci�n por Rendimientos del Trabajo)  	-	-	-	-	-			
+	sin08_s	1	1	n/a	1E-13	system : intermediate : 08 : simulated	-	-	-	-	-	-	-	Children minimum living standard (MLS)	bunnc: number of eligible family members	-	-	-	-	-			
+	sin09_s	1	1	n/a	1E-13	system : intermediate : 09 : simulated	-	-	-	-	-	-	-	Multiplying factors for household MLS 	tinit: Mortgage tax credit (Deducci�n por inversi�n en vivienda habitual: Adquisici�n o rehabilitaci�n de la vivienda habitual) 	-	-	-	-	-			
+	sin10_s	1	1	n/a	1E-13	system : intermediate : 10 : simulated	-	-	-	-	-	-	-	"Adult and household minimum living standard (MLS), multiplied by factor"	poanc: income limit	-	-	-	-	-			
+	sin11_s	1	1	n/a	1E-13	system : intermediate : 11 : simulated	-	-	-	-	-	-	-	-	tintj: Personal Tax Allowance (Minimo Personal)	-	-	-	-	-			
+	sin12_s	1	1	n/a	1E-13	system : intermediate : 12 : simulated	-	-	-	-	-	-	-	Children minimum living standard (MLS)	tintj: Family Tax Allowance for Children (M�nimo Familiar por Hijos)	-	-	-	-	-			
+	sin13_s	1	1	n/a	1E-13	system : intermediate : 13 : simulated	-	-	-	-	-	-	-	Total MLS	tintj: Family Tax Allowance for Dependent Parents (M�nimo Familiar por Ascendiente) 	-	-	-	-	-			
+	sin14_s	1	1	n/a	1E-13	system : intermediate : 14 : simulated	-	-	-	-	-	-	-	Total minimum living standard (MLS)	tintj: Employment Income Tax Allowance  (Deducci�n por Rendimientos del Trabajo)  	-	-	-	-	-			
+	sin15_s	1	1	n/a	1E-13	system : intermediate : 15 : simulated	-	-	-	-	-	-	-	Household minimum living standard (MLS)	bch00: disability as a monetary variable	-	-	-	-	-			
+	sin16_s	1	1	n/a	1E-13	system : intermediate : 16 : simulated	-	-	-	-	-	-	-	imputed self-employment income for income test of social benefits	tinjt: Mortgage tax credit (Deducci�n por inversi�n en vivienda habitual: Adquisici�n o rehabilitaci�n de la vivienda habitual) 	-	-	-	-	-			
+	sin17_s	1	1	n/a	1E-13	system : intermediate : 17 : simulated	-	-	-	-	-	-	-	Housing cost limited by normative housing costs	tintj: eligible for joint taxation	-	-	-	-	-			
+	sin18_s	1	1	n/a	1E-13	system : intermediate : 18 : simulated	-	-	-	-	-	-	-	Total minimum living standard for social assistance	bunct: no of days worked in the qualifying period	-	-	-	-	-			
+	sin19_s	1	1	n/a	1E-13	system : intermediate : 19 : simulated	-	-	-	-	-	-	-	-	bunct: minimum unemployment insurance amount	-	-	-	-	-			
+	sin20_s	1	1	n/a	1E-13	system : intermediate : 20 : simulated	-	-	-	-	-	-	-	-	bunct: maximum unemployment insurance amount	-	-	-	-	-			
+	sin21_s	1	1	n/a	1E-13	system : intermediate : 21 : simulated	-	-	-	-	-	-	-	-	poacm: minimum pension	-	-	-	-	-			
+	sin22_s	1	1	n/a	1E-13	system : intermediate : 22 : simulated	-	-	-	-	-	-	-	-	psuwdcm: minimum pension	-	-	-	-	-			
+	sin23_s	1	1	n/a	1E-13	system : intermediate : 23 : simulated	-	-	-	-	-	-	-	-	bunnc: unemployment spell not covered by unemployment insurance	-	-	-	-	-			
+	sin24_s	1	1	n/a	1E-13	system : intermediate : 24 : simulated	-	-	-	-	-	-	-	-	bunct: number of dependent children	-	-	-	-	-			
+	sin25_s	1	1	n/a	1E-13	system : intermediate : 25 : simulated	-	-	-	-	-	-	-	-	bunct: amount per month	-	-	-	-	-			
+	sin26_s	1	1	n/a	1E-13	system : intermediate : 26 : simulated	-	-	-	-	-	-	-	-	bunnc: number of dependent children	-	-	-	-	-			
+	sin27_s	1	1	n/a	1E-13	system : intermediate : 27 : simulated	-	-	-	-	-	-	-	-	tsc: contribution group	-	-	-	-	-			
+	sin28_s	1	1	n/a	1E-13	system : intermediate : 28 : simulated	-	-	-	-	-	-	-	-	tinjt: Joint Tax Allowance (Deducci�n por declaraci�n conjunta)	-	-	-	-	-			
+	sin29_s	1	1	n/a	1E-13	system : intermediate : 29 : simulated	-	-	-	-	-	-	-	-	tinit: Main residence rent tax credit (Deducci�n por alquiler de vivienda habitual)	-	-	-	-	-			
+	sin30_s	1	1	n/a	1E-13	system : intermediate : 30 : simulated	-	-	-	-	-	-	-	-	tinjt: Main residence rent tax credit (Deducci�n por alquiler de vivienda habitual)	-	-	-	-	-			
+	sin31_s	1	1	n/a	1E-13	system : intermediate : 31 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin32_s	1	1	n/a	1E-13	system : intermediate : 32 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin33_s	1	1	n/a	1E-13	system : intermediate : 33 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin34_s	1	1	n/a	1E-13	system : intermediate : 34 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin35_s	1	1	n/a	1E-13	system : intermediate : 35 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin36_s	1	1	n/a	1E-13	system : intermediate : 36 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin37_s	1	1	n/a	1E-13	system : intermediate : 37 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin38_s	1	1	n/a	1E-13	system : intermediate : 38 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin39_s	1	1	n/a	1E-13	system : intermediate : 39 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin40_s	1	1	n/a	1E-13	system : intermediate : 40 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin41_s	1	1	n/a	1E-13	system : intermediate : 41 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin42_s	1	1	n/a	1E-13	system : intermediate : 42 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin43_s	1	1	n/a	1E-13	system : intermediate : 43 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin44_s	1	1	n/a	1E-13	system : intermediate : 44 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin45_s	1	1	n/a	1E-13	system : intermediate : 45 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin46_s	1	1	n/a	1E-13	system : intermediate : 46 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin47_s	1	1	n/a	1E-13	system : intermediate : 47 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin48_s	1	1	n/a	1E-13	system : intermediate : 48 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin49_s	1	1	n/a	1E-13	system : intermediate : 49 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	sin50_s	1	1	n/a	1E-13	system : intermediate : 50 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	snc_s	1	0	n/a	1E-13	system : # children : simulated	-	-	-	-	-	-	-	-	-	no. of children	-	-	-	-			
+	sncnd_s	1	0	n/a	1E-13	system : # children : # of disabled : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	snd_s	1	0	n/a	1E-13	system : # of disabled : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	srr_s	1	0	n/a	0.0000000000001	system : replacement rate : simulated	-	-	-	-	-	-	-	-	-	replacement rate (for maternity benefit)	-	-	-	-			
+	stk01_s	1	0	n/a	0.0000000000001	system : take up : 01 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up rate - random number	-	-			
+	stk02_s	1	0	n/a	0.0000000000001	system : take up : 02 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up rate - random number	-	-			
+	stk03_s	1	0	n/a	0.0000000000001	system : take up : 03 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up - random number	-	-			
+	stk04_s	1	0	n/a	0.0000000000001	system : take up : 04 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up - random number	-	-			
+	stk05_s	1	0	n/a	0.0000000000001	system : take up : 05 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up - random number	-	-			
+	stk06_s	1	0	n/a	0.0000000000001	system : take up : 06 : simulated	-	-	-	-	-	-	-	-	-	-	-	Take up - random number	-	-			
+	stm01	0	0	n/a	0	system : temporary variable : 01	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm01_s	1	1	n/a	1E-13	system : temporary variable : 01 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm02_s	1	1	n/a	1E-13	system : temporary variable : 02 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm03_s	1	1	n/a	1E-13	system : temporary variable : 03 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm04_s	1	1	n/a	1E-13	system : temporary variable : 04 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm05_s	1	1	n/a	1E-13	system : temporary variable : 05 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm06_s	1	1	n/a	1E-13	system : temporary variable : 06 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm07_s	1	1	n/a	1E-13	system : temporary variable : 07 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm08_s	1	1	n/a	1E-13	system : temporary variable : 08 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm09_s	1	1	n/a	1E-13	system : temporary variable : 09 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm10_s	1	1	n/a	1E-13	system : temporary variable : 10 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm11_s	1	1	n/a	1E-13	system : temporary variable : 11 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	stm12_s	1	1	n/a	1E-13	system : temporary variable : 12 : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tad	0	1	n/a	0	tax : repayments/receipts	tax repayment or receipt	-	-	-	-	-	-	-	tax repayment or receipt (cuota diferencial del IRPF)	tax repayment or receipt	tax repayment or receipt	-	-	-			
+	tag_s	1	1	n/a	1E-13	tax : agriculture : simulated	-	-	-	-	agricultural tax	-	-	-	-	-	-	-	-	-			
+	tbs_s	1	1	n/a	1E-13	tax : business tax : simulated	-	-	-	simplified business tax (egyszer?s�tett v�llalkoz�i ad�)	-	-	-	-	-	-	-	-	-	-			
+	thl_s	1	1	n/a	1E-13	tax : health : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	thlmm_s	1	1	n/a	1E-13	tax : health : minimum : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	thlmx_s	1	1	n/a	1E-13	tax : health : maximum : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tin	0	1	n/a	0	tax : income tax	income tax	-	-	Income tax (Szem�lyi j�vedelem ad�)	income tax	income tax	-	Income tax [Dan z prijmu]	TAX income tax (IRPF)	-	-	-	-	-			
+	tin00_s	1	1	n/a	0.0000000000001	tax : income tax : main/basic : simulated	-	-	-	-	-	-	-	Income tax final liability	-	-	personal income tax (????? ???????????)	-	-	-			
+	tin_s	1	1	n/a	1E-13	tax : income tax : simulated	-	income tax (IRPEF)	income tax (tulumaks)	personal income tax (szem�lyi j�vedelemad�)	-	personal income tax	Personal Income Tax	Income tax [Dan z prijmu]	TAX final income tax liability (IRPF - cuota l�quida)	personal income tax (asmens pajam? mokestis)	-	Personal Income tax	-	-			
+	tinfu_s	1	1	n/a	0.0000000000001	tax : income tax : funeral : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tingt_s	1	1	n/a	1E-13	tax : income tax : gross tax : simulated	-	-	-	-	-	-	-	gross income tax	TAX gross income tax liability (IRPF - cuota integra)	-	-	-	-	-			
+	tingtit_s	1	1	n/a	1E-13	tax : income tax : gross tax : individual taxation : simulated	-	-	-	-	-	-	-	"gross income tax, individual taxation"	"TAX gross income tax liability, individual taxation (IRPF - cuota integra, declaracion individual)"	-	-	-	-	-			
+	tingtjt_s	1	1	n/a	1E-13	tax : income tax : gross tax : joint taxation : simulated	-	-	-	-	-	-	-	"gross income tax, joint taxation"	"TAX gross income tax liability, joint taxation (IRPF - cuota integra, declaracion conjunta)"	-	-	-	-	-			
+	tinit_s	1	1	n/a	1E-13	tax : income tax : individual taxation : simulated	-	-	-	-	-	-	-	-	"TAX final income tax liability, individual taxation (IRPF - cuota l�quida, declaracion individual)"	-	-	-	-	-			
+	tiniy_s	1	1	n/a	1E-13	tax : income tax : investment income : simulated	-	-	-	tax on income raised by right of dividends	-	-	-	-	TAX income tax on savings (IRPF sobre rentas del capital)	-	-	-	-	-			
+	tinjt_s	1	1	n/a	1E-13	tax : income tax : joint taxation : simulated	-	-	-	-	-	-	-	-	"TAX final income tax liability, joint taxation (IRPF - cuota l�quida, declaracion conjunta)"	-	-	-	-	-			
+	tinkt_s	1	1	n/a	1E-13	tax : income tax : capital taxation : simulated	tax on investment income	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinktbd_s	1	1	n/a	1E-13	tax : income tax : capital taxation : bonds : simulated	-	Tax on other bonds	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinktcp_s	1	1	n/a	1E-13	tax : income tax : capital taxation : complementary pension : simulated	-	Tax on private pensions	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinktdt_s	1	1	n/a	1E-13	tax : income tax : capital taxation : deposit interests : simulated	-	Tax on deposits	-	-	-	-	-	-	-	-	interest income tax (????? ??? ????? ??????????)	-	-	-			
+	tinktdv_s	1	1	n/a	1E-13	tax : income tax : capital taxation : dividends : simulated	-	Tax on dividends	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinktgb_s	1	1	n/a	1E-13	tax : income tax : capital taxation : government bonds : simulated	-	Tax on government bonds	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinmu_s	1	1	n/a	1E-13	tax : income tax : municipal government : simulated	municipal income tax	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinna	0	1	n/a	0	tax : income tax : national government	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinna_s	1	1	n/a	1E-13	tax : income tax : national government : simulated	national income tax	National Income Tax	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinpe_s	1	1	n/a	1E-13	tax : income tax : pensioner : simulated	-	-	-	-	-	-	-	-	-	-	pensioners' solidarity contributions	-	-	-			
+	tinpx_s	1	1	n/a	1E-13	tax : income tax : proportional amount : simulated	-	-	-	-	-	-	-	Separate tax scheme tax liability	-	-	-	-	-	-			
+	tinrf_s	1	1	n/a	1E-13	tax : income tax : refund : simulated	-	-	-	-	-	-	-	Income tax bonus	-	-	-	-	-	-			
+	tinrg_s	1	1	n/a	1E-13	tax : income tax : regional government : simulated	-	Regional Income Tax	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinrt_s	1	1	n/a	0.0000000000001	tax : income tax : rent : simulated	-	-	-	-	-	-	-	-	-	-	additional tax on rental income	-	-	-			
+	tinta01_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : main/basic : simulated	-	Personal Tax allowance	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinta_s	1	1	n/a	1E-13	tax : income tax : tax allowance : simulated	-	-	total income tax allowance	-	-	total tax allowances	-	-	-	total tax allowance	-	-	-	-			
+	tinta00_s	1	1	n/a	1E-13	tax : income tax : tax allowance : main/basic : simulated	-	Personal Tax allowance	-	-	-	-	-	Personal exemption	TAX Personal Tax Allowance (Minimo Personal)	-	0% tax bracket	-	-	-			
+	tintaag_s	1	1	n/a	1E-13	tax : income tax : tax allowance : agriculture : simulated	-	-	tax allowance on income from agriculture	-	-	-	-	-	-	-	-	-	-	-			
+	tintacd_s	1	1	n/a	1E-13	tax : income tax : tax allowance : charitable donations : simulated	-	-	-	-	-	-	-	Gifts to charitable organisations exemption	-	-	-	-	-	-			
+	tintace_s	1	1	n/a	1E-13	tax : income tax : tax allowance : cost of earnings : simulated	deduction professional expenses	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintach_s	1	1	n/a	1E-13	tax : income tax : tax allowance : child : simulated	-	-	-	-	-	-	-	-	TAX Family Tax Allowance for Children (M�nimo Familiar por Hijos)	-	child tax allowance	-	-	-			
+	tintadb_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : disabled : simulated	-	-	-	-	-	-	-	disability exemption	-	-	disabled tax allowance	-	-	-			
+	tintadp_s	1	1	n/a	1E-13	tax : income tax : tax allowance : dependent parent : simulated	-	-	-	-	-	-	-	-	TAX Family Tax Allowance for Dependent Parents (M�nimo Familiar por Ascendiente) 	-	-	-	-	-			
+	tintadt_s	1	1	n/a	1E-13	tax : income tax : tax allowance : deposit interests : simulated	tax allowance on interest from savings account	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintadx_s	1	1	n/a	1E-13	tax : income tax : tax allowance : disability expenses : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintaee_s	1	1	n/a	1E-13	tax : income tax : tax allowance : employee : simulated	-	-	-	-	-	-	-	-	"TAX Employment Income Tax Allowance  (Reducciones por circunstancias laborales, Por rendimientos del trabajo)  "	-	-	-	-	-			
+	tintahm_s	1	1	n/a	1E-13	tax : income tax : tax allowance : home owner : simulated	tax allowance for imputed rent (cadastral income)	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintaht_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : heating expenses : simulated	-	-	-	-	-	-	-	-	-	-	tax allowance for new heating systems	-	-	-			
+	tintaie_s	1	1	n/a	1E-13	tax : income tax : tax allowance : internet expenses : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintalf_s	1	1	n/a	1E-13	tax : income tax : tax allowance : life insurance : simulated	-	-	-	-	-	-	-	Private life insurance exemption	-	-	-	-	-	-			
+	tintals_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : loss : simulated	Transfer of losses between spouses	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintami_s	1	1	n/a	1E-13	tax : income tax : tax allowance : mortgage interest : simulated	-	-	-	-	-	-	-	Interest for mortgage repayment exemption	-	-	mortgage interest tax allowance	-	-	-			
+	tintaox	0	1	n/a	0	tax : income tax : tax allowance : other expenses	-	-	-	-	-	deductible selected expenses	-	-	-	-	-	-	-	-			
+	tintaox_s	1	1	n/a	1E-13	tax : income tax : tax allowance : other expenses : simulated	-	Deductible amount - other expenses (Altri oneri deducibili)	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintape_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : pensioner : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintapv_s	1	1	n/a	0.0000000000001	tax : income tax : tax allowance : private contributions : simulated	-	Deductible amount of private pension contributions	-	-	-	-	-	Complementary pension insurance with state support exemption	-	-	private pension contributions tax allowance	-	-	-			
+	tintasp_s	1	1	n/a	1E-13	tax : income tax : tax allowance : spouse : simulated	income transfer between spouses	-	-	-	-	-	-	spouse exemption	-	-	-	-	-	-			
+	tintast_s	1	1	n/a	1E-13	tax : income tax : tax allowance : student : simulated	-	-	-	-	-	-	-	student exemption	-	-	-	-	-	-			
+	tintatb_s	1	1	n/a	1E-13	tax : income tax : tax allowance : tax base : simulated	tax base to calculate income tax credit on basic allowance	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintatc_s	1	1	n/a	1E-13	tax : income tax : tax allowance : tax credit : simulated	tax credits resulting from basic allowance	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintauf_s	1	1	n/a	1E-13	tax : income tax : tax allowance : labour union fee : simulated	-	-	-	-	-	-	-	 Labour union fees exemption	-	-	-	-	-	-			
+	tintawh_s	1	1	n/a	1E-13	tax : income tax : tax allowance : withholding : simulated	-	-	withholding income tax allowance	-	-	-	-	-	-	total withholding tax allowance	-	-	-	-			
+	tintb_s	1	1	n/a	1E-13	tax : income tax : tax base : simulated	-	-	-	-	-	-	-	Tax base	TAX Tax base (base imponible)	-	tax base	-	-	-			
+	tintbit_s	1	1	n/a	1E-13	tax : income tax : tax base : individual taxation : simulated	-	-	-	-	-	-	-	-	"TAX Tax base, individual taxation (base imponible, declaracion individual)"	-	-	-	-	-			
+	tintbjt_s	1	1	n/a	1E-13	tax : income tax : tax base : joint taxation : simulated	-	-	-	-	-	-	-	"Taxable income, joint taxation"	"TAX Tax base, joint taxation (base imponible, declaracion conjunta)"	-	-	-	-	-			
+	tintbrt_s	1	1	n/a	1E-13	tax : income tax : tax base : rent : simulated	-	Taxable rental income	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintc_s	1	1	n/a	1E-13	tax : income tax : tax credit : simulated	-	Personal Tax credit for income source	-	sum of all taxcredits	-	total tax credits	-	-	-	tax deduction due to expenses	total non-refundable tax credits	-	-	-			
+	tintc00_s	1	1	n/a	1E-13	tax : income tax : tax credit : main/basic : simulated	-	-	-	-	-	-	-	Personal exemption	-	-	-	-	-	-			
+	tintc01_s	1	1	n/a	1E-13	tax : income tax : tax credit : 01 : simulated	-	Tax credit for building and refurbishing costs	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcbarg_s	1	1	n/a	1E-13	tax : income tax : tax credit : birth/adoption : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for birth/adoption (deduccion regional de cuota por nacimiento/adopcion)	-	-	-	-	-			
+	tintcccrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : child care expenditure : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for child care (deduccion regional de cuota por guarderias)	-	-	-	-	-			
+	tintcch_s	1	1	n/a	1E-13	tax : income tax : tax credit : child : simulated	-	Tax credit for dependent children	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcchrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : child : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for children (deduccion autonomica de cuota por descendientes)	-	-	-	-	-			
+	tintcdb_s	1	1	n/a	1E-13	tax : income tax : tax credit : disabled : simulated	-	-	-	-	-	-	-	disability exemption	-	-	-	-	-	-			
+	tintcdbrg_s	1	1	n/a	1E-13	tax : income tax : tax credit : disabled : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for disability (deduccion regional de cuota por incapacidad)	-	-	-	-	-			
+	tintcdp_s	1	1	n/a	1E-13	tax : income tax : tax credit : dependent parent : simulated	-	Tax credit for dependent parent(s)	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcdprg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : dependent parent : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for dependent parents (deduccion autonomica de cuota por ascendiente dependiente)	-	-	-	-	-			
+	tintcee_s	1	1	n/a	1E-13	tax : income tax : tax credit : employee : simulated	-	Personal Tax credit for employment income	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintceerg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : employee : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for employment (deduccion autonomica de cuota por trabajo)	-	-	-	-	-			
+	tintcfarg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : family : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for families (deduccion autonomica de cuota por familias)	-	-	-	-	-			
+	tintchkrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : housework : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for housework (deduccion autonomica de cuota por cuidado del hogar)	-	-	-	-	-			
+	tintchl_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : health : simulated	-	-	-	-	-	-	-	-	-	-	medical expenses tax credit	-	-	-			
+	tintcit_s	1	1	n/a	1E-13	tax : income tax : tax credit : individual taxation : simulated	-	-	-	-	-	-	-	-	"TAX income tax credit, individual taxation (deduccion de cuota, declaracion individual)"	-	-	-	-	-			
+	tintcjt_s	1	1	n/a	1E-13	tax : income tax : tax credit : joint taxation : simulated	-	-	-	-	-	-	-	-	"TAX income tax credit, joint taxation (deduccion de cuota, declaracion conjunta)"	-	-	-	-	-			
+	tintclgrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : large family : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for large families (deduccion autonomica de cuota por familia numerosa)	-	-	-	-	-			
+	tintclp_s	1	1	n/a	1E-13	tax : income tax : tax credit : lone parent : simulated	-	Tax credit for lone parent (additional component)	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintclprg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : lone parent : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for lone parents (deduccion autonomica de cuota por familia monoparental)	-	-	-	-	-			
+	tintcly_s	1	1	n/a	1E-13	tax : income tax : tax credit : low pay/income : simulated	tax credit for low activity income	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcmg_s	1	1	n/a	1E-13	tax : income tax : tax credit : mortgage : simulated	-	-	-	-	-	-	-	-	TAX Mortgage tax credit (Deducci�n por inversi�n en vivienda habitual: Adquisici�n o rehabilitaci�n de la vivienda habitual)	-	-	-	-	-			
+	tintcmi_s	1	1	n/a	1E-13	tax : income tax : tax credit : mortgage interest : simulated	-	Tax credit for mortgage interest payment	-	-	-	-	-	-	-	-	mortgage interest tax credit	-	-	-			
+	tintcmp_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : maintenance payments : simulated	-	-	-	-	-	-	-	-	-	-	maintenance payment tax credit	-	-	-			
+	tintcoarg_s	1	1	n/a	1E-13	tax : income tax : tax credit : old age : regional government : simulated	-	-	-	-	-	-	-	-	TAX Regional old-age tax credit (deduccion autonomica de cuota por vejez)	-	-	-	-	-			
+	tintcot_s	1	1	n/a	1E-13	tax : income tax : tax credit : other : simulated	-	-	-	-	-	-	-	-	TAX 400 euro annual tax credit (Deducci�n de 400 euros anuales)	-	-	-	-	-			
+	tintcox_s	1	1	n/a	1E-13	tax : income tax : tax credit : other expenses : simulated	-	Tax credit for other expenses	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcpe_s	1	1	n/a	1E-13	tax : income tax : tax credit : pensioner : simulated	-	Personal Tax credit for pension income	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcrg_s	1	1	n/a	1E-13	tax : income tax : tax credit : regional government : simulated	regional tax credit	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcri_s	1	1	n/a	1E-13	tax : income tax : tax credit : replacement income : simulated	tax credit for replacement income	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcrt_s	1	1	n/a	1E-13	tax : income tax : tax credit : rent : simulated	-	-	-	-	-	-	-	-	TAX Main residence rent tax credit (Deducci�n por alquiler de vivienda habitual)	-	rent tax credit	-	-	-			
+	tintcrtrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : rent : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for rent (deduccion autonomica de cuota por alquiler)	-	-	-	-	-			
+	tintcse_s	1	1	n/a	1E-13	tax : income tax : tax credit : self-employed : simulated	-	Personal Tax credit for self-employment income	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintcsp_s	1	1	n/a	1E-13	tax : income tax : tax credit : spouse : simulated	-	Tax credit for dependent spouse	-	-	-	-	-	spouse exemption	-	-	-	-	-	-			
+	tintcst_s	1	1	n/a	1E-13	tax : income tax : tax credit : student : simulated	-	-	-	-	-	-	-	student exemption	-	-	-	-	-	-			
+	tintctu_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : tuition : simulated	-	-	-	-	-	-	-	-	-	-	education expenses tax credit	-	-	-			
+	tintcwmrg_s	1	1	n/a	0.0000000000001	tax : income tax : tax credit : working mother : regional government : simulated	-	-	-	-	-	-	-	-	TAX regional tax credit for working mother (deduccion autonomica de cuota por madre trabajadora)	-	-	-	-	-			
+	tintp_s	1	0	n/a	1E-13	tax : income tax : type : simulated	-	-	-	-	"income tax, type of taxation (ind or joint)"	-	-	type of taxation	-	-	-	-	-	-			
+	tintrch_s	1	1	n/a	1E-13	tax : income tax : refund tax credit : child : simulated	-	-	-	-	-	-	-	Refundable child tax credit	TAX Working mother tax credit	-	-	-	-	-			
+	tints_s	1	1	n/a	1E-13	tax : income tax : schedule : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintsit_s	1	1	n/a	1E-13	tax : income tax : schedule : individual taxation : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintsjt_s	1	1	n/a	1E-13	tax : income tax : schedule : joint taxation : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tintsna_s	1	1	n/a	1E-13	tax : income tax : schedule : national government : simulated	-	National Income tax schedule 	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinty_s	1	1	n/a	1E-13	tax : income tax : taxable income : simulated	-	-	-	-	-	-	-	Effective taxable income	TAX taxable income (renta tributable)	-	-	-	-	-			
+	tintyjt_s	1	1	n/a	1E-13	tax : income tax : taxable income : joint taxation : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinwh_s	1	1	n/a	1E-13	tax : income tax : withholding : simulated	-	-	withholding income tax (kinnipeetud tulumaks)	-	-	-	-	-	-	withholding income tax	withholding tax on benefits	-	-	-			
+	tinwhtace_s	1	1	n/a	1E-13	tax : income tax : withholding : tax allowance : cost of earnings : simulated	cost of earnings deduction withholding tax	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinwhtasp_s	1	1	n/a	1E-13	tax : income tax : withholding : tax allowance : spouse : simulated	income transfer between spouses in case of withholding tax	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinwhtb_s	1	1	n/a	1E-13	tax : income tax : withholding : tax base : simulated	tax base for withholding tax	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinwhtc_s	1	1	n/a	1E-13	tax : income tax : withholding : tax credit : simulated	withholding tax: tax credit	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tinwhts_s	1	1	n/a	1E-13	tax : income tax : withholding : schedule : simulated	base amount withholding tax	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tis	0	1	n/a	0	tax : income tax and sics	income tax plus contributions	-	-	-	-	-	-	Tax on income and social contributions of the household (Dan z prijmu a odvody na socialni pojisteni domacnosti)	TAX income tax plus contributions (IRPF mas cotizaciones)	-	-	-	-	-			
+	tispy	0	1	n/a	0	tax : income tax and sics : previous year	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tkt_s	1	1	n/a	1E-13	tax : capital taxation : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tmu	0	1	n/a	0	tax : municipal government	-	-	-	-	-	-	-	-	-	-	-	Council Tax	-	-			
+	tpa_s	1	1	n/a	1E-13	tax : payroll tax : simulated	-	-	-	-	-	payroll tax	-	-	-	-	-	-	-	-			
+	tpcctpi_s	1	1	n/a	0.0000000000001	tax : comp prvt ctrb : credited contributions : pension insurance : simulated	-	-	credited contributions: pension (2nd pillar)	-	-	-	-	-	-	-	-	-	-	-			
+	tpcee_s	1	1	n/a	0.0000000000001	tax : comp prvt ctrb : employee : simulated	-	-	-	-	-	-	-	-	-	-	-	Private pension contribution	-	-			
+	tpceepi_s	1	1	n/a	1E-13	tax : comp prvt ctrb : employee : pension insurance : simulated	-	-	employee SIC: funded pension contribution	-	-	-	-	-	-	-	-	-	-	-			
+	tpceepx	0	0	n/a	0.0000000000001	tax : comp prvt ctrb : employee : proportional amount	-	-	-	-	-	-	-	-	-	-	-	Private pension contribution rate	-	-			
+	tpcpe	0	1	n/a	0	tax : comp prvt ctrb : pensioner	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tpcsepi_s	1	1	n/a	1E-13	tax : comp prvt ctrb : self-employed : pension insurance : simulated	-	-	self-employed SIC: funded pension contribution	-	-	-	-	-	-	-	-	-	-	-			
+	tpr	0	1	n/a	0	tax : property tax	-	Local Property tax (ICI)	land tax (maamaks)	-	-	-	-	Property tax (Dan z nemovitosti)	TAX property tax (impuesto de propiedades)	property/wealth taxes	property tax	-	-	-			
+	tscbesi_s	1	1	n/a	1E-13	tax : sic : on benefit : sickness : simulated	-	-	-	-	-	-	-	-	-	-	contributions by people on benefits: sickness	-	-	-			
+	tsccthl_s	1	1	n/a	0.0000000000001	tax : sic : credited contributions : health : simulated	-	-	credited contributions: health	-	-	-	-	-	-	-	-	-	-	-			
+	tscctpi_s	1	1	n/a	0.0000000000001	tax : sic : credited contributions : pension insurance : simulated	-	-	credited contributions: pension (1st pillar)	-	-	-	-	-	-	credited contributions: pension	-	-	-	-			
+	tscctui_s	1	1	n/a	0.0000000000001	tax : sic : credited contributions : unemployment insurance : simulated	-	-	-	-	-	-	-	-	-	credited contributions: unemployment	-	-	-	-			
+	tscdb_s	1	1	n/a	1E-13	tax : sic : disabled : simulated	SICs on disability benefits	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscee	0	1	n/a	0	tax : sic : employee	employee social contribution	-	-	-	-	employee social contribution	-	Social Insurance Contribution of employee (Odvod socialniho pojisteni zamestnance)	SIC employee social contribution (cotizacion social del empleado)	-	-	-	-	-			
+	tscee_s	1	1	n/a	1E-13	tax : sic : employee : simulated	employee SICs	employee SIC (total)	-	employee social insurance contributions (total)	-	-	Employee SICs	Social Insurance Contribution of employee (Odvod socialniho pojisteni zamestnance)	SIC employee social contribution (cotizacion social del empleado)	-	-	employee SICs	-	-			
+	tsceedi_s	1	1	n/a	1E-13	tax : sic : employee : disability insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceefa_s	1	1	n/a	1E-13	tax : sic : employee : family : simulated	-	-	-	-	-	-	-	-	-	-	employee SIC: family benefits	-	-	-			
+	tsceehl_s	1	1	n/a	1E-13	tax : sic : employee : health : simulated	-	-	-	Employee Social Insurance Contribution  - Health	-	-	-	Social Insurance Contribution of employee: health	-	-	-	-	-	-			
+	tsceeml_s	1	1	n/a	1E-13	tax : sic : employee : maternity leave insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceemy_s	1	0	n/a	1E-13	tax : sic : employee : months per year : simulated	-	-	-	-	-	-	-	-	SIC number of employee contributions per year	-	-	-	-	-			
+	tsceeot_s	1	1	n/a	1E-13	tax : sic : employee : other : simulated	-	-	-	-	-	-	-	-	SIC employee social contribution - other (cotizacion social del empleado - otras)	-	employee SIC: other benefits	-	-	-			
+	tsceepi_s	1	1	n/a	1E-13	tax : sic : employee : pension insurance : simulated	-	Employee SICs for pension funds (IVS)	-	Employee Social Insurance Contribution  -Pension 	-	-	-	Social Insurance Contribution of employee: pension	SIC employee social contribution - pensions (cotizacion social del empleado - pensiones)	employee SIC: pension	employee SIC: pension	-	-	-			
+	tsceerd_s	1	1	n/a	1E-13	tax : sic : employee : reduction : simulated	employee sic reduction (workbonus)	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceesf_s	1	1	n/a	0.0000000000001	tax : sic : employee : salary protection fund : simulated	-	Employee SICs for redundancy fund	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceesi_s	1	1	n/a	1E-13	tax : sic : employee : sickness : simulated	-	-	-	-	-	-	-	Social Insurance Contribution of employee: sickness	-	employee SIC: sickness & maternity	employee SIC: sickness	-	-	-			
+	tsceesp_s	1	1	n/a	1E-13	tax : sic : employee : spouse : simulated	special/complementary SIC contribution	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceetp_s	1	1	n/a	1E-13	tax : sic : employee : type : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsceeui_s	1	1	n/a	1E-13	tax : sic : employee : unemployment insurance : simulated	-	-	employee SIC: unemployment	-	-	-	-	Social Insurance Contribution of employee: unemployment	SIC employee social contribution - unemployment (cotizacion social del empleado - desempleo)	-	employee SIC: unemployment	-	-	-			
+	tscer	0	1	n/a	0	tax : sic : employer	employer social contribution	-	-	-	-	employer social contribution	-	Social Insurance Contribution of employer (Odvod socialniho pojisteni zamestnavatele)	SIC employee social contribution (cotizacion social del empleador)	-	-	-	-	-			
+	tscer_s	1	1	n/a	1E-13	tax : sic : employer : simulated	-	employer SIC (total)	-	employer social insurance contributions (total)	-	-	Employer SICs	Social Insurance Contribution of employer (Odvod socialniho pojisteni zamestnavatele)	SIC employer social contribution (cotizacion social del empleador)	-	-	-	-	-			
+	tscerac_s	1	1	n/a	1E-13	tax : sic : employer : accident : simulated	-	-	-	-	-	-	-	-	-	employer SIC: empl. injuries etc	-	-	-	-			
+	tscerci_s	1	1	n/a	0.0000000000001	tax : sic : employer : care insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerdc_s	1	1	n/a	1E-13	tax : sic : employer : daycare : simulated	employer sic daycare	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerdi_s	1	1	n/a	1E-13	tax : sic : employer : disability insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscered_s	1	1	n/a	1E-13	tax : sic : employer : educational leave : simulated	employer sic educational leave	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerei_s	1	1	n/a	1E-13	tax : sic : employer : employer insolvency : simulated	employer sic company closing fund	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerfa_s	1	1	n/a	1E-13	tax : sic : employer : family : simulated	employer sic contribution family allowances	employer SIC (family benefits)	-	-	-	-	-	-	-	-	employer SIC: family benefits	-	-	-			
+	tscerhe_s	1	1	n/a	1E-13	tax : sic : employer : holiday earnings : simulated	employer sic holiday earnings	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerhl_s	1	1	n/a	1E-13	tax : sic : employer : health : simulated	-	-	employer SIC: health	Employer Social Insurance Contribution  - Health	-	-	-	Social Insurance Contribution of employer: health	-	employer SIC: health	-	-	-	-			
+	tscerir_s	1	1	n/a	1E-13	tax : sic : employer : integration/(re)employment : simulated	employer sic integration/(re)employment vulnerable groups	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerml_s	1	1	n/a	1E-13	tax : sic : employer : maternity leave insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerot_s	1	1	n/a	1E-13	tax : sic : employer : other : simulated	-	-	-	-	-	-	-	-	SIC employer social contribution - other (cotizacion social del empleador - otras)	-	employer SIC: other benefits	-	-	-			
+	tscerpi_s	1	1	n/a	1E-13	tax : sic : employer : pension insurance : simulated	-	employer SIC (pension)	employer SIC: pension	Employer Social Insurance Contribution  -Pension 	-	-	-	Social Insurance Contribution of employer: pension	SIC employer social contribution - pensions (cotizacion social del empleador - pensiones)	employer SIC: pension	employer SIC: pension	-	-	-			
+	tscerrd_s	1	1	n/a	1E-13	tax : sic : employer : reduction : simulated	reduction employer's SIC	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscersf_s	1	1	n/a	1E-13	tax : sic : employer : salary protection fund : simulated	employer sic wage moderation	employer SIC (salary protect fund)	-	-	-	-	-	-	-	employer SIC: guarantee fund	-	-	-	-			
+	tscersi_s	1	1	n/a	1E-13	tax : sic : employer : sickness : simulated	-	employer SIC (sickness)	-	-	-	-	-	Social Insurance Contribution of employer: sickness	-	employer SIC: sickness & maternity	employer SIC: sickness	-	-	-			
+	tscersv_s	1	1	n/a	0.0000000000001	tax : sic : employer : severance pay : simulated	-	employer SIC (severance pay)	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscertp_s	1	1	n/a	1E-13	tax : sic : employer : type : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscerui_s	1	1	n/a	1E-13	tax : sic : employer : unemployment insurance : simulated	-	employer SIC (unemployment)	employer SIC: unemployment	-	-	-	-	Social Insurance Contribution of employer: unemployment	SIC employer social contribution - unemployment (cotizacion social del empleador - desempleo)	employer SIC: unemployment	employer SIC: unemployment	-	-	-			
+	tscfr_s	1	1	n/a	1E-13	tax : sic : farmer : simulated	-	-	-	-	farmer social insurance contribution	-	-	-	-	-	-	-	-	-			
+	tscfrot_s	1	1	n/a	0.0000000000001	tax : sic : farmer : other : simulated	-	-	-	-	-	-	-	-	-	-	farmers SIC: other	-	-	-			
+	tscfrpi_s	1	1	n/a	1E-13	tax : sic : farmer : pension insurance : simulated	-	-	-	-	-	-	-	-	-	-	farmers SIC: pension	-	-	-			
+	tscfrsi_s	1	1	n/a	1E-13	tax : sic : farmer : sickness : simulated	-	-	-	-	-	-	-	-	-	-	farmers SIC: sickness	-	-	-			
+	tschl00_s	1	0	n/a	1E-13	tax : sic : health : main/basic : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	Earnings-related health insurance contributions			
+	tschl_s	1	0	n/a	1E-13	tax : sic : health : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	Combined health insurance contributions			
+	tschlfx_s	1	0	n/a	1E-13	tax : sic : health : fixed amount : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	Fixed health insurance contribution 			
+	tschlgv_s	1	1	n/a	1E-13	tax : sic : health : state/government : simulated	-	-	-	-	-	-	-	"State funded public health insurance contributions (students, pensioners, children, etc.)"	-	-	-	-	-	-			
+	tscmaee_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employee : simulated	-	-	-	-	"sic on maternity leave, employee "	-	-	-	-	-	-	-	-	-			
+	tscmaeedi_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employee : disability insurance : simulated	-	-	-	-	"sic on maternity leave, employee disability contribution"	-	-	-	-	-	-	-	-	-			
+	tscmaeepi_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employee : pension insurance : simulated	-	-	-	-	"sic on maternity leave, employee retirement contribution"	-	-	-	-	-	-	-	-	-			
+	tscmaer_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employer : simulated	-	-	-	-	"sic on maternity leave, employer "	-	-	-	-	-	-	-	-	-			
+	tscmaerdi_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employer : disability insurance : simulated	-	-	-	-	"sic on maternity leave, employer disability contribution"	-	-	-	-	-	-	-	-	-			
+	tscmaerpi_s	1	1	n/a	1E-13	tax : sic : on maternity leave : employer : pension insurance : simulated	-	-	-	-	"sic on maternity leave, employer retirement contribution"	-	-	-	-	-	-	-	-	-			
+	tscpe_s	1	1	n/a	1E-13	tax : sic : pensioner : simulated	pensioner SICs	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscse	0	1	n/a	0	tax : sic : self-employed	social contribution on self employment income	-	-	-	-	-	social contribution on self employment income	Social Insurance Contribution of self-employed (Odvod socialniho pojisteni podnikatele)	SIC self-employed social contribution (cotizacion social del trabajador autonomo)	-	-	-	-	-			
+	tscse_s	1	1	n/a	1E-13	tax : sic : self-employed : simulated	self-employed SICs	self-employed SIC (total)	-	self-employed social insurance contributions (total)	-	-	Self-employed SICs	Social Insurance Contribution of self-employed (Odvod socialniho pojisteni podnikatele)	SIC self-employed social contribution (cotizacion social del trabajador autonomo)	-	-	self-employed SICs	-	-			
+	tscseac_s	1	1	n/a	0.0000000000001	tax : sic : self-employed : accident : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscseci_s	1	1	n/a	0.0000000000001	tax : sic : self-employed : care insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscsedi_s	1	1	n/a	1E-13	tax : sic : self-employed : disability insurance : simulated	-	-	-	-	-	-	-	-	SIC self-employed social contribution - disability (cotizacion social del trabajador autonomo - invalidez)	-	-	-	-	-			
+	tscsehl_s	1	1	n/a	1E-13	tax : sic : self-employed : health : simulated	-	-	self-employed SIC: health	Self-employed Social Insurance Contribution  - Health	-	-	-	Social Insurance Contribution of self-employed: health	SIC self-employed social contribution - health (cotizacion social del trabajador autonomo - enfermedad)	self-employed SIC: health (privalomojo sveikatos draudimo ?mokos)	-	-	-	-			
+	tscseir_s	1	1	n/a	0.0000000000001	tax : sic : self-employed : integration/(re)employment : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscseml_s	1	1	n/a	1E-13	tax : sic : self-employed : maternity leave insurance : simulated	-	Self-employed SICs for maternity fund	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscsemy_s	1	0	n/a	1E-13	tax : sic : self-employed : months per year : simulated	-	-	-	-	-	-	-	-	number of employee contributions per year	-	-	-	-	-			
+	tscseot_s	1	1	n/a	1E-13	tax : sic : self-employed : other : simulated	-	-	-	-	-	-	-	-	-	-	self-employed SIC: other benefits	-	-	-			
+	tscsepi_s	1	1	n/a	1E-13	tax : sic : self-employed : pension insurance : simulated	-	Self-employed SICs for pension funds (IVS)	self-employed SIC: pension	Self-employed Social Insurance Contribution  -Pension 	-	-	-	Social Insurance Contribution of self-employed: pension	SIC self-employed social contribution - pension (cotizacion social del trabajador autonomo - pension)	self-employed SIC: pension (socialinio draudimo ?mokos)	self-employed SIC: pension	-	-	-			
+	tscsesi_s	1	1	n/a	1E-13	tax : sic : self-employed : sickness : simulated	-	-	-	-	-	-	-	Social Insurance Contribution of self-employed: sickness	-	-	self-employed SIC: sickness	-	-	-			
+	tscseui_s	1	1	n/a	1E-13	tax : sic : self-employed : unemployment insurance : simulated	-	-	-	-	-	-	-	Social Insurance Contribution of self-employed: unemployment	-	-	-	-	-	-			
+	tsctbee_s	1	1	n/a	1E-13	tax : sic : tax base : employee : simulated	-	-	-	-	-	-	-	-	SIC employee social contribution - contribution base (cotizacion social del empleado - base de contribucion)	-	-	-	-	-			
+	tsctbse_s	1	1	n/a	1E-13	tax : sic : tax base : self-employed : simulated	-	-	-	-	-	-	-	self employed contribution base	SIC self-employed social contribution - contribution base (cotizacion social del trabajador autonomo - base de contribucion)	-	-	-	-	-			
+	tsctbun_s	1	1	n/a	1E-13	tax : sic : tax base : unemployed : simulated	-	-	-	-	-	-	-	-	SIC unemployed contribution base (base de contribucion del desempleado)	-	-	-	-	-			
+	tscun_s	1	1	n/a	1E-13	tax : sic : unemployed : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscundi_s	1	1	n/a	1E-13	tax : sic : unemployed : disability insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscunee_s	1	1	n/a	1E-13	tax : sic : unemployed : employee : simulated	-	-	-	-	-	-	-	-	SIC unemployed social contribution - paid by unemployed (cotizacion social del desempleado - pagada por el desempleado)	-	-	-	-	-			
+	tscuner_s	1	1	n/a	1E-13	tax : sic : unemployed : employer : simulated	-	-	-	-	-	-	-	-	SIC unemployed social contribution - paid by Social Security (cotizacion social del desempleado - pagada por el INEM)	-	-	-	-	-			
+	tscunpi_s	1	1	n/a	1E-13	tax : sic : unemployed : pension insurance : simulated	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tscwheesp_s	1	1	n/a	1E-13	tax : sic : withholding : employee : spouse : simulated	special SIC contribution: monthly	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	tsetp	0	0	n/a	0	tax : self-employed : type	-	-	-	"type of self-employment regarding taxation: (1) joint business and entrepreneurs, (2) EVA payers"	-	-	-	-	-	-	-	-	-	-			
+	ttferpi_s	1	1	n/a	1E-13	tax : transfer : employer : pension insurance : simulated	-	-	employer pension SIC transfer	-	-	-	-	-	-	-	-	-	-	-			
+	ttfsepi_s	1	1	n/a	1E-13	tax : transfer : self-employed : pension insurance : simulated	-	-	self-employed pension SIC transfer	-	-	-	-	-	-	-	-	-	-	-			
+	twl	0	1	n/a	0	tax : wealth	-	-	-	-	-	-	-	-	TAX wealth tax (impuesto a la riqueza)	-	-	-	-	-			
+	txc_s	1	1	n/a	0.0000000000001	tax : special ctrb : simulated	-	-	-	-	-	-	-	-	-	-	extraordinary tax contribution	-	-	-			
+	xcc	0	1	n/a	0	expenditure : child care	-	-	-	-	child care expenses	-	-	-	-	-	-	child care expenses	-	-			
+	xcd	0	1	n/a	0	expenditure : charitable donations	-	-	-	-	donation expenses	-	-	-	-	-	-	-	-	-			
+	xcmie	0	1	n/a	0	expenditure : communication : internet	-	-	-	-	internet expenses	-	-	-	-	-	-	-	-	-			
+	xed	0	1	n/a	0	expenditure : education	-	-	education expenditure	tax credit element - switched off	-	-	-	-	-	-	education expenses	-	-	-			
+	xhc	0	1	n/a	0	expenditure : housing cost	housing expenditure	-	total housing cost	acknowledged costs of home maintenance	-	-	-	Total housing costs (Celkove naklady bydleni)	other housing costs (otros costes de la vivienda)	total housing cost	total housing cost	-	-	-			
+	xhc00	0	1	n/a	0	expenditure : housing cost : main/basic	-	-	-	-	main housing costs	-	-	-	-	-	-	-	-	-			
+	xhchm	0	1	n/a	0	expenditure : housing cost : house maintenance	-	Refurbishment cost	-	-	house maintenance	-	-	-	-	-	-	-	-	-			
+	xhcmo	0	1	n/a	0	expenditure : housing cost : mortgage payment (interest+capital)	-	-	-	tax credit element - switched off	mortgage expenses	-	-	-	-	-	-	-	-	-			
+	xhcmomc	0	1	n/a	0	expenditure : housing cost : mortgage payment (interest+capital) : mortgage capital	-	-	-	-	mortgage capital	-	-	-	-	-	-	mortgage capital	-	-			
+	xhcmomi	0	1	n/a	0	expenditure : housing cost : mortgage payment (interest+capital) : mortgage interest	Mortgage interest payment	Mortgage interest payment	mortgage interest payment	mortgage expenses-interests	mortgage expenses-interests	-	-	Mortgage Interest (Splatky hypoteky)	mortgage interests (pago de intereses por hipoteca)	mortgage interests payments	mortgage interests payments	mortgage interests paid	-	-			
+	xhcot	0	1	n/a	0	expenditure : housing cost : other	-	-	other housing costs	-	other housing costs	-	-	Other housing costs	-	-	other housing costs	other housing costs	-	-			
+	xhcrt	0	1	n/a	0	expenditure : housing cost : rent	rent payment	Rent	rent payment	-	-	-	-	Rent for housing (Najemne)	rent payment (pago por alquiler)	rent payment	rent payment	Rent paid	-	-			
+	xhcsc	0	1	n/a	0	expenditure : housing cost : service charges	-	Compulsory service charges	-	-	service charges	-	-	-	-	-	-	service charges	-	-			
+	xhcscel	0	1	n/a	0	expenditure : housing cost : service charges : electricity	-	-	-	-	house service charges - electricity	-	-	-	-	-	-	-	-	-			
+	xhcscht	0	1	n/a	0	expenditure : housing cost : service charges : heating	-	-	-	-	house service charges - heating	-	-	-	-	-	-	-	-	-			
+	xhcscrf	0	1	n/a	0	expenditure : housing cost : service charges : refuse	-	-	-	-	house service charges - refuse	-	-	-	-	-	-	-	-	-			
+	xhcscwt	0	1	n/a	0	expenditure : housing cost : service charges : water	-	-	-	-	house service charges - water	-	-	-	-	-	-	-	-	-			
+	xhl	0	1	n/a	0	expenditure : health care	-	-	-	-	-	-	-	-	-	-	medical expenses	-	-	-			
+	xht	0	1	n/a	0	expenditure : heating	-	-	-	-	-	-	-	-	-	-	expenses for setting up new heating systems	-	-	-			
+	xishl	0	1	n/a	0	expenditure : insurance : health care	-	-	-	tax credit element - switched off	health insurance	-	-	-	-	-	-	-	-	-			
+	xislf	0	1	n/a	0	expenditure : insurance : life insurance	-	-	-	tax credit element - switched off	-	-	-	-	-	-	-	-	-	-			
+	xispp	0	1	n/a	0	expenditure : insurance : private pension (voluntary)	-	Contributions to Integrative Pension Plans (Pensione Integrativa Privata)	-	tax credit element - switched off	-	-	-	-	-	-	-	-	-	-			
+	xivhcrt	0	1	n/a	0	expenditure : imputed value : housing cost : rent	-	-	-	-	imputed rent expense	-	-	-	-	-	-	-	-	-			
+	xmp	0	1	n/a	0	expenditure : maintenance payment	Maintenance payments paid	Maintenance payments paid	alimony payments (alimendid)	-	maintenance payment	maintenance payments	-	Maintenance payments (Vydaje spojene s bydlenim)	maintenance payment (pago de transferencias privadas)	maintenance payment	-	maintenance paid	-	-			
+	xmpam	0	1	n/a	0	expenditure : maintenance payment : alimony	-	-	-	-	-	-	-	-	-	-	alimony payments	-	-	-			
+	xmpot	0	1	n/a	0	expenditure : maintenance payment : other	-	-	-	-	-	-	-	-	-	-	other maintenance payments	-	-	-			
+	xpp	0	1	n/a	0	expenditure : private pension (voluntary)	-	Contributions to Private Pension Plans (Fondo pensione aziendale o integrativa)	voluntary private pension contributions	voluntary pension contributions	-	voluntary pension contributions	-	Voluntary private pension expenditures (Vydaje na soukrome dobrovolne penzijni pripojisteni)	private pension contribution (contribucion para plan de pension privado)	private pension contributions	private pension contributions	-	-	-			
+	xuf	0	1	n/a	0	expenditure : labour union fee	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yaj	0	1	n/a	0	income : additonal jobs	-	-	-	-	-	contractual work	-	-	-	-	-	-	-	-			
+	ychmp_s	1	1	n/a	0.0000000000001	income : children : maintenance payment : simulated	-	-	-	-	-	-	-	-	-	-	-	Maintenance Paym. received by child	-	-			
+	ychot_s	1	1	n/a	0.0000000000001	income : children : other : simulated	-	-	-	-	-	-	-	-	-	-	-	Children earnings	-	-			
+	ydg01_s	1	1	n/a	0.0000000000001	income : disregard : 01 : simulated	-	Income disregard	-	-	-	-	-	-	-	-	-	Disregard IS	-	-			
+	ydg03_s	1	1	n/a	0.0000000000001	income : disregard : 03 : simulated	-	-	-	-	-	-	-	-	-	-	-	Disregard HBCTB	-	-			
+	ydg04_s	1	1	n/a	0.0000000000001	income : disregard : 04 : simulated	-	-	-	-	-	-	-	-	-	-	-	Disregard CTB	-	-			
+	yds	0	1	n/a	0	income : disposable	disposable income 	-	disposable income in the original survey	disposable income 	-	-	-	Disposable income of a household (Disponibilni prijem domacnosti)	original disposable income (renta disponible original)	disposable income in the original survey	disposable income in the original survey	-	-	-			
+	yem	0	1	n/a	0	income : employment	employment income	employment income	employment income	employment income	employment income	employment income	Employment Income	Income from employment (Prijmy ze zamestnani)	employment income (rendimientos del trabajo por cuenta ajena)	employment income	employment income	employment income	-	-			
+	yem_s	1	1	yem	1E-13	income : employment : simulated	-	-	-	-	-	-	-	-	ymw: employment income after applying minimum wage	-	-	-	-	-			
+	yemab	0	1	n/a	0	income : employment : abroad	-	-	-	-	-	"employment income, from abroad"	-	-	-	-	-	-	-	-			
+	yemeq_s	1	1	n/a	1E-13	income : employment : full-time equivalent employment : simulated	full-time equivalent employment income	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yemfb	0	1	n/a	0	income : employment : fringe benefits	-	fringe benefits	-	-	-	-	-	-	-	-	-	-	-	-			
+	yemhl	0	1	n/a	0	income : employment : holiday bonus	-	-	-	-	-	"employment income, holiday bonus"	-	-	-	-	-	-	-	-			
+	yemmy	0	0	n/a	12	income : employment : months per year	Employment income: no. months received in the year	Employment income: no. months received in the year	no. of months in employment	-	employment income: no. months received in the year	-	-	Months during last 12 months in employment (Pocet mesicu zamestnanosti behem poslednich 12 mesicu)	no. of months receiving employment income (no. de meses recibiendo rendimientos del trabajo por cuenta ajena)	no. of months in employment	no. of months receiving employment income	-	-	-			
+	yemot	0	1	n/a	0	income : employment : other	-	-	-	-	-	other income from employment	-	-	-	-	-	-	-	-			
+	yempj	0	1	yem	0	income : employment : permanent job	-	-	-	-	"employment income, permanent job"	-	-	-	-	-	-	-	-	-			
+	yempv	0	1	n/a	0	income : employment : previous	-	Employment income arrears	previous employment income	tax credit element - switched off	-	-	-	-	-	previous employment income	-	-	-	-			
+	yempv_s	1	1	n/a	1E-13	income : employment : previous : simulated	-	-	previous employment income	tax credit element - switched off	-	-	-	-	previous contribution base	previous employment income	-	-	-	-			
+	yemtj	0	1	n/a	0	income : employment : temporary job	-	-	-	-	"employment income, temporary job"	-	-	-	-	-	-	-	-	-			
+	yemwg	0	1	n/a	0	income : employment : wage/salary	-	-	-	-	-	wage income (only)	-	-	-	-	-	-	-	-			
+	yemxm_s	1	1	n/a	1E-13	income : employment : monthly : simulated	-	-	-	-	-	-	-	-	Employment income received per month	-	-	-	-	-			
+	yfb	0	1	n/a	0	income : fringe benefits	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yivag_s	1	1	n/a	1E-13	income : imputed value : agriculture : simulated	-	-	-	-	Imputed income from agriculture for means-tested benefits	-	-	-	-	-	-	-	-	-			
+	yiviy01_s	1	1	n/a	0.0000000000001	income : imputed value : investment : 01 : simulated	-	-	-	-	-	-	-	-	-	-	-	Tariff Income IS	-	-			
+	yiviy03_s	1	1	n/a	0.0000000000001	income : imputed value : investment : 03 : simulated	-	-	-	-	-	-	-	-	-	-	-	Tariff Income HBCTB	-	-			
+	yiviy_s	1	1	n/a	1E-13	income : imputed value : investment : simulated	imputed income from financial capital for means test social assistance	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yiviy01_s	1	1	n/a	1E-13	income : imputed value : investment : 01 : simulated	imputed income from capital for means test income support elderly	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yivpr_s	1	1	n/a	1E-13	income : imputed value : property : simulated	imputed value income from property (housing) for means test social assistance	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yivpr01_s	1	1	n/a	1E-13	income : imputed value : property : 01 : simulated	imputed income from property for means test income support elderly	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	yivwg	0	1	n/a	0	income : imputed value : wage/salary	imputed hourly wage rate	-	imputed hourly wage rate	tax credit element - switched off	-	-	-	-	imputed wage (salario imputado)	imputed hourly wage rate	imputed hourly wage	-	-	-			
+	yiy	0	1	n/a	0	income : investment	investment income	Investment income	investment income	investment income	investment income	"investment income (dividends, interests)"	-	Returns to investments (Vynosy z investic)	investment income (rendimientos del capital)	investment income	investment income	investment income	-	-			
+	yiydv	0	1	n/a	0	income : investment : dividends	-	Investment income (Dividends)	dividend income	tax credit element - switched off	-	dividends	-	-	-	-	-	-	-	-			
+	yiyit	0	1	n/a	0	income : investment : interests	-	-	interest income	-	-	interests	-	-	-	-	-	-	-	-			
+	yiyitdp	0	1	yiy	0	income : investment : interests : deposits	-	Interests on deposits	-	-	-	-	-	-	-	-	-	-	-	-			
+	yiyitob	0	1	n/a	0	income : investment : interests : other bonds	-	Interests on other bonds	-	-	-	-	-	-	-	-	-	-	-	-			
+	yiyitsb	0	1	n/a	0	income : investment : interests : state bonds	-	Interests on state bonds deposits	-	-	-	-	-	-	-	-	-	-	-	-			
+	yiynt	0	1	n/a	0	income : investment : not taxable	-	-	-	-	-	-	-	-	-	-	-	Non Taxable Invest income	-	-			
+	yiyot	0	1	n/a	0	income : investment : other	-	-	other investment income	-	-	-	-	-	-	-	-	-	-	-			
+	yiytx	0	1	n/a	0	income : investment : taxable	-	-	-	-	-	-	-	-	-	-	-	Taxable invest income	-	-			
+	yls	0	1	n/a	0	income : lump sum	-	-	-	-	-	-	-	-	-	-	-	Lump sum income	-	-			
+	ymn01_s	1	1	n/a	0.0000000000001	income : means : 01 : simulated	-	-	-	-	-	-	-	-	-	-	-	Means HB	-	-			
+	ymn02_s	1	1	n/a	0.0000000000001	income : means : 02 : simulated	-	-	-	-	-	-	-	-	-	-	-	Means CTB	-	-			
+	yot	0	1	n/a	0	income : other	income of children under 16	income of children under 16	income of children under 16	other incomes	other incomes	-	-	Income received by people aged unde 16 (prijem osob mladsich 16 let)	income of children under 16 (ingresos de menores de 16 anos)	income of children under 16	income of children under 16	"odd jobs, children earnings (taxable)"	-	-			
+	ypp	0	1	n/a	0	income : private pension	Private pension	Private pension	private pension	private pension	-	-	-	Private pensions (Penze ze soukromych pojistmych planu)	private pension (pension privada)	private pension	private pension	personal pension	-	-			
+	ypp01	0	1	n/a	0.0000000000001	income : private pension : 01	-	Integrative Private pension	-	-	-	-	-	-	-	-	-	-	-	-			
+	ypp02	0	1	n/a	0.0000000000001	income : private pension : 02	-	Private pension	-	-	-	-	-	-	-	-	-	-	-	-			
+	ypr	0	1	n/a	0	income : property	property income	property income	property income	property income	property income	-	-	Income from rental of property and land (prijmy z pronajmu majetku a pudy)	income from property (rendimientos por propiedad)	property income	property income	property income	-	-			
+	yprld	0	1	n/a	0	income : property : land	-	-	-	-	-	imputed rent from land	-	-	-	-	-	-	-	-			
+	yprro	0	1	n/a	0	income : property : royalties	-	-	royalties	-	-	royalties	-	-	-	-	-	-	-	-			
+	yprrt	0	1	n/a	0	income : property : rent	-	-	rental income	Property: Income from rent	-	rent	-	Rent income (Prijmy z pronajmu)	income from rent (rendimientos por alquiler)	income from rent	income from rent	-	-	-			
+	ypt	0	1	n/a	0	income : private transfers	private transfers received	private transfers received	private transfers received	"Property transfer (Mag�nszem�lyt?l kapott j�vedelem, t�mogat�s)"	-	-	-	Regular interhousehold cash transfers received (Pravidelne soukrome transfery prijate domacnosti)	private transfers (transferencias privadas)	private transfers received	private transfers received	-	-	-			
+	ypt00	0	1	n/a	0	income : private transfers : main/basic	-	-	-	-	main private transfer	-	-	-	-	-	-	-	-	-			
+	yptmp	0	1	n/a	0	income : private transfers : maintenance payment	-	Private transfers including maintenance payments	-	-	received maintenance payment	-	-	-	-	-	-	received maintenance payment	-	-			
+	yptmpnt	0	1	n/a	0	income : private transfers : maintenance payment : not taxable	-	-	maintenance payments (non-taxable)	-	-	-	-	-	-	-	-	-	-	-			
+	yptmptx	0	1	n/a	0	income : private transfers : maintenance payment : taxable	-	-	maintenance payments (taxable)	-	-	-	-	-	-	-	-	-	-	-			
+	yptot	0	1	n/a	0	income : private transfers : other	-	Income received by people aged under 16	-	other private transfers	-	-	-	-	-	-	-	private transfers (non taxable)	-	-			
+	yse	0	1	n/a	0	income : self employment	income from self-employment	income from self-employment	income from self-employment	self-employment income	-	self-employment income	Self-employment income	Cash benefits and losses from self-employment (Hrube prijmy z hlavniho podnikani)	self-employment income (rendimientos del trabajo por cuenta propia)	self-employment income	self-employment income	self-employment income	-	-			
+	yseag	0	1	n/a	0	income : self employment : agriculture	-	-	self-employment income from agriculture	-	self-employment income from agriculture	-	-	-	-	-	-	-	-	-			
+	ysebs	0	1	n/a	0	income : self employment : business	-	-	self-employment income from other than agriculture	-	self-employment income from business (non agriculture)	-	-	-	-	-	-	-	-	-			
+	yseev	0	1	n/a	0	income : self employment : including evasion	-	Selfemp income including evasion	-	-	-	-	-	-	-	-	-	-	-	-			
+	yseil	0	1	n/a	0	income : self employment : intellectual activities	-	-	-	tax credit element - switched off	-	-	-	-	-	-	-	-	-	-			
+	yselo_s	1	1	n/a	0.0000000000001	income : self employment : loss : simulated	-	-	-	-	-	-	-	-	-	-	-	Self-employment loss	-	-			
+	ysemy	0	0	n/a	0	income : self employment : months per year	-	-	-	-	self-employment income: no. months received in the year	-	-	Months self-employed  during last 12 months (pocet mesicu  behem poslednich 12 mesicu jako podnikatel)	no. of months receiving self-employment income (no. de meses recibiendo rendimientos del trabajo por cuenta propia)	no. of months receiving self-employment income	no. of months receiving self-employment income	-	-	-			
+	ysena	0	1	n/a	0	income : self employment : non-registered activity	-	-	income from unregistered self-employment activities	-	-	-	-	-	-	-	-	-	-	-			
+	ysenr	0	1	n/a	0	income : self employment : non reported	-	Non reported self-empl income	-	-	-	-	-	-	-	-	-	-	-	-			
+	ysenr_s	1	1	n/a	1E-13	income : self employment : non reported : simulated	-	Non declared self-empl income	-	-	-	-	-	-	-	-	-	-	-	-			
+	ysepv	0	1	n/a	0	income : self employment : previous	-	-	-	-	-	-	-	-	-	-	-	-	-	-			
+	ysera	0	1	n/a	0	income : self employment : registered activity	-	-	income from registered self-employment activities	-	-	-	-	-	-	-	-	-	-	-			
+	ysetx_s	1	1	n/a	1E-13	income : self employment : taxable : simulated	-	-	taxable income from self-employment	-	-	-	-	-	-	taxable income from self-employment	taxable self-employment income	-	-	-			
+	ysv	0	1	n/a	0	income : severance pay	-	-	-	-	-	-	-	-	severance payment (indemnizaci�n por cese)	-	-	-	-	-			
+	yunsv	0	1	n/a	0	income : unemployment : severance pay	-	Severance pay (Liquidazioni da lavoro - TFR)	severance pay	-	severance payment	-	-	-	-	severance pay	-	-	-	-			
+	sys_end_var														-	-	-	-	-	-			

@@ -1,0 +1,372 @@
+<div class='help_section' style='text-align:middle'>
+        <p>
+        <a href='/mefisto/en/output_help.html'
+          onclick='ExampleWindow( "/mefisto/en/output_help.html" ); return false;'
+          class='help_link'>
+        
+        <img src='/mefisto/images/help.png'
+                              class='help_link' alt='help'/></a></p>
+</div>
+
+
+<form action="" method="post" id="outputform" name="outputform">
+  <input type='hidden' name='random_string' value="" />
+
+  <div class="designreformblock" style="min-height:300px; width="870px">
+     <table>
+     <tr>
+     <td>
+     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+        <title>
+            FLEMOSI::&nbsp;&nbsp;&nbsp;:: Chart Gallery
+        </title>
+        <meta name="generator" content="Flemosi: Belgian Microsimulation Model" />
+        <meta http-equiv="content-type" content="text/html charset=utf-8" />
+        <meta name="author" content="Graham Stark" />
+        <meta name="keywords" content="Microsimulation, Taxation, Benefits" />
+        <meta name="description" content="An microsimulation model" />
+        <meta name="robots" content="all" />
+        <link rel="schema.DC" href="http:/purl.org/dc/elements/1.1/" />
+        <link rel="schema.DCTERMS" href="http:/purl.org/dc/terms/" />
+        <meta name="DC.description" xml:lang="en" content="" />
+        <meta name="DC.title" content="Flemosi: Belgian Microsimulation Model" />
+        <link rel="DC.rights copyright" href="http://www.flemosi.be" />
+        <meta xml:lang="en" name="DC.contributor" content="Graham Stark" />
+        <meta xml:lang="en" name="DC.creator" content="Graham Stark" />
+        <meta xml:lang="en" name="DC.type" content="Text" />
+        <meta xml:lang="en" name="DC.type" content="Interactive Resource" />
+        <meta xml:lang="en" name="DC.type" content="Software" />
+
+<script type="text/javascript" src="/mefisto/js/jquery-latest.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery-ui.js" ></script>
+
+<script type="text/javascript" src="/mefisto/js/jquery.history.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.bgiframe-2.1.2.js" ></script>
+<script type="text/javascript" src="/mefisto/js/jquery.treeview.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.periodicalupdater.js"></script>
+
+<script type="text/javascript" src="/mefisto/js/gksfunctions.js"></script>
+<script type="text/javascript" src="/mefisto/js/mefisto_functions.js"></script>
+
+<link rel="stylesheet" href="/mefisto/css/jquery-ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/mefisto/css/jquery.treeview.css" type="text/css" />
+<link type="text/css" href="/mefisto/css/galleriffic.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="/mefisto/css/mefisto.css" rel="stylesheet" media="screen" />
+
+
+<script type='text/javascript'>
+
+$(document).ready( function() {
+      if( $( "#modelNavTop" ).length > 0 ){
+          $( "#modelNavTop" ).tabs();
+          $( "#modelNavTop" ).bind( "tabsload", function( event, ui ) {
+             // // alert( "binding" );
+             initialiseContainerForm();
+          });
+      }
+});
+</script>
+
+
+
+</head>
+
+<body class='summary_content'>
+         <h1>Chart Gallery</h1>
+         <div id="tabs">
+
+            <ul>
+               <li><a href='#by_decile'>By Decile</a></li>
+               <li><a href='#by_age_of_head'>By Age of Head</a></li>
+               <li><a href='#by_occupation_of_head'>By Occupation of Head</a></li>
+               <li><a href='#by_tenure'>by Tenure</a></li>
+            </ul>
+
+               <div id='by_decile'>
+               <div id='legend_block'>
+                 <table class='legend_table'>
+                   <tr>
+                      <td class='pre_change'>&bull;&nbsp;Before Reform</td>
+                      <td class='post_change'>&bull;&nbsp;After Reform</td>
+                    </tr>
+                 </table>
+                </div>
+                           <table class='summary_table'>
+              <thead>
+                <tr>
+                  <td width='33%' align='center' valign='middle'>
+                  </td>
+                  <td width='33%' align='center'>
+                     Cost<br />
+                     (&euro;)
+                  </td>
+                  <td width='33%' align='center'>
+                     Caseload<br />
+                     (000s)
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr class='tableRowEven'><td valign='middle'>Personal Income Taxes </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.78669E%2B03,1.30960E%2B05,3.90389E%2B05,8.49102E%2B05,1.33071E%2B06,1.90452E%2B06,2.67406E%2B06,3.60834E%2B06,4.45446E%2B06,8.51384E%2B06&amp;da_post_1=4.78669E%2B03,1.30960E%2B05,3.90389E%2B05,8.49102E%2B05,1.33071E%2B06,1.90452E%2B06,2.67406E%2B06,3.60834E%2B06,4.45446E%2B06,8.51384E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.98138E%2B05,2.18143E%2B05,2.50778E%2B05,2.51288E%2B05,2.55608E%2B05,2.58915E%2B05,2.57879E%2B05,2.57940E%2B05,2.58846E%2B05,2.55608E%2B05&amp;da_post_1=1.98138E%2B05,2.18143E%2B05,2.50778E%2B05,2.51288E%2B05,2.55608E%2B05,2.58915E%2B05,2.57879E%2B05,2.57940E%2B05,2.58846E%2B05,2.55608E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Social Security Contributions </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.35573E%2B05,5.02575E%2B05,6.48475E%2B05,1.42206E%2B06,2.16974E%2B06,2.61729E%2B06,3.59820E%2B06,4.45988E%2B06,5.32046E%2B06,7.56910E%2B06&amp;da_post_1=1.35573E%2B05,5.02575E%2B05,6.48475E%2B05,1.42206E%2B06,2.16974E%2B06,2.61729E%2B06,3.59820E%2B06,4.45988E%2B06,5.32046E%2B06,7.56910E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=5.23166E%2B04,1.07263E%2B05,1.60750E%2B05,1.92123E%2B05,2.21840E%2B05,2.28473E%2B05,2.44834E%2B05,2.46282E%2B05,2.49180E%2B05,2.41052E%2B05&amp;da_post_1=5.23166E%2B04,1.07263E%2B05,1.60750E%2B05,1.92123E%2B05,2.21840E%2B05,2.28473E%2B05,2.44834E%2B05,2.46282E%2B05,2.49180E%2B05,2.41052E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Child Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=2.05297E%2B05,2.69995E%2B05,1.98192E%2B05,3.73402E%2B05,4.26963E%2B05,2.86718E%2B05,3.51943E%2B05,3.82871E%2B05,2.32083E%2B05,2.03397E%2B05&amp;da_post_1=2.05297E%2B05,2.69995E%2B05,1.98192E%2B05,3.73402E%2B05,4.26963E%2B05,2.86718E%2B05,3.51943E%2B05,3.82871E%2B05,2.32083E%2B05,2.03397E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.40109E%2B04,5.95421E%2B04,5.12393E%2B04,8.46211E%2B04,8.61421E%2B04,8.64300E%2B04,1.08708E%2B05,1.06169E%2B05,8.12377E%2B04,6.97403E%2B04&amp;da_post_1=4.40109E%2B04,5.95421E%2B04,5.12393E%2B04,8.46211E%2B04,8.61421E%2B04,8.64300E%2B04,1.08708E%2B05,1.06169E%2B05,8.12377E%2B04,6.97403E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Unemployment Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.07223E%2B05,4.84418E%2B05,4.22765E%2B05,5.27703E%2B05,5.06454E%2B05,6.23540E%2B05,4.06094E%2B05,4.14503E%2B05,5.42333E%2B05,7.12408E%2B05&amp;da_post_1=4.07223E%2B05,4.84418E%2B05,4.22765E%2B05,5.27703E%2B05,5.06454E%2B05,6.23540E%2B05,4.06094E%2B05,4.14503E%2B05,5.42333E%2B05,7.12408E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.17967E%2B04,4.97846E%2B04,3.71786E%2B04,4.86989E%2B04,5.02739E%2B04,5.38814E%2B04,5.13450E%2B04,3.99958E%2B04,4.25089E%2B04,3.61984E%2B04&amp;da_post_1=4.17967E%2B04,4.97846E%2B04,3.71786E%2B04,4.86989E%2B04,5.02739E%2B04,5.38814E%2B04,5.13450E%2B04,3.99958E%2B04,4.25089E%2B04,3.61984E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Minimum Income Protection	 </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=2.10075E%2B05,4.07542E%2B04,5.16537E%2B04,3.59534E%2B03,0.00000E%2B00,3.52583E%2B03,0.00000E%2B00,0.00000E%2B00,0.00000E%2B00,4.48449E%2B03&amp;da_post_1=2.10075E%2B05,4.07542E%2B04,5.16537E%2B04,3.59534E%2B03,0.00000E%2B00,3.52583E%2B03,0.00000E%2B00,0.00000E%2B00,0.00000E%2B00,4.48449E%2B03&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=3.25155E%2B04,9.16376E%2B03,6.61351E%2B03,6.19211E%2B02,0.00000E%2B00,7.96673E%2B02,0.00000E%2B00,0.00000E%2B00,0.00000E%2B00,3.86173E%2B02&amp;da_post_1=3.25155E%2B04,9.16376E%2B03,6.61351E%2B03,6.19211E%2B02,0.00000E%2B00,7.96673E%2B02,0.00000E%2B00,0.00000E%2B00,0.00000E%2B00,3.86173E%2B02&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Taxes Minus Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=-2.62085E%2B06,-3.30916E%2B06,-3.30925E%2B06,-2.60180E%2B06,-1.74137E%2B06,-1.25613E%2B06,9.67145E%2B04,1.49281E%2B06,2.43060E%2B06,6.03599E%2B06&amp;da_post_1=-2.62085E%2B06,-3.30916E%2B06,-3.30925E%2B06,-2.60180E%2B06,-1.74137E%2B06,-1.25613E%2B06,9.67145E%2B04,1.49281E%2B06,2.43060E%2B06,6.03599E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_decile' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=2.57943E%2B05,2.58920E%2B05,2.58677E%2B05,2.58039E%2B05,2.58006E%2B05,2.59400E%2B05,2.57879E%2B05,2.57940E%2B05,2.58846E%2B05,2.57936E%2B05&amp;da_post_1=2.57943E%2B05,2.58920E%2B05,2.58677E%2B05,2.58039E%2B05,2.58006E%2B05,2.59400E%2B05,2.57879E%2B05,2.57940E%2B05,2.58846E%2B05,2.57936E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                 </tr>
+              </tbody>
+          </table>
+
+               </div>
+               <div id='by_age_of_head'>
+               <div id='legend_block'>
+                 <table class='legend_table'>
+                   <tr>
+                      <td class='pre_change'>&bull;&nbsp;Before Reform</td>
+                      <td class='post_change'>&bull;&nbsp;After Reform</td>
+                    </tr>
+                 </table>
+                </div>
+                           <table class='summary_table'>
+              <thead>
+                <tr>
+                  <td width='33%' align='center' valign='middle'>
+                  </td>
+                  <td width='33%' align='center'>
+                     Cost<br />
+                     (&euro;)
+                  </td>
+                  <td width='33%' align='center'>
+                     Caseload<br />
+                     (000s)
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr class='tableRowEven'><td valign='middle'>Personal Income Taxes </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.97768E%2B03,1.30731E%2B04,8.00072E%2B06,1.31522E%2B07,1.17990E%2B06,1.51327E%2B06&amp;da_post_1=1.97768E%2B03,1.30731E%2B04,8.00072E%2B06,1.31522E%2B07,1.17990E%2B06,1.51327E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.21243E%2B02,3.96099E%2B03,6.50529E%2B05,9.96198E%2B05,1.83733E%2B05,6.28300E%2B05&amp;da_post_1=4.21243E%2B02,3.96099E%2B03,6.50529E%2B05,9.96198E%2B05,1.83733E%2B05,6.28300E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Social Security Contributions </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.71527E%2B03,3.01832E%2B04,1.12350E%2B07,1.53112E%2B07,8.92804E%2B05,9.69532E%2B05&amp;da_post_1=4.71527E%2B03,3.01832E%2B04,1.12350E%2B07,1.53112E%2B07,8.92804E%2B05,9.69532E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.21243E%2B02,3.54335E%2B03,5.91524E%2B05,8.32941E%2B05,1.13581E%2B05,4.02103E%2B05&amp;da_post_1=4.21243E%2B02,3.54335E%2B03,5.91524E%2B05,8.32941E%2B05,1.13581E%2B05,4.02103E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Child Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=5.65291E%2B02,9.13479E%2B03,1.06020E%2B06,1.81893E%2B06,1.69294E%2B04,2.50982E%2B04&amp;da_post_1=5.65291E%2B02,9.13479E%2B03,1.06020E%2B06,1.81893E%2B06,1.69294E%2B04,2.50982E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.21243E%2B02,1.81940E%2B03,3.06287E%2B05,4.53631E%2B05,7.61491E%2B03,8.06764E%2B03&amp;da_post_1=4.21243E%2B02,1.81940E%2B03,3.06287E%2B05,4.53631E%2B05,7.61491E%2B03,8.06764E%2B03&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Unemployment Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=0.00000E%2B00,5.42337E%2B02,7.47123E%2B05,2.91235E%2B06,1.23105E%2B06,1.56371E%2B05&amp;da_post_1=0.00000E%2B00,5.42337E%2B02,7.47123E%2B05,2.91235E%2B06,1.23105E%2B06,1.56371E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=0.00000E%2B00,6.24409E%2B02,1.17648E%2B05,2.42820E%2B05,7.39991E%2B04,1.65706E%2B04&amp;da_post_1=0.00000E%2B00,6.24409E%2B02,1.17648E%2B05,2.42820E%2B05,7.39991E%2B04,1.65706E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Minimum Income Protection	 </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=0.00000E%2B00,7.24543E%2B03,1.03395E%2B05,1.78311E%2B05,1.97253E%2B04,5.41191E%2B03&amp;da_post_1=0.00000E%2B00,7.24543E%2B03,1.03395E%2B05,1.78311E%2B05,1.97253E%2B04,5.41191E%2B03&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=0.00000E%2B00,8.31902E%2B02,1.78783E%2B04,2.56053E%2B04,4.40352E%2B03,1.37581E%2B03&amp;da_post_1=0.00000E%2B00,8.31902E%2B02,1.78783E%2B04,2.56053E%2B04,4.40352E%2B03,1.37581E%2B03&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Taxes Minus Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.41239E%2B03,-8.83665E%2B03,5.08487E%2B06,5.20446E%2B06,-2.90861E%2B06,-1.21557E%2B07&amp;da_post_1=1.41239E%2B03,-8.83665E%2B03,5.08487E%2B06,5.20446E%2B06,-2.90861E%2B06,-1.21557E%2B07&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_age_of_head' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.21243E%2B02,4.79290E%2B03,6.64425E%2B05,1.02725E%2B06,1.99691E%2B05,6.87006E%2B05&amp;da_post_1=4.21243E%2B02,4.79290E%2B03,6.64425E%2B05,1.02725E%2B06,1.99691E%2B05,6.87006E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                 </tr>
+              </tbody>
+          </table>
+
+               </div>
+               <div id='by_occupation_of_head'>
+               <div id='legend_block'>
+                 <table class='legend_table'>
+                   <tr>
+                      <td class='pre_change'>&bull;&nbsp;Before Reform</td>
+                      <td class='post_change'>&bull;&nbsp;After Reform</td>
+                    </tr>
+                 </table>
+                </div>
+                           <table class='summary_table'>
+              <thead>
+                <tr>
+                  <td width='33%' align='center' valign='middle'>
+                  </td>
+                  <td width='33%' align='center'>
+                     Cost<br />
+                     (&euro;)
+                  </td>
+                  <td width='33%' align='center'>
+                     Caseload<br />
+                     (000s)
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr class='tableRowEven'><td valign='middle'>Personal Income Taxes </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.26913E%2B06,5.88238E%2B06,2.83898E%2B06,2.97088E%2B06,1.20890E%2B06,1.72266E%2B05,2.08052E%2B06,1.48607E%2B06,6.77565E%2B05,0.00000E%2B00,2.27447E%2B06&amp;da_post_1=4.26913E%2B06,5.88238E%2B06,2.83898E%2B06,2.97088E%2B06,1.20890E%2B06,1.72266E%2B05,2.08052E%2B06,1.48607E%2B06,6.77565E%2B05,0.00000E%2B00,2.27447E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.68138E%2B05,3.27618E%2B05,2.11938E%2B05,2.62997E%2B05,1.33569E%2B05,2.58135E%2B04,2.31581E%2B05,1.55694E%2B05,1.14480E%2B05,0.00000E%2B00,8.31313E%2B05&amp;da_post_1=1.68138E%2B05,3.27618E%2B05,2.11938E%2B05,2.62997E%2B05,1.33569E%2B05,2.58135E%2B04,2.31581E%2B05,1.55694E%2B05,1.14480E%2B05,0.00000E%2B00,8.31313E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Social Security Contributions </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=3.60982E%2B06,6.17961E%2B06,3.57073E%2B06,4.12960E%2B06,1.72258E%2B06,1.84629E%2B05,3.43935E%2B06,2.66297E%2B06,1.27463E%2B06,0.00000E%2B00,1.66943E%2B06&amp;da_post_1=3.60982E%2B06,6.17961E%2B06,3.57073E%2B06,4.12960E%2B06,1.72258E%2B06,1.84629E%2B05,3.43935E%2B06,2.66297E%2B06,1.27463E%2B06,0.00000E%2B00,1.66943E%2B06&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.32570E%2B05,2.98767E%2B05,1.89809E%2B05,2.40339E%2B05,1.11255E%2B05,1.43507E%2B04,1.94571E%2B05,1.42989E%2B05,1.03736E%2B05,0.00000E%2B00,5.15727E%2B05&amp;da_post_1=1.32570E%2B05,2.98767E%2B05,1.89809E%2B05,2.40339E%2B05,1.11255E%2B05,1.43507E%2B04,1.94571E%2B05,1.42989E%2B05,1.03736E%2B05,0.00000E%2B00,5.15727E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Child Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=3.49007E%2B05,6.67595E%2B05,3.21679E%2B05,3.38936E%2B05,1.96564E%2B05,6.60165E%2B04,3.44433E%2B05,2.71485E%2B05,1.91910E%2B05,0.00000E%2B00,1.83235E%2B05&amp;da_post_1=3.49007E%2B05,6.67595E%2B05,3.21679E%2B05,3.38936E%2B05,1.96564E%2B05,6.60165E%2B04,3.44433E%2B05,2.71485E%2B05,1.91910E%2B05,0.00000E%2B00,1.83235E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=7.97824E%2B04,1.55084E%2B05,8.85221E%2B04,1.02970E%2B05,5.52984E%2B04,1.44032E%2B04,1.00290E%2B05,7.30210E%2B04,5.15208E%2B04,0.00000E%2B00,5.69500E%2B04&amp;da_post_1=7.97824E%2B04,1.55084E%2B05,8.85221E%2B04,1.02970E%2B05,5.52984E%2B04,1.44032E%2B04,1.00290E%2B05,7.30210E%2B04,5.15208E%2B04,0.00000E%2B00,5.69500E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Unemployment Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=3.08463E%2B05,6.46115E%2B05,4.74928E%2B05,9.88727E%2B05,3.08835E%2B05,3.35514E%2B04,9.93954E%2B05,5.03968E%2B05,4.12967E%2B05,0.00000E%2B00,3.75934E%2B05&amp;da_post_1=3.08463E%2B05,6.46115E%2B05,4.74928E%2B05,9.88727E%2B05,3.08835E%2B05,3.35514E%2B04,9.93954E%2B05,5.03968E%2B05,4.12967E%2B05,0.00000E%2B00,3.75934E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=2.01359E%2B04,5.96107E%2B04,4.34162E%2B04,6.85942E%2B04,3.19907E%2B04,3.06037E%2B03,8.50799E%2B04,4.97433E%2B04,4.59517E%2B04,0.00000E%2B00,4.40792E%2B04&amp;da_post_1=2.01359E%2B04,5.96107E%2B04,4.34162E%2B04,6.85942E%2B04,3.19907E%2B04,3.06037E%2B03,8.50799E%2B04,4.97433E%2B04,4.59517E%2B04,0.00000E%2B00,4.40792E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Minimum Income Protection	 </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=6.52232E%2B03,5.59183E%2B03,9.60356E%2B03,4.16297E%2B02,1.86727E%2B04,3.17939E%2B04,3.69568E%2B04,1.31950E%2B03,2.33397E%2B04,0.00000E%2B00,1.79872E%2B05&amp;da_post_1=6.52232E%2B03,5.59183E%2B03,9.60356E%2B03,4.16297E%2B02,1.86727E%2B04,3.17939E%2B04,3.69568E%2B04,1.31950E%2B03,2.33397E%2B04,0.00000E%2B00,1.79872E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=6.25290E%2B02,7.35846E%2B02,3.00360E%2B03,9.95768E%2B02,5.04003E%2B03,3.21598E%2B03,6.68016E%2B03,1.66084E%2B03,4.69558E%2B03,0.00000E%2B00,2.34418E%2B04&amp;da_post_1=6.25290E%2B02,7.35846E%2B02,3.00360E%2B03,9.95768E%2B02,5.04003E%2B03,3.21598E%2B03,6.68016E%2B03,1.66084E%2B03,4.69558E%2B03,0.00000E%2B00,2.34418E%2B04&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Taxes Minus Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=3.31389E%2B06,3.97500E%2B06,1.70737E%2B06,1.26601E%2B06,4.67877E%2B05,6.03474E%2B03,2.61256E%2B05,3.32950E%2B05,-2.01684E%2B05,0.00000E%2B00,-1.59111E%2B07&amp;da_post_1=3.31389E%2B06,3.97500E%2B06,1.70737E%2B06,1.26601E%2B06,4.67877E%2B05,6.03474E%2B03,2.61256E%2B05,3.32950E%2B05,-2.01684E%2B05,0.00000E%2B00,-1.59111E%2B07&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_occupation_of_head' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.68138E%2B05,3.28222E%2B05,2.11938E%2B05,2.65822E%2B05,1.36225E%2B05,2.58135E%2B04,2.38557E%2B05,1.57421E%2B05,1.22015E%2B05,0.00000E%2B00,9.29432E%2B05&amp;da_post_1=1.68138E%2B05,3.28222E%2B05,2.11938E%2B05,2.65822E%2B05,1.36225E%2B05,2.58135E%2B04,2.38557E%2B05,1.57421E%2B05,1.22015E%2B05,0.00000E%2B00,9.29432E%2B05&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                 </tr>
+              </tbody>
+          </table>
+
+               </div>
+               <div id='by_tenure'>
+               <div id='legend_block'>
+                 <table class='legend_table'>
+                   <tr>
+                      <td class='pre_change'>&bull;&nbsp;Before Reform</td>
+                      <td class='post_change'>&bull;&nbsp;After Reform</td>
+                    </tr>
+                 </table>
+                </div>
+                           <table class='summary_table'>
+              <thead>
+                <tr>
+                  <td width='33%' align='center' valign='middle'>
+                  </td>
+                  <td width='33%' align='center'>
+                     Cost<br />
+                     (&euro;)
+                  </td>
+                  <td width='33%' align='center'>
+                     Caseload<br />
+                     (000s)
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr class='tableRowEven'><td valign='middle'>Personal Income Taxes </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.27305E%2B07,6.72030E%2B06,3.50892E%2B06,5.79520E%2B05,0.00000E%2B00,3.21941E%2B05,0.00000E%2B00&amp;da_post_1=1.27305E%2B07,6.72030E%2B06,3.50892E%2B06,5.79520E%2B05,0.00000E%2B00,3.21941E%2B05,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=personal_income_tax&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Personal Income Taxes ', 'Personal Income Taxes ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=8.29439E%2B05,9.94252E%2B05,4.39877E%2B05,1.67507E%2B05,0.00000E%2B00,3.20654E%2B04,0.00000E%2B00&amp;da_post_1=8.29439E%2B05,9.94252E%2B05,4.39877E%2B05,1.67507E%2B05,0.00000E%2B00,3.20654E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Personal Income Taxes ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Social Security Contributions </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.61291E%2B07,7.07801E%2B06,4.09137E%2B06,9.15915E%2B05,0.00000E%2B00,2.28930E%2B05,0.00000E%2B00&amp;da_post_1=1.61291E%2B07,7.07801E%2B06,4.09137E%2B06,9.15915E%2B05,0.00000E%2B00,2.28930E%2B05,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=social_security_contributions&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Social Security Contributions ', 'Social Security Contributions ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=7.62279E%2B05,7.12350E%2B05,3.39375E%2B05,1.11034E%2B05,0.00000E%2B00,1.90739E%2B04,0.00000E%2B00&amp;da_post_1=7.62279E%2B05,7.12350E%2B05,3.39375E%2B05,1.11034E%2B05,0.00000E%2B00,1.90739E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Social Security Contributions ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Child Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.84392E%2B06,4.36728E%2B05,4.47008E%2B05,1.94400E%2B05,0.00000E%2B00,8.80666E%2B03,0.00000E%2B00&amp;da_post_1=1.84392E%2B06,4.36728E%2B05,4.47008E%2B05,1.94400E%2B05,0.00000E%2B00,8.80666E%2B03,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=child_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Child Benefits ', 'Child Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=4.73195E%2B05,1.38401E%2B05,1.04961E%2B05,5.78235E%2B04,0.00000E%2B00,3.46014E%2B03,0.00000E%2B00&amp;da_post_1=4.73195E%2B05,1.38401E%2B05,1.04961E%2B05,5.78235E%2B04,0.00000E%2B00,3.46014E%2B03,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Child Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Unemployment Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.26045E%2B06,2.60283E%2B06,8.29802E%2B05,3.23798E%2B05,0.00000E%2B00,3.05504E%2B04,0.00000E%2B00&amp;da_post_1=1.26045E%2B06,2.60283E%2B06,8.29802E%2B05,3.23798E%2B05,0.00000E%2B00,3.05504E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=unemployment_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Unemployment Benefits ', 'Unemployment Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.29589E%2B05,1.82247E%2B05,9.51938E%2B04,4.15925E%2B04,0.00000E%2B00,3.03922E%2B03,0.00000E%2B00&amp;da_post_1=1.29589E%2B05,1.82247E%2B05,9.51938E%2B04,4.15925E%2B04,0.00000E%2B00,3.03922E%2B03,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Unemployment Benefits ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Minimum Income Protection	 </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=9.84719E%2B04,5.40952E%2B04,5.48214E%2B04,9.10720E%2B04,0.00000E%2B00,1.56277E%2B04,0.00000E%2B00&amp;da_post_1=9.84719E%2B04,5.40952E%2B04,5.48214E%2B04,9.10720E%2B04,0.00000E%2B00,1.56277E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=mip&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Minimum Income Protection	 ', 'Minimum Income Protection	 ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=1.40704E%2B04,1.04011E%2B04,8.38232E%2B03,1.47752E%2B04,0.00000E%2B00,2.46579E%2B03,0.00000E%2B00&amp;da_post_1=1.40704E%2B04,1.04011E%2B04,8.38232E%2B03,1.47752E%2B04,0.00000E%2B00,2.46579E%2B03,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Minimum Income Protection	 ' /></a></td>
+                 </tr>
+                 <tr class='tableRowEven'><td valign='middle'>Taxes Minus Benefits </td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=false&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=7.71135E%2B06,-1.02444E%2B07,-3.88768E%2B05,-1.84591E%2B06,0.00000E%2B00,-1.47135E%2B04,0.00000E%2B00&amp;da_post_1=7.71135E%2B06,-1.02444E%2B07,-3.88768E%2B05,-1.84591E%2B06,0.00000E%2B00,-1.47135E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                    <td><a class='picture_thumbnail' href='/mefisto/output_page/budget_page/single_chart_popup?col=taxes_minus_benefits&amp;size=large&amp;print_counts=true&amp;breakdown=by_tenure' onclick="ExampleWindow( this.href, 'Taxes Minus Benefits ', 'Taxes Minus Benefits ', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=bar&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=1&amp;da_pre_1=8.38022E%2B05,1.03869E%2B06,4.61053E%2B05,2.09219E%2B05,0.00000E%2B00,3.65969E%2B04,0.00000E%2B00&amp;da_post_1=8.38022E%2B05,1.03869E%2B06,4.61053E%2B05,2.09219E%2B05,0.00000E%2B00,3.65969E%2B04,0.00000E%2B00&amp;col_pre_1=B53A30&amp;col_post_1=165B9B' alt='Taxes Minus Benefits ' /></a></td>
+                 </tr>
+              </tbody>
+          </table>
+
+               </div>
+         </div> <!-- tab container -->
+</body>
+</html>
+     </td>
+      <td align='right'>
+     <table class='control_section'>
+   <tr><td><label for='breakdown'>Break Down By?</label></td><td>
+<select name='breakdown' id='breakdown'>
+<option value='by_decile'  selected='selected' >By Decile</option>
+<option value='by_age_of_head' >By Age of Head</option>
+<option value='by_occupation_of_head' >By Occupation of Head</option>
+<option value='by_tenure' >by Tenure</option>
+</select>   </td></tr>
+   <tr><td><label for='sysno'>System to display?</label></td><td>
+<select name='sysno' id='sysno'>
+<option value='1'  selected='selected' >Pre System</option>
+<option value='2' >Post System</option>
+</select>   </td></tr>
+   <tr><td><label for='print_counts'>Print caseloads?</label></td><td>
+<input type='checkbox' name='print_counts' id='print_counts' class='normal_input'  />   </td></tr>
+   <tr><td><label for='do_differences'>Print differences from base?</label></td><td>
+<input type='checkbox' name='do_differences' id='do_differences' class='normal_input'  />   </td></tr>
+  <tr><td>
+     <input id='output_submit_button' type='submit' value='Redraw' name='Redraw' onclick='submitOutputForm( "budget_page" );return false;' />
+  </td></tr>
+</table>
+
+     </td>
+     </tr>
+     <tr>
+     <td colspan='2' align='center'>
+     <span class='smallText'>National budget broken down by tenure type (&euro; 000s)</span>
+<table class='datatable' cellpadding='8' >
+   <caption>By Tenure Type</caption>
+   <thead>
+      <tr class='headerRow'>
+          <th width='20%'></th><th>Personal Income Taxes</th><th>Social Security Contributions</th><th>Child Benefits</th><th>Unemployment Benefits</th><th>Minimum Income Protection	</th><th>Taxes Minus Benefits</th>      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th>Owned on mortgage</th><td>12,730,478</td><td>16,129,115</td><td>1,843,918</td><td>1,260,455</td><td>98,472</td><td>7,711,350</td></tr>
+      <tr>
+         <th>Owned outright</th><td>6,720,299</td><td>7,078,009</td><td>436,728</td><td>2,602,834</td><td>54,095</td><td>-              10,244,411</td></tr>
+      <tr>
+         <th>Rented</th><td>3,508,921</td><td>4,091,374</td><td>447,008</td><td>829,802</td><td>54,821</td><td>-                 388,768</td></tr>
+      <tr>
+         <th>Reduced Rented</th><td>579,520</td><td>915,915</td><td>194,400</td><td>323,798</td><td>91,072</td><td>-               1,845,912</td></tr>
+      <tr>
+         <th>Social Rented</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr>
+         <th>Free</th><td>321,941</td><td>228,930</td><td>8,807</td><td>30,550</td><td>15,628</td><td>-                  14,713</td></tr>
+      <tr>
+         <th>Other</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+   <tr class='tableRowTotals'>
+      <th width='20%'>totals</th><td class='totals'>23,861,146</td><td class='totals'>28,443,360</td><td class='totals'>2,930,860</td><td class='totals'>5,047,442</td><td class='totals'>314,088</td><td class='totals'>-               4,782,457</td>      </tr>
+   </tbody>
+</table>
+
+     </td>
+     </tr>
+     </table>
+  </div> <!-- model content -->
+
+     <div style="clear: both;">&nbsp;</div>
+
+  <input type='hidden' name='which_page' id='which_page' value="inequality_page" />
+  <input type='hidden' name='which_section' id='which_section' value="output_page" />
+
+</form>
+

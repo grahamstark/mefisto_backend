@@ -1,0 +1,33 @@
+<script type="text/javascript" src="/mefisto/js/jquery-latest.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery-ui.js" ></script>
+
+<script type="text/javascript" src="/mefisto/js/jquery.history.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.opacityrollover.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.bgiframe-2.1.2.js" ></script>
+<script type="text/javascript" src="/mefisto/js/jquery.treeview.js"></script>
+<script type="text/javascript" src="/mefisto/js/jquery.periodicalupdater.js"></script>
+
+<script type="text/javascript" src="/mefisto/js/gksfunctions.js"></script>
+<script type="text/javascript" src="/mefisto/js/mefisto_functions.js"></script>
+
+<link rel="stylesheet" href="/mefisto/css/jquery-ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/mefisto/css/jquery.treeview.css" type="text/css" />
+<link type="text/css" href="/mefisto/css/galleriffic.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="/mefisto/css/mefisto.css" rel="stylesheet" media="screen" />
+
+
+<script type='text/javascript'>
+
+$(document).ready( function() {
+      if( $( "#modelNavTop" ).length > 0 ){
+          $( "#modelNavTop" ).tabs();
+          $( "#modelNavTop" ).bind( "tabsload", function( event, ui ) {
+             // // alert( "binding" );
+             initialiseContainerForm();
+          });
+      }
+});
+         
+</script>
+
+

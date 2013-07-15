@@ -1,0 +1,2 @@
+<img id="@_KEY_@-@_ROW_@-@_ACTION_@-img" src="@_IMG_@" alt="@_ALT_@" onclick="updateRow( '@_URL_@', '@_TABLE-DATA-ID_@', '@_ROW_@', '@_ACTION_@', '@_TABLE-CONTAINER-ID_@' );" />
+

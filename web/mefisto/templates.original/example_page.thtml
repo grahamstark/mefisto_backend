@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@header.thtml "@_PAGE-TITLE_@"
+@@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_SEP_@header_includes.thtml 
+<body>
+   <h2>Information on example Household</h2>
+   
+   <table width='100%' >
+        
+         <tr><td  style='text-align:center'>
+            <h3>Household Information</h3>
+        
+                  @_HOUSEHOLD_@
+        </td></tr>
+        
+         <tr><td>
+                  @_RESULTS_@
+        </td></tr>
+</table>  
+   
+   @@INCLUDE@@ @_SEP_@@_TEMPLATE_ROOT_@@_LANG_@@_SEP_@footer.thtml
+
+   
+</body>
+</html>

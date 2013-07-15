@@ -1,0 +1,2053 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!-- a test comment -->
+<!--  
+<!DOCTYPE ParameterSystem 
+          PUBLIC 
+          "-//Virtual Worlds//Parameter System DTD//EN" 
+          "http://www.virtual-worlds.biz/dtds/parameter_system.dtd"
+>
+
+Ada xml doesn't like urls, hence the SYSTEM one below
+      use the public definition otherwise
+
+        SYSTEM
+        "/home/graham_s/VirtualWorlds/projects/tax_benefit_model_components/etc/parameters/dtds/parameter_system.dtd"
+-->
+
+<ParameterSystem name='be' instanceName='be'>
+   <ParameterSystem name='Income_Tax' instanceName='income_tax'>
+      <Description type='label' lang='nl'>
+          Personenbelasting
+      </Description>
+      <Description type='label' lang='en'>
+          Income Taxes 
+      </Description>
+      <Description type='description' lang='nl'>
+          De personenbelasting is verschuldigd door de rijksinwoners; dat zijn de personen die in Belgi&#235; hun domicilie of de zetel van hun fortuin hebben. De belastbare inkomsten bestaan uit onroerende, roerende, diverse en beroepsinkomsten. 
+      </Description>
+      <Description type='description' lang='en'>
+          Personal income tax is due by the inhabitants of the Kingdom, i.e. the persons whose domicile or whose seat of wealth is located in Belgium. The taxable income includes real-estate income, income from movable property, miscellaneous income and earned income.
+      </Description>
+      <ParameterSystem name='Tax_Rates_And_Bands' instanceName='rates_and_bands'>
+           <Description type='label' lang='nl'>
+              Tarieven en schijven
+           </Description>          
+           <Description type='label' lang='en'>
+              Rates and bands 
+           </Description>         
+           <Description type='description' lang='en'>
+               These are the income tax rates and tax bands. If you want a
+               system with a different number of rates, use the icons on the
+               right to insert or delete rows. 
+           </Description>
+           <Description type='description' lang='nl'>
+               Dit zijn de tarieven van de inkomstenbelasting en de fiscale
+               schijven. Als u een systeem verkiest met een verschillend aantal
+               tarieven, dan kan u gebruik maken van de pictogrammen aan de
+               rechterkant on rijen in te voegen of te verwijderen. 
+            </Description>
+           <ParameterSystemReference instanceName='rate_bands' indexType='integer' maximumSize='8' collectionType='list' type='Rates_And_Bands'>
+		   </ParameterSystemReference>	  
+      <!--
+			<Description type='description' lang='en'>
+                These are the income tax rates and tax bands. If you want a
+               system with a different number of rates, use the icons on the
+               right to insert or delete rows. 
+            </Description>
+            <Description type='description' lang='nl'>
+                Dit zijn de tarieven van de inkomstenbelasting en de fiscale
+               zwemmbandjes. Als u wilt dat een systeem met een verschillend aantal
+               van de tarieven, gebruik maken van de pictogrammen aan de
+               rechterkant in te voegen of te verwijderen rijen. 
+            </Description>
+            <Description type='label' lang='en'>
+                Tax Rates and Bands 
+            </Description>
+            <Description type='tooltip' lang='en'>
+                Income Tax: Rates in percent and starting point of the bracket
+               in Euros per year. 
+            </Description>
+            <Description type='label' lang='nl'>
+                BelastingTarieven en schijven 
+            </Description>
+            <Description type='tooltip' lang='nl'>
+                Inkomstenbelasting: tarieven in procent en ondergrens van de schijf in euro's per jaar. 
+            </Description>
+            <Description type='description' lang='nl'>
+               Dit zijn de tarieven van de inkomstenbelasting en de fiscale
+               zwemmmbandjes. Als u wilt dat een systeem met een verschillend aantal
+               van de tarieven, gebruik maken van de pictogrammen aan de
+               rechterkant in te voegen of te verwijderen rijen.
+            </Description>
+            <Description type='label' lang='nl'>
+               BelastingTarieven en schijven
+            </Description>
+            <Description type='tooltip' lang='nl'>
+               Inkomstenbelasting: Tarieven in procent en het uitgangspunt van
+               de beugel in euro&apos;s per jaar.
+            </Description>
+			-->         
+      </ParameterSystem> 	  
+	  <ParameterSystem name='Allowances' instanceName='allowances'>
+         <Description type='label' lang='nl'>
+            Vrijgesteld inkomen
+         </Description>         
+         <Description type='label' lang='en'>
+            Exempted income 
+         </Description>
+         <Description type='description' lang='nl'>
+				Een eerste schijf, die varieert met de samenstelling van het gezin, is vrijgesteld van belasting. Deze schijf omvat in eerste instantie het vrijgesteld inkomen dat de belastingplichtige en zijn echtgenoot elk genieten. Die bedragen worden vervolgens verhoogd met het inkomen dat wordt vrijgesteld wegens gezinslasten en bepaalde speciale gezinstoestanden.
+         </Description>
+         <Description type='description' lang='en'>
+				A global zero-rate band, varying according to the composition of the household, is tax exempted. This global band consists in the first place of the basic zero-rate band granted to each of the spouses. This band is then increased by the exempted income for dependents and for certain specific family situations.
+         </Description>
+         <Parameter instanceName='base_tax_allowance' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Basis vrijgesteld inkomen
+				</Description>         
+				<Description type='label' lang='en'>
+				Base exempted income 
+				</Description>
+				<Description type='description' lang='en'>
+				The basic zero-rate band is 6,430 euro, both for a single person and for a spouse.
+				</Description>
+				<Description type='description' lang='nl'>
+				Het basisbedrag van het vrijgesteld inkomen bedraagt 6.430 euro, zowel voor een alleenstaande als voor een echtgenoot.
+				</Description>
+				<Extra value='IT_BaseAlw' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_first_dependent_child' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor het eerste kind ten laste
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for the first dependent child 
+				</Description> 
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+				<Extra value='IT_AlwCh1Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_second_dependent_child' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor het tweede kind ten laste
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for the second dependent child 
+				</Description> 
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+				<Extra value='IT_AlwCh2Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_third_dependent_child' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor het derde kind ten laste
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for the third dependent child 
+				</Description> 
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+				<Extra value='IT_AlwCh3Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_each_additional_dependent_child' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor elk extra kind ten laste
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for each extra dependent child 
+				</Description> 
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+            <Extra value='IT_AlwCh4Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_dependent_person_under_65' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor overige personen ten laste (jonger dan 65)
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for other dependent persons (under 65)
+				</Description>
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+				<Extra value='IT_AlwDepMin65Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_dependent_person_65_and_over' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor overige personen ten laste (ouder dan 65)
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for other dependent persons (aged more than 65)
+				</Description>
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description>
+            <Extra value='IT_AlwDepPlus65Supp' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='supplement_for_lone_parent_family' logicalType='tax_allowance'>
+				<Description type='label' lang='nl'>
+				Supplementaire vrijstelling voor alleenstaande met kind(eren) ten laste
+				</Description>         
+				<Description type='label' lang='en'>
+				Supplementary exemptend income for a single person with dependent children
+				</Description>
+				<Description type='description' lang='en'>
+				Children, ascendants and collaterals up to the second degree included, and persons the taxpayer depended on exclusively or principally during his childhood, can be considered as dependent. A person is considered "dependent" if two conditions are met: (1) on 1 January of the tax year he is a member of the family, (2) he has not had personal means of subsistence exceeding a net amount of 2,830 euro. Moreover, a child cannot be considered as dependent if he has been in receipt of any remuneration which was a business expense for the parents.
+				</Description>
+				<Description type='description' lang='nl'>
+				Mogen worden beschouwd als ten laste zijnde, de kinderen, verwanten in opklimmende lijn en in de zijlijn tot en met de tweede graad, maar ook personen die de belastingplichtige tijdens diens jeugdjaren volledig of grotendeels tot hun last hebben gehad. Iemand wordt als ten laste aangemerkt als twee voorwaarden zijn vervuld:
+(1) hij maakt deel uit van het gezin op 1 januari van het aanslagjaar; (2) hij heeft tijdens het belastbare tijdperk geen bestaansmiddelen gehad die netto meer dan 2.830 euro bedragen.
+Bovendien kan een kind niet ten laste zijn als het bezoldigingen heeft genoten die voor zijn ouders beroepskosten vormen.
+				</Description> 
+				<Extra value='IT_AlwLPSupp' key='param_name'/>
+         </Parameter>
+         <Extra value='tin_be' key='sheet'/>
+      </ParameterSystem>
+      <ParameterSystem name='marital_quotient' instanceName='marital_quotient'>
+         <Description type='label' lang='nl'>
+            Huwelijksquoti&#235;nt
+         </Description>
+         <Description type='label' lang='en'>
+             Marital Quotients 
+         </Description>
+         <Description type='description' lang='nl'>
+            Het belastbaar inkomen dat van de verdienende partner kan worden overgedragen aan de niet-verdienende partner en dat behandeld wordt als zijn / haar individueel belastbaar inkomen.
+         </Description>
+         <Description type='description' lang='en'>
+             The taxable income that can be transferred from the earning spouse to the non-earning spouse and treated as his/her individual taxable income. 
+         </Description>
+         <Parameter instanceName='maximum_percentage' logicalType='rate'>
+            <Description type='label' lang='nl'>
+				Percentage van het belastbaar inkomen
+            </Description>
+            <Description type='label' lang='en'>
+                Percentage of taxable income
+            </Description>
+            <Description type='description' lang='en'>
+               Percentage of taxable income that can be transferred between
+               married and legally cohabiting spouses. The amount transferred
+               from the earning spouse to the non-earning spouse is, for the
+               calculation of the taxes, treated as the individual taxable
+               income of the non-earning spouse. 
+            </Description>
+            <Description type='description' lang='nl'>
+               Percentage van het belastbaar inkomen dat kan worden overgedragen
+               tussen gehuwde en wettelijk samenwonende partners. Het
+               overgemaakte bedrag wordt behandeld als de individuele belastbaar inkomen van
+               de niet-verdienende partner.
+            </Description>
+            <Extra value='IT_MarrQuotRate' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='maximum_transfer' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>                
+               Maximum transfer
+            </Description>            
+            <Description type='label' lang='nl'>
+				Maximaal toekenbaar bedrag
+            </Description>
+            <Description type='description' lang='en'>
+               Maximum transfer that can be transferred between
+               married and legally cohabiting spouses. The amount transferred
+               from the earning spouse to the non-earning spouse is, for the
+               calculation of the taxes, treated as the individual taxable
+               income of the non-earning spouse. 
+            </Description>
+            <Description type='description' lang='nl'>
+               Maximum belastbaar inkomen dat kan worden overgedragen
+               tussen gehuwde en wettelijk samenwonende partners. Het
+               overgemaakte bedrag wordt behandeld als de individuele belastbaar inkomen van
+               de niet-verdienende partner.
+            </Description>
+            <Extra value='IT_MarrQuotUpLim' key='param_name'/>
+         </Parameter>
+      </ParameterSystem>
+      <ParameterSystem name='refundable_tax_credit_for_children' instanceName='refundable_tax_credit_for_children'>
+         <Description type='label' lang='nl'>
+            Belastingkrediet voor kinderen
+         </Description>
+         <Description type='label' lang='en'>
+             Tax credit for children 
+         </Description>
+         <Description type='description' lang='en'>
+             If the tax credit for children exceeds the income of the parents, the tax credit is refundable. The doubling of the tax credit for disabled children and the additional tax credit for children jonger than 3 years are included. The refundable tax credit for children is computed at the marginal rate and is limited to 390 euro for every child.
+         </Description>
+         <Description type='description' lang='nl'>
+            De vrijgestelde gedeelten voor kinderen ten laste die niet verrekend kunnen worden wegens onvoldoende inkomsten, geven aanleiding tot een terugbetaalbaar belastingkrediet. De verdubbeling van de vrijstelling wegens handicap en de bijkomende vrijstelling voor kinderen jonger dan 3 jaar worden meegerekend. Het terugbetaalbaar belastingkrediet voor kinderen ten laste wordt berekend tegen de marginale aanslagvoet en wordt beperkt tot 390 euro per kind ten laste. 
+         </Description>
+         <Parameter instanceName='maximum_refundable_amount_per_dependent_child' logicalType='tax_allowance'>
+            <Description type='description' lang='en'>
+               Maximum amount per dependent child
+            </Description>
+            <Description type='description' lang='nl'>
+               Maximaal bedrag per kind ten laste
+            </Description>
+            <Extra value='IT_TCChild' key='param_name'/>
+         </Parameter>
+         <Extra value='tin_be' key='sheet'/>
+      </ParameterSystem>
+      <!--
+                <ParameterSystem name='basic_tax_credit' instanceName='basic_tax_credit'>
+                         <Description lang='en' type='description'> 
+                         Basic tax credit
+                        </Description>
+                        
+                          <Parameter logicalType="tax_allowance" instanceName="basic_tax_credit">
+                                <Description type='description' lang='en'>Basic tax credit for income from unemployment tax_allowances</Description>
+                                <Extra key="sheet" value="tin_be"/>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="tax_credit_lower_income_limit">
+                                <Description type='description' lang='en'>The basic tax credit is 100% granted as long as the taxable income is lower than:</Description>
+                         </Parameter>
+                         
+                         <Parameter logicalType="tax_allowance" instanceName="tax_credit_upper_income_limit">
+                                <Description type='description' lang='en'>A diminishing proportion of the basic tax credit is granted for taxable income up to this limit </Description>
+                         </Parameter>
+                         
+                         <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                <Description type='description' lang='en'>% of the basic  tax credit is granted for a taxable</Description>
+                         </Parameter>
+                         
+                </ParameterSystem>
+                -->
+      <ParameterSystem name='tax_credits_replacement_income' instanceName='tax_credits_replacement_income'>
+         <Description type='description' lang='en'>
+             Tax credit for replacement income 
+         </Description>
+         <Description type='description' lang='nl'>
+            Belastingvermindering voor vervangingsinkomens
+         </Description>
+         <ParameterSystem name='unemployment_benefits' instanceName='unemployment_benefits'>
+            <Description type='description' lang='en'>
+                Unemployment benefit
+            </Description>
+            <Description type='description' lang='nl'>
+               Werkloosheidsuitkering
+            </Description>
+            <Parameter instanceName='basic_tax_credit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   Basic tax credit for standard unemployment benefits 
+               </Description>
+               <Description type='description' lang='nl'>
+                  Basis belastingsvermindering voor gewone werkloosheidsuitkeringen
+               </Description>
+               <Extra value='IT_TCUBInd' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='tax_credit_lower_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   The basic tax credit is 100% granted as long as the taxable income is lower than this amount
+               </Description>
+               <Description type='description' lang='nl'>
+				   De basis belastingvermindering wordt 100% verleend zolang het belastbaar inkomen lager is dan deze waarde
+               </Description>
+               <Extra value='IT_TCUBIncLim1' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='tax_credit_upper_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   Gradual proportional phase-out of the basic tax credit between the income limit above and this value 
+               </Description>
+               <Description type='description' lang='nl'>
+                  Geleidelijke proportionele daling van de basis belastingvermindering tussen bovenstaande inkomensgrens en deze waarde
+               </Description>
+               <Extra value='IT_TCUBIncLim2' key='param_name'/>
+            </Parameter>
+            <!--
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic tax credit is granted for a joint taxable</Description>
+                                        <Extra key="param_name" value="" />	
+                                 </Parameter>
+                                 -->
+         </ParameterSystem>
+         <ParameterSystem name='sickness_benefits' instanceName='sickness_benefits'>
+            <Description type='description' lang='en'>
+                Pensions, Sickness and invalidity benefits 
+            </Description>
+            <Description type='description' lang='nl'>
+               Ziekte- en invaliditeitsuitkeringen
+            </Description>
+            <Parameter instanceName='basic_tax_credit_sickness' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   Basic tax credit for sickness and invalidity benefits 
+               </Description>
+               <Description type='description' lang='nl'>
+		Basis belastingsvermindering voor ziekte- en invaliditeitsuitkeringen
+               </Description>
+               <Extra value='IT_TCDisab' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='basic_tax_credit_pensions' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   Basic tax credit for pensions 
+               </Description>
+               <Description type='description' lang='nl'>
+		Basis belastingsvermindering voor pensioenen
+               </Description>
+               <Extra value='IT_TCPens' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='tax_credit_lower_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+                   The basic tax credit is 100% granted as long as the taxable income is lower than this amount
+               </Description>
+               <Description type='description' lang='nl'>
+		De basis belastingvermindering wordt 100% verleend zolang het belastbaar inkomen lager is dan deze waarde
+               </Description>
+               <Extra value='IT_TCReplIncLim1' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='tax_credit_upper_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+		Gradual proportional phase-out of the basic tax credit between the income limit above and this value 
+               </Description>
+               <Description type='description' lang='nl'>
+		Geleidelijke proportionele daling van de basis belastingvermindering tussen bovenstaande inkomensgrens en deze waarde
+               </Description>
+               <Extra value='IT_TCReplIncLim2' key='param_name'/>
+            </Parameter>
+            <!--
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                        <Extra key="param_name" value="" />
+                                 </Parameter>
+                                 -->
+         </ParameterSystem>
+            <!--
+         <ParameterSystem name='pensions' instanceName='pensions'>
+            <Description type='description' lang='en'>
+                Pensions 
+            </Description>
+            <Description type='description' lang='nl'>
+               Pensioenen
+            </Description>
+            <Parameter instanceName='tax_credit_lower_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+					The basic tax credit is 100% granted as long as the taxable income is lower than this amount
+               </Description>
+               <Description type='description' lang='nl'>
+					De basis belastingvermindering wordt 100% verleend zolang het belastbaar inkomen lager is dan deze waarde
+               </Description>
+               <Extra value='IT_TCReplIncLim1' key='param_name'/>
+            </Parameter>
+            <Parameter instanceName='tax_credit_upper_income_limit' logicalType='tax_allowance'>
+               <Description type='description' lang='en'>
+					Gradual proportional phase-out of the basic tax credit between the income limit above and this value 
+               </Description>
+               <Description type='description' lang='nl'>
+					Geleidelijke proportionele daling van de basis belastingvermindering tussen bovenstaande inkomensgrens en deze waarde
+               </Description>
+               <Extra value='IT_TCReplIncLim2' key='param_name'/>
+            </Parameter>
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                 </Parameter>
+         </ParameterSystem>
+                        <ParameterSystem name="early_retirement_pensions" instanceName="early_retirement_pensions">
+                                <Description type='description' lang='en'>
+                                Early Retirement Pensions
+                                </Description> 
+                                <Parameter instanceName="basic_tax_credit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        Basic tax credit for income from early retirement pensions
+                                        </Description>
+                                </Parameter>
+                                <Parameter instanceName="tax_credit_lower_income_limit" logicalType="tax_allowance">
+                                        <Description type='description' lang='en'>
+                                        The basic tax credit is 100% granted as long as the joint taxable income is lower than this.
+                                        </Description>
+                                </Parameter>
+                                
+                                 <Parameter logicalType="tax_allowance" instanceName="tax_credit_upper_income_limit">
+                                        <Description type='description' lang='en'>A diminishing proportion of the basic tax credit is granted for joint taxable income up to this limit </Description>
+                                 </Parameter>
+                                 
+                                 <Parameter logicalType="rate" instanceName="tax_credit_withdrawal_rate">
+                                        <Description type='description' lang='en'>% of the basic  tax credit is granted for a joint taxable</Description>
+                                 </Parameter>
+                        </ParameterSystem>
+                        -->
+      </ParameterSystem>
+      <!--
+      <ParameterSystem name='reductions_to_zero' instanceName='reductions_to_zero'>
+         <Description type='label' lang='en'>
+             Reductions of Taxes on Benefits 
+         </Description>
+         <Parameter instanceName='unemployment_benefit_label'>
+            <Description type='description' lang='en'>
+                Unemployment Benefits 
+            </Description>
+            <Description type='description' lang='nl'>
+               WW-uitkeringen
+            </Description>
+            <EditInfo display='label_only'/>
+         </Parameter>
+         <Parameter instanceName='unemployment_benefit_lower_level' logicalType='tax_allowance'>
+            <Description type='description' lang='en'>
+                Taxes on unemployment benefits are reduced to zero if a person
+               received only unemployment benefits and the taxable income does
+               not exceed 
+            </Description>
+            <Description type='description' lang='nl'>
+               
+               Belastingen op werkloosheidsuitkeringen worden naar nul teruggebracht indien een individu enkel inkomsten had uit werkloosheidssteun en het belastbare inkomen niet meer bedraagt dan
+               
+            </Description>
+            <Extra value='IT_ZTOldUn' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='unemployment_benefit_higher_level'>
+            <EditInfo display='read_only'/>
+            <Description type='description' lang='en'>
+                For higher taxable incomes, taxes paid on unemployment income
+               can never exceed the difference between the taxable income and 
+            </Description>
+            <Description type='description' lang='nl'>
+               Voor hogere belastbaar inkomen, kan de betaalde belastingen op de
+               werkloosheid inkomen nooit hoger zijn dan het verschil tussen het
+               belastbaar inkomen en
+            </Description>
+         </Parameter>
+         <Parameter instanceName='sickness_and_disability_benefit_label'>
+            <Description type='description' lang='en'>
+                Sickness and disability Benefits 
+            </Description>
+            <Description type='description' lang='nl'>
+               Ziekte en arbeidsongeschiktheid
+            </Description>
+            <EditInfo display='label_only'/>
+         </Parameter>
+         <Parameter instanceName='sickness_and_disability_lower_level' logicalType='tax_allowance'>
+            <Description type='description' lang='en'>
+                Taxes on sickness and disability benefits are reduced to zero if
+               a person received only sickness and disability benefits and the
+               taxable income does not exceed 
+            </Description>
+            <Description type='description' lang='nl'>
+               
+               Belastingen op ziekte- en arbeidsongeschiktheidsuitkeringen worden naar nul teruggebracht indien een individu enkel inkomsten had uit ziekte-en arbeidsongeschiktheidsuitkeringen en het belastbare inkomen niet meer bedraagt dan
+               
+            </Description>
+            <Extra value='IT_ZTDisab' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='sickness_and_disability_higher_level'>
+            <EditInfo display='read_only'/>
+            <Description type='description' lang='en'>
+                For higher taxable incomes, taxes paid on sickness and
+               disability income can never exceed the difference between the
+               taxable income and 
+            </Description>
+            <Description type='description' lang='nl'>
+               Indien het belastbaar inkomen hoger is, kan de betaalde belasting op ziekte-en arbeidsongeschiktheidsuitkeringen nooit hoger zijn dan het verschil tussen het belastbaar inkomen en
+            </Description>
+         </Parameter>
+         <Parameter instanceName='pensions_label'>
+            <EditInfo display='label_only'/>
+            <Description type='description' lang='en'>
+                Pensions, survivor pensions and early retirement pensions 
+            </Description>
+            <Description type='description' lang='nl'>
+               
+               Pensioen, overlevingspensioen en brugpensioen
+               
+            </Description>
+         </Parameter>
+         <Parameter instanceName='pensions_lower_level' logicalType='tax_allowance'>
+            <Description type='description' lang='en'>
+                Taxes on pensions are reduced to zero if a person received only
+               pensions and the taxable income does not exceed 
+            </Description>
+            <Description type='description' lang='nl'>
+               
+               Belastingen op pensioenen worden naar nul teruggebracht indien een individu enkel inkomsten had uit pensioenen en het belastbare inkomen niet meer bedraagt dan
+               
+            </Description>
+            <Extra value='IT_ZTOthReplInc' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='pensions_higher_level'>
+            <Description type='description' lang='en'>
+                For higher taxable incomes, taxes paid on pensions income can
+               never exceed the difference between the taxable income and 
+            </Description>
+            <Description type='description' lang='nl'>
+
+            Belastingen op pensioenen worden naar nul teruggebracht indien een individu enkel inkomsten had uit pensioenen en het belastbare inkomen niet meer bedraagt dan
+            
+            </Description>
+            <EditInfo display='read_only'/>
+         </Parameter>
+         <Description type='label' lang='nl'>
+            Belastingvermindering op vervangingsinkomens
+         </Description>
+      </ParameterSystem>
+      -->
+      <ParameterSystem name='jobkorting' instanceName='jobkorting'>
+         <Description type='label' lang='en'>
+             Jobkorting
+         </Description>
+         <Description type='label' lang='nl'>
+            Jobkorting
+         </Description>
+         <Description type='description' lang='nl'>
+				Forfaitaire vermindering van de personenbelasting voor de beroepsactieve bevolking van het Vlaamse gewest.
+          </Description>
+         <Description type='description' lang='en'>
+				Tax deduction of the personal income taxation for the working people living in the Flemish region.
+         </Description>
+         <Parameter instanceName='basic_yearly_amount' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>
+               The basic yearly amount
+            </Description>
+            <Description type='label' lang='nl'>
+               Het basisbedrag per jaar
+            </Description>
+            <Description type='description' lang='nl'>
+				Het maximale bedrag aan belastingvermindering per jaar.
+			</Description>
+			<Description type='description' lang='en'>
+				The maximum yearly amount of tax deduction.
+			</Description>
+            <Extra value='IT_RTCBaseAmt1' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='phase_in_zone_start' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>
+               Gradual proportional increase of the jobkorting from this amount onwards
+            </Description>
+            <Description type='label' lang='nl'>
+               Geleidelijke proportionele toename van de jobkorting vanaf dit bedrag
+            </Description>
+            <Description type='description' lang='nl'>
+				Het jaarlijks activiteitsinkomen waarna de forfaitaire belastingvermindering gradueel stijgt. 
+           </Description>
+            <Description type='description' lang='en'>
+				The yearly amount of labour income after which the tax deduction gradually increases.
+           </Description>
+            <Extra value='IT_RTCIncLowLim1' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='phase_in_zone_end' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>
+               Full jobkorting from this amount onwards
+            </Description>
+            <Description type='label' lang='nl'>
+               Volledige jobkorting vanaf dit bedrag
+            </Description>
+            <Description type='description' lang='nl'>
+				Het jaarlijks activiteitsinkomen waar de graduele stijging van de forfaitaire belastingvermindering stopt en het maximale bedrag aan jobkorting bereikt is.
+            </Description>
+            <Description type='description' lang='en'>
+				The yearly amount of labour income where the gradual increase in tax deduction stops and the maximum amount of Jobkorting is given.
+            </Description>
+            <Extra value='IT_RTCIncLowLim2' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='flat_zone' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>
+               Gradual proportional decrease of the jobkorting from this amount onwards
+            </Description>
+            <Description type='label' lang='nl'>
+               Geleidelijke proportionele afname van de jobkorting vanaf dit bedrag
+            </Description>
+            <Description type='description' lang='nl'>
+				Het jaarlijks activiteitsinkomen waarna de forfaitaire belastingvermindering gradueel afneemt.
+            </Description>
+            <Description type='description' lang='en'>
+				The yearly amount of labour income after which the tax deduction gradually decreases.
+            </Description>
+            <Extra value='IT_RTCIncUpLim1' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='phase_out_zone' logicalType='tax_allowance'>
+            <Description type='label' lang='en'>
+               End of gradual proportional decrease of the jobkorting
+            </Description>
+            <Description type='label' lang='nl'>
+				Einde van de proportionele afname van de jobkorting
+            </Description>
+            <Description type='description' lang='nl'>
+				Het jaarlijks activiteitsinkomen waar de graduele daling van de forfaitaire belastingvermindering stopt en de Jobkorting volledig verdwenen is.
+            </Description>
+            <Description type='description' lang='en'>
+				The yearly amount of labour income where the gradual decrease in tax deduction stops and no Jobkorting is given. 
+           </Description>
+            <Extra value='IT_RTCIncUpLim2' key='param_name'/>
+         </Parameter>
+      </ParameterSystem>
+   </ParameterSystem>
+   <ParameterSystem name='child_benefits' instanceName='child_benefits'>
+      <Description type='label' lang='en'>
+          Child allowances 
+      </Description>        
+      <Description type='label' lang='nl'>
+          Kinderbijslag 
+      </Description>    
+      <Description type='description' lang='en'>
+			In general a beneficiary, usually the father, opens a right to
+            child allowance if his employer (or himself if he is self-employed)
+            pays or has paid social security contributions. The relevant rules
+            for the computation of child allowances depend on the contribution
+            scheme to which the employer of the beneficiary or the beneficiary
+            himself contributed: the contributory scheme can be as wage earner
+            on the private labour market, as wage earner on the public labour
+            market (either statutory or contractual) or as self-employed. If a
+            beneficiary did not contribute to any of the social security
+            contribution schemes he or she may still open a right to child
+            allowance through the system of guaranteed child allowance. 
+            The guaranteed child allowance is means tested. The
+            amount of child allowance depends on the birth rank of the child.
+      </Description>
+      <Description type='description' lang='nl'>
+            In het algemeen heeft de begunstigde, meestal de vader, het recht
+            op kindertoeslag indien zijn werkgever (of zichzelf als hij 
+            zelfstandige is) de sociale zekerheid
+            bijdragen betaalt of heeft betaald. De relevante regels voor de berekening van kinderbijslag zijn
+            afhankelijk van de bijdrage regeling waarbij de werkgever van de
+            begunstigde of de begunstigde zelf heeft bijgedragen: als kostwinner op de private arbeidsmarkt, als
+            werknemer in loondienst op de publieke arbeidsmarkt (zij het
+            wettelijke of contractuele) of als zelfstandige. Indien een
+            begunstigde niet heeft bijgedragen tot een van de sociale zekerheid
+            premieregelingen heeft hij of zij nog steeds recht op
+            kinderbijslag via het systeem van de gewaarborgde kinderbijslag
+            uitkering. De gewaarborgde kinderbijslag is
+            inkomensafhankelijk. Het bedrag van de kinderbijslag hangt af van de rang van
+            de geboorte van het kind. 
+      </Description>
+      <ParameterSystem name='base_amounts' instanceName='base_amounts'>
+         <Description type='label' lang='en'>
+             Base amounts 
+         </Description>
+         <Description type='label' lang='nl'>            
+             Basisbedrag
+         </Description>       
+         <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents. 
+		 </Description>
+		 <Description type='description' lang='nl'>
+             Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+		  </Description>
+         <Parameter instanceName='first_child' logicalType='benefit'>
+			  <Description type='label' lang='en'>
+                Base amount for first child
+			  </Description>
+			  <Description type='label' lang='nl'>            
+                 Basisbedrag voor het eerste kind
+			  </Description>       
+			  <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents.
+			  </Description>
+			  <Description type='description' lang='nl'>
+             Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+			  </Description>
+			  <Extra value='CB_BaseAmtEmpCh1' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='second_child' logicalType='benefit'>
+			  <Description type='label' lang='en'>
+                Base amount for second child
+			  </Description>
+			  <Description type='label' lang='nl'>            
+                 Basisbedrag voor het tweede kind
+			  </Description>       
+			  <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents.
+			  </Description>
+			  <Description type='description' lang='nl'>
+             Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+			  </Description>
+            <Extra value='CB_BaseAmtEmpCh2' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='third_child' logicalType='benefit'>
+			  <Description type='label' lang='en'>
+                Base amount for third child
+			  </Description>
+			  <Description type='label' lang='nl'>            
+                 Basisbedrag voor het derde kind
+			  </Description>       
+			  <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents.
+			  </Description>
+			  <Description type='description' lang='nl'>
+             Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+			  </Description>
+            <Extra value='CB_BaseAmtEmpCh3' key='param_name'/>
+         </Parameter>
+      </ParameterSystem>
+      <ParameterSystem name='age_supplements_first_child' instanceName='age_supplements_first_child'>
+		 <Description type='label' lang='en'>
+          Monthly age supplements: for the first child  
+		 </Description>        
+		 <Description type='label' lang='nl'>
+			  Maandelijkse leeftijd supplementen: voor het eerste kind 
+		 </Description>             
+         <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents.
+         </Description>         
+         <Description type='description' lang='nl'>
+            Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+         </Description>
+         <Parameter instanceName='children_aged_6_11' logicalType='benefit'>
+            <Description type='description' lang='en'>
+                For children aged 6-11 
+            </Description>
+            <Description type='description' lang='nl'>
+               Voor kinderen tussen 6-11 jaar
+            </Description>
+            <Extra value='CB_SuppCh1Age6to11' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='children_aged_12_17' logicalType='benefit'>
+            <Description type='description' lang='en'>
+                For children aged 12 to 17 
+            </Description>
+            <Description type='description' lang='nl'>
+               Voor kinderen tussen 12-17 jaar
+            </Description>            
+            <Extra value='CB_SuppCh1Age12to17a' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='children_aged_18_25' logicalType='benefit'>
+            <Description type='description' lang='nl'>
+               Voor kinderen tussen 18-25 jaar
+            </Description>
+            <Description type='description' lang='en'>
+                For children aged 18-25 
+            </Description>
+            <Extra value='CB_SuppCh1Age18to25a' key='param_name'/>
+         </Parameter>
+      </ParameterSystem>
+      <ParameterSystem name='age_supplements_second_child' instanceName='age_supplements_second_child'>
+		 <Description type='label' lang='en'>
+           Monthly age supplements: for the second and subsequent children 
+		 </Description>        
+		 <Description type='label' lang='nl'>
+            Maandelijkse leeftijd supplementen: voor de tweede en volgende kinderen
+		 </Description>             
+         <Description type='description' lang='en'>
+            Child allowance is paid to families with dependent children. In
+            principle, children are dependent if they are younger than 18 years
+            old. The exceptions to this rule are twofold. On the one hand, the
+            child remains dependent until 21 if he or she is disabled. On the
+            other hand, a child can remain dependent until the age of 25 if he
+            or she is in full-time education (including higher and advanced
+            education), not married, and whose net taxable income as well as the
+            number of days a gainful occupation has been exercised do not exceed
+            certain thresholds. The income thresholds are slightly higher for
+            handicapped children as well as for children of lone parents.
+         </Description>         
+         <Description type='description' lang='nl'>
+            Kinderbijslag wordt uitgekeerd aan gezinnen met kinderen ten last. In principe zijn kinderen ten laste, indien zij jonger
+            zijn dan 18 jaar oud. De uitzonderingen op deze regel zijn tweeledig.
+            Aan de ene kant, blijft het kind ten laste tot en met de leeftijd van 21 als
+            hij of zij is gehandicapt. Anderzijds kan een kind ten laste
+            blijven tot de leeftijd van 25 als hij of zij deelneemt aan voltijds
+            onderwijs (inclusief hoger en voortgezet onderwijs), niet getrouwd is,
+            en waarvan het netto belastbaar inkomen, alsook het aantal dagen dat
+            een winstgevende activiteit is uitgeoefend niet meer bedragen dan bepaalde
+            drempels. De inkomensgrenzen zijn iets hoger voor gehandicapte
+            kinderen, alsook voor kinderen van alleenstaande ouders.  
+         </Description>
+         <Parameter instanceName='children_aged_6_11' logicalType='benefit'>
+            <Description type='description' lang='nl'>
+               Voor kinderen 6-11 jaar
+            </Description>            
+            <Description type='description' lang='en'>
+                For children aged 6-11 
+            </Description>
+            <Extra value='CB_SuppCh2Age6to11' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='children_aged_12_17' logicalType='benefit'>
+            <Description type='description' lang='nl'>
+               Voor kinderen van 12 tot 17
+            </Description>            
+            <Description type='description' lang='en'>
+                For children aged 12 to 17 
+            </Description>
+            <Extra value='CB_SuppCh2Age12to17' key='param_name'/>
+         </Parameter>
+         <Parameter instanceName='children_aged_18_25' logicalType='benefit'>
+            <Description type='description' lang='en'>
+                For children aged 18-25 
+            </Description>
+            <Description type='description' lang='nl'>
+               Voor kinderen van 18-25 jaar
+            </Description>           
+            <Extra value='CB_SuppCh2Age18to25' key='param_name'/>
+         </Parameter>
+      </ParameterSystem>
+      <Extra value='bch_be' key='sheet'/>
+   </ParameterSystem>
+   <ParameterSystem name='basic_minimum_income' instanceName='basic_minimum_income'>
+      <Description type='description' lang='nl'>
+         Indien de middelen van een persoon minder zijn dan een bepaalde drempel, komt die
+         persoon in aanmerking voor het leefloon tot op het niveau van
+         het minimum inkomen. Om het leefloon te ontvangen, moet men een aanvraag indienen
+         bij een van de Openbare Centra voor Maatschappelijk Welzijn (OCMW). Deze centra
+         hebben een discretionaire bevoegdheid over de ontvankelijkheid van de aanvraag.
+         Bijvoorbeeld, het OCMW kan een geïndividualiseerd project 
+         naar sociale (re)integratie opleggen waarmee de aanvrager dient in te stemmen om het leefloon
+         te krijgen of te behouden.
+      </Description>     
+      <Description type='description' lang='en'>
+          If the means of a person are less than a certain threshold, that
+         person is eligible for income support up to the level of the minimum
+         income. In order to receive income support, one needs to apply for it
+         at the offices for public assistance (CPAS). These centres have some
+         discretionary power over the acceptance. For example, the CPAS can
+         demand an individualized project for social (re)integration that the
+         applicant has to agree to and follow in order to get and/or keep income
+         support. 
+      </Description>
+      <Description type='label' lang='en'>
+          Minimum Income Protection 
+      </Description>
+      <Description type='label' lang='nl'>
+          Leefloon 
+      </Description>
+      <Parameter instanceName='single_person' logicalType='benefit'>
+         <Description type='description' lang='en'>
+             Single person 
+         </Description>
+         <Description type='description' lang='nl'>
+            Alleenstaande
+         </Description>        
+         <Extra value='IS_AmtSACat2' key='param_name'/>
+      </Parameter>
+      <Parameter instanceName='family_without_children' logicalType='benefit'>
+         <Description type='description' lang='en'>
+             Family without children 
+         </Description>
+         <Description type='description' lang='nl'>
+            Gezin zonder kinderen
+         </Description>         
+         <Extra value='IS_AmtSACat1' key='param_name'/>
+      </Parameter>
+      <Parameter instanceName='family_with_children' logicalType='benefit'>
+         <Description type='description' lang='en'>
+             Couple or individual with dependents  
+         </Description>
+         <Description type='description' lang='nl'>
+            Koppel of vrijgezel met personen ten laste
+         </Description>         
+         <Extra value='IS_AmtSACat3' key='param_name'/>
+      </Parameter>
+   </ParameterSystem>
+   
+   <!--
+   <ParameterSystem name='unemployment_benefits' instanceName='unemployment_benefits'>
+      <Description type='description' lang='en'>
+          In the employment legislation one can distinguish three main groups:
+         the indemnified unemployed, support for employed people, and support
+         for the employed who reduce their working hours. The simulation of
+         unemployment benefits will only be for the first group (also the most
+         important group in size). This includes the unemployed after
+         employment, the unemployed after finishing studies, the older
+         unemployed and the early retired. 
+      </Description>
+      <Description type='label' lang='en'>
+          Unemployment benefits 
+      </Description>
+      <Description type='description' lang='nl'>
+          In de arbeidswetgeving kan men onderscheiden drie hoofdgroepen: de
+         vergoede werklozen, ondersteuning voor werkenden, en steun voor de
+         werknemers die te verminderen hun werktijden. De simulatie van de
+         werkloosheid voordelen worden alleen voor de eerste groep (ook de meest
+         belangrijke groep in omvang). Dit omvat de werklozen na het
+         dienstverband, na het afronden van de werklozen studies, de oudere
+         werklozen en het begin van de gepensioneerde. 
+      </Description>
+      <Description type='label' lang='nl'>
+          Werkloosheidsuitkering 
+      </Description>
+      <ParameterSystem name='unemployment_benefit_after_regular_employment' instanceName='unemployment_benefit_after_regular_employment'>
+         <Description type='description' lang='en'>
+            Unemployment benefit after regular employment
+         </Description>
+         <ParameterSystem name='single_non_disabled' instanceName='single_non_disabled'>
+            <Description type='description' lang='en'>
+                Single non disabled person without dependents 
+            </Description>
+            <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+               <Description type='description' lang='en'>
+                   0-6 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_ReplRateSingle6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimSingle6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimSingle6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  0-6 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   7-12 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' units='day' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_ReplRateSingle7to12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimSingle12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimSingle12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  7-12 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='more_than_12_months_unemployed' instanceName='more_than_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   More than 12 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimDep12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimDep12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  Meer dan 12 maand werkloos               </Description>
+            </ParameterSystem>
+            <Description type='description' lang='nl'>
+               Niet gehandicapte personen - geen personen ten laste
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='non_disabled_with_family' instanceName='non_disabled_with_family'>
+            <Description type='description' lang='en'>
+                Non disabled person with dependent family 
+            </Description>
+            <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+               <Description type='description' lang='en'>
+                   0-6 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_ReplRateDep6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minumum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimDep6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimum werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimDep6M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  0-6 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   7-12 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_ReplRateDep7to12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' logicalType='benefit units=&apos;day&apos;'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimDep7to12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimDep7to12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  7-12 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='more_than_12_months_unemployed' instanceName='more_than_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   More than 12 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimDep12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimDep12M' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  Meer dan 12 maand werkloos               </Description>
+            </ParameterSystem>
+            <Description type='description' lang='nl'>
+               Niet gehandicapte persoon met personen ten laste
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='cohabitating_non_disabled' instanceName='cohabitating_non_disabled'>
+            <Description type='description' lang='en'>
+                Cohabitating, non disabled person 
+            </Description>
+            <ParameterSystem name='zero_6_months_unemployed' instanceName='zero_6_months_unemployed'>
+               <Description type='description' lang='en'>
+                   0-6 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  0-6 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='seven_12_months_unemployed' instanceName='seven_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   7-12 Months Unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Minimum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Minimale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  7-12 maand werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='12_16_months_unemployed' instanceName='more_than_12_months_unemployed'>
+               <Description type='description' lang='en'>
+                   12-16 months unemployed 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Mininum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Minimumstroom werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  12-16 maanden werkloos
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='more_than_16_months_unemployed_20_years' instanceName='more_than_16_months_unemployed_20_years'>
+               <Description type='description' lang='en'>
+                   More than 16 months unemployed and work history of more than
+                  20 years 
+               </Description>
+               <Parameter instanceName='payment_type' enumTypeRef='payment_types' type='enumerated'>
+                  <Description type='description' lang='en'>
+                      Replacement rate or lump sum? 
+                  </Description>
+                  <EditInfo onchange='
+if( $( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.payment_type").value == "lump_sum" ){
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).enable();  
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).value="0.0";
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).disable();  
+} else {
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).disable();  
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.lump_sum" ).value="0.0";
+$( "be.unemployment_benefits.unemployment_benefit_after_regular_employment.cohabitating_non_disabled.more_than_16_months_unemployed_20_years.replacement_rate" ).enable();  
+};'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate of Forfaitair bedrag?
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='lump_sum' units='timeless' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Lump sum payment 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Forfaitair bedrag
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  
+                  Meer dan 16 maand werkloos en anci&#235;nniteit van meer dan 20 jaar
+                  
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='more_than_16_months_unemployed_lt_20_years' instanceName='more_than_16_months_unemployed_lt_20_years'>
+               <Description type='description' lang='en'>
+                   More than 16 months unemployed and work history of less than
+                  20 years 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                    Replacement rate of forfaitair bedrag
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='lump_sum' units='timeless' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Lump sum payment 
+                  </Description>
+                  <Description type='description' lang='nl'>
+                     Forfaitair bedrag
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  
+                  Meer dan 16 maand werkloos en anci&#235;nniteit van minder dan 20 jaar
+                  
+               </Description>
+            </ParameterSystem>
+            <Description type='description' lang='nl'>
+               Samenwonend, niet gehandicapte
+            </Description>
+         </ParameterSystem>
+         <Description type='description' lang='nl'>
+            Werkloosheidsuitkering na normale werkduur
+         </Description>
+      </ParameterSystem>
+      <ParameterSystem name='unemployment_benefit_after_study' instanceName='unemployment_benefit_after_study'>
+         <Description type='description' lang='en'>
+            Unemployment benefit - after study
+         </Description>
+         <Parameter instanceName='eligibility_maximum_age' logicalType='age_limit'>
+            <Description type='description' lang='en'>
+                Eligibility: until the age of 
+            </Description>
+            <Description type='description' lang='nl'>
+               In aanmerking te komen: tot de leeftijd van
+            </Description>
+         </Parameter>
+         <ParameterSystem name='single_non_disabled' instanceName='single_non_disabled'>
+            <Description type='description' lang='en'>
+                Single non-disabled people 
+            </Description>
+            <Parameter instanceName='age_lt_18' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; aged under 18 
+               </Description>
+               <Extra value='UI_PostStudySingleY18' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering; jonger dan 18
+               </Description>
+            </Parameter>
+            <Parameter instanceName='age_18_21' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; age 18 to 21 
+               </Description>
+               <Extra value='UI_PostStudySingleY21' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering, leeftijd 18 tot 21
+               </Description>
+            </Parameter>
+            <Parameter instanceName='age_over_21' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; aged over 21 
+               </Description>
+               <Extra value='UI_PostStudySingle21' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering; ouder dan 21
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+               Niet gehandicapte vrijgezellen
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='with_dependent_family' instanceName='with_dependent_family'>
+            <Description type='description' lang='en'>
+                People with dependent families 
+            </Description>
+            <Parameter instanceName='per_day' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit 
+               </Description>
+               <Extra value='UI_PostStudyDepFam' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+               Mensen met personen ten laste
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='cohabitating_with partner_with_other_income' instanceName='cohabitating_with partner_with_other_income'>
+            <Description type='description' lang='en'>
+                Cohabitating with partner with other income than unemployment
+               benefits 
+            </Description>
+            <Parameter instanceName='age_lt_18' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; aged under 18 
+               </Description>
+               <Extra value='UI_PostStudyNoPrivCohabY18' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering; jonger dan 18
+               </Description>
+            </Parameter>
+            <Parameter instanceName='age_18_21' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; age 18 to 21 
+               </Description>
+               <Extra value='UI_PostStudyNoPrivCohab18' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering, leeftijd 18 tot 21
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+            Samenwonend met partner met andere inkomsten dan werkloosheidsuitkering
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='cohabitating_with partner_no_other_income' instanceName='cohabitating_with partner_no_other_income'>
+            <Description type='description' lang='en'>
+                Cohabitating with partner with no other income than unemployment
+               benefits 
+            </Description>
+            <Parameter instanceName='age_lt_18' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; aged under 18 
+               </Description>
+               <Extra value='UI_PostStudyPrivCohabY18' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering; jonger dan 18
+               </Description>
+            </Parameter>
+            <Parameter instanceName='age_18_21' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Unemployment benefit; age 18 to 21 
+               </Description>
+               <Extra value='UI_PostStudyPrivCohab18' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Werkloosheidsuitkering, leeftijd 18 tot 21
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+               Samenwonend met partner met geen ander inkomen dan
+               werkloosheidsuitkeringen
+            </Description>
+         </ParameterSystem>
+         <Description type='description' lang='nl'>
+            Werkloosheidsuitkering - na studie
+         </Description>
+      </ParameterSystem>
+      <ParameterSystem name='unemployment_benefit_older_employees' instanceName='unemployment_benefit_older_employees'>
+         <Description type='description' lang='en'>
+            Unemployment benefits for older employees
+         </Description>
+         <Parameter instanceName='eligibility_minimum_age' logicalType='age_limit'>
+            <Description type='description' lang='en'>
+                Eligibility: from the age of 
+            </Description>
+            <Description type='description' lang='nl'>
+               In aanmerking te komen: vanaf de leeftijd van
+            </Description>
+         </Parameter>
+         <Parameter instanceName='eligibility_minimum_years_work' logicalType='age_limit'>
+            <Description type='description' lang='en'>
+                With at least this number of years of work history 
+            </Description>
+            <Description type='description' lang='nl'>
+               Met ten minste dit aantal werkjaren geschiedenis
+            </Description>
+         </Parameter>
+         <ParameterSystem name='single_without_dependents' instanceName='single_without_dependents'>
+            <Description type='description' lang='en'>
+                Single without dependents 
+            </Description>
+            <Parameter instanceName='under_55s'>
+               <Description type='description' lang='en'>
+                   Under 55 year old 
+               </Description>
+               <EditInfo display='label_only'/>
+               <Description type='description' lang='nl'>
+                  Jonger dan 55 jaar
+               </Description>
+            </Parameter>
+            <Parameter instanceName='under_55s_replacement_rate' logicalType='rate'>
+               <Description type='description' lang='en'>
+                   Replacement rate 
+               </Description>
+               <Extra value='UI_SuppRateSingleY55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Replacement rate
+               </Description>
+            </Parameter>
+            <Parameter instanceName='under_55s_minimum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_LowLimSingleY55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Parameter instanceName='under_55s_maximum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_UpLimSingleY55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Parameter instanceName='over_55s'>
+               <Description type='description' lang='en'>
+                   55 years old and over 
+               </Description>
+               <EditInfo display='label_only'/>
+               <Description type='description' lang='nl'>
+                  55 jaar oud en ouder
+               </Description>
+            </Parameter>
+            <Parameter instanceName='over_55s_replacement_rate' logicalType='rate'>
+               <Description type='description' lang='en'>
+                   Replacement rate 
+               </Description>
+               <Extra value='UI_SuppRateSingle55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Replacement rate
+               </Description>
+            </Parameter>
+            <Parameter instanceName='over_55s_minimum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_LowLimSingle55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Parameter instanceName='over_55s_maximum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_UpLimSingle55' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+               Vrijgezel - geen personen ten laste
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='with_dependent_family' instanceName='with_dependent_family'>
+            <Description type='description' lang='en'>
+                With dependent family 
+            </Description>
+            <Parameter instanceName='replacement_rate' logicalType='rate'>
+               <Description type='description' lang='en'>
+                   Replacement rate 
+               </Description>
+               <Extra value='UI_ReplRateDep12M' key='param_name'/>
+               
+               <Description type='description' lang='nl'>
+                  Replacement rate
+               </Description>
+            </Parameter>
+            <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_LowLimOldDep' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+               <Description type='description' lang='en'>
+                   Maximum unemployment benefit 
+               </Description>
+               <Extra value='UI_UpLimOldDep' key='param_name'/>
+               <Description type='description' lang='nl'>
+                  Maximale werkloosheidsuitkering
+               </Description>
+            </Parameter>
+            <Description type='description' lang='nl'>
+               Met personen ten laste
+            </Description>
+         </ParameterSystem>
+         <ParameterSystem name='cohabitating_with_partner' instanceName='cohabitating_with_partner'>
+            <Description type='description' lang='en'>
+                Cohabitating with Partner 
+            </Description>
+            <ParameterSystem name='fifty_54' instanceName='fifty_54'>
+               <Description type='description' lang='en'>
+                   50 to 54 years old 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_SuppRateCohabY55' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimCohab55' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimCohab55' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  50 tot 54 jaar oud
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='fifty_five_57' instanceName='fifty_five_57'>
+               <Description type='description' lang='en'>
+                   Age 55 to 57 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_SuppRateCohab55to57' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimCohab55to57' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimCohab55to57' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  55 tot 57 jaar oud
+               </Description>
+            </ParameterSystem>
+            <ParameterSystem name='fifty_eight_plus' instanceName='fifty_eight_plus'>
+               <Description type='description' lang='en'>
+                   Age 58 and over 
+               </Description>
+               <Parameter instanceName='replacement_rate' logicalType='rate'>
+                  <Description type='description' lang='en'>
+                      Replacement rate 
+                  </Description>
+                  <Extra value='UI_SuppRateCohab58' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Replacement rate
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='minimum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_LowLimCohab58' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Parameter instanceName='maximum_unemployment_benefit' units='day' logicalType='benefit'>
+                  <Description type='description' lang='en'>
+                      Maximum unemployment benefit 
+                  </Description>
+                  <Extra value='UI_UpLimCohab58' key='param_name'/>
+                  <Description type='description' lang='nl'>
+                     Maximale werkloosheidsuitkering
+                  </Description>
+               </Parameter>
+               <Description type='description' lang='nl'>
+                  58 jaar en ouder
+               </Description>
+            </ParameterSystem>
+            <Description type='description' lang='nl'>
+               Samenwonend met partner            </Description>
+         </ParameterSystem>
+         
+         <Description type='description' lang='nl'>
+            Werkloosheidsuitkering voor oudere werknemers
+         </Description>
+      </ParameterSystem>
+  
+      <Description type='description' lang='nl'>
+         In de arbeidswetgeving kan men onderscheiden drie hoofdgroepen: de
+         vergoede werklozen, ondersteuning voor werkende mensen, en steun voor
+         de werknemers die minder te gaan werken. De simulatie van de
+         werkloosheidsuitkeringen zal alleen voor de eerste groep (ook de
+         belangrijkste groep in omvang). Dit omvat de werklozen na de
+         werkgelegenheid, de werklozen na het afronden van studies, de oudere
+         werklozen en de bruggepensioneerden.
+      </Description>
+      <Description type='label' lang='nl'>
+         Werkloosheidsuitkering
+      </Description>
+      <Extra value='bun_be' key='sheet'/>
+   </ParameterSystem>
+   -->
+   <!-- ub -->
+   <ParameterSystem name='Rates_And_Bands' id='Rates_And_Bands'>
+      <Description type='label' lang='en'>
+          Tax Rates and Bands 
+      </Description>
+      <Description type='description' lang='en'>
+          Tax Rates and Bands 
+      </Description>
+      <Description type='label' lang='nl'>
+          Taux et tranches d&#39;imposition 
+      </Description>
+      <Description type='description' lang='nl'>
+          Taux et tranches d&#39;imposition 
+      </Description>
+      <Description type='label' lang='nl'>
+         BelastingTarieven en schijven
+      </Description>
+      <Description type='description' lang='nl'>
+         BelastingTarieven en schijven
+      </Description>
+      <Parameter name='rate' instanceName='rate' units='percent' logicalType='rate' type='real'>
+         <Description type='label' lang='en'/>
+         <Description type='tooltip' lang='en'>
+             Tax Rate 
+         </Description>
+         <Description type='label' lang='nl'/>
+         <Description type='tooltip' lang='nl'>
+             Taux d&#39;imposition 
+         </Description>
+         <EditInfo topset='false' prec='1' max='100' min='0' treatAsPercentage='true' uprate='dont_uprate' check='halt'/>
+         <Extra value='IT_Rate' key='param_name'/>
+         <Description type='label' lang='nl'>
+         </Description>
+         <Description type='tooltip' lang='nl'>
+            Belastingtarief
+         </Description>
+      </Parameter>
+      <Parameter name='band' instanceName='band' units='year' logicalType='tax_band' type='real'>
+         <Description type='label' lang='en'/>
+         <Description type='tooltip' lang='en'>
+             Tax Band (Upper Limit) 
+         </Description>
+         <Description type='description' lang='en'>
+             The Upper Limit of the Tax Band 
+         </Description>
+         <Description type='label' lang='nl'/>
+         <Description type='tooltip' lang='nl'>
+             Tranche d&#39;imposition (limite supérieure) 
+         </Description>
+         <Description type='description' lang='nl'>
+             Limite suppérieure de la tranche d&#39;imposition 
+         </Description>
+         <EditInfo topset='true' prec='1' min='0' next='100' uprate='rooker_wise' check='halt'/>
+         <Extra value='IT_Bracket' key='param_name'/>
+         <Description type='label' lang='nl'>
+         </Description>
+         <Description type='tooltip' lang='nl'>
+            Schijf van belastbaar inkomen (bovengrens)
+         </Description>
+         <Description type='description' lang='nl'>
+            De bovengrens van de Belastingdienst Band
+         </Description>
+      </Parameter>
+   </ParameterSystem>
+   <EnumeratedType id='incomes'>
+      <EnumValue name='pdi'>
+         <Text lang='en'>
+            Disability pension
+         </Text>
+         <Text lang='nl'>
+            Arbeidsongeschiktheidspensioen
+         </Text>
+      </EnumValue>
+      <EnumValue name='phl'>
+         <Text lang='en'>
+            Health benefits
+         </Text>
+         <Text lang='nl'>
+            Voordelen voor de gezondheid
+         </Text>
+      </EnumValue>
+      <EnumValue name='poa'>
+         <Text lang='en'>
+            Retirement pension
+         </Text>
+         <Text lang='nl'>
+            Ouderdomspensioen
+         </Text>
+      </EnumValue>
+      <EnumValue name='psu'>
+         <Text lang='en'>
+            Survivor pension 
+         </Text>
+         <Text lang='nl'>
+            Overlevingspensioen
+         </Text>
+      </EnumValue>
+      <EnumValue name='bun'>
+         <Text lang='en'>
+            Unemployement benefit
+         </Text>
+         <Text lang='nl'>
+            Werkloosheidsuitkering uitkering
+         </Text>
+      </EnumValue>
+      <EnumValue name='yem'>
+         <Text lang='en'>
+            Income from employment
+         </Text>
+         <Text lang='nl'>
+            Inkomen uit arbeid
+         </Text>
+      </EnumValue>
+      <EnumValue name='ypp'>
+         <Text lang='en'>
+            Income from private pension
+         </Text>
+         <Text lang='nl'>
+            Inkomsten uit particuliere pensioenregelingen
+         </Text>
+      </EnumValue>
+      <EnumValue name='yse'>
+         <Text lang='en'>
+            Income from self employment
+         </Text>
+         <Text lang='nl'>
+            Inkomsten uit zelfstandige
+         </Text>
+      </EnumValue>
+      <EnumValue name='sic'>
+         <Text lang='en'>
+            Social insurance contributions (including deductions)
+         </Text>
+         <Text lang='nl'>
+            Premies sociale verzekeringen (inclusief aftrek)
+         </Text>
+      </EnumValue>
+      <EnumValue name='xmp'>
+         <Text lang='en'>
+            Alimony (paid)
+         </Text>
+         <Text lang='nl'>
+            Alimentatie (tegen betaling)
+         </Text>
+      </EnumValue>
+      <EnumValue name='ypt'>
+         <Text lang='en'>
+            Alimony (received)
+         </Text>
+         <Text lang='nl'>
+            Alimentatie (ontvangen)
+         </Text>
+      </EnumValue>
+      <EnumValue name='kivho'>
+         <Text lang='en'>
+            Imputed rent from housing
+         </Text>
+         <Text lang='nl'>
+            Huurwaarde van de woning
+         </Text>
+      </EnumValue>
+   </EnumeratedType>
+   <EnumeratedType id='payment_types'>
+      <EnumValue name='replacement_rate'>
+         <Text lang='en'>
+            Replacement rate
+         </Text>
+         <Text lang='nl'>
+            Replacement rate
+         </Text>
+      </EnumValue>
+      <EnumValue name='lump_sum'>
+         <Text lang='en'>
+            Lump Sum
+         </Text>
+         <Text lang='nl'>
+            Lump Sum
+         </Text>
+      </EnumValue>
+   </EnumeratedType>
+</ParameterSystem>

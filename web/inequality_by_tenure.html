@@ -1,0 +1,88 @@
+<div class='help_section' style='text-align:middle'>
+        <p>
+        <a href='/mefisto/en/output_help.html'
+          onclick='ExampleWindow( "/mefisto/en/output_help.html" ); return false;'
+          class='help_link'>
+        
+        <img src='/mefisto/images/help.png'
+                              class='help_link' alt='help'/></a></p>
+</div>
+
+
+<form action="" method="post" id="outputform" name="outputform">
+  <input type='hidden' name='random_string' value="" />
+
+  <div class="designreformblock" style="min-height:300px; width="870px">
+     <table>
+     <tr>
+     <td>
+                 <h2>Effects on the Distribution of Income</h2>
+
+               <div id='no_breakdown'>
+                <div >
+                 <table class='legend_table'>
+                   <tr>
+                      <td class='pre_change'>&bull;&nbsp;Before Reform</td>
+                      <td class='post_change'>&bull;&nbsp;After Reform</td>
+                    </tr>
+                 </table>
+                </div>
+                            <table class='datatable' width='100%'>
+              <thead>
+                <tr>
+                  <td width='20%' align='center' valign='middle'>
+                  </td>
+                  <td width='20%' align='center'>
+                     Pre
+                  </td>
+                  <td width='20%' align='center'>
+                     Post
+                  </td>
+                  <td width='20%' align='center'>
+                     Change
+                  </td>
+                  <td width='20%' align='center'></td>
+                </tr>
+              </thead>
+              <tbody>
+<tr class='tableRowEven'>
+<th valign='middle' align='right'>Whole Population</th><td valign='middle' align='right'>20.90</td><td valign='middle' align='right'>20.90</td><td valign='middle' align='right'><span class='total_cost_value neutral'>0.00</span></td><td><a class='picture_thumbnail' href='/mefisto/output_page/inequality_page/single_chart_popup?col=overall&amp;size=large&amp;breakdown=no_breakdown' onclick="ExampleWindow( this.href, 'Income Distribution Effects&nbsp;Whole Population(Lorenz Curve&nbsp;%)', 'Income Distribution Effects&nbsp;Whole Population(Lorenz Curve&nbsp;%)', '' ); return false;" onfocus='this.blur()'><img src='http://virtual-worlds.org.uk/mfplot/plotter/?type=lorenz&amp;size=thumb&amp;style=normal&amp;pre_or_post=both&amp;num_series=2&amp;da_pre_1=0.0,4.00426E-02,8.00470E-02,1.20014E-01,1.60094E-01,2.00107E-01,2.40090E-01,2.80144E-01,3.20038E-01,3.60115E-01,4.00299E-01,4.40080E-01,4.80323E-01,5.20595E-01,5.60026E-01,6.00329E-01,6.40049E-01,6.80310E-01,7.20611E-01,7.60109E-01,8.00093E-01,8.40215E-01,8.80079E-01,9.20583E-01,9.61073E-01,1.0&amp;col_pre_1=B53A30&amp;da_pre_2=0.0,2.10250E-02,4.66817E-02,7.53244E-02,1.05189E-01,1.36734E-01,1.69526E-01,2.03752E-01,2.39244E-01,2.76786E-01,3.14941E-01,3.55903E-01,3.98535E-01,4.40537E-01,4.85285E-01,5.31338E-01,5.78201E-01,6.26474E-01,6.74924E-01,7.18422E-01,7.61501E-01,8.02744E-01,8.50121E-01,8.97003E-01,9.44637E-01,1.0&amp;col_pre_2=B53A30&amp;da_post_1=0.0,4.00426E-02,8.00470E-02,1.20014E-01,1.60094E-01,2.00107E-01,2.40090E-01,2.80144E-01,3.20038E-01,3.60115E-01,4.00299E-01,4.40080E-01,4.80323E-01,5.20595E-01,5.60026E-01,6.00329E-01,6.40049E-01,6.80310E-01,7.20611E-01,7.60109E-01,8.00093E-01,8.40215E-01,8.80079E-01,9.20583E-01,9.61073E-01,1.0&amp;col_post_1=165B9B&amp;da_post_2=0.0,2.10250E-02,4.66817E-02,7.53244E-02,1.05189E-01,1.36734E-01,1.69526E-01,2.03752E-01,2.39244E-01,2.76786E-01,3.14941E-01,3.55903E-01,3.98535E-01,4.40537E-01,4.85285E-01,5.31338E-01,5.78201E-01,6.26474E-01,6.74924E-01,7.18422E-01,7.61501E-01,8.02744E-01,8.50121E-01,8.97003E-01,9.44637E-01,1.0&amp;col_post_2=165B9B' alt='Income Distribution Effects&nbsp;Whole Population(Lorenz Curve&nbsp;%)' /></a></td></tr>
+              </tbody>
+      </table>
+
+               </div>
+         </div> <!-- tab container -->
+
+     </td>
+      <td align='right'>
+     <table class='control_section'>
+   <tr><td><label for='breakdown'>Break Down By?</label></td><td>
+<select name='breakdown' id='breakdown'>
+<option value='no_breakdown'  selected='selected' >no Breakdown</option>
+<option value='by_decile' >By Decile</option>
+<option value='by_age_of_head' >By Age of Head</option>
+<option value='by_occupation_of_head' >By Occupation of Head</option>
+<option value='by_tenure' >by Tenure</option>
+</select>   </td></tr>
+  <tr><td>
+     <input id='output_submit_button' type='submit' value='Redraw' name='Redraw' onclick='submitOutputForm( "inequality_page" );return false;' />
+  </td></tr>
+</table>
+
+     </td>
+     </tr>
+     <tr>
+     <td colspan='2' align='center'>
+     
+     </td>
+     </tr>
+     </table>
+  </div> <!-- model content -->
+
+     <div style="clear: both;">&nbsp;</div>
+
+  <input type='hidden' name='which_page' id='which_page' value="inequality_page" />
+  <input type='hidden' name='which_section' id='which_section' value="output_page" />
+
+</form>
+

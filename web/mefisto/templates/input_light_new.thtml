@@ -1,0 +1,128 @@
+<div id='quickie_div'>
+
+<h3 style='text-align:center'>@_LIGHT-PAGE_@</h3>
+
+@@IF@@ @_JOB-IS-RUNNING_@        
+        @@INCLUDE@@ jquery_progress_bar.thtml   
+        <p>&nbsp;</p>
+@@END_IF@@
+
+
+<form action="@_URI_@" method="post" id="flat-rate-form" name="flat-rate-form" class='jqtransform lightform'>
+        <h3>@_FLAT-RATE-LABEL_@</h3>
+        
+               <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='flat_tax' />
+               <div class='rowElem'>
+                       <label for='rate-input'>@_RATE-INPUT-LABEL_@</label>&nbsp;@_RATE-INPUT_@
+               </div>
+               <div class='rowElem'>
+                       <label for='exemption-input'>@_EXEMPTION-INPUT-LABEL_@</label>&nbsp;@_EXEMPTION-INPUT_@
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="@_SAVE_@"
+                                 onclick='saveQuickie( "flat-rate" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="@_RUN_@"
+                                 @_DISABLE-RUN_@
+                                 onclick='runQuickie( "flat-rate" );return false'
+                                 type="submit" />
+               </div>
+     
+</form>
+
+<form action="@_URI_@" method="post" id="rtc-form" name="rtc-form" class='jqtransform lightform'>
+      <h3>@_RTC-LABEL_@</h3>
+      
+               <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='regional_tax_credit' />
+               <div class='rowElem'>
+                        <label for='exemption-input'>@_RTC-INPUT-LABEL_@</label>&nbsp;@_RTC-INPUT_@
+               </div>
+               
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="@_SAVE_@"
+                                 onclick='saveQuickie( "rtc" );return false'
+                                 type="submit" />
+                       <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="@_RUN_@"
+                                 @_DISABLE-RUN_@
+                                 onclick='runQuickie( "rtc" );return false'
+                                 type="submit" />
+               </div>
+     
+</form>
+
+<form action="@_URI_@" method="post" id="cc-form" name="cc-form" class='jqtransform lightform'>
+      <h3>@_CHILD-CARE-LABEL_@</h3>
+      
+               <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='child_care' />
+               <div class='rowElem'>
+                       <label for='exemption-input'>@_CHILD-CARE-INPUT-LABEL_@</label>&nbsp;@_CHILD-CARE-INPUT_@
+               </div>
+               <div class='rowElem formbuttons'>
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="@_SAVE_@"
+                                 onclick='saveQuickie( "cc" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="@_RUN_@"
+                                 @_DISABLE-RUN_@
+                                 onclick='runQuickie( "cc" );return false'
+                                 type="submit" />
+                </div>
+     
+</form>
+
+<form action="@_URI_@" method="post" id="mip-form" name="mip-form" class='jqtransform lightform'>
+      <h3>@_MIP-LABEL_@</h3>
+      
+               <input type='hidden' name='random_string' value="@_RANDOM_STRING_@" />
+               <input type='hidden' name='which_page' value="light_page" />
+               <input type='hidden' name='which_package' value='minimum_income_protection' />
+               <div class='rowElem'>
+                        <label for='exemption-input'>@_MIP-INPUT-LABEL_@</label>&nbsp;@_MIP-INPUT_@
+               </div>
+               <div class='rowElem formbuttons'>
+        
+                       <input
+                                 id="save_button"
+                                 name="save"
+                                 value="@_SAVE_@"
+                                 onclick='saveQuickie( "mip" );return false'
+                                 type="submit" />
+                        <input
+                                 id="run_submit_button"
+                                 name="run"
+                                 value="@_RUN_@"
+                                 @_DISABLE-RUN_@
+                                 onclick='runQuickie( "mip" );return false'
+                                 type="submit" />
+               </div>
+
+     
+</form>
+
+<div style="clear: both;">&nbsp;</div>
+
+</div>
+

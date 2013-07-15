@@ -1,0 +1,85 @@
+with Ada.Text_IO;
+
+package body EU.Web.Settings is
+
+   function Read_Web_Settings( filename : String ) return Web_Settings is
+      use EU_Key_Value_IO;
+      use Ada.Text_IO;
+      file : Ada.Text_IO.File_Type;  
+      settings : Web_Settings;
+   begin
+      Open( file, In_File, filename );
+      settings.root := Read( file, "root" );
+      settings.log_file_name := Read( file, "log_file_name" );
+      settings.work_dir := Read( file, "work_dir" );
+      settings.template_components_path := Read( file, "template_components_path" );
+      settings.port := Read( file, "port" );
+      settings.charts_driver_script := Read( file, "charts_driver_script" );
+      settings.create_zip_file_and_static_images := Read( file, "create_zip_file_and_static_images" );
+      Close( file );
+      return settings;
+   end Read_Web_Settings;
+  
+   function Log_File_Name( this : in Web_Settings ) return String is
+   begin
+      return To_String( this.root & this.log_file_name );
+   end Log_File_Name;
+   
+   function Log_File_Name( this : in Web_Settings ) return Unbounded_String is
+   begin
+      return this.root & this.log_file_name;
+   end Log_File_Name;
+ 
+  
+   function Root( this : in Web_Settings ) return Unbounded_String is 
+   begin 
+      return this.root;
+   end Root;
+   
+   function Root( this : in Web_Settings ) return String is 
+   begin 
+      return To_String( this.root ); 
+   end Root;
+
+   function Work_Dir( this : in Web_Settings ) return Unbounded_String is 
+   begin 
+      return this.root & this.work_dir;
+   end Work_Dir;
+
+   function Work_Dir( this : in Web_Settings ) return String is 
+   begin 
+      return To_String( this.root & this.work_dir ); 
+   end Work_Dir;
+   
+   function Template_Components_Path( this : in Web_Settings ) return Unbounded_String is 
+   begin 
+      return this.root & this.template_components_path;
+   end Template_Components_Path;
+   
+   function Template_Components_Path( this : in Web_Settings ) return String is 
+   begin 
+      return To_String( this.root & this.template_components_path ); 
+   end Template_Components_Path;
+
+   function Port( this : in Web_Settings ) return Positive is 
+   begin 
+      return this.port;
+   end Port;
+   
+   function Charts_Driver_Script( this : in Web_Settings ) return Unbounded_String is 
+   begin 
+      return this.root & this.charts_driver_script; 
+   end Charts_Driver_Script;
+   
+   function Charts_Driver_Script( this : in Web_Settings ) return String is 
+   begin 
+      return To_String( this.root & this.charts_driver_script ); 
+   end Charts_Driver_Script;
+
+   function Create_Zip_File_And_Static_Images( this : in Web_Settings ) return Boolean is begin 
+      return this.create_zip_file_and_static_images; 
+   end create_zip_file_and_static_images;
+  
+  
+   
+end EU.Web.Settings;

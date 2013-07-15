@@ -1,0 +1,8 @@
+<img id='@_KEY_@-img' src='@_ROOT_@/@_IMG_@' alt='Help' onclick="$( '#infotext' ).html( $( 'div#@_KEY_@-text' ).html() );" /> 
+<div id='@_KEY_@-text' style='display:none'>
+
+@_MAIN-HELP-TEXT_@
+
+</div>
+
+

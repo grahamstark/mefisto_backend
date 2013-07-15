@@ -1,0 +1,56 @@
+Tenure_Type ASSETS  Main Residence  Tenure
+ 1 Owned on mortgage
+ 2 Owned outright
+ 3 Rented
+ 4 Reduced Rented
+ 5 Social Rented
+ 6 Free
+ 7 Other
+
+Nuts_Level_1_Type
+ 1 Brussels
+ 2 Flanders
+ 3 Wallonia
+
+Marital_Status_Type DEMOGRAPHIC  Marital Status
+ 1 Single
+ 2 Married
+ 3 Separated
+ 4 Divorced
+ 5 Widowed
+
+Education_Current_Status_Type DEMOGRAPHIC  Education - Current Status
+ 0 Not in Education
+ 1 Pre-primary
+ 2 Primary
+ 3 Lower Secondary
+ 4 Upper Secondary
+ 5 Post Secondary
+ 6 Tertiary
+
+Education_Highest_Status_Type DEMOGRAPHIC  Education - Highest Status
+ 0 Not completed Primary
+ 1 Primary
+ 2 Lower Secondary
+ 3 Upper Secondary
+ 4 Post Secondary
+ 5 Tertiary
+ 
+Citizenship_Type DEMOGRAPHIC  Citizenship
+ 1 This country
+ 2 other EU
+ 3 Other
+
+Consensual_Union_Type DEMOGRAPHIC Consensual Union
+0 No
+1 Yes, on a legal basis
+
+Gender_Type DEMOGRAPHIC  Gender
+ 0 Female
+ 1 Male
+
+Citizenship_Type DEMOGRAPHIC : Citizenship
+ 1 This country
+ 2 other EU
+ 3 Other
+
